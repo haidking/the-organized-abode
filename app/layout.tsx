@@ -23,18 +23,18 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "The Organized Abode — Real Recipes. Real Simple.",
-    template: "%s | The Organized Abode",
+    default: "The Better Home Recipes — Real Recipes. Real Simple.",
+    template: "%s | The Better Home Recipes",
   },
   description:
     "A clean, simple recipe site for real home cooking — copycat, one-pan, drinks, meal prep and more.",
-  metadataBase: new URL("https://theorganizedabode.com"),
+  metadataBase: new URL("https://thebetterhomerecipes.com"),
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "The Organized Abode",
-    title: "The Organized Abode — Real Recipes. Real Simple.",
+    siteName: "The Better Home Recipes",
+    title: "The Better Home Recipes — Real Recipes. Real Simple.",
     description:
       "A clean, simple recipe site for real home cooking — copycat, one-pan, drinks, meal prep and more.",
   },
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <nav className="sticky top-0 z-50 bg-surface/90 backdrop-blur-sm border-b border-border">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
             <Link href="/" className="font-heading text-xl font-bold text-ink hover:text-highlight transition-colors">
-              The Organized Abode
+              The Better Home Recipes
             </Link>
             <div className="flex items-center gap-6 text-sm font-medium">
               <Link href="/recipes" className="text-ink-secondary hover:text-highlight transition-colors">
@@ -71,7 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer className="border-t border-border bg-surface mt-12">
           <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
             <p className="text-xs text-ink-secondary leading-relaxed">
-              © {new Date().getFullYear()} The Organized Abode. All rights
+              © {new Date().getFullYear()} The Better Home Recipes. All rights
               reserved. Disclosure: This site contains affiliate links.
             </p>
           </div>

@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default function AffiliateCard({ recipe }: Props) {
-  const pinUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(`https://theorganizedabode.com/recipes/${recipe.slug}`)}`;
+  const pinUrl = `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(`https://thebetterhomerecipes.com/recipes/${recipe.slug}`)}`;
 
   return (
     <aside className="space-y-6 lg:sticky lg:top-24">

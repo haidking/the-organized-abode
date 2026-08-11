@@ -6,7 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateCard from "@/components/AffiliateCard";
 import JsonLd from "@/components/JsonLd";
 
-const SITE_URL = "https://theorganizedabode.com";
+const SITE_URL = "https://thebetterhomerecipes.com";
 
 /* ── Static params for all recipe slugs ────────────────────────────────── */
 

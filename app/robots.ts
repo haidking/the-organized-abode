@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://theorganizedabode.com/sitemap.xml",
+    sitemap: "https://thebetterhomerecipes.com/sitemap.xml",
   };
 }

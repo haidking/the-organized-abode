@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import type { Recipe, Category } from "@/data/types";
 import CategoryFilter from "./CategoryFilter";
 import RecipeCard from "./RecipeCard";
@@ -12,7 +13,13 @@ interface Props {
 }
 
 export default function RecipeGrid({ recipes }: Props) {
-  const [activeCategory, setActiveCategory] = useState<FilterKey>("all");
+  const searchParams = useSearchParams();
+  const initialParam = searchParams.get("category") as FilterKey | null;
+  const [activeCategory, setActiveCategory] = useState<FilterKey>(
+    initialParam && ["copycat", "one-pan", "drinks", "meal-prep", "salads", "breakfast"].includes(initialParam)
+      ? initialParam
+      : "all"
+  );
 
   const filtered =
     activeCategory === "all"

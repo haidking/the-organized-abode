@@ -152,7 +152,7 @@ function heroSvg(recipe, accent) {
   <text x="${W / 2}" y="154" font-family="Liberation Sans" font-size="28" font-weight="bold" fill="${PALETTE.surface}" text-anchor="middle">${escapeXml(recipe.category)}</text>
   ${textBlock(titleLines, W / 2, titleStartY, fontSize, 92, PALETTE.ink, true)}
   <text x="${W / 2}" y="620" font-family="Liberation Serif" font-size="34" font-style="italic" fill="${PALETTE.inkSecondary}" text-anchor="middle">${escapeXml(recipe.subtitle)}</text>
-  <text x="${W / 2}" y="720" font-family="Liberation Sans" font-size="24" fill="${PALETTE.inkSecondary}" text-anchor="middle" letter-spacing="4">THE ORGANIZED ABODE</text>
+  <text x="${W / 2}" y="720" font-family="Liberation Sans" font-size="24" fill="${PALETTE.inkSecondary}" text-anchor="middle" letter-spacing="4">THE BETTER HOME RECIPES</text>
 </svg>`;
 }
 
@@ -173,7 +173,7 @@ function pinSvg(recipe, accent) {
   <text x="${W / 2}" y="218" font-family="Liberation Sans" font-size="30" font-weight="bold" fill="${PALETTE.surface}" text-anchor="middle">${escapeXml(recipe.category)}</text>
   ${textBlock(titleLines, W / 2, titleStartY, fontSize, 76, PALETTE.ink, true)}
   <text x="${W / 2}" y="1010" font-family="Liberation Serif" font-size="36" font-style="italic" fill="${PALETTE.inkSecondary}" text-anchor="middle">${escapeXml(recipe.subtitle)}</text>
-  <text x="${W / 2}" y="1160" font-family="Liberation Sans" font-size="26" fill="${PALETTE.inkSecondary}" text-anchor="middle" letter-spacing="4">THE ORGANIZED ABODE</text>
+  <text x="${W / 2}" y="1160" font-family="Liberation Sans" font-size="26" fill="${PALETTE.inkSecondary}" text-anchor="middle" letter-spacing="4">THE BETTER HOME RECIPES</text>
 </svg>`;
 }
 

@@ -47,7 +47,7 @@ export const recipes: Recipe[] = [
     datePublished: "2026-08-08",
     image: "/images/viral-cucumber-salad.jpg",
     pinImage: "/images/pins/viral-cucumber-salad.png",
-    metaTitle: "Viral Cucumber Salad (3 Ingredients, 10 Minutes) | The Organized Abode",
+    metaTitle: "Viral Cucumber Salad (3 Ingredients, 10 Minutes) | The Better Home Recipes",
     metaDescription:
       "The viral smashed cucumber salad in 10 minutes — soy sauce, chili oil, garlic, sesame. Crunchy, spicy and dangerously addictive.",
   },
@@ -100,7 +100,7 @@ export const recipes: Recipe[] = [
     datePublished: "2026-08-05",
     image: "/images/one-pot-creamy-tuscan-chicken-pasta.jpg",
     pinImage: "/images/pins/one-pot-creamy-tuscan-chicken-pasta.png",
-    metaTitle: "One-Pot Creamy Tuscan Chicken Pasta (25 Minutes) | The Organized Abode",
+    metaTitle: "One-Pot Creamy Tuscan Chicken Pasta (25 Minutes) | The Better Home Recipes",
     metaDescription:
       "One-pot Tuscan chicken pasta in 25 minutes — seared chicken, cherry tomatoes, spinach and a rich parmesan cream sauce. Serves 4, one pot to wash.",
   },
@@ -144,7 +144,7 @@ export const recipes: Recipe[] = [
     datePublished: "2026-08-01",
     image: "/images/strawberry-matcha-latte.jpg",
     pinImage: "/images/pins/strawberry-matcha-latte.png",
-    metaTitle: "Strawberry Matcha Latte (5-Minute Iced Recipe) | The Organized Abode",
+    metaTitle: "Strawberry Matcha Latte (5-Minute Iced Recipe) | The Better Home Recipes",
     metaDescription:
       "Layered iced strawberry matcha latte made at home in 5 minutes — mashed strawberries, honey, oat milk and ceremonial matcha. Prettier than the coffee shop's.",
   },
@@ -186,7 +186,7 @@ export const recipes: Recipe[] = [
     datePublished: "2026-07-30",
     image: "/images/green-detox-smoothie.jpg",
     pinImage: "/images/pins/green-detox-smoothie.png",
-    metaTitle: "Green Detox Smoothie (5 Ingredients, 5 Minutes) | The Organized Abode",
+    metaTitle: "Green Detox Smoothie (5 Ingredients, 5 Minutes) | The Better Home Recipes",
     metaDescription:
       "A green detox smoothie that tastes good — spinach, banana, green apple, lime and ginger. 5 ingredients, 5 minutes, no kale bitterness.",
   },
@@ -235,7 +235,7 @@ export const recipes: Recipe[] = [
     datePublished: "2026-07-25",
     image: "/images/one-pan-tuscan-butter-gnocchi.jpg",
     pinImage: "/images/pins/one-pan-tuscan-butter-gnocchi.png",
-    metaTitle: "One-Pan Tuscan Butter Gnocchi (20 Minutes) | The Organized Abode",
+    metaTitle: "One-Pan Tuscan Butter Gnocchi (20 Minutes) | The Better Home Recipes",
     metaDescription:
       "One-pan Tuscan butter gnocchi in 20 minutes — crispy pan-seared gnocchi tossed in a garlic parmesan cream sauce with sun-dried tomatoes and spinach.",
   },
@@ -296,7 +296,7 @@ export const recipes: Recipe[] = [
     datePublished: "2026-07-18",
     image: "/images/copycat-crumbl-pink-sugar-cookie.jpg",
     pinImage: "/images/pins/copycat-crumbl-pink-sugar-cookie.png",
-    metaTitle: "Copycat Crumbl Pink Sugar Cookie Recipe | The Organized Abode",
+    metaTitle: "Copycat Crumbl Pink Sugar Cookie Recipe | The Better Home Recipes",
     metaDescription:
       "Soft, thick copycat Crumbl pink sugar cookies with a cream cheese swirl. The secret: almond extract + cream cheese for that signature Crumbl texture.",
   },
@@ -326,7 +326,7 @@ export const recipes: Recipe[] = [
     datePublished: "2026-07-12",
     image: "/images/6-high-protein-breakfasts-meal-prep.jpg",
     pinImage: "/images/pins/6-high-protein-breakfasts-meal-prep.png",
-    metaTitle: "6 High-Protein Breakfasts to Meal Prep | The Organized Abode",
+    metaTitle: "6 High-Protein Breakfasts to Meal Prep | The Better Home Recipes",
     metaDescription:
       "Meal prep six high-protein breakfasts in 30 minutes: yogurt bowl (32g), feta spinach omelette (28g), chia oats, eggs & sausage, salmon toast and more.",
     mealPrep: [
@@ -445,7 +445,7 @@ export const recipes: Recipe[] = [
     datePublished: "2026-07-05",
     image: "/images/copycat-ihop-buttermilk-pancakes.jpg",
     pinImage: "/images/pins/copycat-ihop-buttermilk-pancakes.png",
-    metaTitle: "Copycat IHOP Buttermilk Pancakes (10 Minutes) | The Organized Abode",
+    metaTitle: "Copycat IHOP Buttermilk Pancakes (10 Minutes) | The Better Home Recipes",
     metaDescription:
       "Fluffy, thick copycat IHOP buttermilk pancakes in 10 minutes. The secret: rest the batter 5 minutes for a tall, diner-style stack.",
   },
@@ -496,7 +496,7 @@ export const recipes: Recipe[] = [
     datePublished: "2026-06-28",
     image: "/images/copycat-dominos-garlic-parmesan-chicken.jpg",
     pinImage: "/images/pins/copycat-dominos-garlic-parmesan-chicken.png",
-    metaTitle: "Copycat Domino's Garlic Parmesan Chicken | The Organized Abode",
+    metaTitle: "Copycat Domino's Garlic Parmesan Chicken | The Better Home Recipes",
     metaDescription:
       "Better than delivery: juicy chicken thighs in a creamy garlic parmesan sauce, seared then baked. A 40-minute copycat Domino's garlic parmesan chicken.",
   },
@@ -550,7 +550,7 @@ export const recipes: Recipe[] = [
     datePublished: "2026-06-20",
     image: "/images/copycat-crumbl-chocolate-chip-cookie.jpg",
     pinImage: "/images/pins/copycat-crumbl-chocolate-chip-cookie.png",
-    metaTitle: "Copycat Crumbl Chocolate Chip Cookie Recipe | The Organized Abode",
+    metaTitle: "Copycat Crumbl Chocolate Chip Cookie Recipe | The Better Home Recipes",
     metaDescription:
       "Thick, gooey copycat Crumbl chocolate chip cookies with flaky sea salt. Brown butter, brown sugar and bread flour make them better than the real thing.",
   },

@@ -18,7 +18,7 @@ export default function JsonLd({ recipe, canonicalUrl }: Props) {
     image: [canonicalUrl + recipe.image],
     author: {
       "@type": "Organization",
-      name: "The Organized Abode",
+      name: "The Better Home Recipes",
     },
     datePublished: recipe.datePublished,
     recipeYield: `${recipe.servings} servings`,

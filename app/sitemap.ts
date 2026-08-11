@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { recipes } from "@/data/recipes";
 
-const SITE_URL = "https://theorganizedabode.com";
+const SITE_URL = "https://thebetterhomerecipes.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [

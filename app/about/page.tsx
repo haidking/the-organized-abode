@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The Organized Abode — a clean, simple recipe site for real home cooking.",
+    "The Better Home Recipes — a clean, simple recipe site for real home cooking.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About | The Organized Abode",
+    title: "About | The Better Home Recipes",
     description:
-      "The Organized Abode — a clean, simple recipe site for real home cooking.",
+      "The Better Home Recipes — a clean, simple recipe site for real home cooking.",
     type: "website",
   },
 };
@@ -20,7 +20,7 @@ export default function AboutPage() {
         About
       </h1>
       <p className="text-base leading-relaxed text-ink-secondary">
-        The Organized Abode is a recipe site for people who love good food but
+        The Better Home Recipes is a recipe site for people who love good food but
         don&apos;t love fussing over it. Every recipe here is tested, photographed
         and written with a simple promise: make something delicious, quickly,
         without a sink full of dishes. From copycat cookies and one-pan dinners to
