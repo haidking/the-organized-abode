@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll, clean base */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply bg-background text-ink font-body min-h-screen;
+}
+
+/* Checklist-style ingredients list */
+.ingredient-checklist li {
+  @apply flex items-start gap-3 py-2 border-b border-border/50;
+}
+.ingredient-checklist li::before {
+  content: "";
+  @apply block h-4 w-4 flex-shrink-0 mt-1 rounded border-2 border-border;
+}
+
+/* Numbered steps */
+.recipe-step {
+  @apply relative pl-12 py-5;
+}
+.recipe-step-number {
+  @apply absolute left-0 top-5 flex h-7 w-7 items-center justify-center rounded-full bg-accent text-xs font-bold text-white;
+}
+
+/* Pro tips box */
+.tips-box {
+  @apply rounded-lg bg-accent-light p-5 border border-accent/20;
+}
+
+/* AdSense placeholder marker */
+.ad-placeholder {
+  @apply flex items-center justify-center rounded border-2 border-dashed border-border bg-background text-xs text-ink-secondary;
+}
