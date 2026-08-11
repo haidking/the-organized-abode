@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { recipes, getRecipeBySlug, categoryLabels } from "@/data/recipes";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateCard from "@/components/AffiliateCard";
+import IngredientsList from "@/components/IngredientsList";
 import JsonLd from "@/components/JsonLd";
 
 const SITE_URL = "https://thebetterhomerecipes.com";
@@ -113,13 +114,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
                 <h2 className="font-heading text-xl font-bold text-ink mb-4">
                   Ingredients
                 </h2>
-                <ul className="ingredient-checklist">
-                  {recipe.ingredients.map((item) => (
-                    <li key={item} className="text-sm text-ink">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                <IngredientsList items={recipe.ingredients} />
               </section>
             )}
 
@@ -144,13 +139,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
                           {meal.protein}
                         </span>
                       </div>
-                      <ul className="ingredient-checklist">
-                        {meal.ingredients.map((item) => (
-                          <li key={item} className="text-sm text-ink">
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
+                      <IngredientsList items={meal.ingredients} />
                     </div>
                   ))}
                 </div>
