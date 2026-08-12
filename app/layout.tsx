@@ -59,11 +59,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col">
         {/* ─── Nav ─── */}
         <nav className="sticky top-0 z-50 bg-surface/90 backdrop-blur-sm border-b border-border">
-          <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-            <Link href="/" className="font-heading text-xl font-bold text-ink hover:text-highlight transition-colors">
+          <div className="mx-auto flex max-w-6xl flex-col items-center gap-2 px-4 py-3 sm:flex-row sm:justify-between sm:gap-0 sm:px-6">
+            <Link href="/" className="font-heading text-lg sm:text-xl font-bold text-ink hover:text-highlight transition-colors text-center">
               The Better Home Recipes
             </Link>
-            <div className="flex items-center gap-6 text-sm font-medium">
+            <div className="flex items-center gap-5 sm:gap-6 text-sm font-medium">
               <Link href="/" className="text-ink-secondary hover:text-highlight transition-colors">
                 Home
               </Link>
