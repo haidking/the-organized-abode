@@ -70,10 +70,15 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
           {/* ── Left column (main) ── */}
           <article className="flex-1 min-w-0">
-            {/* Title + subtitle */}
+            {/* Title + byline + subtitle */}
             <h1 className="font-heading text-3xl sm:text-4xl font-bold text-ink leading-tight">
               {recipe.title}
             </h1>
+            <p className="mt-3 flex flex-wrap items-center gap-x-2 text-sm text-ink-secondary">
+              <span>By [YOUR NAME]</span>
+              <span aria-hidden="true">·</span>
+              <span>{formatDate(recipe.datePublished)}</span>
+            </p>
             <p className="mt-2 text-lg italic text-ink-secondary">{recipe.subtitle}</p>
 
             {/* Meta row */}
@@ -197,4 +202,13 @@ function MetaChip({ children }: { children: React.ReactNode }) {
       {children}
     </span>
   );
+}
+
+/** Format an ISO date (e.g. "2026-08-08") as "Month DD, YYYY" for the byline. */
+function formatDate(date: string): string {
+  return new Date(date).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
 }

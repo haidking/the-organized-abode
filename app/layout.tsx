@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     "A clean, simple recipe site for real home cooking — copycat, one-pan, drinks, meal prep and more.",
   metadataBase: new URL("https://thebetterhomerecipes.com"),
   alternates: { canonical: "/" },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -41,11 +45,17 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
 };
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 /* ── Layout ─────────────────────────────────────────────────────────────── */
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+      {/* ADSENSE SCRIPT GOES HERE — replace with actual AdSense verification script after account approval */}
       <body className="min-h-screen flex flex-col">
         {/* ─── Nav ─── */}
         <nav className="sticky top-0 z-50 bg-surface/90 backdrop-blur-sm border-b border-border">
@@ -54,11 +64,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               The Better Home Recipes
             </Link>
             <div className="flex items-center gap-6 text-sm font-medium">
+              <Link href="/" className="text-ink-secondary hover:text-highlight transition-colors">
+                Home
+              </Link>
               <Link href="/recipes" className="text-ink-secondary hover:text-highlight transition-colors">
                 Recipes
               </Link>
               <Link href="/about" className="text-ink-secondary hover:text-highlight transition-colors">
                 About
+              </Link>
+              <Link href="/contact" className="text-ink-secondary hover:text-highlight transition-colors">
+                Contact
               </Link>
             </div>
           </div>
@@ -72,7 +88,26 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6">
             <p className="text-xs text-ink-secondary leading-relaxed">
               © {new Date().getFullYear()} The Better Home Recipes. All rights
-              reserved. Disclosure: This site contains affiliate links.
+              reserved.
+            </p>
+            <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-ink-secondary">
+              <Link href="/privacy-policy" className="hover:text-highlight transition-colors">
+                Privacy Policy
+              </Link>
+              <span aria-hidden="true">·</span>
+              <Link href="/disclaimer" className="hover:text-highlight transition-colors">
+                Disclaimer
+              </Link>
+              <span aria-hidden="true">·</span>
+              <Link href="/contact" className="hover:text-highlight transition-colors">
+                Contact
+              </Link>
+            </div>
+            <p className="mt-3 text-xs text-ink-secondary leading-relaxed">
+              As an Amazon Associate I earn from qualifying purchases.
+            </p>
+            <p className="mt-1 text-xs text-ink-secondary leading-relaxed">
+              This site uses Google AdSense to display ads.
             </p>
           </div>
         </footer>

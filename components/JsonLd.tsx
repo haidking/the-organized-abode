@@ -8,6 +8,7 @@ interface Props {
 /**
  * JSON-LD structured data for a recipe page, following schema.org/Recipe.
  * The script tag is rendered server-side and is never hydrated by React.
+ * author is a schema.org Person matching the site's author byline.
  */
 export default function JsonLd({ recipe, canonicalUrl }: Props) {
   const ld: Record<string, unknown> = {
@@ -17,8 +18,8 @@ export default function JsonLd({ recipe, canonicalUrl }: Props) {
     description: recipe.description,
     image: [canonicalUrl + recipe.image],
     author: {
-      "@type": "Organization",
-      name: "The Better Home Recipes",
+      "@type": "Person",
+      name: "[YOUR NAME/PEN NAME]",
     },
     datePublished: recipe.datePublished,
     recipeYield: `${recipe.servings} servings`,
