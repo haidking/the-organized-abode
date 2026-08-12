@@ -139,10 +139,10 @@ export default function PrivacyPolicyPage() {
             If you have any questions about this Privacy Policy, you can reach us
             at{" "}
             <a
-              href="mailto:[YOUR EMAIL]"
+              href="mailto:syedhaider0727@gmail.com"
               className="text-highlight hover:text-highlight/80 transition-colors"
             >
-              [YOUR EMAIL]
+              syedhaider0727@gmail.com
             </a>
             .
           </p>

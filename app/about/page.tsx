@@ -21,7 +21,7 @@ export default function AboutPage() {
       </h1>
 
       <p className="text-base leading-relaxed text-ink-secondary mb-5">
-        Hi, I&apos;m [YOUR NAME/PEN NAME] — a home cook who believes great food
+        Hi, I&apos;m Haidking — a home cook who believes great food
         shouldn&apos;t require a culinary degree, a wall of specialty pans, or an
         afternoon of shopping for obscure ingredients. The Better Home Recipes
         started as my own kitchen notebook: a place to write down the quick,

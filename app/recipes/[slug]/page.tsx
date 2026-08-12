@@ -75,7 +75,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
               {recipe.title}
             </h1>
             <p className="mt-3 flex flex-wrap items-center gap-x-2 text-sm text-ink-secondary">
-              <span>By [YOUR NAME]</span>
+              <span>By Haidking</span>
               <span aria-hidden="true">·</span>
               <span>{formatDate(recipe.datePublished)}</span>
             </p>

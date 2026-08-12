@@ -21,10 +21,10 @@ export default function ContactPage() {
           Contact
         </h1>
         <a
-          href="mailto:[YOUR EMAIL]"
+          href="mailto:syedhaider0727@gmail.com"
           className="inline-flex items-center gap-2 rounded-full bg-highlight px-6 py-3 text-sm font-semibold text-white shadow-md shadow-highlight/25 hover:bg-highlight/90 transition-colors"
         >
-          [YOUR EMAIL]
+          syedhaider0727@gmail.com
         </a>
       </div>
     </section>
