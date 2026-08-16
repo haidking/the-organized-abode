@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { recipes, categoryLabels } from "@/data/recipes";
 import RecipeGrid from "@/components/RecipeGrid";
+import FreeEbooks from "@/components/FreeEbooks";
 import type { Category } from "@/data/types";
 
 /* ── Category cards for the browse section ──────────────────────────────── */
@@ -22,9 +23,9 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ════════════════════════════════════════════════════════════════════
+      {/* ═════════════════════════════════════════════════════════════════════
           Hero
-      ════════════════════════════════════════════════════════════════════ */}
+      ═════════════════════════════════════════════════════════════════════ */}
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-surface to-accent-light/30">
         {/* Decorative blobs */}
         <div className="pointer-events-none absolute -top-32 -right-32 h-[500px] w-[500px] rounded-full bg-accent-light/40 blur-3xl" />
@@ -65,9 +66,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════════════════════════════════
+      {/* ═════════════════════════════════════════════════════════════════════
           Browse by Category
-      ════════════════════════════════════════════════════════════════════ */}
+      ═════════════════════════════════════════════════════════════════════ */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 -mt-8 relative z-10">
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
           {CATEGORY_CARDS.map(({ key, icon, tagline }) => {
@@ -91,9 +92,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════════════════════════════════
+      {/* ═════════════════════════════════════════════════════════════════════
           Featured Recipes
-      ════════════════════════════════════════════════════════════════════ */}
+      ═════════════════════════════════════════════════════════════════════ */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-16">
         <div className="flex items-end justify-between mb-8">
           <div>
@@ -152,9 +153,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════════════════════════════════
+      {/* ═════════════════════════════════════════════════════════════════════
           Why This Site
-      ════════════════════════════════════════════════════════════════════ */}
+      ═════════════════════════════════════════════════════════════════════ */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-20">
         <div className="rounded-2xl bg-surface border border-border p-8 sm:p-12">
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink text-center mb-10">
@@ -192,9 +193,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ════════════════════════════════════════════════════════════════════
+      {/* ═════════════════════════════════════════════════════════════════════
+          Free eBooks Promo
+      ═════════════════════════════════════════════════════════════════════ */}
+      <FreeEbooks />
+
+      {/* ═════════════════════════════════════════════════════════════════════
           Full Grid with Filter
-      ════════════════════════════════════════════════════════════════════ */}
+      ═════════════════════════════════════════════════════════════════════ */}
       <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-20">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink mb-8">
           All Recipes
