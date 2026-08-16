@@ -28,8 +28,9 @@ export default function AuthorAvatar({ size = "nav", ring = true }: Props) {
 
   return (
     <span
-      className={`inline-flex shrink-0 ${cls} ${ringCls} rounded-full overflow-hidden bg-accent-light border border-border`}
+      className={`inline-flex shrink-0 relative ${cls} ${ringCls} rounded-full overflow-hidden bg-accent-light border border-border`}
       aria-hidden="true"
+      style={{ position: "relative" }}
     >
       {/* Try the real image first; on error fall back to the initials badge */}
       <Image
@@ -37,11 +38,9 @@ export default function AuthorAvatar({ size = "nav", ring = true }: Props) {
         alt=""
         fill
         sizes={typeof size === "number" ? `${size}px` : size === "hero" ? "48px" : "28px"}
-        className="object-cover transition-opacity duration-200"
+        className="object-cover object-center transition-opacity duration-200"
         onError={(e) => {
           (e.currentTarget as HTMLImageElement).style.display = "none";
-          // The fallback is rendered below via the onError handler's sibling
-          // (React renders both; the <Image> hides itself on error)
         }}
       />
       {/* Fallback initials — shows if author-avatar.jpg doesn't exist yet */}
