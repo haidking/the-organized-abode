@@ -5,7 +5,9 @@ import { recipes, getRecipeBySlug, categoryLabels } from "@/data/recipes";
 import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateCard from "@/components/AffiliateCard";
 import IngredientsList from "@/components/IngredientsList";
+import { ScaledIngredientsList } from "@/components/ServingsScaler";
 import JsonLd from "@/components/JsonLd";
+import JumpToRecipe from "@/components/JumpToRecipe";
 
 const SITE_URL = "https://thebetterhomerecipes.com";
 
@@ -102,6 +104,9 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
               />
             </div>
 
+            {/* Jump to Recipe button (mobile) */}
+            <JumpToRecipe targetId="ingredients" />
+
             {/* Description */}
             <p className="mt-6 text-base leading-relaxed text-ink-secondary">
               {recipe.description}
@@ -115,11 +120,8 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
 
             {/* Ingredients (skip for roundup pages) */}
             {!isRoundup && recipe.ingredients.length > 0 && (
-              <section className="mt-8">
-                <h2 className="font-heading text-xl font-bold text-ink mb-4">
-                  Ingredients
-                </h2>
-                <IngredientsList items={recipe.ingredients} />
+              <section className="mt-8" id="ingredients">
+                <ScaledIngredientsList items={recipe.ingredients} originalServings={recipe.servings} />
               </section>
             )}
 

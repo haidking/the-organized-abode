@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── JumpToRecipe animation ────────────────────────────────────────────── */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(1rem); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out forwards;
+}
+
 /* Smooth scroll, clean base */
 html {
   scroll-behavior: smooth;
@@ -29,4 +38,232 @@ body {
 /* AdSense placeholder marker */
 .ad-placeholder {
   @apply flex items-center justify-center rounded border-2 border-dashed border-border bg-background text-xs text-ink-secondary;
+}
+
+/* ── Print stylesheet ──────────────────────────────────────────────────────
+   Clean, minimal recipe printout — hides nav, sidebar, ads, hero blobs.
+   Shows: title, meta, description, ingredients, steps, tips only.
+*/
+@media print {
+  /* Hide everything by default */
+  nav,
+  footer,
+  .ad-placeholder,
+  [class*="pointer-events-none"],  /* hero decorative blobs */
+  aside,                           /* affiliate sidebar */
+  .tips-box + .ad-placeholder,     /* ad between tips and next section */
+  .recipe-step-number {            /* step numbers handled via CSS counter */
+    display: none !important;
+  }
+
+  /* Page setup */
+  @page {
+    margin: 2cm;
+    size: auto;
+  }
+
+  html, body {
+    background: white !important;
+    color: #111 !important;
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  /* Article container */
+  article {
+    max-width: none !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Hero image - small, top of page */
+  article > div:first-of-type {
+    display: none !important;  /* hide breadcrumb */
+  }
+
+  /* Title area */
+  h1 {
+    font-size: 22pt !important;
+    line-height: 1.2 !important;
+    color: #111 !important;
+    margin: 0 0 0.5rem !important;
+    page-break-after: avoid;
+  }
+
+  .font-heading.text-lg.italic,
+  p.text-lg.italic {
+    font-size: 14pt !important;
+    color: #444 !important;
+    margin: 0 0 1rem !important;
+  }
+
+  /* Meta row - compact */
+  .flex.flex-wrap.gap-2 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+    font-size: 10pt !important;
+    color: #555 !important;
+    margin: 0.5rem 0 1.5rem !important;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .flex.flex-wrap.gap-2 > span {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    font-weight: 600;
+  }
+
+  /* Description */
+  article > p.text-base.leading-relaxed {
+    font-size: 11pt !important;
+    color: #333 !important;
+    margin: 1rem 0 2rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Section headers */
+  h2 {
+    font-size: 14pt !important;
+    color: #111 !important;
+    border-bottom: 2px solid #2D6A4F !important;
+    padding-bottom: 0.25rem !important;
+    margin: 2rem 0 1rem !important;
+    page-break-after: avoid;
+  }
+
+  /* Ingredients list */
+  .ingredients-list,
+  [class*="IngredientsList"] {
+    columns: 2 !important;
+    column-gap: 2rem !important;
+    margin: 1rem 0 2rem !important;
+  }
+
+  .ingredients-list li,
+  [class*="IngredientsList"] li {
+    break-inside: avoid !important;
+    padding: 0.25rem 0 !important;
+    font-size: 11pt !important;
+    list-style: disc !important;
+    margin-left: 1.5rem !important;
+  }
+
+  /* Steps - numbered via CSS */
+  ol.space-y-0 {
+    counter-reset: step-counter !important;
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 1rem 0 2rem !important;
+  }
+
+  .recipe-step {
+    position: relative !important;
+    padding: 0.75rem 0 0.75rem 2.5rem !important;
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+    border-bottom: 1px solid #eee !important;
+    page-break-inside: avoid !important;
+  }
+
+  .recipe-step::before {
+    counter-increment: step-counter !important;
+    content: counter(step-counter) "." !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0.75rem !important;
+    font-weight: 700 !important;
+    font-size: 11pt !important;
+    color: #2D6A4F !important;
+    width: 2rem !important;
+    text-align: right !important;
+    padding-right: 0.5rem !important;
+  }
+
+  .recipe-step-number {
+    display: none !important;
+  }
+
+  /* Tips box */
+  .tips-box {
+    background: #f0fdf4 !important;
+    border: 1px solid #bbf7d0 !important;
+    border-radius: 0.5rem !important;
+    padding: 1rem !important;
+    margin: 2rem 0 !important;
+    page-break-inside: avoid !important;
+  }
+
+  .tips-box h2 {
+    border-color: #2D6A4F !important;
+  }
+
+  .tips-box li {
+    font-size: 11pt !important;
+    padding: 0.25rem 0 !important;
+  }
+
+  /* Meal prep mini-cards */
+  .grid.grid-cols-1.sm\:grid-cols-2 {
+    display: block !important;
+  }
+
+  .grid.grid-cols-1.sm\:grid-cols-2 > div {
+    break-inside: avoid !important;
+    border: 1px solid #ddd !important;
+    border-radius: 0.5rem !important;
+    padding: 1rem !important;
+    margin: 1rem 0 !important;
+    page-break-inside: avoid !important;
+  }
+
+  .grid.grid-cols-1.sm\:grid-cols-2 h3 {
+    font-size: 12pt !important;
+    margin: 0 0 0.5rem !important;
+    border: none !important;
+  }
+
+  .inline-flex.items-center.rounded-full.bg-highlight-soft {
+    background: #fef3c7 !important;
+    color: #92400e !important;
+    border: 1px solid #fcd34d !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Remove all shadows, rounded corners on containers */
+  .rounded-xl, .rounded-lg, .rounded-2xl {
+    border-radius: 0 !important;
+  }
+
+  .shadow, .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl {
+    box-shadow: none !important;
+  }
+
+  /* Links - show URL after text for reference */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")" !important;
+    font-size: 9pt !important;
+    color: #666 !important;
+    font-weight: normal !important;
+  }
+
+  /* Page breaks */
+  h2, h3, .tips-box, .grid > div {
+    page-break-inside: avoid;
+  }
+
+  ol > li {
+    page-break-inside: avoid;
+  }
 }
