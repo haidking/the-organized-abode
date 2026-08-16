@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import Link from "next/link";
+import AuthorAvatar from "@/components/AuthorAvatar";
 import "./globals.css";
 
 /* ── Fonts ──────────────────────────────────────────────────────────────── */
@@ -60,7 +61,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* ─── Nav ─── */}
         <nav className="sticky top-0 z-50 bg-surface/90 backdrop-blur-sm border-b border-border">
           <div className="mx-auto flex max-w-6xl flex-col items-center gap-2 px-4 py-3 sm:flex-row sm:justify-between sm:gap-0 sm:px-6">
-            <Link href="/" className="font-heading text-lg sm:text-xl font-bold text-ink hover:text-highlight transition-colors text-center">
+            <Link
+              href="/"
+              className="flex items-center gap-2 font-heading text-lg sm:text-xl font-bold text-ink hover:text-highlight transition-colors text-center"
+            >
+              <AuthorAvatar size="nav" ring={false} />
               The Better Home Recipes
             </Link>
             <div className="flex items-center gap-5 sm:gap-6 text-sm font-medium">

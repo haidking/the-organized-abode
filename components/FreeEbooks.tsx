@@ -8,7 +8,9 @@ import { useEffect, useRef, useState } from "react";
 interface Ebook {
   title: string;
   description: string;
-  image: string; // /images/ebooks/[slug].jpg — add the covers later
+  image: string;
+  url: string; // Gumroad purchase link
+  badge: string; // e.g. "$12" or "Get it"
 }
 
 const EBOOKS: Ebook[] = [
@@ -17,18 +19,24 @@ const EBOOKS: Ebook[] = [
     description:
       "The trending recipes everyone's making — each with just five pantry ingredients.",
     image: "/images/ebooks/viral-recipes-ebook.jpg",
+    url: "https://haiderwave468.gumroad.com/l/ysndwj",
+    badge: "Get it",
   },
   {
     title: "10 Quick Protein Breakfasts for Busy Gains",
     description:
       "High-protein mornings in minutes, so you stay fueled no matter how packed the day gets.",
     image: "/images/ebooks/protein-breakfasts-ebook.jpg",
+    url: "https://haiderwave468.gumroad.com/l/rylglt",
+    badge: "Get it",
   },
   {
     title: "10 Detox Drinks to Clean Your Gut",
     description:
       "Refreshing five-minute sips to reset, refresh and feel lighter all week long.",
     image: "/images/ebooks/detox-drinks-ebook.jpg",
+    url: "https://haiderwave468.gumroad.com/l/copnkx",
+    badge: "Get it",
   },
 ];
 
@@ -61,23 +69,23 @@ export default function FreeEbooks() {
     <section
       ref={sectionRef}
       className="border-t-4 border-accent bg-[#FAF7F2]"
-      aria-labelledby="free-ebooks-heading"
+      aria-labelledby="ebooks-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20">
         {/* ── Heading ── */}
         <div className="text-center">
           <span className="inline-block rounded-full border border-accent/20 bg-accent-light/60 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent">
-            ✦ Free Downloads
+            ✦ Recipe eBooks
           </span>
           <h2
-            id="free-ebooks-heading"
+            id="ebooks-heading"
             className="mt-4 font-heading text-3xl sm:text-4xl font-bold text-ink"
           >
-            Free Recipe eBooks — Download Instantly
+            Recipe eBooks — Grab Your Copy
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-base leading-relaxed text-ink-secondary">
-            Three mini cookbooks from The Better Home Recipes — yours free, no
-            sign-up required. Grab them all.
+            Three mini cookbooks from The Better Home Recipes — viral recipes,
+            protein breakfasts, and detox drinks. Pick the one that fits your week.
           </p>
         </div>
 
@@ -121,8 +129,10 @@ function EbookCard({
     >
       {/* Cover */}
       <a
-        href="#"
-        aria-label={`Download ${book.title}`}
+        href={book.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`Get ${book.title}`}
         className="group block w-full max-w-[260px]"
       >
         <div className="relative aspect-[2/3] w-full overflow-hidden rounded-lg border border-border bg-surface shadow-md transition-transform duration-300 group-hover:-translate-y-1.5 group-hover:shadow-xl">
@@ -153,10 +163,12 @@ function EbookCard({
 
       {/* CTA */}
       <a
-        href="#"
+        href={book.url}
+        target="_blank"
+        rel="noopener noreferrer"
         className="mt-4 inline-flex items-center rounded-full bg-accent px-6 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-accent/90 hover:shadow-md"
       >
-        Download Free
+        {book.badge}
       </a>
     </article>
   );

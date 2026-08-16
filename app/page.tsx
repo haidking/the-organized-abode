@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { recipes, categoryLabels } from "@/data/recipes";
 import RecipeGrid from "@/components/RecipeGrid";
 import FreeEbooks from "@/components/FreeEbooks";
+import AuthorAvatar from "@/components/AuthorAvatar";
 import type { Category } from "@/data/types";
 
 /* ── Category cards for the browse section ──────────────────────────────── */
@@ -32,10 +33,16 @@ export default function HomePage() {
         <div className="pointer-events-none absolute -bottom-24 -left-24 h-[400px] w-[400px] rounded-full bg-highlight-soft/50 blur-3xl" />
 
         <div className="relative mx-auto max-w-5xl px-4 py-28 text-center sm:px-6 sm:py-36">
-          {/* Badge */}
-          <span className="mb-6 inline-block rounded-full border border-accent/20 bg-accent-light/60 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent">
-            ✦ Simple recipes for real kitchens
-          </span>
+          {/* Badge + Author */}
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="inline-block rounded-full border border-accent/20 bg-accent-light/60 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent">
+              ✦ Simple recipes for real kitchens
+            </span>
+            <span className="flex items-center gap-2 text-xs font-medium text-ink-secondary">
+              <AuthorAvatar size="nav" ring={false} />
+              By Haider
+            </span>
+          </div>
 
           <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl font-bold text-ink leading-[1.1] tracking-tight">
             Real Recipes.
