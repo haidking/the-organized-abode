@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
 import AuthorAvatar from "@/components/AuthorAvatar";
 import "./globals.css";
 
@@ -117,6 +118,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
       </body>
+
+      {/* ─── Vercel Analytics ─── */}
+      <Analytics />
     </html>
   );
 }
