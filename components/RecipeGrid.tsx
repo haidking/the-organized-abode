@@ -28,14 +28,16 @@ export default function RecipeGrid({ recipes }: Props) {
 
   return (
     <div>
-      <div className="mb-6">
+      {/* Category filter strip - z-20 to stay above cards */}
+      <div className="relative z-20 mb-6 pb-4">
         <CategoryFilter
           activeCategory={activeCategory}
           onCategoryChange={setActiveCategory}
         />
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {/* Recipe grid - z-10, gap-6 */}
+      <div className="relative z-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {filtered.map((recipe) => (
           <RecipeCard key={recipe.slug} recipe={recipe} />
         ))}

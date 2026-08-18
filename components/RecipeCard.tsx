@@ -7,40 +7,88 @@ interface Props {
   recipe: Recipe;
 }
 
+/* Seeded pseudo-random for consistent saves count per recipe */
+function getSavesCount(slug: string): string {
+  // Specific values for key recipes as requested
+  const specificSaves: Record<string, string> = {
+    "viral-cucumber-salad": "6.1k",
+    "one-pot-creamy-tuscan-chicken-pasta": "8.2k",
+    "strawberry-matcha-latte": "5.4k",
+    "copycat-crumbl-pink-sugar-cookie": "7.8k",
+    "copycat-crumbl-chocolate-chip-cookie": "9.1k",
+    "one-pan-tuscan-butter-gnocchi": "4.3k",
+    "green-detox-smoothie": "3.7k",
+    "6-high-protein-breakfasts-meal-prep": "5.9k",
+    "copycat-dominos-garlic-parmesan-chicken": "6.6k",
+    "copycat-ihop-buttermilk-pancakes": "7.2k",
+  };
+
+  if (specificSaves[slug]) {
+    return specificSaves[slug];
+  }
+
+  // For other recipes, use seeded random
+  let hash = 0;
+  for (let i = 0; i < slug.length; i++) {
+    hash = ((hash << 5) - hash + slug.charCodeAt(i)) | 0;
+  }
+  // Map to range 800-8500
+  const num = 800 + (Math.abs(hash) % 7700);
+  // Format as k with 1 decimal
+  if (num >= 1000) {
+    return (Math.round(num / 100) / 10).toFixed(1) + "k";
+  }
+  return num.toString();
+}
+
+function getDescriptionSnippet(description: string): string {
+  // Get first sentence
+  const match = description.match(/^[^.!?]+[.!?]/);
+  if (match) return match[0].trim();
+  // Fallback: first 100 chars
+  return description.slice(0, 100).trim() + "...";
+}
+
 export default function RecipeCard({ recipe }: Props) {
+  const savesCount = getSavesCount(recipe.slug);
+  const descriptionSnippet = getDescriptionSnippet(recipe.description);
+
   return (
     <Link
       href={`/recipes/${recipe.slug}`}
-      className="group block relative"
+      className="group block bg-surface rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
       aria-label={`View recipe: ${recipe.title}`}
     >
-      {/* Floating image — positioned ABOVE card */}
-      <div className="relative z-10 -mt-5 md:-mt-8">
-        <div className="rounded-xl aspect-square overflow-hidden shadow-lg">
-          <Image
-            src={recipe.image}
-            alt={recipe.title}
-            fill
-            className="object-cover transition-transform duration-300 group-hover:scale-105"
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
-        </div>
+      {/* Image - top of card, full width, aspect-[4/3], rounded-t-2xl */}
+      <div className="relative aspect-[4/3] overflow-hidden">
+        <Image
+          src={recipe.image}
+          alt={recipe.title}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
       </div>
 
-      {/* Card body — starts below floating image */}
-      <div className="bg-surface rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 pt-20 md:pt-24 pb-5 px-4">
-        {/* Category badge — top right absolute */}
-        <span className="absolute top-4 right-4 bg-accent text-white text-[10px] font-medium px-2 py-0.5 rounded-full">
+      {/* Card body */}
+      <div className="px-5 py-4">
+        {/* Category badge - inside card body, below image */}
+        <span className="inline-block bg-accent text-white text-xs font-medium rounded-full px-3 py-1 w-fit mb-3">
           {categoryLabels[recipe.category]}
         </span>
 
         {/* Title */}
-        <h3 className="font-heading text-lg md:text-[18px] font-bold text-ink line-clamp-2 mb-2 group-hover:text-accent transition-colors">
+        <h3 className="font-heading text-lg font-bold text-[#1C1A18] leading-snug line-clamp-2">
           {recipe.title}
         </h3>
 
+        {/* Description snippet */}
+        <p className="mt-1 text-sm text-[#6B5F57] line-clamp-2">
+          {descriptionSnippet}
+        </p>
+
         {/* Meta row */}
-        <div className="flex items-center gap-4 text-ink-secondary text-[13px] font-body mb-3">
+        <div className="mt-3 flex items-center gap-4 text-sm text-[#6B5F57]">
           <span className="flex items-center gap-1">
             <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <circle cx="12" cy="12" r="10" />
@@ -59,15 +107,15 @@ export default function RecipeCard({ recipe }: Props) {
           </span>
         </div>
 
-        {/* Star rating */}
-        <div className="flex items-center gap-2 text-[13px] mb-4">
+        {/* Stars + saves on same line */}
+        <div className="mt-2 flex items-center gap-2 text-sm">
           <span className="text-amber-500" aria-label="4 out of 5 stars">★★★★</span>
-          <span className="text-ink-secondary">Saved 2.4k times</span>
+          <span className="text-[#6B5F57]">Saved {savesCount} times</span>
         </div>
 
         {/* Bottom CTA */}
-        <div className="border-t border-border pt-3">
-          <span className="text-accent text-sm font-medium hover:underline">View Recipe →</span>
+        <div className="mt-4 pt-3 border-t border-[#EAE0D6]">
+          <span className="text-accent text-sm font-semibold hover:underline">View Recipe →</span>
         </div>
       </div>
     </Link>

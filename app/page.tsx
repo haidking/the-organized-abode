@@ -143,7 +143,7 @@ export default function HomePage() {
           <span className="inline-block border-b-2 border-accent pb-1 text-xs font-bold uppercase tracking-wider text-accent">
             Our Recipes
           </span>
-          <h2 className="font-heading mt-4 text-4xl font-bold text-ink md:text-[36px]">
+          <h2 className="font-heading mt-2 text-4xl font-bold text-ink md:text-[36px]">
             Recipes Worth Saving
           </h2>
           <p className="mx-auto mt-2 max-w-lg text-base text-ink-secondary">
@@ -155,6 +155,9 @@ export default function HomePage() {
           <RecipeGrid recipes={recipes} />
         </Suspense>
       </section>
+
+      {/* Extra padding before footer */}
+      <div className="pb-16" />
 
       {/* ═════════════════════════════════════════════════════════════════════
           Free eBooks Promo (unchanged)
