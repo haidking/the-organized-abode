@@ -8,20 +8,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#FAFAF8",
+        background: "#F7EDE2",
         surface: "#FFFFFF",
-        border: "#E8E3DC",
+        border: "#EAE0D6",
         ink: {
-          DEFAULT: "#1C1C1A",
-          secondary: "#6B6560",
+          DEFAULT: "#1C1A18",
+          secondary: "#6B5F57",
         },
         accent: {
-          DEFAULT: "#2D6A4F",
-          light: "#D8F3DC",
+          DEFAULT: "#E8632A",
+          hover: "#C94F1A",
+          light: "#EFDDD0",
         },
-        highlight: {
-          DEFAULT: "#B5451B",
-          soft: "#FDF0EC",
+        forest: {
+          DEFAULT: "#2D6A4F",
+        },
+        footer: {
+          bg: "#2A2A2A",
+          text: "#E8E0D8",
+          border: "#3A3A3A",
+          muted: "#9A9080",
         },
       },
       fontFamily: {

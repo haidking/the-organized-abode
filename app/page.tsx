@@ -1,199 +1,134 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
-import { recipes, categoryLabels } from "@/data/recipes";
+import { recipes } from "@/data/recipes";
 import RecipeGrid from "@/components/RecipeGrid";
 import FreeEbooks from "@/components/FreeEbooks";
-import AuthorAvatar from "@/components/AuthorAvatar";
-import type { Category } from "@/data/types";
 
-/* ── Category cards for the browse section ──────────────────────────────── */
-const CATEGORY_CARDS: { key: Category; icon: string; tagline: string }[] = [
-  { key: "copycat", icon: "🍪", tagline: "Restaurant favorites at home" },
-  { key: "one-pan", icon: "🍳", tagline: "Minimal cleanup, maximum flavor" },
-  { key: "drinks", icon: "🥤", tagline: "Sips worth savoring" },
-  { key: "meal-prep", icon: "📦", tagline: "Cook once, eat all week" },
-  { key: "salads", icon: "🥗", tagline: "Fresh, fast & satisfying" },
-  { key: "breakfast", icon: "🥞", tagline: "Start the day right" },
+/* ── Trust bar items ─────────────────────────────────────────────────────── */
+const TRUST_ITEMS = [
+  {
+    icon: (
+      <path d="M8.5 3.5c-2.2 0-4 1.8-4 4 0 2.5 3.5 6.5 3.5 6.5s3.5-4 3.5-6.5c0-2.2-1.8-4-4-4zM8.5 9.5c-.8 0-1.5-.7-1.5-1.5S7.7 6.5 8.5 6.5 10 7.2 10 8s-.7 1.5-1.5 1.5z" />
+    ),
+    label: "Real Ingredients",
+    sub: "No processed junk",
+  },
+  {
+    icon: (
+      <>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 14" />
+      </>
+    ),
+    label: "Under 30 Min",
+    sub: "Most recipes",
+  },
+  {
+    icon: (
+      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+    ),
+    label: "Better Than Takeout",
+    sub: "Proven at home",
+  },
+  {
+    icon: (
+      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+    ),
+    label: "Saved by Thousands",
+    sub: "On Pinterest",
+  },
 ];
 
+/* ── Hero background split (diagonal via clip-path) ─────────────────────── */
+const heroSplitStyle: React.CSSProperties = {
+  // Left 60% warm peach, right 40% slightly darker peach
+  clipPath: "polygon(0 0, 60% 0, 40% 100%, 0 100%)",
+};
+
 export default function HomePage() {
-  const featured = [...recipes]
-    .sort((a, b) => new Date(b.datePublished).getTime() - new Date(a.datePublished).getTime())
-    .slice(0, 3);
+  // Best-looking hero image (visually appealing food photo)
+  const heroImage = "/images/one-pot-creamy-tuscan-chicken-pasta.jpg";
 
   return (
     <>
       {/* ═════════════════════════════════════════════════════════════════════
-          Hero
+          Hero — diagonal split with bleeding image
       ═════════════════════════════════════════════════════════════════════ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-background via-surface to-accent-light/30">
-        {/* Decorative blobs */}
-        <div className="pointer-events-none absolute -top-32 -right-32 h-[500px] w-[500px] rounded-full bg-accent-light/40 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-24 -left-24 h-[400px] w-[400px] rounded-full bg-highlight-soft/50 blur-3xl" />
+      <section className="relative overflow-hidden bg-background">
+        {/* Right 40% — darker peach via clip-path pseudo-element */}
+        <div
+          className="absolute inset-0 bg-accent-light"
+          style={heroSplitStyle}
+          aria-hidden="true"
+        />
 
-        <div className="relative mx-auto max-w-5xl px-4 py-28 text-center sm:px-6 sm:py-36">
-          {/* Badge + Author */}
-          <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="inline-block rounded-full border border-accent/20 bg-accent-light/60 px-4 py-1.5 text-xs font-semibold tracking-wide text-accent">
-              ✦ Simple recipes for real kitchens
-            </span>
-            <span className="flex items-center gap-2 text-xs font-medium text-ink-secondary">
-              <AuthorAvatar size="nav" ring={false} />
-              By Haider
-            </span>
-          </div>
-
-          <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl font-bold text-ink leading-[1.1] tracking-tight">
-            Real Recipes.
-            <br />
-            <span className="text-highlight">Real&nbsp;Simple.</span>
-          </h1>
-
-          <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-ink-secondary">
-            Copycat favorites, one-pan dinners, refreshing drinks — everything you
-            need for a week of effortless cooking, all in one place.
-          </p>
-
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href="/recipes"
-              className="inline-flex items-center gap-2 rounded-full bg-highlight px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-highlight/25 hover:bg-highlight/90 hover:shadow-xl hover:shadow-highlight/30 transition-all"
-            >
-              Browse All Recipes
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-            </Link>
-            <Link
-              href="/about"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-8 py-3.5 text-base font-medium text-ink hover:border-accent hover:text-accent transition-colors"
-            >
-              About Us
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ═════════════════════════════════════════════════════════════════════
-          Browse by Category
-      ═════════════════════════════════════════════════════════════════════ */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 -mt-8 relative z-10">
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-          {CATEGORY_CARDS.map(({ key, icon, tagline }) => {
-            const count = recipes.filter((r) => r.category === key).length;
-            return (
+        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="flex flex-col-reverse items-center gap-8 py-16 sm:py-20 lg:flex-row lg:items-center lg:gap-12">
+            {/* Left 60% — text */}
+            <div className="w-full text-center lg:w-3/5 lg:text-left">
+              <h1 className="font-heading text-[36px] leading-[1.15] font-bold text-ink sm:text-5xl md:text-[52px]">
+                Real Recipes.
+                <br />
+                Better At Home.
+                <br />
+                Every Time.
+              </h1>
+              <p className="mx-auto mt-4 max-w-md text-base leading-relaxed text-ink-secondary lg:mx-0">
+                Simple, real recipes for home kitchens — better than the original.
+              </p>
               <Link
-                key={key}
-                href={`/recipes?category=${key}`}
-                className="group flex flex-col items-center rounded-xl border border-border bg-surface p-5 text-center shadow-sm hover:shadow-md hover:border-accent/40 hover:-translate-y-0.5 transition-all"
+                href="/recipes"
+                className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3 text-base font-bold text-white shadow-lg transition-all duration-300 hover:bg-accent-hover hover:shadow-xl"
               >
-                <span className="text-3xl mb-2">{icon}</span>
-                <span className="font-heading text-sm font-bold text-ink group-hover:text-accent transition-colors">
-                  {categoryLabels[key]}
-                </span>
-                <span className="mt-1 text-xs text-ink-secondary">
-                  {count} recipe{count !== 1 ? "s" : ""}
-                </span>
+                Browse Recipes
+                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
               </Link>
-            );
-          })}
-        </div>
-      </section>
+            </div>
 
-      {/* ═════════════════════════════════════════════════════════════════════
-          Featured Recipes
-      ═════════════════════════════════════════════════════════════════════ */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-16">
-        <div className="flex items-end justify-between mb-8">
-          <div>
-            <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink">
-              Latest Recipes
-            </h2>
-            <p className="mt-1 text-sm text-ink-secondary">
-              Fresh from the kitchen — just published.
-            </p>
-          </div>
-          <Link
-            href="/recipes"
-            className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-highlight hover:text-highlight/80 transition-colors"
-          >
-            View all
-            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {featured.map((recipe) => (
-            <Link
-              key={recipe.slug}
-              href={`/recipes/${recipe.slug}`}
-              className="group block overflow-hidden rounded-xl bg-surface border border-border shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src={recipe.image}
-                  alt={recipe.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-                <span className="absolute top-3 left-3 inline-block rounded-full bg-accent px-3 py-1 text-xs font-semibold text-white shadow-sm">
-                  {categoryLabels[recipe.category]}
-                </span>
-              </div>
-              <div className="p-5">
-                <h3 className="font-heading text-lg font-bold text-ink leading-snug group-hover:text-highlight transition-colors">
-                  {recipe.title}
-                </h3>
-                <p className="mt-1 text-sm text-ink-secondary line-clamp-2">
-                  {recipe.subtitle}
-                </p>
-                <div className="mt-3 flex items-center gap-3 text-xs text-ink-secondary">
-                  <span className="inline-flex items-center gap-1">⏱ {recipe.totalTime}</span>
-                  <span className="text-border">|</span>
-                  <span className="inline-flex items-center gap-1">👤 {recipe.servings} servings</span>
-                  <span className="text-border">|</span>
-                  <span className="inline-flex items-center gap-1">📊 {recipe.difficulty}</span>
+            {/* Right 40% — hero image bleeding below section */}
+            <div className="relative z-20 w-full lg:w-2/5">
+              <div className="relative -mb-10 overflow-hidden rounded-2xl shadow-2xl sm:-mb-16">
+                <div className="relative aspect-[4/5]">
+                  <Image
+                    src={heroImage}
+                    alt="Featured recipe: One-Pot Creamy Tuscan Chicken Pasta"
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                  />
                 </div>
               </div>
-            </Link>
-          ))}
+            </div>
+          </div>
         </div>
       </section>
 
       {/* ═════════════════════════════════════════════════════════════════════
-          Why This Site
+          Trust Bar
       ═════════════════════════════════════════════════════════════════════ */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-20">
-        <div className="rounded-2xl bg-surface border border-border p-8 sm:p-12">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink text-center mb-10">
-            Why <span className="text-accent">The Better Home Recipes</span>?
-          </h2>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
-            {[
-              {
-                icon: "📝",
-                title: "Simple Recipes",
-                desc: "Every recipe is tested, photographed and written for real kitchens — no complicated techniques, no impossible-to-find ingredients.",
-              },
-              {
-                icon: "⏱",
-                title: "Quick & Easy",
-                desc: "Most recipes take 30 minutes or less. One-pan meals, 5-minute drinks and meal prep that saves your whole week.",
-              },
-              {
-                icon: "🛒",
-                title: "Recommended Tools",
-                desc: "Every piece of equipment linked directly to Amazon — the exact tools we use, so you can cook with confidence.",
-              },
-            ].map(({ icon, title, desc }) => (
-              <div key={title} className="flex flex-col items-center text-center">
-                <span className="mb-3 flex h-14 w-14 items-center justify-center rounded-2xl bg-accent-light text-2xl">
-                  {icon}
-                </span>
-                <h3 className="font-heading text-base font-bold text-ink">{title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-secondary max-w-xs">
-                  {desc}
-                </p>
+      <section className="border-y border-border bg-surface py-5">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid grid-cols-2 gap-6 sm:flex sm:items-center sm:justify-center sm:gap-8 lg:gap-16">
+            {TRUST_ITEMS.map((item) => (
+              <div key={item.label} className="flex flex-col items-center text-center">
+                <svg
+                  className="mb-2 h-7 w-7 text-accent"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  {item.icon}
+                </svg>
+                <span className="text-sm font-bold text-ink">{item.label}</span>
+                <span className="mt-0.5 text-xs text-ink-secondary">{item.sub}</span>
               </div>
             ))}
           </div>
@@ -201,21 +136,30 @@ export default function HomePage() {
       </section>
 
       {/* ═════════════════════════════════════════════════════════════════════
-          Free eBooks Promo
+          Section Header + Recipe Grid
       ═════════════════════════════════════════════════════════════════════ */}
-      <FreeEbooks />
+      <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-10">
+        <div className="mb-8 text-center">
+          <span className="inline-block border-b-2 border-accent pb-1 text-xs font-bold uppercase tracking-wider text-accent">
+            Our Recipes
+          </span>
+          <h2 className="font-heading mt-4 text-4xl font-bold text-ink md:text-[36px]">
+            Recipes Worth Saving
+          </h2>
+          <p className="mx-auto mt-2 max-w-lg text-base text-ink-secondary">
+            Simple ingredients. Real results. Better than the original.
+          </p>
+        </div>
 
-      {/* ═════════════════════════════════════════════════════════════════════
-          Full Grid with Filter
-      ═════════════════════════════════════════════════════════════════════ */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-20">
-        <h2 className="font-heading text-2xl sm:text-3xl font-bold text-ink mb-8">
-          All Recipes
-        </h2>
         <Suspense>
           <RecipeGrid recipes={recipes} />
         </Suspense>
       </section>
+
+      {/* ═════════════════════════════════════════════════════════════════════
+          Free eBooks Promo (unchanged)
+      ═════════════════════════════════════════════════════════════════════ */}
+      <FreeEbooks />
     </>
   );
 }
