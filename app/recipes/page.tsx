@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { recipes } from "@/data/recipes";
-import RecipeGrid from "@/components/RecipeGrid";
+import RecipesExplorer from "@/components/RecipesExplorer";
 
 export const metadata: Metadata = {
   title: "Recipes",
@@ -23,7 +23,7 @@ export default function RecipesPage() {
         Recipes
       </h1>
       <Suspense>
-        <RecipeGrid recipes={recipes} />
+        <RecipesExplorer recipes={recipes} />
       </Suspense>
     </section>
   );

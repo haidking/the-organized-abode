@@ -1075,6 +1075,9 @@ export const categoryLabels: Record<Category, string> = {
   "meal-prep": "Meal Prep",
   salads: "Salads",
   breakfast: "Breakfast",
+  mains: "Mains",
+  desserts: "Desserts",
+  snacks: "Snacks",
 };
 
 /** Look up a single recipe by slug. Returns undefined if not found. */

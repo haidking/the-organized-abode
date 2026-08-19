@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { recipes } from "@/data/recipes";
-import RecipeGrid from "@/components/RecipeGrid";
+import RecipesExplorer from "@/components/RecipesExplorer";
 import FreeEbooks from "@/components/FreeEbooks";
 
 /* ── Trust bar items ─────────────────────────────────────────────────────── */
@@ -152,7 +152,7 @@ export default function HomePage() {
         </div>
 
         <Suspense>
-          <RecipeGrid recipes={recipes} />
+          <RecipesExplorer recipes={recipes} />
         </Suspense>
       </section>
 

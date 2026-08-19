@@ -57,6 +57,17 @@ export default function Header() {
               )}
             </Link>
           ))}
+          {/* Mobile search icon - links to recipes page which has the search bar */}
+          <Link
+            href="/recipes"
+            className="p-2 rounded-full text-ink-secondary hover:text-accent hover:bg-border/50 transition-colors lg:hidden"
+            aria-label="Search recipes"
+          >
+            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+              <circle cx="11" cy="11" r="8" />
+              <path d="M21 21l-4.35-4.35" />
+            </svg>
+          </Link>
           <Link
             href="/recipes"
             className="bg-accent text-white rounded-full px-5 py-2 text-sm font-medium hover:bg-accent-hover transition-all duration-300 hidden sm:inline-flex"

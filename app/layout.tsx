@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BottomNav from "@/components/BottomNav";
 import "./globals.css";
 
 /* ── Fonts ──────────────────────────────────────────────────────────────── */
@@ -61,8 +62,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen flex flex-col">
         <Header />
         {/* ─── Main ─── */}
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 pb-20 lg:pb-0">{children}</main>
         <Footer />
+
+        {/* ─── Bottom mobile nav ─── */}
+        <BottomNav />
 
         {/* ─── Vercel Analytics ─── */}
         <Analytics />

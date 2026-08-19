@@ -4,7 +4,16 @@ export type Category =
   | "drinks"
   | "meal-prep"
   | "salads"
-  | "breakfast";
+  | "breakfast"
+  | "mains"
+  | "desserts"
+  | "snacks";
+
+// Derived-dimension enums (UI vocab, NOT stored per-recipe)
+export type MealType = "breakfast" | "lunch" | "dinner" | "snack" | "drink" | "dessert";
+export type Dietary  = "vegan" | "vegetarian" | "high-protein";
+export type ProteinLevel = "low" | "medium" | "high";
+export type PrepBucket = "under-10" | "under-20" | "under-30" | "over-30";
 
 // Used only by the roundup recipe ("6 High-Protein Breakfasts"). Each entry is
 // one mini-recipe rendered as its own card with a protein-count badge.
@@ -40,4 +49,7 @@ export interface Recipe {
   pinImage: string; // the original pin — /images/pins/[slug].png
   metaTitle: string;
   metaDescription: string; // max 155 chars
+  // Optional nutrition (per serving) — used by derivation helpers
+  calories?: number;
+  proteinGrams?: number;
 }

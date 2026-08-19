@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { Recipe } from "@/data/types";
 import { categoryLabels } from "@/data/recipes";
+import RecipeImage from "@/components/RecipeImage";
 
 interface Props {
   recipe: Recipe;
@@ -61,10 +61,9 @@ export default function RecipeCard({ recipe }: Props) {
     >
       {/* Image - top of card, full width, aspect-[4/3], rounded-t-2xl */}
       <div className="relative aspect-[4/3] overflow-hidden">
-        <Image
+        <RecipeImage
           src={recipe.image}
           alt={recipe.title}
-          fill
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
