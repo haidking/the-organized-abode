@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -58,7 +59,14 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      {/* ADSENSE SCRIPT GOES HERE — replace with actual AdSense verification script after account approval */}
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3927086411410112"
+          crossOrigin="anonymous"
+          strategy="lazyOnload"
+        />
+      </head>
       <body className="min-h-screen flex flex-col">
         <Header />
         {/* ─── Main ─── */}
