@@ -127,7 +127,7 @@ export default function HomePage() {
                 href="#free-ebooks"
                 className="group inline-flex items-center gap-2 rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 text-base sm:text-lg font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 hover:shadow-xl hover:-translate-y-0.5 min-w-[220px] justify-center"
               >
-                Free eBooks
+                Recipe eBooks
                 <svg
                   className="h-5 w-5 transition-transform group-hover:translate-y-1"
                   fill="none"
