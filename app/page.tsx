@@ -4,7 +4,6 @@ import { Suspense } from "react";
 import { recipes } from "@/data/recipes";
 import RecipesExplorer from "@/components/RecipesExplorer";
 import FreeEbooks from "@/components/FreeEbooks";
-import EmailCapture from "@/components/EmailCapture";
 
 /* ── Trust bar items ─────────────────────────────────────────────────────── */
 const TRUST_ITEMS = [
@@ -152,13 +151,6 @@ export default function HomePage() {
               50,000+ home cooks saving recipes weekly
             </p>
 
-            {/* Email capture */}
-            <div className="mt-10 pt-8 border-t border-white/10">
-              <p className="text-center text-white/70 text-sm mb-4">
-                Get 3 new recipes weekly — no spam, just the good stuff
-              </p>
-              <EmailCapture />
-            </div>
           </div>
         </div>
 
