@@ -47,6 +47,9 @@ export const metadata: Metadata = {
       "A clean, simple recipe site for real home cooking — copycat, one-pan, drinks, meal prep and more.",
   },
   twitter: { card: "summary_large_image" },
+  other: {
+    "google-adsense-account": "ca-pub-3927086411410112",
+  },
 };
 
 export const viewport: Viewport = {
