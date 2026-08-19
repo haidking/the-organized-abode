@@ -5,6 +5,8 @@ interface Props {
   canonicalUrl: string;
 }
 
+const SITE_URL = "https://thebetterhomerecipes.com";
+
 /**
  * JSON-LD structured data for a recipe page, following schema.org/Recipe.
  * The script tag is rendered server-side and is never hydrated by React.
@@ -16,13 +18,23 @@ export default function JsonLd({ recipe, canonicalUrl }: Props) {
     "@type": "Recipe",
     name: recipe.title,
     description: recipe.description,
-    image: [canonicalUrl + recipe.image],
+    image: [`${SITE_URL}${recipe.image}`],
     author: {
       "@type": "Person",
-      name: "Haidking",
+      name: "The Better Home Recipes",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "The Better Home Recipes",
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/The_Better_Home_Recipes_Logo.png`,
+      },
     },
     datePublished: recipe.datePublished,
     recipeYield: `${recipe.servings} servings`,
+    recipeCategory: recipe.category,
+    recipeCuisine: "American",
     prepTime: toISO8601Duration(recipe.prepTime),
     totalTime: toISO8601Duration(recipe.totalTime),
     recipeIngredient: recipe.ingredients,
@@ -35,6 +47,14 @@ export default function JsonLd({ recipe, canonicalUrl }: Props) {
 
   if (recipe.cookTime) {
     ld.cookTime = toISO8601Duration(recipe.cookTime);
+  }
+
+  if (recipe.calories) {
+    ld.nutrition = {
+      "@type": "NutritionInformation",
+      calories: `${recipe.calories} kcal`,
+      ...(recipe.proteinGrams && { proteinContent: `${recipe.proteinGrams}g` }),
+    };
   }
 
   return (

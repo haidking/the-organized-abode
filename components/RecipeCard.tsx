@@ -2,6 +2,9 @@ import Link from "next/link";
 import type { Recipe } from "@/data/types";
 import { categoryLabels } from "@/data/recipes";
 import RecipeImage from "@/components/RecipeImage";
+import PinItButton from "@/components/PinItButton";
+
+const SITE_URL = "https://thebetterhomerecipes.com";
 
 interface Props {
   recipe: Recipe;
@@ -110,6 +113,15 @@ export default function RecipeCard({ recipe }: Props) {
         <div className="mt-2 flex items-center gap-2 text-sm">
           <span className="text-amber-500" aria-label="4 out of 5 stars">★★★★</span>
           <span className="text-[#6B5F57]">Saved {savesCount} times</span>
+        </div>
+
+        {/* Pin.it button */}
+        <div className="mt-2">
+          <PinItButton
+            url={`${SITE_URL}/recipes/${recipe.slug}`}
+            media={`${SITE_URL}${recipe.pinImage || recipe.image}`}
+            description={recipe.title}
+          />
         </div>
 
         {/* Bottom CTA */}

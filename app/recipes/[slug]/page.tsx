@@ -8,6 +8,8 @@ import IngredientsList from "@/components/IngredientsList";
 import { ScaledIngredientsList } from "@/components/ServingsScaler";
 import JsonLd from "@/components/JsonLd";
 import JumpToRecipe from "@/components/JumpToRecipe";
+import PinItButton from "@/components/PinItButton";
+import RelatedRecipes from "@/components/RelatedRecipes";
 
 const SITE_URL = "https://thebetterhomerecipes.com";
 
@@ -90,6 +92,15 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
               <MetaChip>📋 Total · {recipe.totalTime}</MetaChip>
               <MetaChip>👤 Serves · {recipe.servings}</MetaChip>
               <MetaChip>📊 {recipe.difficulty}</MetaChip>
+            </div>
+
+            {/* Save to Pinterest + social share row */}
+            <div className="mt-4 flex flex-wrap items-center gap-3">
+              <PinItButton
+                url={canonicalUrl}
+                media={`${SITE_URL}${recipe.pinImage || recipe.image}`}
+                description={recipe.title}
+              />
             </div>
 
             {/* Hero image */}
@@ -178,6 +189,9 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
                 </ul>
               </section>
             )}
+
+            {/* Related Recipes */}
+            <RelatedRecipes currentSlug={params.slug} limit={3} />
 
             {/* ── AdSense placeholder (300×250 rectangle) ── */}
             <div className="my-8 ad-placeholder h-[250px] w-full max-w-[300px]">
