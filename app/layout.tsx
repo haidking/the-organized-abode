@@ -49,6 +49,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" },
   other: {
     "google-adsense-account": "ca-pub-3927086411410112",
+    "google-site-verification": "XCoohoOOwa8l1xTB9Tc3bwNLo9kWuD7F3G7TYuSF_Ig",
   },
 };
 
