@@ -53,7 +53,7 @@ export default function HomePage() {
         {/* Full-bleed banner image — fills entire viewport */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <Image
-            src="/The%20Better%20Home%20Recipes%20Banner.png"
+            src="/The_Better_Home_Recipes_Banner.png"
             alt=""
             fill
             priority
