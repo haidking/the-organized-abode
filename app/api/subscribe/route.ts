@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
 /**
- * Email subscription endpoint.
- * In production, connect to your ESP (ConvertKit, MailerLite, Buttondown, etc.).
- * For now, logs to console and returns success.
+ * Email subscription endpoint — ConvertKit (Kit) integration.
+ * Subscribes email to the specified form.
  */
 export async function POST(request: NextRequest) {
   try {
@@ -13,28 +12,31 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
     }
 
-    // TODO: Replace with your ESP integration
-    // Example for ConvertKit:
-    // await fetch(`https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`, {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify({ email, api_key: process.env.CONVERTKIT_API_KEY }),
-    // });
+    const API_KEY = process.env.CONVERTKIT_API_KEY;
+    const FORM_ID = process.env.CONVERTKIT_FORM_ID;
 
-    // Example for MailerLite:
-    // await fetch("https://connect.mailerlite.com/api/subscribers", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     Authorization: `Bearer ${process.env.MAILERLITE_API_KEY}`,
-    //   },
-    //   body: JSON.stringify({ email, groups: [GROUP_ID] }),
-    // });
+    if (!API_KEY || !FORM_ID) {
+      console.error("[Subscribe] Missing ConvertKit config");
+      return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
+    }
 
-    console.log("[Subscribe] New subscriber:", email);
+    const res = await fetch(`https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, api_key: API_KEY }),
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      // ConvertKit returns { error: "message" } on failure
+      console.error("[Subscribe] ConvertKit error:", data);
+      return NextResponse.json({ error: data.error || "Subscription failed" }, { status: 400 });
+    }
 
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (err) {
+    console.error("[Subscribe] Unexpected error:", err);
     return NextResponse.json({ error: "Subscription failed" }, { status: 500 });
   }
 }
