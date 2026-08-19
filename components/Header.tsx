@@ -35,7 +35,7 @@ export default function Header() {
           aria-label="The Better Home Recipes - Home"
         >
           <Image
-            src="/The_Better_Home_Recipes_Logo.png"
+            src="/The%20Better%20Home%20Recipes%20Logo.png"
             alt=""
             width={48}
             height={48}
