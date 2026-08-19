@@ -123,10 +123,21 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
               {recipe.description}
             </p>
 
-            {/* ── AdSense placeholder (728×90 leaderboard) ── */}
-            <div className="my-8 ad-placeholder h-[90px] w-full max-w-[728px]">
-              {/* TODO: Replace with Google AdSense ad slot — 728×90 leaderboard */}
-              Ad placeholder — 728 × 90
+            {/* ── AdSense: Responsive horizontal ad ── */}
+            <div className="my-8">
+              <ins
+                className="adsbygoogle"
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-3927086411410112"
+                data-ad-slot="8551069083"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: "(adsbygoogle = window.adsbygoogle || []).push({});",
+                }}
+              />
             </div>
 
             {/* Ingredients (skip for roundup pages) */}
@@ -193,10 +204,21 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
             {/* Related Recipes */}
             <RelatedRecipes currentSlug={params.slug} limit={3} />
 
-            {/* ── AdSense placeholder (300×250 rectangle) ── */}
-            <div className="my-8 ad-placeholder h-[250px] w-full max-w-[300px]">
-              {/* TODO: Replace with Google AdSense ad slot — 300×250 rectangle */}
-              Ad placeholder — 300 × 250
+            {/* ── AdSense: Responsive horizontal ad ── */}
+            <div className="my-8">
+              <ins
+                className="adsbygoogle"
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-3927086411410112"
+                data-ad-slot="8551069083"
+                data-ad-format="auto"
+                data-full-width-responsive="true"
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: "(adsbygoogle = window.adsbygoogle || []).push({});",
+                }}
+              />
             </div>
           </article>
 
