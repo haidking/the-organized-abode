@@ -64,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3927086411410112"
           crossOrigin="anonymous"
-          strategy="lazyOnload"
+          strategy="beforeInteractive"
         />
       </head>
       <body className="min-h-screen flex flex-col">
