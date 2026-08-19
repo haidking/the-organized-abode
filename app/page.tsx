@@ -40,70 +40,124 @@ const TRUST_ITEMS = [
   },
 ];
 
-/* ── Hero background split (diagonal via clip-path) ─────────────────────── */
-const heroSplitStyle: React.CSSProperties = {
-  // Left 60% warm peach, right 40% slightly darker peach
-  clipPath: "polygon(0 0, 60% 0, 40% 100%, 0 100%)",
-};
-
 export default function HomePage() {
-  // Best-looking hero image (visually appealing food photo)
-  const heroImage = "/images/one-pot-creamy-tuscan-chicken-pasta.jpg";
-
   return (
     <>
       {/* ═════════════════════════════════════════════════════════════════════
-          Hero — diagonal split with bleeding image
+          HERO — Full-Width Banner Background (Option A)
       ═════════════════════════════════════════════════════════════════════ */}
-      <section className="relative overflow-hidden bg-background">
-        {/* Right 40% — darker peach via clip-path pseudo-element */}
+      <section
+        className="relative min-h-screen flex items-center overflow-hidden bg-background"
+        aria-labelledby="hero-title"
+      >
+        {/* Full-bleed banner image — fills entire viewport */}
+        <div className="absolute inset-0 z-0" aria-hidden="true">
+          <Image
+            src="/The_Better_Home_Recipes_Banner.png"
+            alt=""
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+            quality={90}
+          />
+        </div>
+
+        {/* Subtle warm dark gradient on left 50% only — for text readability */}
         <div
-          className="absolute inset-0 bg-accent-light"
-          style={heroSplitStyle}
+          className="absolute inset-0 z-10 pointer-events-none"
           aria-hidden="true"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(30,30,30,0.75) 0%, rgba(30,30,30,0.55) 35%, rgba(30,30,30,0.15) 55%, transparent 65%)",
+          }}
         />
 
-        <div className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="flex flex-col-reverse items-center gap-8 py-16 sm:py-20 lg:flex-row lg:items-center lg:gap-12">
-            {/* Left 60% — text */}
-            <div className="w-full text-center lg:w-3/5 lg:text-left">
-              <h1 className="font-heading text-[36px] leading-[1.15] font-bold text-ink sm:text-5xl md:text-[52px]">
-                Real Recipes.
-                <br />
-                Better At Home.
-                <br />
-                Every Time.
-              </h1>
-              <p className="mx-auto mt-4 max-w-md text-base leading-relaxed text-ink-secondary lg:mx-0">
-                Simple, real recipes for home kitchens — better than the original.
-              </p>
+        {/* Content overlay */}
+        <div className="relative z-20 mx-auto max-w-6xl px-4 sm:px-6 py-20 sm:py-28 lg:py-32 w-full">
+          <div className="max-w-3xl animate-fade-in-up">
+            {/* Badge */}
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-forest/90 px-4 py-1.5 text-xs sm:text-sm font-semibold text-white tracking-wide mb-6 shadow-lg backdrop-blur-sm">
+              <span aria-hidden="true">🍋</span>
+              New Recipes Every Week
+            </span>
+
+            {/* Headline — BIG, bold, punchy */}
+            <h1
+              id="hero-title"
+              className="font-heading text-white leading-[1.05] font-extrabold tracking-tight
+                text-[44px] sm:text-[56px] lg:text-[72px] xl:text-[80px]
+                mb-6"
+            >
+              Real Recipes.
+              <br />
+              Better At Home.
+              <br />
+              Every Time.
+            </h1>
+
+            {/* Subtext */}
+            <p className="text-white/90 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
+              Copycat. Quick. Better than the original.
+            </p>
+
+            {/* Dual CTAs */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-10">
               <Link
                 href="/recipes"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3 text-base font-bold text-white shadow-lg transition-all duration-300 hover:bg-accent-hover hover:shadow-xl"
+                className="group inline-flex items-center gap-2 rounded-full bg-forest px-8 py-4 text-base sm:text-lg font-bold text-white shadow-xl transition-all duration-300 hover:bg-forest-hover hover:shadow-2xl hover:-translate-y-0.5 min-w-[220px] justify-center"
               >
                 Browse Recipes
-                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                <svg
+                  className="h-5 w-5 transition-transform group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </Link>
+              <Link
+                href="#free-ebooks"
+                className="group inline-flex items-center gap-2 rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 text-base sm:text-lg font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 hover:shadow-xl hover:-translate-y-0.5 min-w-[220px] justify-center"
+              >
+                Free eBooks
+                <svg
+                  className="h-5 w-5 transition-transform group-hover:translate-y-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 5v14M19 12l-7 7-7-7"
+                  />
                 </svg>
               </Link>
             </div>
 
-            {/* Right 40% — hero image bleeding below section */}
-            <div className="relative z-20 w-full lg:w-2/5">
-              <div className="relative -mb-10 overflow-hidden rounded-2xl shadow-2xl sm:-mb-16">
-                <div className="relative aspect-[4/5]">
-                  <Image
-                    src={heroImage}
-                    alt="Featured recipe: One-Pot Creamy Tuscan Chicken Pasta"
-                    fill
-                    priority
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                  />
-                </div>
-              </div>
-            </div>
+            {/* Social proof */}
+            <p className="flex items-center gap-2 text-white/70 text-sm font-medium">
+              <span aria-hidden="true">⭐</span>
+              50,000+ home cooks saving recipes weekly
+            </p>
           </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce-gentle" aria-hidden="true">
+          <svg className="h-6 w-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
         </div>
       </section>
 
@@ -160,9 +214,11 @@ export default function HomePage() {
       <div className="pb-16" />
 
       {/* ═════════════════════════════════════════════════════════════════════
-          Free eBooks Promo (unchanged)
+          Free eBooks Promo (anchored for scroll link)
       ═════════════════════════════════════════════════════════════════════ */}
-      <FreeEbooks />
+      <section id="free-ebooks">
+        <FreeEbooks />
+      </section>
     </>
   );
 }

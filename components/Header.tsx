@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import AuthorAvatar from "@/components/AuthorAvatar";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -34,8 +34,16 @@ export default function Header() {
           className="flex items-center gap-2 font-heading italic text-lg sm:text-xl font-bold text-accent hover:opacity-80 transition-opacity text-center"
           aria-label="The Better Home Recipes - Home"
         >
-          <AuthorAvatar size="nav" ring={false} />
-          The Better Home Recipes
+          <Image
+            src="/The_Better_Home_Recipes_Logo.png"
+            alt=""
+            width={48}
+            height={48}
+            className="h-12 w-12 sm:h-[48px] sm:w-[48px] object-contain"
+            priority
+            aria-hidden="true"
+          />
+          <span className="hidden sm:inline">The Better Home Recipes</span>
         </Link>
         <div className="flex items-center gap-5 sm:gap-6 text-sm font-medium">
           {navLinks.map((link) => (
@@ -70,7 +78,7 @@ export default function Header() {
           </Link>
           <Link
             href="/recipes"
-            className="bg-accent text-white rounded-full px-5 py-2 text-sm font-medium hover:bg-accent-hover transition-all duration-300 hidden sm:inline-flex"
+            className="bg-forest text-white rounded-full px-5 py-2 text-sm font-medium hover:bg-forest-hover transition-all duration-300 hidden sm:inline-flex"
           >
             Browse Recipes
           </Link>
