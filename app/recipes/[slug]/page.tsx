@@ -12,6 +12,8 @@ import PinItButton from "@/components/PinItButton";
 import RelatedRecipes from "@/components/RelatedRecipes";
 import RecipeImage from "@/components/RecipeImage";
 import AdUnit from "@/components/AdUnit";
+import PrintRecipeButton from "@/components/PrintRecipeButton";
+import RecipeRatingComments from "@/components/RecipeRatingComments";
 
 const SITE_URL = "https://thebetterhomerecipes.com";
 
@@ -100,13 +102,14 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
               <MetaChip>📊 {recipe.difficulty}</MetaChip>
             </div>
 
-            {/* Save to Pinterest + social share row */}
+            {/* Save to Pinterest + Print Recipe row */}
             <div className="mt-4 flex flex-wrap items-center gap-3">
               <PinItButton
                 url={canonicalUrl}
                 media={`${SITE_URL}${recipe.pinImage || recipe.image}`}
                 description={recipe.title}
               />
+              <PrintRecipeButton />
             </div>
 
             {/* Hero image */}
@@ -298,6 +301,9 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
 
             {/* Related Recipes */}
             <RelatedRecipes currentSlug={params.slug} limit={3} />
+
+            {/* Ratings & Comments Section */}
+            <RecipeRatingComments recipeSlug={params.slug} recipeTitle={recipe.title} />
 
             {/* ── AdSense: Responsive horizontal ad ── */}
             <AdUnit />
