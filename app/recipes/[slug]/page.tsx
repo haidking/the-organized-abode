@@ -11,6 +11,7 @@ import JumpToRecipe from "@/components/JumpToRecipe";
 import PinItButton from "@/components/PinItButton";
 import RelatedRecipes from "@/components/RelatedRecipes";
 import RecipeImage from "@/components/RecipeImage";
+import AdUnit from "@/components/AdUnit";
 
 const SITE_URL = "https://thebetterhomerecipes.com";
 
@@ -130,21 +131,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
             </p>
 
             {/* ── AdSense: Responsive horizontal ad ── */}
-            <div className="my-8">
-              <ins
-                className="adsbygoogle"
-                style={{ display: "block" }}
-                data-ad-client="ca-pub-3927086411410112"
-                data-ad-slot="8551069083"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: "(adsbygoogle = window.adsbygoogle || []).push({});",
-                }}
-              />
-            </div>
+            <AdUnit />
 
             {/* Ingredients (skip for roundup/listicle pages if empty) */}
             {!isRoundup && recipe.ingredients.length > 0 && (
@@ -313,21 +300,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
             <RelatedRecipes currentSlug={params.slug} limit={3} />
 
             {/* ── AdSense: Responsive horizontal ad ── */}
-            <div className="my-8">
-              <ins
-                className="adsbygoogle"
-                style={{ display: "block" }}
-                data-ad-client="ca-pub-3927086411410112"
-                data-ad-slot="8551069083"
-                data-ad-format="auto"
-                data-full-width-responsive="true"
-              />
-              <script
-                dangerouslySetInnerHTML={{
-                  __html: "(adsbygoogle = window.adsbygoogle || []).push({});",
-                }}
-              />
-            </div>
+            <AdUnit />
           </article>
 
           {/* ── Right column (sidebar) ── */}

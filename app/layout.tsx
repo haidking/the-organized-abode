@@ -64,15 +64,13 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
-      <head>
+      <body className="min-h-screen flex flex-col">
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3927086411410112"
           crossOrigin="anonymous"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
         />
-      </head>
-      <body className="min-h-screen flex flex-col">
         <Header />
         {/* ─── Main ─── */}
         <main className="flex-1 pb-20 lg:pb-0">{children}</main>
