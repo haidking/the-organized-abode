@@ -7,6 +7,7 @@ const categoryLinks = Object.entries(categoryLabels).map(([slug, label]) => ({
 }));
 
 const siteLinks = [
+  { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
   { href: "/privacy-policy", label: "Privacy Policy" },
