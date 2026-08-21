@@ -2,68 +2,89 @@ import type { Recipe, Category } from "./types";
 
 /**
  * All recipe data lives here — no CMS, no database.
- * Affiliate URLs are placeholders ("#") and live server-side only.
+ * Affiliate URLs live server-side only.
  * The array order doubles as "newest first" for the homepage grid.
  */
 export const recipes: Recipe[] = [
   {
-    slug: "viral-cucumber-salad",
-    title: "Viral Cucumber Salad",
-    subtitle: "3 ingredients. Dangerously addictive.",
-    category: "salads",
-    prepTime: "10 min",
-    totalTime: "10 min",
-    servings: 2,
-    difficulty: "Easy",
-    description:
-      "This viral smashed cucumber salad is salty, garlicky and a little bit spicy — and it comes together in 10 minutes with almost no cooking. Crunchy, cold and dangerously easy to eat by the bowlful.",
-    ingredients: [
+    "slug": "viral-cucumber-salad",
+    "title": "Viral Cucumber Salad",
+    "subtitle": "3 ingredients. Dangerously addictive.",
+    "category": "salads",
+    "prepTime": "10 min",
+    "totalTime": "10 min",
+    "servings": 2,
+    "difficulty": "Easy",
+    "description": "This viral smashed cucumber salad is salty, garlicky and a little bit spicy — and it comes together in 10 minutes with almost no cooking. Crunchy, cold and dangerously easy to eat by the bowlful.",
+    "ingredients": [
       "1 large English cucumber",
       "3 tbsp soy sauce",
       "1 tbsp chili oil",
       "1 tsp sesame seeds",
       "2 cloves garlic (minced)",
-      "1 tsp rice vinegar",
+      "1 tsp rice vinegar"
     ],
-    equipment: ["Garlic press", "Mixing bowl", "Sharp knife", "Cutting board"],
-    steps: [
+    "equipment": [
+      "Garlic press",
+      "Mixing bowl",
+      "Sharp knife",
+      "Cutting board"
+    ],
+    "steps": [
       "Slice the cucumber in half lengthwise, then cut each half into 2–3 long pieces. Use the flat side of your knife (or a rolling pin) to lightly smash the pieces so they split into craggy, sauce-grabbing chunks.",
       "Cut the smashed cucumber into bite-size pieces and transfer to a mixing bowl.",
       "In a small bowl, stir together the soy sauce, chili oil, rice vinegar and minced garlic.",
       "Pour the dressing over the cucumber and toss well so every piece is coated.",
-      "Sprinkle with sesame seeds and serve immediately, or chill for 20 minutes for an even colder, more pickled bite.",
+      "Sprinkle with sesame seeds and serve immediately, or chill for 20 minutes for an even colder, more pickled bite."
     ],
-    tips: [
+    "tips": [
       "Smashing (not slicing) the cucumber opens up its texture so it soaks up the dressing instead of letting it run off.",
-      "Make it ahead: the salad keeps in the fridge for up to a day — the cucumber just gets more pickled.",
+      "Make it ahead: the salad keeps in the fridge for up to a day — the cucumber just gets more pickled."
     ],
-    affiliateLinks: [
-      { label: "Garlic press", url: "https://www.amazon.com/Garlic-Press-Easy-Squeeze-Ergonomic-Professional/dp/B07N7KFHVH?crid=TD0OSTRL4FB&dib=eyJ2IjoiMSJ9.DVOWrEMVuQds5c5SVkroV1YHgFVQelKyzAijway-5ucYTxWsVriGLLg_e-LxAcP_gBM_lEV8JsvF5SddukcE1PHfYj9POhIa038OhKz4Z1WmqjS8c1O1wQY0xHSy_gtPPHhH5pE2AObIv0ZrlceFeTU9iQtdydVUiE8_wJEsggMYEuDhsHooWBpDdt-caGUO28wy-UC-SFl3gDvsjplzVcKG4puoGZZ9jMKfTdDz8Kc2Wov3aR7Mxrwjg22cZifcXyCSntrp0rphy9tfgkouFwP0VLjeUyy3UOU1C7hbN0w.-GuJh0wZT6SOvOSgBv5sTZfliJe9JydgXZaXn2HBgYs&dib_tag=se&keywords=garlic%2Bpress&qid=1786447462&sprefix=garlic%2Bpr%2Caps%2C514&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=279de00f5fde249948bc6d3ebd5cbab0&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Mixing bowl", url: "https://www.amazon.com/Umite-Chef-Airtight-Stainless-Attachments/dp/B0CGWQ53L3?crid=23ZP398JASWMB&dib=eyJ2IjoiMSJ9.XvYIKVs6ZhMBJ7V3gogPAQugzzPma9lm5nRm2D0vJrOevLp9aZ3FlgL_oN7yDr-NCY1wE71n-FVBqB4_3aJOGVaVuonJdd7fKONmS-ZahgY9w5_EYU5YAAtael6OPgyVzhDvFvOLKqrqpytpTpNmSMy5NaqAcxvVIvZ6fH5kzeC-aCI17x_Y8CyKhjHws6NkFGLrqYWJ3iOLZTWVIID9b-BJBDOXGN_0j2X9J3DXeTUcjcWVB6l8yOVG5jelDiG_ayx5cckAcckF8fvv0Wt5hy__mP9TRfXazX7cqcr32kU.skLDbAV0BgyUNWIjijtXKeSrUL_W09M3IfGWTTrl3Z0&dib_tag=se&keywords=mixing%2Bbowl&qid=1786447369&sprefix=mixing%2Bbow%2Caps%2C594&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=15877a9b938b4abb43ad08aa4a9abef1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Chef's knife", url: "https://www.amazon.com/imarku-Japanese-Chef-Knife-Christmas/dp/B01DDBJF12?crid=P1JL5PTKVCSL&dib=eyJ2IjoiMSJ9.ogtZ39PSrD-ERAopQ2MM3VCP_a3dl6ffe6qSY2QaFoOcz8oGUN7M6nxfUCGOkmuTwq3uZILmFIMfI9CKR6HbtdaERpyf8gZneCouzf4ttZr17ulavhgonyJg0S01i2ZJW9_kKnTuQzhzJXZDOIuw8ZebfpvQxb0X36eCZdW_FzupFACVOarwRC93n3S9wJW32TDxpexDdQkXibRkvMrFh73wPGAVexfLgPLRD1J8GnUS2SjRWh2mXWl0k4r7EoC5uyHN9Mn68B3lzNH4u7QcCzrQ9r57yN3o2ClVQiPCcT4.8HLcVWX7WBpQnFO98qmHSZvOO-1enOxBhYwGoXNB3vo&dib_tag=se&keywords=chef%27s%2Bknife&qid=1786447491&sprefix=chef%27s%2Bkni%2Caps%2C559&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b2350b77530821ac5ff826370713cf5e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Cutting board", url: "https://www.amazon.com/Astercook-Deep-Carbonized-Reversible-Charcuterie-Easy-Grip/dp/B0FH6YL3XC?crid=A4FFFNSS5B4Q&dib=eyJ2IjoiMSJ9.vUsBbpa1w7SdehyR5dNno85rMajSPEtI8MRW0HJTGAPIwBRmeRI0F_ekfGI5KJ2B-GHzfWG7FijoG4g8gjeQ1bFsQeYjvrzFMjFI6wX-eQ-fuU2lHrURqC8fhWd04-xo1XhpLaDHF-9gVw3dNZ2oxUJxZ7zUg7BlWkFIbWo7HVxFsrDHtAAK97vygxEEpUyriAgERQMVUsNWJRIuqcrlLpBld5SXozPQEoESjjBiVpsHNc8qHnqac6lSZ32AGEmuELAGNftrToU5o7lz_QpXXPb3PcX3671Z9uBiFaYM2ro.kV-8hceo1PA3PKdjJulr5K0Y4aOwFSNfGKw_8S7h5MM&dib_tag=se&keywords=cutting%2Bboard&qid=1786447530&sprefix=cutting%2Bbo%2Caps%2C509&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=f734b0b1be32e91f76686a1330661035&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Garlic press",
+        "url": "https://www.amazon.com/Garlic-Press-Easy-Squeeze-Ergonomic-Professional/dp/B07N7KFHVH?crid=TD0OSTRL4FB&dib=eyJ2IjoiMSJ9.DVOWrEMVuQds5c5SVkroV1YHgFVQelKyzAijway-5ucYTxWsVriGLLg_e-LxAcP_gBM_lEV8JsvF5SddukcE1PHfYj9POhIa038OhKz4Z1WmqjS8c1O1wQY0xHSy_gtPPHhH5pE2AObIv0ZrlceFeTU9iQtdydVUiE8_wJEsggMYEuDhsHooWBpDdt-caGUO28wy-UC-SFl3gDvsjplzVcKG4puoGZZ9jMKfTdDz8Kc2Wov3aR7Mxrwjg22cZifcXyCSntrp0rphy9tfgkouFwP0VLjeUyy3UOU1C7hbN0w.-GuJh0wZT6SOvOSgBv5sTZfliJe9JydgXZaXn2HBgYs&dib_tag=se&keywords=garlic%2Bpress&qid=1786447462&sprefix=garlic%2Bpr%2Caps%2C514&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=279de00f5fde249948bc6d3ebd5cbab0&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Mixing bowl",
+        "url": "https://www.amazon.com/Umite-Chef-Airtight-Stainless-Attachments/dp/B0CGWQ53L3?crid=23ZP398JASWMB&dib=eyJ2IjoiMSJ9.XvYIKVs6ZhMBJ7V3gogPAQugzzPma9lm5nRm2D0vJrOevLp9aZ3FlgL_oN7yDr-NCY1wE71n-FVBqB4_3aJOGVaVuonJdd7fKONmS-ZahgY9w5_EYU5YAAtael6OPgyVzhDvFvOLKqrqpytpTpNmSMy5NaqAcxvVIvZ6fH5kzeC-aCI17x_Y8CyKhjHws6NkFGLrqYWJ3iOLZTWVIID9b-BJBDOXGN_0j2X9J3DXeTUcjcWVB6l8yOVG5jelDiG_ayx5cckAcckF8fvv0Wt5hy__mP9TRfXazX7cqcr32kU.skLDbAV0BgyUNWIjijtXKeSrUL_W09M3IfGWTTrl3Z0&dib_tag=se&keywords=mixing%2Bbowl&qid=1786447369&sprefix=mixing%2Bbow%2Caps%2C594&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=15877a9b938b4abb43ad08aa4a9abef1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Chef's knife",
+        "url": "https://www.amazon.com/imarku-Japanese-Chef-Knife-Christmas/dp/B01DDBJF12?crid=P1JL5PTKVCSL&dib=eyJ2IjoiMSJ9.ogtZ39PSrD-ERAopQ2MM3VCP_a3dl6ffe6qSY2QaFoOcz8oGUN7M6nxfUCGOkmuTwq3uZILmFIMfI9CKR6HbtdaERpyf8gZneCouzf4ttZr17ulavhgonyJg0S01i2ZJW9_kKnTuQzhzJXZDOIuw8ZebfpvQxb0X36eCZdW_FzupFACVOarwRC93n3S9wJW32TDxpexDdQkXibRkvMrFh73wPGAVexfLgPLRD1J8GnUS2SjRWh2mXWl0k4r7EoC5uyHN9Mn68B3lzNH4u7QcCzrQ9r57yN3o2ClVQiPCcT4.8HLcVWX7WBpQnFO98qmHSZvOO-1enOxBhYwGoXNB3vo&dib_tag=se&keywords=chef%27s%2Bknife&qid=1786447491&sprefix=chef%27s%2Bkni%2Caps%2C559&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b2350b77530821ac5ff826370713cf5e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Cutting board",
+        "url": "https://www.amazon.com/Astercook-Deep-Carbonized-Reversible-Charcuterie-Easy-Grip/dp/B0FH6YL3XC?crid=A4FFFNSS5B4Q&dib=eyJ2IjoiMSJ9.vUsBbpa1w7SdehyR5dNno85rMajSPEtI8MRW0HJTGAPIwBRmeRI0F_ekfGI5KJ2B-GHzfWG7FijoG4g8gjeQ1bFsQeYjvrzFMjFI6wX-eQ-fuU2lHrURqC8fhWd04-xo1XhpLaDHF-9gVw3dNZ2oxUJxZ7zUg7BlWkFIbWo7HVxFsrDHtAAK97vygxEEpUyriAgERQMVUsNWJRIuqcrlLpBld5SXozPQEoESjjBiVpsHNc8qHnqac6lSZ32AGEmuELAGNftrToU5o7lz_QpXXPb3PcX3671Z9uBiFaYM2ro.kV-8hceo1PA3PKdjJulr5K0Y4aOwFSNfGKw_8S7h5MM&dib_tag=se&keywords=cutting%2Bboard&qid=1786447530&sprefix=cutting%2Bbo%2Caps%2C509&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=f734b0b1be32e91f76686a1330661035&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["salad", "cucumber", "viral", "asian", "quick", "healthy"],
-    datePublished: "2026-08-08",
-    image: "/images/viral-cucumber-salad.jpg",
-    pinImage: "/images/pins/viral-cucumber-salad.png",
-    metaTitle: "Viral Cucumber Salad (3 Ingredients, 10 Minutes) | The Better Home Recipes",
-    metaDescription:
-      "The viral smashed cucumber salad in 10 minutes — soy sauce, chili oil, garlic, sesame. Crunchy, spicy and dangerously addictive.",
+    "tags": [
+      "salad",
+      "cucumber",
+      "viral",
+      "asian",
+      "quick",
+      "healthy"
+    ],
+    "datePublished": "2026-08-08",
+    "image": "/images/viral-cucumber-salad.jpg",
+    "pinImage": "/images/pins/viral-cucumber-salad.png",
+    "metaTitle": "Viral Cucumber Salad (3 Ingredients, 10 Minutes) | The Better Home Recipes",
+    "metaDescription": "The viral smashed cucumber salad in 10 minutes — soy sauce, chili oil, garlic, sesame. Crunchy, spicy and dangerously addictive."
   },
   {
-    slug: "one-pot-creamy-tuscan-chicken-pasta",
-    title: "One-Pot Creamy Tuscan Chicken Pasta",
-    subtitle: "Ready in 25 minutes",
-    category: "one-pan",
-    prepTime: "10 min",
-    cookTime: "15 min",
-    totalTime: "25 min",
-    servings: 4,
-    difficulty: "Easy",
-    description:
-      "Creamy Tuscan chicken pasta is a 25-minute, one-pot dinner built on seared chicken, cherry tomatoes, sun-dried tomatoes and a rich parmesan cream sauce. Everything cooks in a single wide pot, so dinner is done before the dishes pile up.",
-    ingredients: [
+    "slug": "one-pot-creamy-tuscan-chicken-pasta",
+    "title": "One-Pot Creamy Tuscan Chicken Pasta",
+    "subtitle": "Ready in 25 minutes",
+    "category": "one-pan",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "totalTime": "25 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Creamy Tuscan chicken pasta is a 25-minute, one-pot dinner built on seared chicken, cherry tomatoes, sun-dried tomatoes and a rich parmesan cream sauce. Everything cooks in a single wide pot, so dinner is done before the dishes pile up.",
+    "ingredients": [
       "1 lb chicken breast or thighs (cut into bite-size pieces)",
       "12 oz rigatoni pasta",
       "1 cup cherry tomatoes (halved)",
@@ -75,134 +96,189 @@ export const recipes: Recipe[] = [
       "Fresh basil (handful, torn)",
       "1 tsp Italian seasoning",
       "1 tbsp olive oil",
-      "Salt and black pepper to taste",
+      "Salt and black pepper to taste"
     ],
-    equipment: ["Large wide pot or Dutch oven", "Wooden spoon", "Tongs", "Grater"],
-    steps: [
+    "equipment": [
+      "Large wide pot or Dutch oven",
+      "Wooden spoon",
+      "Tongs",
+      "Grater"
+    ],
+    "steps": [
       "Season the chicken pieces with salt, pepper and half the Italian seasoning. Heat the olive oil in a large wide pot over medium-high heat.",
       "Sear the chicken for 4–5 minutes until golden on the outside, then remove it to a plate. It will finish cooking in the sauce later.",
       "Add the garlic, cherry tomatoes and sun-dried tomatoes to the same pot and sauté for 2 minutes, scraping up any browned bits.",
       "Add the rigatoni and enough water to cover it by about an inch (about 4 cups). Bring to a boil, then simmer uncovered for 10–12 minutes, stirring often, until the pasta is al dente and most of the liquid has absorbed.",
       "Reduce the heat to low. Stir in the heavy cream, parmesan, remaining Italian seasoning and the spinach. Cook for 2–3 minutes until the spinach wilts and the sauce turns creamy.",
-      "Return the chicken to the pot, add the torn basil, and simmer for 2 more minutes until everything is hot. Season to taste and serve.",
+      "Return the chicken to the pot, add the torn basil, and simmer for 2 more minutes until everything is hot. Season to taste and serve."
     ],
-    tips: [
+    "tips": [
       "Reserve a ladle of pasta water before the sauce goes in — a splash at the end loosens a sauce that's too thick.",
-      "One pot, 25 minutes, and the whole dish is done before the garlic bread finishes toasting.",
+      "One pot, 25 minutes, and the whole dish is done before the garlic bread finishes toasting."
     ],
-    affiliateLinks: [
-      { label: "Dutch oven", url: "https://www.amazon.com/Enameled-Cast-Iron-Dutch-Oven/dp/B0DXJTNWJN?crid=TVDOLLRZIF64&dib=eyJ2IjoiMSJ9.1RipCjRwp4yv3IHs4x1q8C_SHUqcsbpeDpcbdBo-2JLg8h8Hno0IxKy4bvHTMR7d5rNN7yBKHLfA7NBx2NJaHvT2Ohu22gWLSZTcPrdJi7rPdUCAiygwung_RUk4M7N7vTP8t8Ytq9H_w98foCBjki5oHks6EayOci6I-KuuEVa7ZpchUe73DELoH0QfT8TAUq-pS76fqb2QkqCQCs7coDQ0LJaVLqV6BuzAX2Ebv4-avC37i466OiHsmY0RjMuCSXMvgwGKoxeh-f3JKkGJLMczFSBFxs_ocWal1dEobMw.iFhJ4TmTPbbwvTMXmy0ScGA-yfQqoJu8OtBFyQVJgmc&dib_tag=se&keywords=dutch%2Boven&qid=1786447085&sprefix=dutch%2Bover%2Caps%2C528&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=9e4698f1f0941d03ddf58d171adcebf3&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Wooden spoon", url: "https://www.amazon.com/Nonstick-Cookware-Resistant-Utensils-Stirring/dp/B0FRFPQ3N5?crid=27NC175XIRFRC&dib=eyJ2IjoiMSJ9.7kdWYj9yf38TGskuggIcECMVhiK5gHgqGJ5qYyC6-PunHqegJgw5HLvW6CpY9skDWZ7gKdJTtUGejjz2NUUfmqMl-ojXYE4f0alkGc5atdnDv9WMfrmOv07DchBBxbv1C8Xi6p7pH7A0fto57eMjc7ydJwMYxbNA7ix02rrM9-HYyrzOWHiWpgaIJNRl2o7I-v4LKhOsICtZd8zpGSpTIVeMy8eIJ2tXAGFhSi4p97kbJQFobVB-BzBzyMIVPWOy5rc9w00nfz_Y0f3Q5kiYmWJ5EGEqQIJAjHi2HLtyEfE.U2K3-f3lbDJAuTF3149LHsXE7t8FBc8JDy-BBO_gi-o&dib_tag=se&keywords=wooden+spoon&qid=1786446658&sprefix=wooden+spo%2Caps%2C532&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=cb48013bb64f0951dc932f4e9d035ba2&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Tongs", url: "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Box grater", url: "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Dutch oven",
+        "url": "https://www.amazon.com/Enameled-Cast-Iron-Dutch-Oven/dp/B0DXJTNWJN?crid=TVDOLLRZIF64&dib=eyJ2IjoiMSJ9.1RipCjRwp4yv3IHs4x1q8C_SHUqcsbpeDpcbdBo-2JLg8h8Hno0IxKy4bvHTMR7d5rNN7yBKHLfA7NBx2NJaHvT2Ohu22gWLSZTcPrdJi7rPdUCAiygwung_RUk4M7N7vTP8t8Ytq9H_w98foCBjki5oHks6EayOci6I-KuuEVa7ZpchUe73DELoH0QfT8TAUq-pS76fqb2QkqCQCs7coDQ0LJaVLqV6BuzAX2Ebv4-avC37i466OiHsmY0RjMuCSXMvgwGKoxeh-f3JKkGJLMczFSBFxs_ocWal1dEobMw.iFhJ4TmTPbbwvTMXmy0ScGA-yfQqoJu8OtBFyQVJgmc&dib_tag=se&keywords=dutch%2Boven&qid=1786447085&sprefix=dutch%2Bover%2Caps%2C528&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=9e4698f1f0941d03ddf58d171adcebf3&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Wooden spoon",
+        "url": "https://www.amazon.com/Nonstick-Cookware-Resistant-Utensils-Stirring/dp/B0FRFPQ3N5?crid=27NC175XIRFRC&dib=eyJ2IjoiMSJ9.7kdWYj9yf38TGskuggIcECMVhiK5gHgqGJ5qYyC6-PunHqegJgw5HLvW6CpY9skDWZ7gKdJTtUGejjz2NUUfmqMl-ojXYE4f0alkGc5atdnDv9WMfrmOv07DchBBxbv1C8Xi6p7pH7A0fto57eMjc7ydJwMYxbNA7ix02rrM9-HYyrzOWHiWpgaIJNRl2o7I-v4LKhOsICtZd8zpGSpTIVeMy8eIJ2tXAGFhSi4p97kbJQFobVB-BzBzyMIVPWOy5rc9w00nfz_Y0f3Q5kiYmWJ5EGEqQIJAjHi2HLtyEfE.U2K3-f3lbDJAuTF3149LHsXE7t8FBc8JDy-BBO_gi-o&dib_tag=se&keywords=wooden+spoon&qid=1786446658&sprefix=wooden+spo%2Caps%2C532&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=cb48013bb64f0951dc932f4e9d035ba2&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Tongs",
+        "url": "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Box grater",
+        "url": "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["one-pot", "chicken", "pasta", "italian", "quick"],
-    datePublished: "2026-08-05",
-    image: "/images/one-pot-creamy-tuscan-chicken-pasta.jpg",
-    pinImage: "/images/pins/one-pot-creamy-tuscan-chicken-pasta.png",
-    metaTitle: "One-Pot Creamy Tuscan Chicken Pasta (25 Minutes) | The Better Home Recipes",
-    metaDescription:
-      "One-pot Tuscan chicken pasta in 25 minutes — seared chicken, cherry tomatoes, spinach and a rich parmesan cream sauce. Serves 4, one pot to wash.",
+    "tags": [
+      "one-pot",
+      "chicken",
+      "pasta",
+      "italian",
+      "quick"
+    ],
+    "datePublished": "2026-08-05",
+    "image": "/images/one-pot-creamy-tuscan-chicken-pasta.jpg",
+    "pinImage": "/images/pins/one-pot-creamy-tuscan-chicken-pasta.png",
+    "metaTitle": "One-Pot Creamy Tuscan Chicken Pasta (25 Minutes) | The Better Home Recipes",
+    "metaDescription": "One-pot Tuscan chicken pasta in 25 minutes — seared chicken, cherry tomatoes, spinach and a rich parmesan cream sauce. Serves 4, one pot to wash."
   },
   {
-    slug: "strawberry-matcha-latte",
-    title: "Strawberry Matcha Latte",
-    subtitle: "Prettier than the coffee shop's — made at home",
-    category: "drinks",
-    prepTime: "5 min",
-    totalTime: "5 min",
-    servings: 1,
-    difficulty: "Easy",
-    description:
-      "A layered iced strawberry matcha latte you can make at home in 5 minutes — mashed strawberries and honey on the bottom, creamy oat milk in the middle and a bright green matcha top. It's prettier than the coffee shop's, for a fraction of the price.",
-    ingredients: [
+    "slug": "strawberry-matcha-latte",
+    "title": "Strawberry Matcha Latte",
+    "subtitle": "Prettier than the coffee shop's — made at home",
+    "category": "drinks",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "A layered iced strawberry matcha latte you can make at home in 5 minutes — mashed strawberries and honey on the bottom, creamy oat milk in the middle and a bright green matcha top. It's prettier than the coffee shop's, for a fraction of the price.",
+    "ingredients": [
       "½ cup fresh strawberries (hulled)",
       "1 tsp ceremonial matcha",
       "¾ cup oat milk",
       "1 tbsp honey",
-      "Ice, to fill",
+      "Ice, to fill"
     ],
-    equipment: ["Matcha whisk", "Tall glass", "Small bowl", "Muddler or fork"],
-    steps: [
+    "equipment": [
+      "Matcha whisk",
+      "Tall glass",
+      "Small bowl",
+      "Muddler or fork"
+    ],
+    "steps": [
       "In a small bowl, mash the strawberries with the honey using a fork (or a muddler) until they form a rough syrup.",
       "Spoon the strawberry mixture into the bottom of a tall glass.",
       "Fill the glass with ice, then pour the oat milk over the top.",
       "In a separate small bowl, sift the matcha to remove clumps. Add 2 tablespoons of warm (not boiling) water and whisk in a zig-zag motion until smooth and frothy.",
-      "Slowly pour the whisked matcha over the oat milk. The layers should stay distinct — stir just before drinking.",
+      "Slowly pour the whisked matcha over the oat milk. The layers should stay distinct — stir just before drinking."
     ],
-    tips: [
+    "tips": [
       "Sift the matcha first — it's what keeps the top layer smooth instead of clumpy.",
-      "Warm the oat milk slightly before pouring for a gentler, sweeter latte.",
+      "Warm the oat milk slightly before pouring for a gentler, sweeter latte."
     ],
-    affiliateLinks: [
-      { label: "Matcha whisk", url: "https://www.amazon.com/Clay-Fire-Matcha-Handcrafted-Traditional/dp/B0FL2SM8XP?crid=IMZULE719TD4&dib=eyJ2IjoiMSJ9.10DLFdNYEm3vv-gGWwUknnjFU3JoISizCj2UAcFws-udV8sR4L5lgcJLN0mg1ZbSsxaHuPEMfv85B3b1piFI7jILtu9zEKHdtfiQKSOSJ1QNmeCWMDxw8NAIYoaBjjJ7_yGZ8v2k7us59aUExljqZjcK-VrztEgSz7rP59M9p2ysn0odwmgsYcJnVLs8vJggx0wOFW3rjnOHk1vb8GlTUXpLbDYHi5YwYi4nNIs_YO8zjsnmzIqQ5pbVqcv54XJfWI_nZ-gVvCdfP6tRqHUrB6TDDrCP6YA7XIIn73GGaOk.a3jcnWWUCQZKrqD0Y75WLbPZ73nHugMGSpQdCbEQ-LI&dib_tag=se&keywords=matcha%2Bwhisk&qid=1786446749&sprefix=matcha%2Bwish%2Caps%2C529&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=de5d48b5ad631782f917d21b214fe202&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Tall glass", url: "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3HCSZLG75G5IK&dib=eyJ2IjoiMSJ9.pMnrB7TmD_ZKW1_Bb9PMpatMVi4GEO61lvanLpzZ_VKmp19fJ5Xz8W06E26ZUw0ueYP2_v8ZU4KMltrMehQvpM_wslK5Xb5s7k28QSJpnel6lUpVNAiE1Kbk5ha2lBs7I2x0yx0iIUpCICDcU3fF1K78jjnIxnM_wHdXMegNXa8EXeoyNv7--3fYupUoW2eTMvXJmKqmLDBK2ujRVr02PaYgp60gYDU2SVNSg9NWnEvFPA2WSBzGRBPyfCofhIEFXvRKrT0csgKoJqCoWDdGeWfsvYMfQNzsUY-CRnTDVo4.VtoO0iCRnKuMcOddS0uyxns9xCztkh3Lu4epJe7HTWg&dib_tag=se&keywords=tall%2Bglass&qid=1786446781&sprefix=tall%2Bgla%2Caps%2C509&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3fba6e3b07e56624a952abbe49c7b384&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Ceramic matcha bowl", url: "https://www.amazon.com/CAMATET-Matcha-Ceramic-Japanese-Ceremonial/dp/B0DRG3H3DF?crid=FAPJBCM6Z33M&dib=eyJ2IjoiMSJ9.lfeefNB1tMjmYcwXVDsJRJYSpoemPhVa4UK-j2GJOwXwk8c5Po0uiosc8HeFABXX86WnZYiRdTWzHh7mSRHfO-ZRUXTaPWkY0WS42gw5JR9n5vI9zVCDnqCZpyqw045vxZ_2QhmfnGgBCyTQ3nCexkRugv2bRDABI_VyRu-zIuV8n8Pd4-c3-5tQWauuzzOVAc988A3nAPoIf4n64hPJiaR6tK6Pj_56afbevmALpNORU1p7D0w4naEfMgV20myFsa9-pZdoN2N5GsdOPGhNtZIuyKD23q7qIxU5S1qpxNM.DLBwVaV-y9vWy3ldFtDzOZ8ChyP21PARXn1vN1oJo9I&dib_tag=se&keywords=ceramic%2Bmatcha%2Bbowl&qid=1786446874&sprefix=ceramic%2Bmatcha%2Bbowl%2Caps%2C550&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=27a02cf091a815572f336b072ed629b8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Muddler", url: "https://www.amazon.com/Ohtomber-Cocktails-Stainless-Accessories-Bartending/dp/B0DDB3JWPV?crid=37WP5NUSL9MJO&dib=eyJ2IjoiMSJ9.Ma9yEK4EkPe_06fd9AvfO4TGZ0C8rZiDeOatRKez0pCz6W4_lozBAK4scWry6tTRRoxyCGLGFeCPO6eK4T7sRkBCoK89aw8sNFg90pE0fC4zvj2KgRcSyCTPXk6gx5icarXyGQBW2EiIz8bfXrdKBP3CfOWCTSxeEqmQ0B7rg3OxJl0h6_ELH4YJ08MGbdhpUBK5t0Ar8BW8-7cPrvuakOP0mXNv-MMt-ACqKEry0WaWwJXkhVKvfPuVqIA3VWehUidAF8lwg62nxUr9wM2j4hcXjGkwHuRqV7o49BfrG0E.vsEPjTNBH2RdcKMkNSwHtxBXt9NuEUdn6_YfMaiGSOI&dib_tag=se&keywords=muddler&qid=1786446901&sprefix=mu%2Caps%2C572&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=0fce22d45b473338647ec3819e2e14db&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Matcha whisk",
+        "url": "https://www.amazon.com/Clay-Fire-Matcha-Handcrafted-Traditional/dp/B0FL2SM8XP?crid=IMZULE719TD4&dib=eyJ2IjoiMSJ9.10DLFdNYEm3vv-gGWwUknnjFU3JoISizCj2UAcFws-udV8sR4L5lgcJLN0mg1ZbSsxaHuPEMfv85B3b1piFI7jILtu9zEKHdtfiQKSOSJ1QNmeCWMDxw8NAIYoaBjjJ7_yGZ8v2k7us59aUExljqZjcK-VrztEgSz7rP59M9p2ysn0odwmgsYcJnVLs8vJggx0wOFW3rjnOHk1vb8GlTUXpLbDYHi5YwYi4nNIs_YO8zjsnmzIqQ5pbVqcv54XJfWI_nZ-gVvCdfP6tRqHUrB6TDDrCP6YA7XIIn73GGaOk.a3jcnWWUCQZKrqD0Y75WLbPZ73nHugMGSpQdCbEQ-LI&dib_tag=se&keywords=matcha%2Bwhisk&qid=1786446749&sprefix=matcha%2Bwish%2Caps%2C529&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=de5d48b5ad631782f917d21b214fe202&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Tall glass",
+        "url": "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3HCSZLG75G5IK&dib=eyJ2IjoiMSJ9.pMnrB7TmD_ZKW1_Bb9PMpatMVi4GEO61lvanLpzZ_VKmp19fJ5Xz8W06E26ZUw0ueYP2_v8ZU4KMltrMehQvpM_wslK5Xb5s7k28QSJpnel6lUpVNAiE1Kbk5ha2lBs7I2x0yx0iIUpCICDcU3fF1K78jjnIxnM_wHdXMegNXa8EXeoyNv7--3fYupUoW2eTMvXJmKqmLDBK2ujRVr02PaYgp60gYDU2SVNSg9NWnEvFPA2WSBzGRBPyfCofhIEFXvRKrT0csgKoJqCoWDdGeWfsvYMfQNzsUY-CRnTDVo4.VtoO0iCRnKuMcOddS0uyxns9xCztkh3Lu4epJe7HTWg&dib_tag=se&keywords=tall%2Bglass&qid=1786446781&sprefix=tall%2Bgla%2Caps%2C509&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3fba6e3b07e56624a952abbe49c7b384&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Ceramic matcha bowl",
+        "url": "https://www.amazon.com/CAMATET-Matcha-Ceramic-Japanese-Ceremonial/dp/B0DRG3H3DF?crid=FAPJBCM6Z33M&dib=eyJ2IjoiMSJ9.lfeefNB1tMjmYcwXVDsJRJYSpoemPhVa4UK-j2GJOwXwk8c5Po0uiosc8HeFABXX86WnZYiRdTWzHh7mSRHfO-ZRUXTaPWkY0WS42gw5JR9n5vI9zVCDnqCZpyqw045vxZ_2QhmfnGgBCyTQ3nCexkRugv2bRDABI_VyRu-zIuV8n8Pd4-c3-5tQWauuzzOVAc988A3nAPoIf4n64hPJiaR6tK6Pj_56afbevmALpNORU1p7D0w4naEfMgV20myFsa9-pZdoN2N5GsdOPGhNtZIuyKD23q7qIxU5S1qpxNM.DLBwVaV-y9vWy3ldFtDzOZ8ChyP21PARXn1vN1oJo9I&dib_tag=se&keywords=ceramic%2Bmatcha%2Bbowl&qid=1786446874&sprefix=ceramic%2Bmatcha%2Bbowl%2Caps%2C550&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=27a02cf091a815572f336b072ed629b8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Muddler",
+        "url": "https://www.amazon.com/Ohtomber-Cocktails-Stainless-Accessories-Bartending/dp/B0DDB3JWPV?crid=37WP5NUSL9MJO&dib=eyJ2IjoiMSJ9.Ma9yEK4EkPe_06fd9AvfO4TGZ0C8rZiDeOatRKez0pCz6W4_lozBAK4scWry6tTRRoxyCGLGFeCPO6eK4T7sRkBCoK89aw8sNFg90pE0fC4zvj2KgRcSyCTPXk6gx5icarXyGQBW2EiIz8bfXrdKBP3CfOWCTSxeEqmQ0B7rg3OxJl0h6_ELH4YJ08MGbdhpUBK5t0Ar8BW8-7cPrvuakOP0mXNv-MMt-ACqKEry0WaWwJXkhVKvfPuVqIA3VWehUidAF8lwg62nxUr9wM2j4hcXjGkwHuRqV7o49BfrG0E.vsEPjTNBH2RdcKMkNSwHtxBXt9NuEUdn6_YfMaiGSOI&dib_tag=se&keywords=muddler&qid=1786446901&sprefix=mu%2Caps%2C572&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=0fce22d45b473338647ec3819e2e14db&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["drinks", "matcha", "latte", "strawberry", "iced"],
-    datePublished: "2026-08-01",
-    image: "/images/strawberry-matcha-latte.jpg",
-    pinImage: "/images/pins/strawberry-matcha-latte.png",
-    metaTitle: "Strawberry Matcha Latte (5-Minute Iced Recipe) | The Better Home Recipes",
-    metaDescription:
-      "Layered iced strawberry matcha latte made at home in 5 minutes — mashed strawberries, honey, oat milk and ceremonial matcha. Prettier than the coffee shop's.",
+    "tags": [
+      "drinks",
+      "matcha",
+      "latte",
+      "strawberry",
+      "iced"
+    ],
+    "datePublished": "2026-08-01",
+    "image": "/images/strawberry-matcha-latte.jpg",
+    "pinImage": "/images/pins/strawberry-matcha-latte.png",
+    "metaTitle": "Strawberry Matcha Latte (5-Minute Iced Recipe) | The Better Home Recipes",
+    "metaDescription": "Layered iced strawberry matcha latte made at home in 5 minutes — mashed strawberries, honey, oat milk and ceremonial matcha. Prettier than the coffee shop's."
   },
   {
-    slug: "green-detox-smoothie",
-    title: "Green Detox Smoothie",
-    subtitle: "That actually tastes good — 5 ingredients only",
-    category: "drinks",
-    prepTime: "5 min",
-    totalTime: "5 min",
-    servings: 1,
-    difficulty: "Easy",
-    description:
-      "A green detox smoothie that actually tastes good: spinach, banana, green apple, lime and ginger blended into a bright, refreshing drink. Five ingredients, five minutes, and no kale bitterness in sight.",
-    ingredients: [
+    "slug": "green-detox-smoothie",
+    "title": "Green Detox Smoothie",
+    "subtitle": "That actually tastes good — 5 ingredients only",
+    "category": "drinks",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "A green detox smoothie that actually tastes good: spinach, banana, green apple, lime and ginger blended into a bright, refreshing drink. Five ingredients, five minutes, and no kale bitterness in sight.",
+    "ingredients": [
       "2 cups fresh spinach",
       "1 banana",
       "1 green apple (cored and chopped)",
       "½ lime (juice and zest)",
-      "1 tsp fresh ginger (peeled)",
+      "1 tsp fresh ginger (peeled)"
     ],
-    equipment: ["High-speed blender", "Tall glass"],
-    steps: [
+    "equipment": [
+      "High-speed blender",
+      "Tall glass"
+    ],
+    "steps": [
       "Add ½ cup of cold water (or coconut water for extra sweetness) to the blender first so the blades turn easily.",
       "Add the spinach, banana, chopped apple, lime juice and zest, and the ginger.",
       "Blend on high for 45–60 seconds until completely smooth, stopping to scrape down the sides once.",
       "Taste, and add more water a splash at a time if you'd like it thinner.",
-      "Pour into a tall glass and drink immediately — it's best ice-cold and fresh.",
+      "Pour into a tall glass and drink immediately — it's best ice-cold and fresh."
     ],
-    tips: [
+    "tips": [
       "Freeze the banana in chunks and the green apple ahead of time and you won't need any ice — it's frothier and colder.",
-      "The lime does the heavy lifting here: it brightens the whole glass and masks any spinach taste.",
+      "The lime does the heavy lifting here: it brightens the whole glass and masks any spinach taste."
     ],
-    affiliateLinks: [
-      { label: "High-speed blender", url: "https://www.amazon.com/Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506?ie=UTF8&s=psc&sprefix=high%2Bspeed%2Bblen%2Caps%2C555&keywords=high%2Bspeed%2Bblender&crid=8IR2ALTQODKI&dib_tag=se&ASIN=B00NGV4506&dib=eyJ2IjoiMSJ9.Xu0NhznEvkQP1KciA8NZDHe-rcH3gsM2nSIES7KCwadI2ceVCIX2xZtj-RYvRmri4N2KK0G4Yz-NGYGAjj26-GigSttjuVFLXJRqq1-VEKvauISIsVuGlKiWtKof5--ZqLJT8S4wQYZDzjgQjQf0kwc4cA62ElgfvR6Uuuxo1FuN3hVet9WV23ARtae_riyIUeU9Cy_cDz915ivQ_82j2JanKFoHWwSYiTvqCNlaovI.rUDn_kfuVLyZcVc3142tOm--PwBLtIixpBfHMS4nRas&qid=1786446937&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=657f8897039b81a712107ed361fa52bb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Tall glass", url: "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3HCSZLG75G5IK&dib=eyJ2IjoiMSJ9.pMnrB7TmD_ZKW1_Bb9PMpatMVi4GEO61lvanLpzZ_VKmp19fJ5Xz8W06E26ZUw0ueYP2_v8ZU4KMltrMehQvpM_wslK5Xb5s7k28QSJpnel6lUpVNAiE1Kbk5ha2lBs7I2x0yx0iIUpCICDcU3fF1K78jjnIxnM_wHdXMegNXa8EXeoyNv7--3fYupUoW2eTMvXJmKqmLDBK2ujRVr02PaYgp60gYDU2SVNSg9NWnEvFPA2WSBzGRBPyfCofhIEFXvRKrT0csgKoJqCoWDdGeWfsvYMfQNzsUY-CRnTDVo4.VtoO0iCRnKuMcOddS0uyxns9xCztkh3Lu4epJe7HTWg&dib_tag=se&keywords=tall%2Bglass&qid=1786446781&sprefix=tall%2Bgla%2Caps%2C509&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3fba6e3b07e56624a952abbe49c7b384&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "High-speed blender",
+        "url": "https://www.amazon.com/Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506?ie=UTF8&s=psc&sprefix=high%2Bspeed%2Bblen%2Caps%2C555&keywords=high%2Bspeed%2Bblender&crid=8IR2ALTQODKI&dib_tag=se&ASIN=B00NGV4506&dib=eyJ2IjoiMSJ9.Xu0NhznEvkQP1KciA8NZDHe-rcH3gsM2nSIES7KCwadI2ceVCIX2xZtj-RYvRmri4N2KK0G4Yz-NGYGAjj26-GigSttjuVFLXJRqq1-VEKvauISIsVuGlKiWtKof5--ZqLJT8S4wQYZDzjgQjQf0kwc4cA62ElgfvR6Uuuxo1FuN3hVet9WV23ARtae_riyIUeU9Cy_cDz915ivQ_82j2JanKFoHWwSYiTvqCNlaovI.rUDn_kfuVLyZcVc3142tOm--PwBLtIixpBfHMS4nRas&qid=1786446937&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=657f8897039b81a712107ed361fa52bb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Tall glass",
+        "url": "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3HCSZLG75G5IK&dib=eyJ2IjoiMSJ9.pMnrB7TmD_ZKW1_Bb9PMpatMVi4GEO61lvanLpzZ_VKmp19fJ5Xz8W06E26ZUw0ueYP2_v8ZU4KMltrMehQvpM_wslK5Xb5s7k28QSJpnel6lUpVNAiE1Kbk5ha2lBs7I2x0yx0iIUpCICDcU3fF1K78jjnIxnM_wHdXMegNXa8EXeoyNv7--3fYupUoW2eTMvXJmKqmLDBK2ujRVr02PaYgp60gYDU2SVNSg9NWnEvFPA2WSBzGRBPyfCofhIEFXvRKrT0csgKoJqCoWDdGeWfsvYMfQNzsUY-CRnTDVo4.VtoO0iCRnKuMcOddS0uyxns9xCztkh3Lu4epJe7HTWg&dib_tag=se&keywords=tall%2Bglass&qid=1786446781&sprefix=tall%2Bgla%2Caps%2C509&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3fba6e3b07e56624a952abbe49c7b384&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["smoothie", "detox", "healthy", "green", "drinks"],
-    datePublished: "2026-07-30",
-    image: "/images/green-detox-smoothie.jpg",
-    pinImage: "/images/pins/green-detox-smoothie.png",
-    metaTitle: "Green Detox Smoothie (5 Ingredients, 5 Minutes) | The Better Home Recipes",
-    metaDescription:
-      "A green detox smoothie that tastes good — spinach, banana, green apple, lime and ginger. 5 ingredients, 5 minutes, no kale bitterness.",
+    "tags": [
+      "smoothie",
+      "detox",
+      "healthy",
+      "green",
+      "drinks"
+    ],
+    "datePublished": "2026-07-30",
+    "image": "/images/green-detox-smoothie.jpg",
+    "pinImage": "/images/pins/green-detox-smoothie.png",
+    "metaTitle": "Green Detox Smoothie (5 Ingredients, 5 Minutes) | The Better Home Recipes",
+    "metaDescription": "A green detox smoothie that tastes good — spinach, banana, green apple, lime and ginger. 5 ingredients, 5 minutes, no kale bitterness."
   },
   {
-    slug: "one-pan-tuscan-butter-gnocchi",
-    title: "One-Pan Tuscan Butter Gnocchi",
-    subtitle: "Ready in 20 minutes. One pan. Zero effort.",
-    category: "one-pan",
-    prepTime: "5 min",
-    cookTime: "15 min",
-    totalTime: "20 min",
-    servings: 3,
-    difficulty: "Easy",
-    description:
-      "One-pan Tuscan butter gnocchi is a 20-minute dinner where pillowy gnocchi get seared in butter, then tossed with sun-dried tomatoes, spinach, garlic and a parmesan cream sauce. One skillet, zero boiling water, and clean-up is a single pan.",
-    ingredients: [
+    "slug": "one-pan-tuscan-butter-gnocchi",
+    "title": "One-Pan Tuscan Butter Gnocchi",
+    "subtitle": "Ready in 20 minutes. One pan. Zero effort.",
+    "category": "one-pan",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "totalTime": "20 min",
+    "servings": 3,
+    "difficulty": "Easy",
+    "description": "One-pan Tuscan butter gnocchi is a 20-minute dinner where pillowy gnocchi get seared in butter, then tossed with sun-dried tomatoes, spinach, garlic and a parmesan cream sauce. One skillet, zero boiling water, and clean-up is a single pan.",
+    "ingredients": [
       "1 lb shelf-stable gnocchi",
       "3 tbsp butter",
       "⅓ cup sun-dried tomatoes (chopped)",
@@ -212,46 +288,63 @@ export const recipes: Recipe[] = [
       "¼ cup grated parmesan",
       "Fresh basil (handful, torn)",
       "¼ tsp red pepper flakes",
-      "Salt and black pepper to taste",
+      "Salt and black pepper to taste"
     ],
-    equipment: ["Large skillet", "Wooden spoon", "Grater"],
-    steps: [
+    "equipment": [
+      "Large skillet",
+      "Wooden spoon",
+      "Grater"
+    ],
+    "steps": [
       "Melt the butter in a large skillet over medium heat. Add the garlic and sun-dried tomatoes and cook for 1 minute until fragrant.",
       "Add the gnocchi in a single layer and let it cook undisturbed for 3–4 minutes so it develops golden, crispy edges.",
       "Toss the gnocchi, then pour in the heavy cream. Stir and bring to a gentle simmer.",
       "Add the spinach and parmesan and cook for 2–3 minutes, stirring, until the spinach wilts and the sauce coats the gnocchi.",
-      "Season with salt, pepper and red pepper flakes, then fold in the basil. Serve straight from the pan.",
+      "Season with salt, pepper and red pepper flakes, then fold in the basil. Serve straight from the pan."
     ],
-    tips: [
+    "tips": [
       "Don't stir the gnocchi for the first few minutes — those golden butter-fried edges are the whole point.",
-      "No pre-boiling needed: shelf-stable gnocchi cooks right in the cream and butter.",
+      "No pre-boiling needed: shelf-stable gnocchi cooks right in the cream and butter."
     ],
-    affiliateLinks: [
-      { label: "Large skillet", url: "https://www.amazon.com/SENSARTE-Nonstick-Skillet-Induction-Healthy/dp/B0D9Q7D9VS?crid=1VNIHLRVLUXBI&dib=eyJ2IjoiMSJ9.41vwpolDYRfCYNkU-05YrjknucAQBPWNzUmJ855cYR_MDAffgvnHWfOhrh0cCmifc9Z9aUOH-1_Ik8ctBIUY8vP1HU7_IbE_PeR4qzS98kYMcpZG3qYk9CxTFOn4IcyU-RIoe7urNO2f0vVSzSh9jC_p7EtvtOvEi8tIQP6uvN_kbjiqEmn1SnFVO7Z8fKZ_l20uXf2EN49xvEX9pm8L5qu3X4ZRch4lyvGCoLG5Bdt_PJdpcSkOF4SiPaqsWTru7HQOvlnF0-RP5N5jj325B4Z8kFUT3qYLezZneZN6B4E.0PyDvgpsUiOyM1dCEQ8XuUVpibDpIFyr1DbXuKwBM9A&dib_tag=se&keywords=large%2Bskillet&qid=1786446621&sprefix=large%2Bskil%2Caps%2C540&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=e4d4a6882e8485e3994c48e0ae0643af&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Wooden spoon", url: "https://www.amazon.com/Nonstick-Cookware-Resistant-Utensils-Stirring/dp/B0FRFPQ3N5?crid=27NC175XIRFRC&dib=eyJ2IjoiMSJ9.7kdWYj9yf38TGskuggIcECMVhiK5gHgqGJ5qYyC6-PunHqegJgw5HLvW6CpY9skDWZ7gKdJTtUGejjz2NUUfmqMl-ojXYE4f0alkGc5atdnDv9WMfrmOv07DchBBxbv1C8Xi6p7pH7A0fto57eMjc7ydJwMYxbNA7ix02rrM9-HYyrzOWHiWpgaIJNRl2o7I-v4LKhOsICtZd8zpGSpTIVeMy8eIJ2tXAGFhSi4p97kbJQFobVB-BzBzyMIVPWOy5rc9w00nfz_Y0f3Q5kiYmWJ5EGEqQIJAjHi2HLtyEfE.U2K3-f3lbDJAuTF3149LHsXE7t8FBc8JDy-BBO_gi-o&dib_tag=se&keywords=wooden+spoon&qid=1786446658&sprefix=wooden+spo%2Caps%2C532&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=cb48013bb64f0951dc932f4e9d035ba2&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Box grater", url: "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Large skillet",
+        "url": "https://www.amazon.com/SENSARTE-Nonstick-Skillet-Induction-Healthy/dp/B0D9Q7D9VS?crid=1VNIHLRVLUXBI&dib=eyJ2IjoiMSJ9.41vwpolDYRfCYNkU-05YrjknucAQBPWNzUmJ855cYR_MDAffgvnHWfOhrh0cCmifc9Z9aUOH-1_Ik8ctBIUY8vP1HU7_IbE_PeR4qzS98kYMcpZG3qYk9CxTFOn4IcyU-RIoe7urNO2f0vVSzSh9jC_p7EtvtOvEi8tIQP6uvN_kbjiqEmn1SnFVO7Z8fKZ_l20uXf2EN49xvEX9pm8L5qu3X4ZRch4lyvGCoLG5Bdt_PJdpcSkOF4SiPaqsWTru7HQOvlnF0-RP5N5jj325B4Z8kFUT3qYLezZneZN6B4E.0PyDvgpsUiOyM1dCEQ8XuUVpibDpIFyr1DbXuKwBM9A&dib_tag=se&keywords=large%2Bskillet&qid=1786446621&sprefix=large%2Bskil%2Caps%2C540&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=e4d4a6882e8485e3994c48e0ae0643af&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Wooden spoon",
+        "url": "https://www.amazon.com/Nonstick-Cookware-Resistant-Utensils-Stirring/dp/B0FRFPQ3N5?crid=27NC175XIRFRC&dib=eyJ2IjoiMSJ9.7kdWYj9yf38TGskuggIcECMVhiK5gHgqGJ5qYyC6-PunHqegJgw5HLvW6CpY9skDWZ7gKdJTtUGejjz2NUUfmqMl-ojXYE4f0alkGc5atdnDv9WMfrmOv07DchBBxbv1C8Xi6p7pH7A0fto57eMjc7ydJwMYxbNA7ix02rrM9-HYyrzOWHiWpgaIJNRl2o7I-v4LKhOsICtZd8zpGSpTIVeMy8eIJ2tXAGFhSi4p97kbJQFobVB-BzBzyMIVPWOy5rc9w00nfz_Y0f3Q5kiYmWJ5EGEqQIJAjHi2HLtyEfE.U2K3-f3lbDJAuTF3149LHsXE7t8FBc8JDy-BBO_gi-o&dib_tag=se&keywords=wooden+spoon&qid=1786446658&sprefix=wooden+spo%2Caps%2C532&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=cb48013bb64f0951dc932f4e9d035ba2&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Box grater",
+        "url": "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["one-pan", "pasta", "gnocchi", "quick", "italian"],
-    datePublished: "2026-07-25",
-    image: "/images/one-pan-tuscan-butter-gnocchi.jpg",
-    pinImage: "/images/pins/one-pan-tuscan-butter-gnocchi.png",
-    metaTitle: "One-Pan Tuscan Butter Gnocchi (20 Minutes) | The Better Home Recipes",
-    metaDescription:
-      "One-pan Tuscan butter gnocchi in 20 minutes — crispy pan-seared gnocchi tossed in a garlic parmesan cream sauce with sun-dried tomatoes and spinach.",
+    "tags": [
+      "one-pan",
+      "pasta",
+      "gnocchi",
+      "quick",
+      "italian"
+    ],
+    "datePublished": "2026-07-25",
+    "image": "/images/one-pan-tuscan-butter-gnocchi.jpg",
+    "pinImage": "/images/pins/one-pan-tuscan-butter-gnocchi.png",
+    "metaTitle": "One-Pan Tuscan Butter Gnocchi (20 Minutes) | The Better Home Recipes",
+    "metaDescription": "One-pan Tuscan butter gnocchi in 20 minutes — crispy pan-seared gnocchi tossed in a garlic parmesan cream sauce with sun-dried tomatoes and spinach."
   },
   {
-    slug: "copycat-crumbl-pink-sugar-cookie",
-    title: "Copycat Crumbl Pink Sugar Cookie",
-    subtitle: "Soft, thick & better than the original",
-    category: "copycat",
-    prepTime: "20 min",
-    cookTime: "12 min",
-    totalTime: "50 min",
-    servings: 12,
-    difficulty: "Medium",
-    description:
-      "This copycat Crumbl pink sugar cookie is soft, thick and frosted with a cream-cheese swirl — the secret is a touch of almond extract and cream cheese in both the dough and the frosting. It tastes like the bakery version, from your own kitchen.",
-    ingredients: [
+    "slug": "copycat-crumbl-pink-sugar-cookie",
+    "title": "Copycat Crumbl Pink Sugar Cookie",
+    "subtitle": "Soft, thick & better than the original",
+    "category": "copycat",
+    "prepTime": "20 min",
+    "cookTime": "12 min",
+    "totalTime": "50 min",
+    "servings": 12,
+    "difficulty": "Medium",
+    "description": "This copycat Crumbl pink sugar cookie is soft, thick and frosted with a cream-cheese swirl — the secret is a touch of almond extract and cream cheese in both the dough and the frosting. It tastes like the bakery version, from your own kitchen.",
+    "ingredients": [
       "¾ cup butter (softened)",
       "1½ cups powdered sugar",
       "3 oz cream cheese (softened)",
@@ -262,16 +355,16 @@ export const recipes: Recipe[] = [
       "1 tsp baking powder",
       "½ tsp salt",
       "Pink food coloring",
-      "Pink sugar (for topping)",
+      "Pink sugar (for topping)"
     ],
-    equipment: [
+    "equipment": [
       "Stand mixer",
       "Baking sheet",
       "Parchment paper",
       "Cookie scoop",
-      "Piping bag (for frosting)",
+      "Piping bag (for frosting)"
     ],
-    steps: [
+    "steps": [
       "In a stand mixer fitted with the paddle attachment, cream the softened butter, cream cheese and powdered sugar for 2–3 minutes until light and fluffy.",
       "Add the egg, almond extract and vanilla, and beat until combined and smooth.",
       "In a separate bowl, whisk together the flour, baking powder and salt. With the mixer on low, add the dry ingredients until a soft dough forms.",
@@ -279,137 +372,172 @@ export const recipes: Recipe[] = [
       "Preheat the oven to 350°F. Place the dough balls on a parchment-lined baking sheet, 3 inches apart.",
       "Bake for 10–12 minutes until the edges are just set and the centers still look slightly underdone. Cool completely on the sheet.",
       "For the frosting, beat 2 oz softened cream cheese, 1 cup powdered sugar, ¼ cup softened butter and ¼ tsp almond extract until fluffy, then tint it pale pink.",
-      "Pipe or swirl the frosting onto each cooled cookie and finish with a sprinkle of pink sugar.",
+      "Pipe or swirl the frosting onto each cooled cookie and finish with a sprinkle of pink sugar."
     ],
-    tips: [
+    "tips": [
       "Almond extract + cream cheese = that signature Crumbl texture. Don't skip either one.",
-      "Pull the cookies while the centers still look a touch underdone — they set as they cool.",
+      "Pull the cookies while the centers still look a touch underdone — they set as they cool."
     ],
-    affiliateLinks: [
-      { label: "Stand mixer", url: "https://www.amazon.com/Kitchen-box-Electric-Portable-Lightweight/dp/B09BVCPSBT?crid=3VOOQHPRRAU14&dib=eyJ2IjoiMSJ9.YzI6Nwe0e0LhSZli4AKYq9ha5K4UuyxJHg6PQaSiXE0CdW2_VC5sH2tGkg7dk1GT5_gucZMkpXzA15tm5y1tePjryh2OwPpnkcclbieFD9ZPCYoXAUw34QzacQ_IZ-KjS8ipksC0tQvPFjU5PEBQL77s4gRnRrx4aj1uO68DRa8VUFvBycxijoWKncm7bFjFHGStnl3gmIIBa9mPqNNzYo2BWpesSotrbX2Ubm7czZw.OUTTsjiW_gcIbLyzuuyLmDO4UXFC-jTkr3MrgIhsPkE&dib_tag=se&keywords=stand%2Bmixer&qid=1786446369&sprefix=stand%2Bmi%2Caps%2C529&sr=8-1&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=e34c5531e4877052aed1a04dc78d60af&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Baking sheet", url: "https://www.amazon.com/NutriChef-3-Piece-Nonstick-Kitchen-Baking/dp/B089N57JGS?crid=KROAKD3A8R8P&currency=USD&dib=eyJ2IjoiMSJ9.vAfxlVdVZSbP4HWzB0GLHWtMXiBuatAgnBw-K4h8izmdpq-qe_YmMs6JI2xSiNNAzSrzZWTHeDQdJ_W6gHiFYRtYdLKMk8nD9L4S3mFbsc0iKQiaL1E-YkkkdUq-ud5gSUNWGx5QjD2POPnSCTTAl5O8e9ZmqUe3CQjpG5B8K1os_iXhzYBycWVqv6Wpe2mNzlNJOpVJuMq4k9ee3tRTHSV0RPBWs_dqmSeae9hsJTH5XEVavE1cptJYeybqSponW6anEaV1NxCgumcTlZ2_mJ7yMxxpEePsX1XTC7ZPCUo.3LIgX1O64l1RNuSQVU6AGlfuxTZWQApaGrgjQo5FI4Q&dib_tag=se&keywords=baking%2Bsheet&qid=1786446452&sprefix=baking%2Bsh%2Caps%2C539&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=0af115230d1cd60bddee9e579b5929ab&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Parchment paper", url: "https://www.amazon.com/Reynolds-Kitchens-Unbleached-Parchment-Paper/dp/B07PFYT8MC?crid=KROAKD3A8R8P&currency=USD&dib=eyJ2IjoiMSJ9.vAfxlVdVZSbP4HWzB0GLHWtMXiBuatAgnBw-K4h8izmdpq-qe_YmMs6JI2xSiNNAzSrzZWTHeDQdJ_W6gHiFYRtYdLKMk8nD9L4S3mFbsc0iKQiaL1E-YkkkdUq-ud5gSUNWGx5QjD2POPnSCTTAl5O8e9ZmqUe3CQjpG5B8K1os_iXhzYBycWVqv6Wpe2mNzlNJOpVJuMq4k9ee3tRTHSV0RPBWs_dqmSeae9hsJTH5XEVavE1cptJYeybqSponW6anEaV1NxCgumcTlZ2_mJ7yMxxpEePsX1XTC7ZPCUo.3LIgX1O64l1RNuSQVU6AGlfuxTZWQApaGrgjQo5FI4Q&dib_tag=se&keywords=baking%2Bsheet&qid=1786446490&sprefix=baking%2Bsh%2Caps%2C539&sr=8-1&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=aa66ed18094e202ded3c9cf8a7f54b44&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Cookie scoop", url: "https://www.amazon.com/JUNADAEL-Set-Tablespoon-Cupcake-Truffles/dp/B0DK6TSL13?crid=33L9LZ2RJTE1&dib=eyJ2IjoiMSJ9.XFIFyMgrvrvsXi55f-BN0UoOsJiH34EwAn4jDhGc6CAZwWMvYrBR-OLbpxOpfWYSW8GmG-mz6XG1YdAvPV02lr6kHOygJopAfP0avrpuYcWd-vcBj_7ira1ipYFhqInmxegAOKRsmpP2uhOm8mHRQoDeXhjKpwxIVG5Vs_ZBUTktiSmJtqaM7G8lOFDg24RJX5WffeEFIC6qVVBqv7KY4snCQNnnJbEat8LICCjLvgC20pOGH_OUS07HhbChZxwImlCY6D-3PUKqbHTc0GbXa2fo1z3BDi7-56MdWLr-E8A.URZOQa25lrWMSD9m_Ab9GGFeg_pWgsivkO9FMQKv5D0&dib_tag=se&keywords=cooking+scoop&qid=1786446518&sprefix=cooking+scoo%2Caps%2C536&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=55bfaaf1f0a0f165158f98fcccaec5b4&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Piping bag", url: "https://www.amazon.com/Riccle-Decorating-Reusable-Scrapers-Couplers/dp/B0CGNZ7BGR?crid=1OWVPW5L845L5&dib=eyJ2IjoiMSJ9.r78_q4mBTfhCDTJ2la6UcjhQ4tfjEn5JrNzHaq5rvqTFaNtjIJDw3Uc5YFXQ7dbVMMJdOseQ52sMPSZ2zP9SFL206Ovfq6dpdvwKIp9ISV0H9DbiLJH-IVMRdSuXBMFEHuySHvWwAq6SFR8SNX1V4MKDdBAZDtY2ZBtCCO0Tr0Huf7KG2_-JFgE-IdotN_aKgM1iGB4dVsIrdt22zXpiBhfhuZqt4bw6psIZOhJvscwK1YWgFdgTQdmx2gOK7foKBXGcmLn5mhDLHPZWJmMCWykvvyfpB3bkpFMJNiCuq1k.hnaOp3yrYkJ73229GQvMnxEE4MZwSEvsSWpdqyVVjEY&dib_tag=se&keywords=piping%2Bbag&qid=1786446552&sprefix=piping%2Bbag%2Caps%2C523&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b85c9c984d8fdd05142f7e261c737eb8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Stand mixer",
+        "url": "https://www.amazon.com/Kitchen-box-Electric-Portable-Lightweight/dp/B09BVCPSBT?crid=3VOOQHPRRAU14&dib=eyJ2IjoiMSJ9.YzI6Nwe0e0LhSZli4AKYq9ha5K4UuyxJHg6PQaSiXE0CdW2_VC5sH2tGkg7dk1GT5_gucZMkpXzA15tm5y1tePjryh2OwPpnkcclbieFD9ZPCYoXAUw34QzacQ_IZ-KjS8ipksC0tQvPFjU5PEBQL77s4gRnRrx4aj1uO68DRa8VUFvBycxijoWKncm7bFjFHGStnl3gmIIBa9mPqNNzYo2BWpesSotrbX2Ubm7czZw.OUTTsjiW_gcIbLyzuuyLmDO4UXFC-jTkr3MrgIhsPkE&dib_tag=se&keywords=stand%2Bmixer&qid=1786446369&sprefix=stand%2Bmi%2Caps%2C529&sr=8-1&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=e34c5531e4877052aed1a04dc78d60af&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Baking sheet",
+        "url": "https://www.amazon.com/NutriChef-3-Piece-Nonstick-Kitchen-Baking/dp/B089N57JGS?crid=KROAKD3A8R8P&currency=USD&dib=eyJ2IjoiMSJ9.vAfxlVdVZSbP4HWzB0GLHWtMXiBuatAgnBw-K4h8izmdpq-qe_YmMs6JI2xSiNNAzSrzZWTHeDQdJ_W6gHiFYRtYdLKMk8nD9L4S3mFbsc0iKQiaL1E-YkkkdUq-ud5gSUNWGx5QjD2POPnSCTTAl5O8e9ZmqUe3CQjpG5B8K1os_iXhzYBycWVqv6Wpe2mNzlNJOpVJuMq4k9ee3tRTHSV0RPBWs_dqmSeae9hsJTH5XEVavE1cptJYeybqSponW6anEaV1NxCgumcTlZ2_mJ7yMxxpEePsX1XTC7ZPCUo.3LIgX1O64l1RNuSQVU6AGlfuxTZWQApaGrgjQo5FI4Q&dib_tag=se&keywords=baking%2Bsheet&qid=1786446452&sprefix=baking%2Bsh%2Caps%2C539&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=0af115230d1cd60bddee9e579b5929ab&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Parchment paper",
+        "url": "https://www.amazon.com/Reynolds-Kitchens-Unbleached-Parchment-Paper/dp/B07PFYT8MC?crid=KROAKD3A8R8P&currency=USD&dib=eyJ2IjoiMSJ9.vAfxlVdVZSbP4HWzB0GLHWtMXiBuatAgnBw-K4h8izmdpq-qe_YmMs6JI2xSiNNAzSrzZWTHeDQdJ_W6gHiFYRtYdLKMk8nD9L4S3mFbsc0iKQiaL1E-YkkkdUq-ud5gSUNWGx5QjD2POPnSCTTAl5O8e9ZmqUe3CQjpG5B8K1os_iXhzYBycWVqv6Wpe2mNzlNJOpVJuMq4k9ee3tRTHSV0RPBWs_dqmSeae9hsJTH5XEVavE1cptJYeybqSponW6anEaV1NxCgumcTlZ2_mJ7yMxxpEePsX1XTC7ZPCUo.3LIgX1O64l1RNuSQVU6AGlfuxTZWQApaGrgjQo5FI4Q&dib_tag=se&keywords=baking%2Bsheet&qid=1786446490&sprefix=baking%2Bsh%2Caps%2C539&sr=8-1&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=aa66ed18094e202ded3c9cf8a7f54b44&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Cookie scoop",
+        "url": "https://www.amazon.com/JUNADAEL-Set-Tablespoon-Cupcake-Truffles/dp/B0DK6TSL13?crid=33L9LZ2RJTE1&dib=eyJ2IjoiMSJ9.XFIFyMgrvrvsXi55f-BN0UoOsJiH34EwAn4jDhGc6CAZwWMvYrBR-OLbpxOpfWYSW8GmG-mz6XG1YdAvPV02lr6kHOygJopAfP0avrpuYcWd-vcBj_7ira1ipYFhqInmxegAOKRsmpP2uhOm8mHRQoDeXhjKpwxIVG5Vs_ZBUTktiSmJtqaM7G8lOFDg24RJX5WffeEFIC6qVVBqv7KY4snCQNnnJbEat8LICCjLvgC20pOGH_OUS07HhbChZxwImlCY6D-3PUKqbHTc0GbXa2fo1z3BDi7-56MdWLr-E8A.URZOQa25lrWMSD9m_Ab9GGFeg_pWgsivkO9FMQKv5D0&dib_tag=se&keywords=cooking+scoop&qid=1786446518&sprefix=cooking+scoo%2Caps%2C536&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=55bfaaf1f0a0f165158f98fcccaec5b4&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Piping bag",
+        "url": "https://www.amazon.com/Riccle-Decorating-Reusable-Scrapers-Couplers/dp/B0CGNZ7BGR?crid=1OWVPW5L845L5&dib=eyJ2IjoiMSJ9.r78_q4mBTfhCDTJ2la6UcjhQ4tfjEn5JrNzHaq5rvqTFaNtjIJDw3Uc5YFXQ7dbVMMJdOseQ52sMPSZ2zP9SFL206Ovfq6dpdvwKIp9ISV0H9DbiLJH-IVMRdSuXBMFEHuySHvWwAq6SFR8SNX1V4MKDdBAZDtY2ZBtCCO0Tr0Huf7KG2_-JFgE-IdotN_aKgM1iGB4dVsIrdt22zXpiBhfhuZqt4bw6psIZOhJvscwK1YWgFdgTQdmx2gOK7foKBXGcmLn5mhDLHPZWJmMCWykvvyfpB3bkpFMJNiCuq1k.hnaOp3yrYkJ73229GQvMnxEE4MZwSEvsSWpdqyVVjEY&dib_tag=se&keywords=piping%2Bbag&qid=1786446552&sprefix=piping%2Bbag%2Caps%2C523&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b85c9c984d8fdd05142f7e261c737eb8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["copycat", "cookies", "crumbl", "baking", "dessert"],
-    datePublished: "2026-07-18",
-    image: "/images/copycat-crumbl-pink-sugar-cookie.jpg",
-    pinImage: "/images/pins/copycat-crumbl-pink-sugar-cookie.png",
-    metaTitle: "Copycat Crumbl Pink Sugar Cookie Recipe | The Better Home Recipes",
-    metaDescription:
-      "Soft, thick copycat Crumbl pink sugar cookies with a cream cheese swirl. The secret: almond extract + cream cheese for that signature Crumbl texture.",
+    "tags": [
+      "copycat",
+      "cookies",
+      "crumbl",
+      "baking",
+      "dessert"
+    ],
+    "datePublished": "2026-07-18",
+    "image": "/images/copycat-crumbl-pink-sugar-cookie.jpg",
+    "pinImage": "/images/pins/copycat-crumbl-pink-sugar-cookie.png",
+    "metaTitle": "Copycat Crumbl Pink Sugar Cookie Recipe | The Better Home Recipes",
+    "metaDescription": "Soft, thick copycat Crumbl pink sugar cookies with a cream cheese swirl. The secret: almond extract + cream cheese for that signature Crumbl texture."
   },
   {
-    slug: "6-high-protein-breakfasts-meal-prep",
-    title: "6 High-Protein Breakfasts (Meal Prep)",
-    subtitle: "Meal Prep Sunday → Eat All Week",
-    category: "meal-prep",
-    prepTime: "30 min",
-    totalTime: "30 min",
-    servings: 6,
-    difficulty: "Easy",
-    description:
-      "Six high-protein make-ahead breakfasts — Greek yogurt bowl, feta spinach omelette, banana chia oats, scrambled eggs and sausage, salmon avocado toast and cottage cheese with pineapple — all ready on Sunday so you eat well all week. Every option is 24g of protein or more.",
-    ingredients: [],
-    equipment: ["Meal prep containers", "Non-stick pan", "Sheet pan"],
-    steps: [],
-    tips: [
-      "Batch the non-refrigerated extras on Sunday: portion out nuts, seeds and toppings so weekday mornings are a five-minute assembly job.",
+    "slug": "6-high-protein-breakfasts-meal-prep",
+    "title": "6 High-Protein Breakfasts (Meal Prep)",
+    "subtitle": "Meal Prep Sunday → Eat All Week",
+    "category": "meal-prep",
+    "prepTime": "30 min",
+    "totalTime": "30 min",
+    "servings": 6,
+    "difficulty": "Easy",
+    "description": "Six high-protein make-ahead breakfasts — Greek yogurt bowl, feta spinach omelette, banana chia oats, scrambled eggs and sausage, salmon avocado toast and cottage cheese with pineapple — all ready on Sunday so you eat well all week. Every option is 24g of protein or more.",
+    "ingredients": [],
+    "equipment": [
+      "Meal prep containers",
+      "Non-stick pan",
+      "Sheet pan"
     ],
-    affiliateLinks: [
-      { label: "Meal prep containers", url: "https://www.amazon.com/KOMUEE-Containers-Airtight-Microwave-Dishwasher/dp/B08X4615SC?crid=1SI7CH1MHL917&dib=eyJ2IjoiMSJ9.8qyHg9ea13NFeMeAxetKh2-iCquJjIF3xUQQKnQLCODbh1LdpRYsciUoPjiJpAnhQ4XjHUDTje0uQMp8bpnBRaLmGXuxq3HhMrSOltE2ksiEe897P1Pu1sRe_ul7_DvWZkR4DngjeEWLFVtNlde7cuGRMNjT7Wyzx19R-a_yEmqjCFor1bh46IbsL9JytYn3Orsu8gRilpEyRu4R9qqc-wsyfumxjP9nklEE2rU1e2jePPR82Wk2XCN0l5gon_GXX2Nq4bpVoJbg9DTr8U8c9d2r3BcZ5Bv8g4loR0tgkTQ.VN6M4Ui67AVlhvxhbdJdeRY0AITQhFSGX6iH9vY5Q30&dib_tag=se&keywords=meal%2Bprep%2Bcontainer&qid=1786446973&sprefix=meal%2Bprep%2Bconta%2Caps%2C530&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=d9d16b42a9579989b1b25b3f23146655&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Non-stick pan", url: "https://www.amazon.com/SENSARTE-Nonstick-Frying-Pan-Skillet/dp/B086PHS2V8?crid=41DYZZYQRTY0&dib=eyJ2IjoiMSJ9.5BmhUdF-5NPg_yEGuG3w4K-dMF7fq5L5LJcB_-1SEYiK4hmdgKW2WN2lBspwzibWObgmA_4gsQ6_h4Ko3N8WYaCTfgFcIapBkrxhmxdubuJ5ZQ0wUWaCVGDr9kEbzSzoQV-9ybmoTwydtKI9ocWUI8t_UXEjnihAg8Jn0A_tDsLjjFFJGxkHhyopzRo2CiUsZheHFu7hY-NLmAR6Ltrim98yatrTSCJiddfXbsjrGKfzotTv3-HtU2mjzCLuSNvdC3R5O4qs3TUC5fA2p1O0_jy_XEJCwE6-lC0qR42ImmI.A5uckZCE9B0ulhG0W6rEAcuIJCZMT38ZitCXcRi5EIM&dib_tag=se&keywords=non-stick%2Bpan&qid=1786447015&sprefix=non-stick%2Bpan%2Caps%2C578&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3361412a3d1428a57a42edbbe94764d8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Sheet pan", url: "https://www.amazon.com/goodcook-Nonstick-Bakeware-Cookie-multicolor/dp/B0026RHI3M?crid=11T6U8UXGRNXW&dib=eyJ2IjoiMSJ9.mOWte96yz1MSPL7uQHwiZohIvuW5M_CuAn_sEpQrmKvGV4higERf6l-NyM74PX6s2_hhuLynQ4SUxJHhLEXQIgepwrdthLoFk08HULcVg8oRGwqt-6qqCAP0lC-BEBRUVoUPIWmR7S50uUD0d4cb_4VkXV2tXVfRPkRXtlCRRSGha4hta-W3mTBH_A09kexA3M1LdpRfceMD8QmoPObPT1CVQq_J-55oXKUc6SvE8txrsedvfYCG-fa_Wf6xn6q3DijlA0Ibw3x3cbuLlud5PDy6LeqvpjW2s3qvq65G6wI.Qo7DKRi1yPTsnyKOX3vevtWMwU6yOYFzdvBFIyR5Gy8&dib_tag=se&keywords=sheet+pan&qid=1786447054&sprefix=sheet+pan%2Caps%2C536&sr=8-7&linkCode=ll2&tag=theorgani0014-20&linkId=bccb3723493045315abf9f7611f91358&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "steps": [],
+    "tips": [
+      "Batch the non-refrigerated extras on Sunday: portion out nuts, seeds and toppings so weekday mornings are a five-minute assembly job."
     ],
-    tags: ["meal-prep", "high-protein", "breakfast", "weekly"],
-    datePublished: "2026-07-12",
-    image: "/images/6-high-protein-breakfasts-meal-prep.jpg",
-    pinImage: "/images/pins/6-high-protein-breakfasts-meal-prep.png",
-    metaTitle: "6 High-Protein Breakfasts to Meal Prep | The Better Home Recipes",
-    metaDescription:
-      "Meal prep six high-protein breakfasts in 30 minutes: yogurt bowl (32g), feta spinach omelette (28g), chia oats, eggs & sausage, salmon toast and more.",
-    mealPrep: [
+    "affiliateLinks": [
       {
-        title: "Greek Yogurt Bowl",
-        protein: "32g",
-        ingredients: [
+        "label": "Meal prep containers",
+        "url": "https://www.amazon.com/KOMUEE-Containers-Airtight-Microwave-Dishwasher/dp/B08X4615SC?crid=1SI7CH1MHL917&dib=eyJ2IjoiMSJ9.8qyHg9ea13NFeMeAxetKh2-iCquJjIF3xUQQKnQLCODbh1LdpRYsciUoPjiJpAnhQ4XjHUDTje0uQMp8bpnBRaLmGXuxq3HhMrSOltE2ksiEe897P1Pu1sRe_ul7_DvWZkR4DngjeEWLFVtNlde7cuGRMNjT7Wyzx19R-a_yEmqjCFor1bh46IbsL9JytYn3Orsu8gRilpEyRu4R9qqc-wsyfumxjP9nklEE2rU1e2jePPR82Wk2XCN0l5gon_GXX2Nq4bpVoJbg9DTr8U8c9d2r3BcZ5Bv8g4loR0tgkTQ.VN6M4Ui67AVlhvxhbdJdeRY0AITQhFSGX6iH9vY5Q30&dib_tag=se&keywords=meal%2Bprep%2Bcontainer&qid=1786446973&sprefix=meal%2Bprep%2Bconta%2Caps%2C530&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=d9d16b42a9579989b1b25b3f23146655&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Non-stick pan",
+        "url": "https://www.amazon.com/SENSARTE-Nonstick-Frying-Pan-Skillet/dp/B086PHS2V8?crid=41DYZZYQRTY0&dib=eyJ2IjoiMSJ9.5BmhUdF-5NPg_yEGuG3w4K-dMF7fq5L5LJcB_-1SEYiK4hmdgKW2WN2lBspwzibWObgmA_4gsQ6_h4Ko3N8WYaCTfgFcIapBkrxhmxdubuJ5ZQ0wUWaCVGDr9kEbzSzoQV-9ybmoTwydtKI9ocWUI8t_UXEjnihAg8Jn0A_tDsLjjFFJGxkHhyopzRo2CiUsZheHFu7hY-NLmAR6Ltrim98yatrTSCJiddfXbsjrGKfzotTv3-HtU2mjzCLuSNvdC3R5O4qs3TUC5fA2p1O0_jy_XEJCwE6-lC0qR42ImmI.A5uckZCE9B0ulhG0W6rEAcuIJCZMT38ZitCXcRi5EIM&dib_tag=se&keywords=non-stick%2Bpan&qid=1786447015&sprefix=non-stick%2Bpan%2Caps%2C578&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3361412a3d1428a57a42edbbe94764d8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Sheet pan",
+        "url": "https://www.amazon.com/goodcook-Nonstick-Bakeware-Cookie-multicolor/dp/B0026RHI3M?crid=11T6U8UXGRNXW&dib=eyJ2IjoiMSJ9.mOWte96yz1MSPL7uQHwiZohIvuW5M_CuAn_sEpQrmKvGV4higERf6l-NyM74PX6s2_hhuLynQ4SUxJHhLEXQIgepwrdthLoFk08HULcVg8oRGwqt-6qqCAP0lC-BEBRUVoUPIWmR7S50uUD0d4cb_4VkXV2tXVfRPkRXtlCRRSGha4hta-W3mTBH_A09kexA3M1LdpRfceMD8QmoPObPT1CVQq_J-55oXKUc6SvE8txrsedvfYCG-fa_Wf6xn6q3DijlA0Ibw3x3cbuLlud5PDy6LeqvpjW2s3qvq65G6wI.Qo7DKRi1yPTsnyKOX3vevtWMwU6yOYFzdvBFIyR5Gy8&dib_tag=se&keywords=sheet+pan&qid=1786447054&sprefix=sheet+pan%2Caps%2C536&sr=8-7&linkCode=ll2&tag=theorgani0014-20&linkId=bccb3723493045315abf9f7611f91358&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
+    ],
+    "tags": [
+      "meal-prep",
+      "high-protein",
+      "breakfast",
+      "weekly"
+    ],
+    "datePublished": "2026-07-12",
+    "image": "/images/6-high-protein-breakfasts-meal-prep.jpg",
+    "pinImage": "/images/pins/6-high-protein-breakfasts-meal-prep.png",
+    "metaTitle": "6 High-Protein Breakfasts to Meal Prep | The Better Home Recipes",
+    "metaDescription": "Meal prep six high-protein breakfasts in 30 minutes: yogurt bowl (32g), feta spinach omelette (28g), chia oats, eggs & sausage, salmon toast and more.",
+    "mealPrep": [
+      {
+        "title": "Greek Yogurt Bowl",
+        "protein": "32g",
+        "ingredients": [
           "1 cup plain Greek yogurt",
           "2 tbsp sliced almonds",
           "1 tbsp chia seeds",
           "½ cup mixed berries",
-          "1 tsp honey",
-        ],
+          "1 tsp honey"
+        ]
       },
       {
-        title: "Feta Spinach Omelette",
-        protein: "28g",
-        ingredients: [
+        "title": "Feta Spinach Omelette",
+        "protein": "28g",
+        "ingredients": [
           "3 large eggs",
           "1 cup fresh spinach",
           "2 tbsp crumbled feta",
           "1 tsp olive oil",
-          "Salt and pepper to taste",
-        ],
+          "Salt and pepper to taste"
+        ]
       },
       {
-        title: "Banana Chia Oats",
-        protein: "24g",
-        ingredients: [
+        "title": "Banana Chia Oats",
+        "protein": "24g",
+        "ingredients": [
           "½ cup rolled oats",
           "1 cup milk",
           "1 tbsp chia seeds",
           "1 banana (sliced)",
-          "2 tbsp vanilla Greek yogurt",
-        ],
+          "2 tbsp vanilla Greek yogurt"
+        ]
       },
       {
-        title: "Scrambled Eggs + Sausage",
-        protein: "35g",
-        ingredients: [
+        "title": "Scrambled Eggs + Sausage",
+        "protein": "35g",
+        "ingredients": [
           "3 large eggs",
           "2 turkey sausage links",
           "1 tsp butter",
           "¼ cup shredded cheddar",
-          "Salt and pepper to taste",
-        ],
+          "Salt and pepper to taste"
+        ]
       },
       {
-        title: "Salmon Avocado Toast",
-        protein: "30g",
-        ingredients: [
+        "title": "Salmon Avocado Toast",
+        "protein": "30g",
+        "ingredients": [
           "2 slices sourdough",
           "4 oz smoked salmon",
           "½ avocado (mashed)",
           "1 tsp everything bagel seasoning",
-          "Lemon juice to taste",
-        ],
+          "Lemon juice to taste"
+        ]
       },
       {
-        title: "Cottage Cheese + Pineapple",
-        protein: "26g",
-        ingredients: [
+        "title": "Cottage Cheese + Pineapple",
+        "protein": "26g",
+        "ingredients": [
           "1 cup cottage cheese",
           "½ cup fresh pineapple (chunked)",
           "1 tbsp chopped walnuts",
-          "1 tsp honey",
-        ],
-      },
-    ],
+          "1 tsp honey"
+        ]
+      }
+    ]
   },
   {
-    slug: "copycat-ihop-buttermilk-pancakes",
-    title: "Copycat IHOP Buttermilk Pancakes",
-    subtitle: "Fluffy, thick & ready in 10 minutes",
-    category: "breakfast",
-    prepTime: "5 min",
-    cookTime: "10 min",
-    totalTime: "15 min",
-    servings: 4,
-    difficulty: "Easy",
-    description:
-      "Fluffy, thick copycat IHOP buttermilk pancakes made from scratch in 10 minutes. The secret is letting the batter rest for 5 minutes — it relaxes the gluten for a light, diner-style stack every time.",
-    ingredients: [
+    "slug": "copycat-ihop-buttermilk-pancakes",
+    "title": "Copycat IHOP Buttermilk Pancakes",
+    "subtitle": "Fluffy, thick & ready in 10 minutes",
+    "category": "breakfast",
+    "prepTime": "5 min",
+    "cookTime": "10 min",
+    "totalTime": "15 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Fluffy, thick copycat IHOP buttermilk pancakes made from scratch in 10 minutes. The secret is letting the batter rest for 5 minutes — it relaxes the gluten for a light, diner-style stack every time.",
+    "ingredients": [
       "2 cups all-purpose flour",
       "2 tbsp sugar",
       "1 tsp baking powder",
@@ -418,50 +546,75 @@ export const recipes: Recipe[] = [
       "2 large eggs",
       "1¾ cups buttermilk",
       "3 tbsp melted butter",
-      "1 tsp vanilla extract",
+      "1 tsp vanilla extract"
     ],
-    equipment: ["Non-stick griddle or pan", "Mixing bowl", "Whisk", "Ladle", "Spatula"],
-    steps: [
+    "equipment": [
+      "Non-stick griddle or pan",
+      "Mixing bowl",
+      "Whisk",
+      "Ladle",
+      "Spatula"
+    ],
+    "steps": [
       "In a large mixing bowl, whisk together the flour, sugar, baking powder, baking soda and salt.",
       "In a separate bowl, whisk the eggs, then add the buttermilk, melted butter and vanilla and whisk until combined.",
       "Pour the wet ingredients into the dry and stir with a whisk until just combined — a few lumps are fine. Do not overmix.",
       "Let the batter rest for 5 minutes. This is the secret to the tall, fluffy IHOP-style stack.",
       "Heat a non-stick griddle over medium heat. Ladle ¼-cup portions onto the hot griddle.",
       "Cook until bubbles form on the surface and the edges look set (about 2–3 minutes), then flip and cook 1–2 minutes more until golden.",
-      "Keep the finished pancakes warm under a towel while you cook the rest, then serve with butter and syrup.",
+      "Keep the finished pancakes warm under a towel while you cook the rest, then serve with butter and syrup."
     ],
-    tips: [
+    "tips": [
       "Let the batter rest 5 minutes — that's what makes these thick and fluffy instead of flat.",
-      "Lumps are your friend. Overmixing develops gluten and makes tough, rubbery pancakes.",
+      "Lumps are your friend. Overmixing develops gluten and makes tough, rubbery pancakes."
     ],
-    affiliateLinks: [
-      { label: "Non-stick griddle", url: "https://www.amazon.com/SENSARTE-Nonstick-Stay-Cool-Induction-Compatible/dp/B0BJZCNYKG?crid=39VRGASZJMZKT&dib=eyJ2IjoiMSJ9.YtPzn-yuW0t8dSo_qcnvellP3kNUAw57Bh2Vdav0OyfASWbMzB8Mlyi346Ad1PzdkaFocrehT_i-jVmso-TnnWHTMKHQQ-uMTiRDpk8_VH0vVW-4nrTSnsChMB3HER3MEn4XEkRlic8XEtaPxittBFsxRcmBbKZzzjHXLf3V3mfKeIfMdUsCiaTvOGKpTtFlDIC2fPWMB3P0tbd56SeAT94fqwJPU9G36XrpvGioprEljQ1E3B3DIthIalW-uLvVjMpzE7LYNWgUUdzEWjcBJiFq5Ml9oTLCmwh35Z7rNbk.nUyYcv27hFAEN6viD8AGb0Jzgm09oImB9lPDJnge80M&dib_tag=se&keywords=non-stick%2Bgriddle&qid=1786447330&sprefix=non-stick%2Bgrid%2Caps%2C591&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=935a2b6c3840313a586a068d42fd5423&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Mixing bowl", url: "https://www.amazon.com/Umite-Chef-Airtight-Stainless-Attachments/dp/B0CGWQ53L3?crid=23ZP398JASWMB&dib=eyJ2IjoiMSJ9.XvYIKVs6ZhMBJ7V3gogPAQugzzPma9lm5nRm2D0vJrOevLp9aZ3FlgL_oN7yDr-NCY1wE71n-FVBqB4_3aJOGVaVuonJdd7fKONmS-ZahgY9w5_EYU5YAAtael6OPgyVzhDvFvOLKqrqpytpTpNmSMy5NaqAcxvVIvZ6fH5kzeC-aCI17x_Y8CyKhjHws6NkFGLrqYWJ3iOLZTWVIID9b-BJBDOXGN_0j2X9J3DXeTUcjcWVB6l8yOVG5jelDiG_ayx5cckAcckF8fvv0Wt5hy__mP9TRfXazX7cqcr32kU.skLDbAV0BgyUNWIjijtXKeSrUL_W09M3IfGWTTrl3Z0&dib_tag=se&keywords=mixing%2Bbowl&qid=1786447369&sprefix=mixing%2Bbow%2Caps%2C594&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=15877a9b938b4abb43ad08aa4a9abef1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Whisk", url: "https://www.amazon.com/NileHome-Stainless-Whisking-Blending-Stirring-3/dp/B08SWBRTRK?crid=2CS8NT5VFRFG6&dib=eyJ2IjoiMSJ9.vn1T1LMF_WslotWzDq-_xU7cEuW1IsKeJTBHLKoHwqECcn_ciIvEA34guwMHwi-9rA_udHVc06PB31Si7opmh_wTAYahnUcerKGUbR2oFn1PKhUUdaBU1cggN-teWkfG9NkY-snv9h3Nma4uJthBuinfYpK4SxY4Jk5FaS5ao6YsCMUqzEZJ9MHJog13oNwgnPYYQQRiOvAJcFT3U_H-_KHv99p6nmOssVk69_3PHJUpM29uR87H_1lp0q3VkmPIL3tDs8E0H625NhU_OeRTf7vn159LNj3QHSoozbz_tSI.tgvCrPnEBw-R1p7aWEHwA2Pn6b-7kTQN_Xw-uI3G_vE&dib_tag=se&keywords=whisk&qid=1786447261&sprefix=whis%2Caps%2C575&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=421beec0b247ae768b05025544fc957e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Ladle", url: "https://www.amazon.com/Zulay-Inch-Stainless-Steel-Ladle/dp/B07QMZ5JJH?crid=3G6PGLFSHS69L&dib=eyJ2IjoiMSJ9.Aw-TAYMd_cWyqjQKntFWlVknrTE-dFbXIDpRwV42ByZNdOVaQOWMU74-vgJBuXe21Q14eGpkoHAUmqSf5IZdpCG8t-uW6J4V1PfVLLuYchC6jBYPxla-eTDC7HTv-A_AJSaDAL4agN7WWLFnc_2tBO0iwg9Jk_wo5FR6X4jNR0zh1sx03UZrwpAKcjTuBSU-LHw-PCuDqYFP4kLVYrlYf_YcFTLZxsiUz88ooqPzGcc8bJwu8r4uCQLkY1GKKWvTjHNCzxBGxyVsGQ1zKSU1-OvOq3nbhECOETk-ygVf8ts.yeYLPLHY0OJ4kDC4vgVSEZbFOgzmBfdWfBjbNyQWbZQ&dib_tag=se&keywords=ladle&qid=1786447405&sprefix=lad%2Caps%2C546&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=cf82ef7c1d7de0ff54f670cf56f4d0b8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Spatula", url: "https://www.amazon.com/ChefAide-Silicone-Ergonomic-Resistant-Nonstick/dp/B0CHGFG64S?crid=QIIJ7VM1WVF&dib=eyJ2IjoiMSJ9.La1iSEcG-MEW7zhzIuKYspMLDGOIUdQbz8_AMVHJWR6O5H1-24U1abeqsNWbV_HkOw1muFOXQF7Op8tasRzOXZPstKcUX7G0QD1OFh_ruoER1AENOSVNEAV6RjffM0DEsJNR9QeF-9RFBt2oeG9ryrLkl2o7KLh4lAWcbI5TiumUA_uW1ZzmjtR3Xz9A8W09CNAJjaKz5dgVezVKPsdvbIYXGDbfjldfF6UP_hi85q4YTaucr9vLQrG_L4nsjn8DRCE-IkZk2nQj-Fbe_U4U9kTpXl8B6P6ik4-VoZmvUXc.xrnbFvPvyzCAPhTbdMbIeaa8kWAlKu4gpm8LrOT9zkI&dib_tag=se&keywords=spatula&qid=1786447434&sprefix=spatula%2Caps%2C651&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b317254da6af52edf84935b30bb7d093&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Non-stick griddle",
+        "url": "https://www.amazon.com/SENSARTE-Nonstick-Stay-Cool-Induction-Compatible/dp/B0BJZCNYKG?crid=39VRGASZJMZKT&dib=eyJ2IjoiMSJ9.YtPzn-yuW0t8dSo_qcnvellP3kNUAw57Bh2Vdav0OyfASWbMzB8Mlyi346Ad1PzdkaFocrehT_i-jVmso-TnnWHTMKHQQ-uMTiRDpk8_VH0vVW-4nrTSnsChMB3HER3MEn4XEkRlic8XEtaPxittBFsxRcmBbKZzzjHXLf3V3mfKeIfMdUsCiaTvOGKpTtFlDIC2fPWMB3P0tbd56SeAT94fqwJPU9G36XrpvGioprEljQ1E3B3DIthIalW-uLvVjMpzE7LYNWgUUdzEWjcBJiFq5Ml9oTLCmwh35Z7rNbk.nUyYcv27hFAEN6viD8AGb0Jzgm09oImB9lPDJnge80M&dib_tag=se&keywords=non-stick%2Bgriddle&qid=1786447330&sprefix=non-stick%2Bgrid%2Caps%2C591&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=935a2b6c3840313a586a068d42fd5423&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Mixing bowl",
+        "url": "https://www.amazon.com/Umite-Chef-Airtight-Stainless-Attachments/dp/B0CGWQ53L3?crid=23ZP398JASWMB&dib=eyJ2IjoiMSJ9.XvYIKVs6ZhMBJ7V3gogPAQugzzPma9lm5nRm2D0vJrOevLp9aZ3FlgL_oN7yDr-NCY1wE71n-FVBqB4_3aJOGVaVuonJdd7fKONmS-ZahgY9w5_EYU5YAAtael6OPgyVzhDvFvOLKqrqpytpTpNmSMy5NaqAcxvVIvZ6fH5kzeC-aCI17x_Y8CyKhjHws6NkFGLrqYWJ3iOLZTWVIID9b-BJBDOXGN_0j2X9J3DXeTUcjcWVB6l8yOVG5jelDiG_ayx5cckAcckF8fvv0Wt5hy__mP9TRfXazX7cqcr32kU.skLDbAV0BgyUNWIjijtXKeSrUL_W09M3IfGWTTrl3Z0&dib_tag=se&keywords=mixing%2Bbowl&qid=1786447369&sprefix=mixing%2Bbow%2Caps%2C594&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=15877a9b938b4abb43ad08aa4a9abef1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Whisk",
+        "url": "https://www.amazon.com/NileHome-Stainless-Whisking-Blending-Stirring-3/dp/B08SWBRTRK?crid=2CS8NT5VFRFG6&dib=eyJ2IjoiMSJ9.vn1T1LMF_WslotWzDq-_xU7cEuW1IsKeJTBHLKoHwqECcn_ciIvEA34guwMHwi-9rA_udHVc06PB31Si7opmh_wTAYahnUcerKGUbR2oFn1PKhUUdaBU1cggN-teWkfG9NkY-snv9h3Nma4uJthBuinfYpK4SxY4Jk5FaS5ao6YsCMUqzEZJ9MHJog13oNwgnPYYQQRiOvAJcFT3U_H-_KHv99p6nmOssVk69_3PHJUpM29uR87H_1lp0q3VkmPIL3tDs8E0H625NhU_OeRTf7vn159LNj3QHSoozbz_tSI.tgvCrPnEBw-R1p7aWEHwA2Pn6b-7kTQN_Xw-uI3G_vE&dib_tag=se&keywords=whisk&qid=1786447261&sprefix=whis%2Caps%2C575&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=421beec0b247ae768b05025544fc957e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Ladle",
+        "url": "https://www.amazon.com/Zulay-Inch-Stainless-Steel-Ladle/dp/B07QMZ5JJH?crid=3G6PGLFSHS69L&dib=eyJ2IjoiMSJ9.Aw-TAYMd_cWyqjQKntFWlVknrTE-dFbXIDpRwV42ByZNdOVaQOWMU74-vgJBuXe21Q14eGpkoHAUmqSf5IZdpCG8t-uW6J4V1PfVLLuYchC6jBYPxla-eTDC7HTv-A_AJSaDAL4agN7WWLFnc_2tBO0iwg9Jk_wo5FR6X4jNR0zh1sx03UZrwpAKcjTuBSU-LHw-PCuDqYFP4kLVYrlYf_YcFTLZxsiUz88ooqPzGcc8bJwu8r4uCQLkY1GKKWvTjHNCzxBGxyVsGQ1zKSU1-OvOq3nbhECOETk-ygVf8ts.yeYLPLHY0OJ4kDC4vgVSEZbFOgzmBfdWfBjbNyQWbZQ&dib_tag=se&keywords=ladle&qid=1786447405&sprefix=lad%2Caps%2C546&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=cf82ef7c1d7de0ff54f670cf56f4d0b8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Spatula",
+        "url": "https://www.amazon.com/ChefAide-Silicone-Ergonomic-Resistant-Nonstick/dp/B0CHGFG64S?crid=QIIJ7VM1WVF&dib=eyJ2IjoiMSJ9.La1iSEcG-MEW7zhzIuKYspMLDGOIUdQbz8_AMVHJWR6O5H1-24U1abeqsNWbV_HkOw1muFOXQF7Op8tasRzOXZPstKcUX7G0QD1OFh_ruoER1AENOSVNEAV6RjffM0DEsJNR9QeF-9RFBt2oeG9ryrLkl2o7KLh4lAWcbI5TiumUA_uW1ZzmjtR3Xz9A8W09CNAJjaKz5dgVezVKPsdvbIYXGDbfjldfF6UP_hi85q4YTaucr9vLQrG_L4nsjn8DRCE-IkZk2nQj-Fbe_U4U9kTpXl8B6P6ik4-VoZmvUXc.xrnbFvPvyzCAPhTbdMbIeaa8kWAlKu4gpm8LrOT9zkI&dib_tag=se&keywords=spatula&qid=1786447434&sprefix=spatula%2Caps%2C651&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b317254da6af52edf84935b30bb7d093&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["copycat", "pancakes", "ihop", "breakfast", "fluffy"],
-    datePublished: "2026-07-05",
-    image: "/images/copycat-ihop-buttermilk-pancakes.jpg",
-    pinImage: "/images/pins/copycat-ihop-buttermilk-pancakes.png",
-    metaTitle: "Copycat IHOP Buttermilk Pancakes (10 Minutes) | The Better Home Recipes",
-    metaDescription:
-      "Fluffy, thick copycat IHOP buttermilk pancakes in 10 minutes. The secret: rest the batter 5 minutes for a tall, diner-style stack.",
+    "tags": [
+      "copycat",
+      "pancakes",
+      "ihop",
+      "breakfast",
+      "fluffy"
+    ],
+    "datePublished": "2026-07-05",
+    "image": "/images/copycat-ihop-buttermilk-pancakes.jpg",
+    "pinImage": "/images/pins/copycat-ihop-buttermilk-pancakes.png",
+    "metaTitle": "Copycat IHOP Buttermilk Pancakes (10 Minutes) | The Better Home Recipes",
+    "metaDescription": "Fluffy, thick copycat IHOP buttermilk pancakes in 10 minutes. The secret: rest the batter 5 minutes for a tall, diner-style stack."
   },
   {
-    slug: "copycat-dominos-garlic-parmesan-chicken",
-    title: "Copycat Domino's Garlic Parmesan Chicken",
-    subtitle: "Better Than Delivery",
-    category: "copycat",
-    prepTime: "10 min",
-    cookTime: "30 min",
-    totalTime: "40 min",
-    servings: 4,
-    difficulty: "Medium",
-    description:
-      "Better than delivery: copycat Domino's garlic parmesan chicken. Juicy chicken thighs seared in a cast-iron skillet, smothered in a creamy garlic parmesan sauce with Italian herbs, and baked until golden. It's the pizza-side flavor, as a main dish.",
-    ingredients: [
+    "slug": "copycat-dominos-garlic-parmesan-chicken",
+    "title": "Copycat Domino's Garlic Parmesan Chicken",
+    "subtitle": "Better Than Delivery",
+    "category": "copycat",
+    "prepTime": "10 min",
+    "cookTime": "30 min",
+    "totalTime": "40 min",
+    "servings": 4,
+    "difficulty": "Medium",
+    "description": "Better than delivery: copycat Domino's garlic parmesan chicken. Juicy chicken thighs seared in a cast-iron skillet, smothered in a creamy garlic parmesan sauce with Italian herbs, and baked until golden. It's the pizza-side flavor, as a main dish.",
+    "ingredients": [
       "2 lb boneless chicken thighs",
       "3 tbsp garlic butter",
       "1 cup heavy cream",
@@ -469,50 +622,76 @@ export const recipes: Recipe[] = [
       "1 tsp Italian herbs (oregano, thyme, basil)",
       "1 tbsp olive oil",
       "4 cloves garlic (minced)",
-      "Salt and black pepper to taste",
+      "Salt and black pepper to taste"
     ],
-    equipment: ["Cast iron skillet", "Whisk", "Baking dish", "Tongs", "Grater"],
-    steps: [
+    "equipment": [
+      "Cast iron skillet",
+      "Whisk",
+      "Baking dish",
+      "Tongs",
+      "Grater"
+    ],
+    "steps": [
       "Preheat the oven to 375°F. Pat the chicken thighs dry and season both sides with salt, pepper and half the Italian herbs.",
       "Heat the olive oil in a cast-iron skillet over medium-high heat. Sear the chicken for 3–4 minutes per side until golden, then transfer to a plate.",
       "Reduce the heat to medium and add the garlic butter and minced garlic. Cook for 1 minute until fragrant.",
       "Pour in the heavy cream and whisk in the parmesan and remaining Italian herbs. Simmer for 3–4 minutes until the sauce thickens slightly.",
       "Return the chicken to the skillet (or transfer everything to a baking dish) and spoon the sauce over the top.",
       "Bake uncovered for 20 minutes until the chicken is cooked through and the sauce is bubbly and browned at the edges.",
-      "Rest for 5 minutes, then serve with extra parmesan and the pan sauce spooned over.",
+      "Rest for 5 minutes, then serve with extra parmesan and the pan sauce spooned over."
     ],
-    tips: [
+    "tips": [
       "Sear the chicken first — it locks in the juices so the sauce stays creamy instead of watery.",
-      "Use a cast-iron skillet that can go straight from stovetop to oven and it's one less dish to wash.",
+      "Use a cast-iron skillet that can go straight from stovetop to oven and it's one less dish to wash."
     ],
-    affiliateLinks: [
-      { label: "Cast iron skillet", url: "https://www.amazon.com/Lodge-Seasoned-Cast-Iron-Skillet/dp/B00006JSUB?crid=1Q2IGX18JIM6A&dib=eyJ2IjoiMSJ9.yT7gVNTZD5mfojg5mkVUKjYoTydauk8BC_qudoyBJdrIXbEoEA-4QoRZ1i4EoTpo_ppOJFv8-9wuOoq3Quj0iyyuv42oA9hNRetNZZ42Hpv7UD4MpUKbKb7nz0ZXU30zuBjnNAiLaVEpH-dPcx6cfzJdY7WUfgdfBxKm4V1J7FEkJWoMoESmeogDd8JmURtFaYp5SbA0O2wljcJ_Qij4poy0rRtK8uzHgg3kAv6EK2tJ5tdtzfaqMTa3U65wLuEHd1d9Iw1heZGaTPYVdkPduZEGzg82MN3CTlKfiOo1eSA._YC9cUc3sNY_jkRUKCLzrbaXdmINXm-3vo9tgS7MqGU&dib_tag=se&keywords=cast%2Biron%2Bskillet&qid=1786447222&sprefix=cast%2Biron%2Bskill%2Caps%2C537&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=8e8dc5234c7c93838118dc11699177b1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Whisk", url: "https://www.amazon.com/NileHome-Stainless-Whisking-Blending-Stirring-3/dp/B08SWBRTRK?crid=2CS8NT5VFRFG6&dib=eyJ2IjoiMSJ9.vn1T1LMF_WslotWzDq-_xU7cEuW1IsKeJTBHLKoHwqECcn_ciIvEA34guwMHwi-9rA_udHVc06PB31Si7opmh_wTAYahnUcerKGUbR2oFn1PKhUUdaBU1cggN-teWkfG9NkY-snv9h3Nma4uJthBuinfYpK4SxY4Jk5FaS5ao6YsCMUqzEZJ9MHJog13oNwgnPYYQQRiOvAJcFT3U_H-_KHv99p6nmOssVk69_3PHJUpM29uR87H_1lp0q3VkmPIL3tDs8E0H625NhU_OeRTf7vn159LNj3QHSoozbz_tSI.tgvCrPnEBw-R1p7aWEHwA2Pn6b-7kTQN_Xw-uI3G_vE&dib_tag=se&keywords=whisk&qid=1786447261&sprefix=whis%2Caps%2C575&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=421beec0b247ae768b05025544fc957e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Baking dish", url: "https://www.amazon.com/MCIRCO-Piece-Deep-Glass-Baking/dp/B087QZQX8V?crid=NLU2FS2SXQJN&dib=eyJ2IjoiMSJ9.mlJVPdQdvrLBNeuwr50fm5sI2K9XfC38wsBM2ef-MBNvgF0BlpY8fsWFQSj8lLXQk_IKHD8MenzoTJ_y5UEANjnoueHt2VFQLbsrrxHykxcsYLZJrPRgXdUaxq3d72qvoYRTS2BO7suwQaHTqKyBpWCuQeN_ONvQeqDcAUf_8goJp0SygO13jKyjfXXjBRlPawu4IuzisENgLlM0welZ5WIeah0r3QxoQLPCi1wBkdZXj-hif2Tj_yQL8TVdat-TPZNRlNSoDEuXJ5ErB9LQw5OjRpV8zyWy7459tq28m6c.pQUM1WHLOIvTRpWpMUA7nG5v1og0Ts1JtmVJaEpsOvI&dib_tag=se&keywords=baking%2Bdish&qid=1786447291&sprefix=baking%2Bdish%2Caps%2C547&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=437a061191d42f80670369965f4c3ff0&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Tongs", url: "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Box grater", url: "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Cast iron skillet",
+        "url": "https://www.amazon.com/Lodge-Seasoned-Cast-Iron-Skillet/dp/B00006JSUB?crid=1Q2IGX18JIM6A&dib=eyJ2IjoiMSJ9.yT7gVNTZD5mfojg5mkVUKjYoTydauk8BC_qudoyBJdrIXbEoEA-4QoRZ1i4EoTpo_ppOJFv8-9wuOoq3Quj0iyyuv42oA9hNRetNZZ42Hpv7UD4MpUKbKb7nz0ZXU30zuBjnNAiLaVEpH-dPcx6cfzJdY7WUfgdfBxKm4V1J7FEkJWoMoESmeogDd8JmURtFaYp5SbA0O2wljcJ_Qij4poy0rRtK8uzHgg3kAv6EK2tJ5tdtzfaqMTa3U65wLuEHd1d9Iw1heZGaTPYVdkPduZEGzg82MN3CTlKfiOo1eSA._YC9cUc3sNY_jkRUKCLzrbaXdmINXm-3vo9tgS7MqGU&dib_tag=se&keywords=cast%2Biron%2Bskillet&qid=1786447222&sprefix=cast%2Biron%2Bskill%2Caps%2C537&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=8e8dc5234c7c93838118dc11699177b1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Whisk",
+        "url": "https://www.amazon.com/NileHome-Stainless-Whisking-Blending-Stirring-3/dp/B08SWBRTRK?crid=2CS8NT5VFRFG6&dib=eyJ2IjoiMSJ9.vn1T1LMF_WslotWzDq-_xU7cEuW1IsKeJTBHLKoHwqECcn_ciIvEA34guwMHwi-9rA_udHVc06PB31Si7opmh_wTAYahnUcerKGUbR2oFn1PKhUUdaBU1cggN-teWkfG9NkY-snv9h3Nma4uJthBuinfYpK4SxY4Jk5FaS5ao6YsCMUqzEZJ9MHJog13oNwgnPYYQQRiOvAJcFT3U_H-_KHv99p6nmOssVk69_3PHJUpM29uR87H_1lp0q3VkmPIL3tDs8E0H625NhU_OeRTf7vn159LNj3QHSoozbz_tSI.tgvCrPnEBw-R1p7aWEHwA2Pn6b-7kTQN_Xw-uI3G_vE&dib_tag=se&keywords=whisk&qid=1786447261&sprefix=whis%2Caps%2C575&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=421beec0b247ae768b05025544fc957e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Baking dish",
+        "url": "https://www.amazon.com/MCIRCO-Piece-Deep-Glass-Baking/dp/B087QZQX8V?crid=NLU2FS2SXQJN&dib=eyJ2IjoiMSJ9.mlJVPdQdvrLBNeuwr50fm5sI2K9XfC38wsBM2ef-MBNvgF0BlpY8fsWFQSj8lLXQk_IKHD8MenzoTJ_y5UEANjnoueHt2VFQLbsrrxHykxcsYLZJrPRgXdUaxq3d72qvoYRTS2BO7suwQaHTqKyBpWCuQeN_ONvQeqDcAUf_8goJp0SygO13jKyjfXXjBRlPawu4IuzisENgLlM0welZ5WIeah0r3QxoQLPCi1wBkdZXj-hif2Tj_yQL8TVdat-TPZNRlNSoDEuXJ5ErB9LQw5OjRpV8zyWy7459tq28m6c.pQUM1WHLOIvTRpWpMUA7nG5v1og0Ts1JtmVJaEpsOvI&dib_tag=se&keywords=baking%2Bdish&qid=1786447291&sprefix=baking%2Bdish%2Caps%2C547&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=437a061191d42f80670369965f4c3ff0&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Tongs",
+        "url": "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Box grater",
+        "url": "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["copycat", "chicken", "dominos", "garlic", "parmesan", "dinner"],
-    datePublished: "2026-06-28",
-    image: "/images/copycat-dominos-garlic-parmesan-chicken.jpg",
-    pinImage: "/images/pins/copycat-dominos-garlic-parmesan-chicken.png",
-    metaTitle: "Copycat Domino's Garlic Parmesan Chicken | The Better Home Recipes",
-    metaDescription:
-      "Better than delivery: juicy chicken thighs in a creamy garlic parmesan sauce, seared then baked. A 40-minute copycat Domino's garlic parmesan chicken.",
+    "tags": [
+      "copycat",
+      "chicken",
+      "dominos",
+      "garlic",
+      "parmesan",
+      "dinner"
+    ],
+    "datePublished": "2026-06-28",
+    "image": "/images/copycat-dominos-garlic-parmesan-chicken.jpg",
+    "pinImage": "/images/pins/copycat-dominos-garlic-parmesan-chicken.png",
+    "metaTitle": "Copycat Domino's Garlic Parmesan Chicken | The Better Home Recipes",
+    "metaDescription": "Better than delivery: juicy chicken thighs in a creamy garlic parmesan sauce, seared then baked. A 40-minute copycat Domino's garlic parmesan chicken."
   },
   {
-    slug: "copycat-crumbl-chocolate-chip-cookie",
-    title: "Copycat Crumbl Chocolate Chip Cookie",
-    subtitle: "Thick, Gooey & Better Than the Real Thing",
-    category: "copycat",
-    prepTime: "20 min",
-    cookTime: "12 min",
-    totalTime: "1 hr",
-    servings: 10,
-    difficulty: "Medium",
-    description:
-      "This copycat Crumbl chocolate chip cookie is thick, gooey and topped with flaky sea salt. Brown butter, brown sugar and bread flour give it that bakery-size, chewy-centered texture — it's better than the real thing.",
-    ingredients: [
+    "slug": "copycat-crumbl-chocolate-chip-cookie",
+    "title": "Copycat Crumbl Chocolate Chip Cookie",
+    "subtitle": "Thick, Gooey & Better Than the Real Thing",
+    "category": "copycat",
+    "prepTime": "20 min",
+    "cookTime": "12 min",
+    "totalTime": "1 hr",
+    "servings": 10,
+    "difficulty": "Medium",
+    "description": "This copycat Crumbl chocolate chip cookie is thick, gooey and topped with flaky sea salt. Brown butter, brown sugar and bread flour give it that bakery-size, chewy-centered texture — it's better than the real thing.",
+    "ingredients": [
       "2¼ cups bread flour",
       "1 cup unsalted butter (browned and cooled)",
       "¾ cup brown sugar",
@@ -522,10 +701,16 @@ export const recipes: Recipe[] = [
       "1 tsp baking soda",
       "½ tsp salt",
       "1½ cups chocolate chips",
-      "Flaky sea salt (for topping)",
+      "Flaky sea salt (for topping)"
     ],
-    equipment: ["Stand mixer", "Baking sheet", "Parchment paper", "Cookie scoop", "Cooling rack"],
-    steps: [
+    "equipment": [
+      "Stand mixer",
+      "Baking sheet",
+      "Parchment paper",
+      "Cookie scoop",
+      "Cooling rack"
+    ],
+    "steps": [
       "Brown the butter: melt it in a skillet over medium heat and cook, swirling, until it turns amber and smells nutty (about 4–5 minutes). Pour into a bowl and cool for 15 minutes.",
       "In a stand mixer, beat the browned butter, brown sugar and granulated sugar until smooth and glossy.",
       "Add the eggs, egg yolk and vanilla and beat until combined and lightened in color.",
@@ -533,83 +718,122 @@ export const recipes: Recipe[] = [
       "Fold in the chocolate chips by hand. Scoop the dough into large balls and chill for at least 30 minutes.",
       "Preheat the oven to 350°F. Place the chilled dough balls on a parchment-lined baking sheet, 3 inches apart.",
       "Bake for 11–13 minutes until the edges are golden and the centers are still soft. They'll look underdone — that's right.",
-      "Sprinkle immediately with flaky sea salt and transfer to a cooling rack.",
+      "Sprinkle immediately with flaky sea salt and transfer to a cooling rack."
     ],
-    tips: [
+    "tips": [
       "Chill the dough — it's what keeps these cookies thick and bakery-style instead of flat and spreading.",
-      "Bread flour is the secret to the chew. Pull them while the centers are soft and they set to gooey perfection.",
+      "Bread flour is the secret to the chew. Pull them while the centers are soft and they set to gooey perfection."
     ],
-    affiliateLinks: [
-      { label: "Stand mixer", url: "https://www.amazon.com/Kitchen-box-Electric-Portable-Lightweight/dp/B09BVCPSBT?crid=3VOOQHPRRAU14&dib=eyJ2IjoiMSJ9.YzI6Nwe0e0LhSZli4AKYq9ha5K4UuyxJHg6PQaSiXE0CdW2_VC5sH2tGkg7dk1GT5_gucZMkpXzA15tm5y1tePjryh2OwPpnkcclbieFD9ZPCYoXAUw34QzacQ_IZ-KjS8ipksC0tQvPFjU5PEBQL77s4gRnRrx4aj1uO68DRa8VUFvBycxijoWKncm7bFjFHGStnl3gmIIBa9mPqNNzYo2BWpesSotrbX2Ubm7czZw.OUTTsjiW_gcIbLyzuuyLmDO4UXFC-jTkr3MrgIhsPkE&dib_tag=se&keywords=stand%2Bmixer&qid=1786446369&sprefix=stand%2Bmi%2Caps%2C529&sr=8-1&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=e34c5531e4877052aed1a04dc78d60af&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Baking sheet", url: "https://www.amazon.com/NutriChef-3-Piece-Nonstick-Kitchen-Baking/dp/B089N57JGS?crid=KROAKD3A8R8P&currency=USD&dib=eyJ2IjoiMSJ9.vAfxlVdVZSbP4HWzB0GLHWtMXiBuatAgnBw-K4h8izmdpq-qe_YmMs6JI2xSiNNAzSrzZWTHeDQdJ_W6gHiFYRtYdLKMk8nD9L4S3mFbsc0iKQiaL1E-YkkkdUq-ud5gSUNWGx5QjD2POPnSCTTAl5O8e9ZmqUe3CQjpG5B8K1os_iXhzYBycWVqv6Wpe2mNzlNJOpVJuMq4k9ee3tRTHSV0RPBWs_dqmSeae9hsJTH5XEVavE1cptJYeybqSponW6anEaV1NxCgumcTlZ2_mJ7yMxxpEePsX1XTC7ZPCUo.3LIgX1O64l1RNuSQVU6AGlfuxTZWQApaGrgjQo5FI4Q&dib_tag=se&keywords=baking%2Bsheet&qid=1786446452&sprefix=baking%2Bsh%2Caps%2C539&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=0af115230d1cd60bddee9e579b5929ab&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Parchment paper", url: "https://www.amazon.com/Reynolds-Kitchens-Unbleached-Parchment-Paper/dp/B07PFYT8MC?crid=KROAKD3A8R8P&currency=USD&dib=eyJ2IjoiMSJ9.vAfxlVdVZSbP4HWzB0GLHWtMXiBuatAgnBw-K4h8izmdpq-qe_YmMs6JI2xSiNNAzSrzZWTHeDQdJ_W6gHiFYRtYdLKMk8nD9L4S3mFbsc0iKQiaL1E-YkkkdUq-ud5gSUNWGx5QjD2POPnSCTTAl5O8e9ZmqUe3CQjpG5B8K1os_iXhzYBycWVqv6Wpe2mNzlNJOpVJuMq4k9ee3tRTHSV0RPBWs_dqmSeae9hsJTH5XEVavE1cptJYeybqSponW6anEaV1NxCgumcTlZ2_mJ7yMxxpEePsX1XTC7ZPCUo.3LIgX1O64l1RNuSQVU6AGlfuxTZWQApaGrgjQo5FI4Q&dib_tag=se&keywords=baking%2Bsheet&qid=1786446490&sprefix=baking%2Bsh%2Caps%2C539&sr=8-1&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=aa66ed18094e202ded3c9cf8a7f54b44&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Cookie scoop", url: "https://www.amazon.com/JUNADAEL-Set-Tablespoon-Cupcake-Truffles/dp/B0DK6TSL13?crid=33L9LZ2RJTE1&dib=eyJ2IjoiMSJ9.XFIFyMgrvrvsXi55f-BN0UoOsJiH34EwAn4jDhGc6CAZwWMvYrBR-OLbpxOpfWYSW8GmG-mz6XG1YdAvPV02lr6kHOygJopAfP0avrpuYcWd-vcBj_7ira1ipYFhqInmxegAOKRsmpP2uhOm8mHRQoDeXhjKpwxIVG5Vs_ZBUTktiSmJtqaM7G8lOFDg24RJX5WffeEFIC6qVVBqv7KY4snCQNnnJbEat8LICCjLvgC20pOGH_OUS07HhbChZxwImlCY6D-3PUKqbHTc0GbXa2fo1z3BDi7-56MdWLr-E8A.URZOQa25lrWMSD9m_Ab9GGFeg_pWgsivkO9FMQKv5D0&dib_tag=se&keywords=cooking+scoop&qid=1786446518&sprefix=cooking+scoo%2Caps%2C536&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=55bfaaf1f0a0f165158f98fcccaec5b4&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Cooling rack", url: "https://www.amazon.com/2PCS-Cooling-Racks-Cooking-Baking/dp/B0D4LX9Z3Q?crid=27T9H7MSGF0UF&dib=eyJ2IjoiMSJ9.TSX0iCqNKWpdOXmVpsHgaXWNX-L9ntUwKehc0DlAW4VDadj8UxbAEGVYJHQPhZibHagqUFUxFX1ZO1plYeV0aqkhAOfZvOL4rrN4qrlgpTxkeJBFEHZZYXQB1UE5QPPGGNatW1DEoDIubCvOOj-dLtuF8GIvyEHXnz4q3SVg6asa5pX7ZdOu9nqijmDQb224D74vLwoJVLKbsdgHYMIWpSU0sDkrtoTK_BIYOB46XQcixwbneAmwIyMSeLCOQGQ8zXpE772qyi4FZP7MyaR2aS6Otv1EmIF-nzkjpooCERU.XW6QJ3rlqWUdgpnB9HWpY7-dEekAhNOkOWN0DftZe9Y&dib_tag=se&keywords=cooling%2Brack&qid=1786447189&sprefix=cooling%2Bra%2Caps%2C560&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=1687f5e0a7f3ffdc360872f6e8d1baa3&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Stand mixer",
+        "url": "https://www.amazon.com/Kitchen-box-Electric-Portable-Lightweight/dp/B09BVCPSBT?crid=3VOOQHPRRAU14&dib=eyJ2IjoiMSJ9.YzI6Nwe0e0LhSZli4AKYq9ha5K4UuyxJHg6PQaSiXE0CdW2_VC5sH2tGkg7dk1GT5_gucZMkpXzA15tm5y1tePjryh2OwPpnkcclbieFD9ZPCYoXAUw34QzacQ_IZ-KjS8ipksC0tQvPFjU5PEBQL77s4gRnRrx4aj1uO68DRa8VUFvBycxijoWKncm7bFjFHGStnl3gmIIBa9mPqNNzYo2BWpesSotrbX2Ubm7czZw.OUTTsjiW_gcIbLyzuuyLmDO4UXFC-jTkr3MrgIhsPkE&dib_tag=se&keywords=stand%2Bmixer&qid=1786446369&sprefix=stand%2Bmi%2Caps%2C529&sr=8-1&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=e34c5531e4877052aed1a04dc78d60af&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Baking sheet",
+        "url": "https://www.amazon.com/NutriChef-3-Piece-Nonstick-Kitchen-Baking/dp/B089N57JGS?crid=KROAKD3A8R8P&currency=USD&dib=eyJ2IjoiMSJ9.vAfxlVdVZSbP4HWzB0GLHWtMXiBuatAgnBw-K4h8izmdpq-qe_YmMs6JI2xSiNNAzSrzZWTHeDQdJ_W6gHiFYRtYdLKMk8nD9L4S3mFbsc0iKQiaL1E-YkkkdUq-ud5gSUNWGx5QjD2POPnSCTTAl5O8e9ZmqUe3CQjpG5B8K1os_iXhzYBycWVqv6Wpe2mNzlNJOpVJuMq4k9ee3tRTHSV0RPBWs_dqmSeae9hsJTH5XEVavE1cptJYeybqSponW6anEaV1NxCgumcTlZ2_mJ7yMxxpEePsX1XTC7ZPCUo.3LIgX1O64l1RNuSQVU6AGlfuxTZWQApaGrgjQo5FI4Q&dib_tag=se&keywords=baking%2Bsheet&qid=1786446452&sprefix=baking%2Bsh%2Caps%2C539&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=0af115230d1cd60bddee9e579b5929ab&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Parchment paper",
+        "url": "https://www.amazon.com/Reynolds-Kitchens-Unbleached-Parchment-Paper/dp/B07PFYT8MC?crid=KROAKD3A8R8P&currency=USD&dib=eyJ2IjoiMSJ9.vAfxlVdVZSbP4HWzB0GLHWtMXiBuatAgnBw-K4h8izmdpq-qe_YmMs6JI2xSiNNAzSrzZWTHeDQdJ_W6gHiFYRtYdLKMk8nD9L4S3mFbsc0iKQiaL1E-YkkkdUq-ud5gSUNWGx5QjD2POPnSCTTAl5O8e9ZmqUe3CQjpG5B8K1os_iXhzYBycWVqv6Wpe2mNzlNJOpVJuMq4k9ee3tRTHSV0RPBWs_dqmSeae9hsJTH5XEVavE1cptJYeybqSponW6anEaV1NxCgumcTlZ2_mJ7yMxxpEePsX1XTC7ZPCUo.3LIgX1O64l1RNuSQVU6AGlfuxTZWQApaGrgjQo5FI4Q&dib_tag=se&keywords=baking%2Bsheet&qid=1786446490&sprefix=baking%2Bsh%2Caps%2C539&sr=8-1&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=aa66ed18094e202ded3c9cf8a7f54b44&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Cookie scoop",
+        "url": "https://www.amazon.com/JUNADAEL-Set-Tablespoon-Cupcake-Truffles/dp/B0DK6TSL13?crid=33L9LZ2RJTE1&dib=eyJ2IjoiMSJ9.XFIFyMgrvrvsXi55f-BN0UoOsJiH34EwAn4jDhGc6CAZwWMvYrBR-OLbpxOpfWYSW8GmG-mz6XG1YdAvPV02lr6kHOygJopAfP0avrpuYcWd-vcBj_7ira1ipYFhqInmxegAOKRsmpP2uhOm8mHRQoDeXhjKpwxIVG5Vs_ZBUTktiSmJtqaM7G8lOFDg24RJX5WffeEFIC6qVVBqv7KY4snCQNnnJbEat8LICCjLvgC20pOGH_OUS07HhbChZxwImlCY6D-3PUKqbHTc0GbXa2fo1z3BDi7-56MdWLr-E8A.URZOQa25lrWMSD9m_Ab9GGFeg_pWgsivkO9FMQKv5D0&dib_tag=se&keywords=cooking+scoop&qid=1786446518&sprefix=cooking+scoo%2Caps%2C536&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=55bfaaf1f0a0f165158f98fcccaec5b4&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Cooling rack",
+        "url": "https://www.amazon.com/2PCS-Cooling-Racks-Cooking-Baking/dp/B0D4LX9Z3Q?crid=27T9H7MSGF0UF&dib=eyJ2IjoiMSJ9.TSX0iCqNKWpdOXmVpsHgaXWNX-L9ntUwKehc0DlAW4VDadj8UxbAEGVYJHQPhZibHagqUFUxFX1ZO1plYeV0aqkhAOfZvOL4rrN4qrlgpTxkeJBFEHZZYXQB1UE5QPPGGNatW1DEoDIubCvOOj-dLtuF8GIvyEHXnz4q3SVg6asa5pX7ZdOu9nqijmDQb224D74vLwoJVLKbsdgHYMIWpSU0sDkrtoTK_BIYOB46XQcixwbneAmwIyMSeLCOQGQ8zXpE772qyi4FZP7MyaR2aS6Otv1EmIF-nzkjpooCERU.XW6QJ3rlqWUdgpnB9HWpY7-dEekAhNOkOWN0DftZe9Y&dib_tag=se&keywords=cooling%2Brack&qid=1786447189&sprefix=cooling%2Bra%2Caps%2C560&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=1687f5e0a7f3ffdc360872f6e8d1baa3&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["copycat", "cookies", "crumbl", "chocolate chip", "baking", "dessert"],
-    datePublished: "2026-06-20",
-    image: "/images/copycat-crumbl-chocolate-chip-cookie.jpg",
-    pinImage: "/images/pins/copycat-crumbl-chocolate-chip-cookie.png",
-    metaTitle: "Copycat Crumbl Chocolate Chip Cookie Recipe | The Better Home Recipes",
-    metaDescription:
-      "Thick, gooey copycat Crumbl chocolate chip cookies with flaky sea salt. Brown butter, brown sugar and bread flour make them better than the real thing.",
+    "tags": [
+      "copycat",
+      "cookies",
+      "crumbl",
+      "chocolate chip",
+      "baking",
+      "dessert"
+    ],
+    "datePublished": "2026-06-20",
+    "image": "/images/copycat-crumbl-chocolate-chip-cookie.jpg",
+    "pinImage": "/images/pins/copycat-crumbl-chocolate-chip-cookie.png",
+    "metaTitle": "Copycat Crumbl Chocolate Chip Cookie Recipe | The Better Home Recipes",
+    "metaDescription": "Thick, gooey copycat Crumbl chocolate chip cookies with flaky sea salt. Brown butter, brown sugar and bread flour make them better than the real thing."
   },
   {
-    slug: "copycat-chick-fil-a-lemonade",
-    title: "Copycat Chick-fil-A Lemonade",
-    subtitle: "Classic, Frosted & Strawberry — 3 ingredients each",
-    category: "drinks",
-    prepTime: "5 min",
-    totalTime: "5 min",
-    servings: 4,
-    difficulty: "Easy",
-    description:
-      "The real Chick-fil-A lemonade is just three ingredients — fresh lemon juice, sugar and water — and the frosted and strawberry versions are just as easy. Here are all three, made at home for a fraction of the drive-thru price.",
-    ingredients: [
+    "slug": "copycat-chick-fil-a-lemonade",
+    "title": "Copycat Chick-fil-A Lemonade",
+    "subtitle": "Classic, Frosted & Strawberry — 3 ingredients each",
+    "category": "drinks",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "The real Chick-fil-A lemonade is just three ingredients — fresh lemon juice, sugar and water — and the frosted and strawberry versions are just as easy. Here are all three, made at home for a fraction of the drive-thru price.",
+    "ingredients": [
       "1 cup fresh lemon juice (about 5–6 lemons)",
       "1 cup granulated sugar",
       "5 cups cold water",
       "3 cups vanilla ice cream (for the Frosted)",
-      "1 cup frozen strawberries, thawed (for the Strawberry)",
+      "1 cup frozen strawberries, thawed (for the Strawberry)"
     ],
-    equipment: ["Citrus juicer", "Pitcher", "Blender (for Frosted & Strawberry)", "Fine mesh strainer"],
-    steps: [
+    "equipment": [
+      "Citrus juicer",
+      "Pitcher",
+      "Blender (for Frosted & Strawberry)",
+      "Fine mesh strainer"
+    ],
+    "steps": [
       "Classic: juice the lemons until you have 1 cup of fresh juice. Strain out the pulp and seeds if you like it smooth.",
       "Stir the sugar into the lemon juice until fully dissolved, then add the cold water and chill.",
       "Frosted: blend 1 cup of the classic lemonade with 3 cups of vanilla ice cream until thick and creamy, about 30 seconds.",
       "Strawberry: blend 1 cup of the classic lemonade with 1 cup of thawed frozen strawberries until smooth, then pour over ice.",
-      "Serve the classic and strawberry over ice; the frosted goes straight into a glass with a straw.",
+      "Serve the classic and strawberry over ice; the frosted goes straight into a glass with a straw."
     ],
-    tips: [
+    "tips": [
       "Fresh-squeezed lemon juice is the whole secret — bottled juice tastes flat next to the real thing.",
-      "Make a big batch of the classic base, then split it for the frosted and strawberry whenever a craving hits.",
+      "Make a big batch of the classic base, then split it for the frosted and strawberry whenever a craving hits."
     ],
-    affiliateLinks: [
-      { label: "Citrus juicer", url: "https://www.amazon.com/Zulay-Commercial-Citrus-Juicer-Manual/dp/B01MZ1WHZG?crid=1Z4X9QY5X8K2L&dib=eyJ2IjoiMSJ9.https://www.amazon.com/Elite-Gourmet-ETS623-Grapefruits-Stainless/dp/B0CK9HJ7S2?crid=UKYD8SI8P9CH&dib=eyJ2IjoiMSJ9.1UhghLZQJCJ2KTkTN4ew07Op6NpJGe9jvjxnCv8gsykCvPtHupEbYxeDQNrPBSPFev128ydJ28Fhk55M6H5X67D5HQUM3V1ksBuQEsYWnhFL3FSSnWA_XEl-R89k6REF0ho-Fach8KQfXaOhECJyFIR6ODNVTRp4z_wvMJ1h5O_FY2DFkuMCm9cE5XzL83y4Q4gdtlmlIHg9zEajNhUpYT9ZUrU0lrYSqfuX0qHmeiEP8GRMp3EEGqbuADk0bBWFsoi7_n2i9jMYWb147CT3xGpIQ0ZiBauQX6UJG1iBG8A.ccZbN0L7kXz4HHqG7DCgzA_n_lYouiWMkrmm7sfE7Pk&dib_tag=se&keywords=citrus%2Bjuicer&qid=1786872008&sprefix=citrus%2Bjuicer%2Caps%2C914&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=28affd98ad3bc7313b34443b50536bfb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&dib_tag=se&keywords=citrus%2Bjuicer&qid=1786448000&sprefix=citrus%2Bjui%2Caps%2C500&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=00000000000000000000000000000001&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Glass pitcher", url: "https://www.amazon.com/example-Glass-Pitcher-Spill-Proof-Dispenser/dp/B08EXAMPLEPIT?crid=2A3B4C5D6E7F8&dib=eyJ2IjoiMSJ9.https://www.amazon.com/Spreccio-Mason-Jar-Pitcher-Breastmilk/dp/B0DGCVK1JL?crid=IPKJPEIGAJ58&dib=eyJ2IjoiMSJ9.9l1vM4A3KvgchlohBYfYT5kA329AlVO4aI3BlvpDVf8F7Fg2lBWTZ8SR5rml9CBVBvN3_tedh2s4i7nMpXiM1DX8lBqeMSRgh1JYp8h2tKTcvZifZosHlUbH9TCXAlqmCUcA8yoHVSKl9dbnTLLbZtmcLcxJSFk-wuzbSHYg-XlYQ5vB-FZwQMivn1qpoKp9x1Y4AX4EiCnKdyZ3rCvd9-mCWQJYDh5qd4VCt8wwYzDVzU9_G2ujD0ueeT9qfphpt23C5k1FsC6iQL-ceQHMT7Xk-a81b7xW5lNJ-2GcujM.1ndyCib0tM1CjnH-zB8u6CPXhvMVA-4nVaw6HFwbXV4&dib_tag=se&keywords=glass%2Bpitcher&qid=1786872098&sprefix=glass%2Bpitc%2Caps%2C562&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=266ca3417f7c1e09423feeee72c9750e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&dib_tag=se&keywords=glass%2Bpitcher&qid=1786448001&sprefix=glass%2Bpit%2Caps%2C500&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=00000000000000000000000000000002&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "High-speed blender", url: "https://www.amazon.com/Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506?ie=UTF8&s=psc&sprefix=high%2Bspeed%2Bblen%2Caps%2C555&keywords=high%2Bspeed%2Bblender&crid=8IR2ALTQODKI&dib_tag=se&ASIN=B00NGV4506&dib=eyJ2IjoiMSJ9.Xu0NhznEvkQP1KciA8NZDHe-rcH3gsM2nSIES7KCwadI2ceVCIX2xZtj-RYvRmri4N2KK0G4Yz-NGYGAjj26-GigSttjuVFLXJRqq1-VEKvauISIsVuGlKiWtKof5--ZqLJT8S4wQYZDzjgQjQf0kwc4cA62ElgfvR6Uuuxo1FuN3hVet9WV23ARtae_riyIUeU9Cy_cDz915ivQ_82j2JanKFoHWwSYiTvqCNlaovI.rUDn_kfuVLyZcVc3142tOm--PwBLtIixpBfHMS4nRas&qid=1786446937&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=657f8897039b81a712107ed361fa52bb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Citrus juicer",
+        "url": "https://www.amazon.com/Elite-Gourmet-ETS623-Grapefruits-Stainless/dp/B0CK9HJ7S2?crid=UKYD8SI8P9CH&dib=eyJ2IjoiMSJ9.1UhghLZQJCJ2KTkTN4ew07Op6NpJGe9jvjxnCv8gsykCvPtHupEbYxeDQNrPBSPFev128ydJ28Fhk55M6H5X67D5HQUM3V1ksBuQEsYWnhFL3FSSnWA_XEl-R89k6REF0ho-Fach8KQfXaOhECJyFIR6ODNVTRp4z_wvMJ1h5O_FY2DFkuMCm9cE5XzL83y4Q4gdtlmlIHg9zEajNhUpYT9ZUrU0lrYSqfuX0qHmeiEP8GRMp3EEGqbuADk0bBWFsoi7_n2i9jMYWb147CT3xGpIQ0ZiBauQX6UJG1iBG8A.ccZbN0L7kXz4HHqG7DCgzA_n_lYouiWMkrmm7sfE7Pk&dib_tag=se&keywords=citrus%2Bjuicer&qid=1786872008&sprefix=citrus%2Bjuicer%2Caps%2C914&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=28affd98ad3bc7313b34443b50536bfb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Glass pitcher",
+        "url": "https://www.amazon.com/Spreccio-Mason-Jar-Pitcher-Breastmilk/dp/B0DGCVK1JL?crid=IPKJPEIGAJ58&dib=eyJ2IjoiMSJ9.9l1vM4A3KvgchlohBYfYT5kA329AlVO4aI3BlvpDVf8F7Fg2lBWTZ8SR5rml9CBVBvN3_tedh2s4i7nMpXiM1DX8lBqeMSRgh1JYp8h2tKTcvZifZosHlUbH9TCXAlqmCUcA8yoHVSKl9dbnTLLbZtmcLcxJSFk-wuzbSHYg-XlYQ5vB-FZwQMivn1qpoKp9x1Y4AX4EiCnKdyZ3rCvd9-mCWQJYDh5qd4VCt8wwYzDVzU9_G2ujD0ueeT9qfphpt23C5k1FsC6iQL-ceQHMT7Xk-a81b7xW5lNJ-2GcujM.1ndyCib0tM1CjnH-zB8u6CPXhvMVA-4nVaw6HFwbXV4&dib_tag=se&keywords=glass%2Bpitcher&qid=1786872098&sprefix=glass%2Bpitc%2Caps%2C562&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=266ca3417f7c1e09423feeee72c9750e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "High-speed blender",
+        "url": "https://www.amazon.com/Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506?ie=UTF8&s=psc&sprefix=high%2Bspeed%2Bblen%2Caps%2C555&keywords=high%2Bspeed%2Bblender&crid=8IR2ALTQODKI&dib_tag=se&ASIN=B00NGV4506&dib=eyJ2IjoiMSJ9.Xu0NhznEvkQP1KciA8NZDHe-rcH3gsM2nSIES7KCwadI2ceVCIX2xZtj-RYvRmri4N2KK0G4Yz-NGYGAjj26-GigSttjuVFLXJRqq1-VEKvauISIsVuGlKiWtKof5--ZqLJT8S4wQYZDzjgQjQf0kwc4cA62ElgfvR6Uuuxo1FuN3hVet9WV23ARtae_riyIUeU9Cy_cDz915ivQ_82j2JanKFoHWwSYiTvqCNlaovI.rUDn_kfuVLyZcVc3142tOm--PwBLtIixpBfHMS4nRas&qid=1786446937&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=657f8897039b81a712107ed361fa52bb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["copycat", "chick-fil-a", "lemonade", "drinks", "strawberry", "frosted"],
-    datePublished: "2026-08-14",
-    image: "/images/copycat-chick-fil-a-lemonade.jpg",
-    pinImage: "/images/pins/copycat-chick-fil-a-lemonade.png",
-    metaTitle: "Copycat Chick-fil-A Lemonade (Classic, Frosted & Strawberry) | The Better Home Recipes",
-    metaDescription:
-      "The real Chick-fil-A lemonade is just 3 ingredients — fresh lemon, sugar and water. Get the Classic, Frosted & Strawberry versions at home.",
+    "tags": [
+      "copycat",
+      "chick-fil-a",
+      "lemonade",
+      "drinks",
+      "strawberry",
+      "frosted"
+    ],
+    "datePublished": "2026-08-14",
+    "image": "/images/copycat-chick-fil-a-lemonade.jpg",
+    "pinImage": "/images/pins/copycat-chick-fil-a-lemonade.png",
+    "metaTitle": "Copycat Chick-fil-A Lemonade (Classic, Frosted & Strawberry) | The Better Home Recipes",
+    "metaDescription": "The real Chick-fil-A lemonade is just 3 ingredients — fresh lemon, sugar and water. Get the Classic, Frosted & Strawberry versions at home."
   },
   {
-    slug: "creamy-coconut-curry-lentil-soup",
-    title: "Creamy Coconut Curry Lentil Soup",
-    subtitle: "One pot, 25 minutes, totally vegan",
-    category: "one-pan",
-    prepTime: "5 min",
-    cookTime: "20 min",
-    totalTime: "25 min",
-    servings: 4,
-    difficulty: "Easy",
-    description:
-      "A cozy one-pot coconut curry lentil soup that's creamy, comforting and 100% vegan. Red lentils, coconut milk and warm curry spices simmer into a thick, protein-rich bowl in 25 minutes with just one pot to wash.",
-    ingredients: [
+    "slug": "creamy-coconut-curry-lentil-soup",
+    "title": "Creamy Coconut Curry Lentil Soup",
+    "subtitle": "One pot, 25 minutes, totally vegan",
+    "category": "one-pan",
+    "prepTime": "5 min",
+    "cookTime": "20 min",
+    "totalTime": "25 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "A cozy one-pot coconut curry lentil soup that's creamy, comforting and 100% vegan. Red lentils, coconut milk and warm curry spices simmer into a thick, protein-rich bowl in 25 minutes with just one pot to wash.",
+    "ingredients": [
       "1 cup dried red lentils (rinsed)",
       "1 can (14 oz) full-fat coconut milk",
       "3 cups vegetable broth",
@@ -622,136 +846,168 @@ export const recipes: Recipe[] = [
       "1 tsp turmeric",
       "2 cups baby spinach",
       "1 tbsp coconut oil",
-      "Salt and lime juice to taste",
+      "Salt and lime juice to taste"
     ],
-    equipment: ["Large pot or Dutch oven", "Wooden spoon", "Immersion blender (optional)"],
-    steps: [
+    "equipment": [
+      "Large pot or Dutch oven",
+      "Wooden spoon",
+      "Immersion blender (optional)"
+    ],
+    "steps": [
       "Heat the coconut oil in a large pot over medium heat. Add the onion and cook 4 minutes until softened.",
       "Stir in the garlic, ginger, curry paste, cumin and turmeric and cook 1 minute until fragrant.",
       "Add the diced tomatoes, coconut milk, vegetable broth and rinsed lentils. Stir and bring to a gentle boil.",
       "Reduce to a simmer and cook uncovered 18–20 minutes, stirring occasionally, until the lentils are soft and the soup has thickened.",
       "Stir in the spinach and cook 1 minute until wilted. Finish with salt and a squeeze of lime.",
-      "For an extra-creamy bowl, blend half the soup with an immersion blender, then stir it back in.",
+      "For an extra-creamy bowl, blend half the soup with an immersion blender, then stir it back in."
     ],
-    tips: [
+    "tips": [
       "Red lentils break down on their own — no soaking, and they thicken the soup as they cook.",
-      "A squeeze of lime at the end wakes up all the coconut and curry flavors.",
+      "A squeeze of lime at the end wakes up all the coconut and curry flavors."
     ],
-    affiliateLinks: [
-      { label: "Dutch oven", url: "https://www.amazon.com/Enameled-Cast-Iron-Dutch-Oven/dp/B0DXJTNWJN?crid=TVDOLLRZIF64&dib=eyJ2IjoiMSJ9.1RipCjRwp4yv3IHs4x1q8C_SHUqcsbpeDpcbdBo-2JLg8h8Hno0IxKy4bvHTMR7d5rNN7yBKHLfA7NBx2NJaHvT2Ohu22gWLSZTcPrdJi7rPdUCAiygwung_RUk4M7N7vTP8t8Ytq9H_w98foCBjki5oHks6EayOci6I-KuuEVa7ZpchUe73DELoH0QfT8TAUq-pS76fqb2QkqCQCs7coDQ0LJaVLqV6BuzAX2Ebv4-avC37i466OiHsmY0RjMuCSXMvgwGKoxeh-f3JKkGJLMczFSBFxs_ocWal1dEobMw.iFhJ4TmTPbbwvTMXmy0ScGA-yfQqoJu8OtBFyQVJgmc&dib_tag=se&keywords=dutch%2Boven&qid=1786447085&sprefix=dutch%2Bover%2Caps%2C528&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=9e4698f1f0941d03ddf58d171adcebf3&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Wooden spoon", url: "https://www.amazon.com/Nonstick-Cookware-Resistant-Utensils-Stirring/dp/B0FRFPQ3N5?crid=27NC175XIRFRC&dib=eyJ2IjoiMSJ9.7kdWYj9yf38TGskuggIcECMVhiK5gHgqGJ5qYyC6-PunHqegJgw5HLvW6CpY9skDWZ7gKdJTtUGejjz2NUUfmqMl-ojXYE4f0alkGc5atdnDv9WMfrmOv07DchBBxbv1C8Xi6p7pH7A0fto57eMjc7ydJwMYxbNA7ix02rrM9-HYyrzOWHiWpgaIJNRl2o7I-v4LKhOsICtZd8zpGSpTIVeMy8eIJ2tXAGFhSi4p97kbJQFobVB-BzBzyMIVPWOy5rc9w00nfz_Y0f3Q5kiYmWJ5EGEqQIJAjHi2HLtyEfE.U2K3-f3lbDJAuTF3149LHsXE7t8FBc8JDy-BBO_gi-o&dib_tag=se&keywords=wooden+spoon&qid=1786446658&sprefix=wooden+spo%2Caps%2C532&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=cb48013bb64f0951dc932f4e9d035ba2&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Immersion blender", url: "https://www.amazon.com/MUELLER-Immersion-Hand-Blender-Attachment/dp/B07H1PRHZ1?crid=3Z9X8Y2L1K4M&dib=eyJ2IjoiMSJ9.https://www.amazon.com/Immersion-Stainless-Emulsifier-Effortless-Smoothies/dp/B0FSZSKB92?crid=2RYH010QZLP6B&dib=eyJ2IjoiMSJ9.j24smqERTUnUQC9tvuKJTRC1O2DhymNhUTy9LF1ZVEbVaJacQ79Xi_8pSq19SYbhwPzNYMZvNK7_2-hR1CgvdAzXFVjEXuOqtjr_nIF8SoTUdN2ZFMnB6puL49A9LHeq7MzIo-E1YORoVLV932WbPc0ax-B4EPqfVMMvR3-MItykuWUUwZ8q5ljpySZfpN5cwYVLOFcvks6YPYotleo5xm0R92FK7jS4lSk4QuTdatA.SU5DgzcGfKrNJtp4y6rhmsxCbpp4yVbVp0FQ94CTnBQ&dib_tag=se&keywords=immersion%2Bblender&qid=1786872050&sprefix=immersion%2Bblend%2Caps%2C638&sr=8-5&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=ed26bb7454a5ce14f942d75aa542d932&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&dib_tag=se&keywords=immersion%2Bblender&qid=1786448002&sprefix=immersion%2Bblen%2Caps%2C500&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=00000000000000000000000000000003&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Dutch oven",
+        "url": "https://www.amazon.com/Enameled-Cast-Iron-Dutch-Oven/dp/B0DXJTNWJN?crid=TVDOLLRZIF64&dib=eyJ2IjoiMSJ9.1RipCjRwp4yv3IHs4x1q8C_SHUqcsbpeDpcbdBo-2JLg8h8Hno0IxKy4bvHTMR7d5rNN7yBKHLfA7NBx2NJaHvT2Ohu22gWLSZTcPrdJi7rPdUCAiygwung_RUk4M7N7vTP8t8Ytq9H_w98foCBjki5oHks6EayOci6I-KuuEVa7ZpchUe73DELoH0QfT8TAUq-pS76fqb2QkqCQCs7coDQ0LJaVLqV6BuzAX2Ebv4-avC37i466OiHsmY0RjMuCSXMvgwGKoxeh-f3JKkGJLMczFSBFxs_ocWal1dEobMw.iFhJ4TmTPbbwvTMXmy0ScGA-yfQqoJu8OtBFyQVJgmc&dib_tag=se&keywords=dutch%2Boven&qid=1786447085&sprefix=dutch%2Bover%2Caps%2C528&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=9e4698f1f0941d03ddf58d171adcebf3&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Wooden spoon",
+        "url": "https://www.amazon.com/Nonstick-Cookware-Resistant-Utensils-Stirring/dp/B0FRFPQ3N5?crid=27NC175XIRFRC&dib=eyJ2IjoiMSJ9.7kdWYj9yf38TGskuggIcECMVhiK5gHgqGJ5qYyC6-PunHqegJgw5HLvW6CpY9skDWZ7gKdJTtUGejjz2NUUfmqMl-ojXYE4f0alkGc5atdnDv9WMfrmOv07DchBBxbv1C8Xi6p7pH7A0fto57eMjc7ydJwMYxbNA7ix02rrM9-HYyrzOWHiWpgaIJNRl2o7I-v4LKhOsICtZd8zpGSpTIVeMy8eIJ2tXAGFhSi4p97kbJQFobVB-BzBzyMIVPWOy5rc9w00nfz_Y0f3Q5kiYmWJ5EGEqQIJAjHi2HLtyEfE.U2K3-f3lbDJAuTF3149LHsXE7t8FBc8JDy-BBO_gi-o&dib_tag=se&keywords=wooden+spoon&qid=1786446658&sprefix=wooden+spo%2Caps%2C532&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=cb48013bb64f0951dc932f4e9d035ba2&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Immersion blender",
+        "url": "https://www.amazon.com/Immersion-Stainless-Emulsifier-Effortless-Smoothies/dp/B0FSZSKB92?crid=2RYH010QZLP6B&dib=eyJ2IjoiMSJ9.j24smqERTUnUQC9tvuKJTRC1O2DhymNhUTy9LF1ZVEbVaJacQ79Xi_8pSq19SYbhwPzNYMZvNK7_2-hR1CgvdAzXFVjEXuOqtjr_nIF8SoTUdN2ZFMnB6puL49A9LHeq7MzIo-E1YORoVLV932WbPc0ax-B4EPqfVMMvR3-MItykuWUUwZ8q5ljpySZfpN5cwYVLOFcvks6YPYotleo5xm0R92FK7jS4lSk4QuTdatA.SU5DgzcGfKrNJtp4y6rhmsxCbpp4yVbVp0FQ94CTnBQ&dib_tag=se&keywords=immersion%2Bblender&qid=1786872050&sprefix=immersion%2Bblend%2Caps%2C638&sr=8-5&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=ed26bb7454a5ce14f942d75aa542d932&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["one-pot", "vegan", "lentil", "curry", "soup", "coconut"],
-    datePublished: "2026-08-13",
-    image: "/images/creamy-coconut-curry-lentil-soup.jpg",
-    pinImage: "/images/pins/creamy-coconut-curry-lentil-soup.png",
-    metaTitle: "Creamy Coconut Curry Lentil Soup (One Pot, 25 Min, Vegan) | The Better Home Recipes",
-    metaDescription:
-      "One-pot vegan coconut curry lentil soup in 25 minutes — red lentils, coconut milk and warm curry spices. Creamy, protein-rich and one pot to wash.",
+    "tags": [
+      "one-pot",
+      "vegan",
+      "lentil",
+      "curry",
+      "soup",
+      "coconut"
+    ],
+    "datePublished": "2026-08-13",
+    "image": "/images/creamy-coconut-curry-lentil-soup.jpg",
+    "pinImage": "/images/pins/creamy-coconut-curry-lentil-soup.png",
+    "metaTitle": "Creamy Coconut Curry Lentil Soup (One Pot, 25 Min, Vegan) | The Better Home Recipes",
+    "metaDescription": "One-pot vegan coconut curry lentil soup in 25 minutes — red lentils, coconut milk and warm curry spices. Creamy, protein-rich and one pot to wash."
   },
   {
-    slug: "5-high-protein-smoothie-recipes",
-    title: "5 High-Protein Smoothie Recipes",
-    subtitle: "20g+ protein each, ready in 2 minutes",
-    category: "drinks",
-    prepTime: "2 min",
-    totalTime: "2 min",
-    servings: 1,
-    difficulty: "Easy",
-    description:
-      "Five high-protein smoothies you can blend in two minutes flat — Chocolate Peanut Butter, Berry Blast, Tropical Mango, Green Power and Strawberry Vanilla. Every one lands at 20g of protein or more, so breakfast actually keeps you full.",
-    ingredients: [],
-    equipment: ["High-speed blender", "Tall glass", "Measuring cups"],
-    steps: [],
-    tips: [
+    "slug": "5-high-protein-smoothie-recipes",
+    "title": "5 High-Protein Smoothie Recipes",
+    "subtitle": "20g+ protein each, ready in 2 minutes",
+    "category": "drinks",
+    "prepTime": "2 min",
+    "totalTime": "2 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Five high-protein smoothies you can blend in two minutes flat — Chocolate Peanut Butter, Berry Blast, Tropical Mango, Green Power and Strawberry Vanilla. Every one lands at 20g of protein or more, so breakfast actually keeps you full.",
+    "ingredients": [],
+    "equipment": [
+      "High-speed blender",
+      "Tall glass",
+      "Measuring cups"
+    ],
+    "steps": [],
+    "tips": [
       "Use a peeled, frozen banana in every blend — it adds creaminess and natural sweetness with zero ice chips.",
-      "Add the liquid first so the blender blades move freely, then protein powder, then frozen fruit on top.",
+      "Add the liquid first so the blender blades move freely, then protein powder, then frozen fruit on top."
     ],
-    affiliateLinks: [
-      { label: "High-speed blender", url: "https://www.amazon.com/Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506?ie=UTF8&s=psc&sprefix=high%2Bspeed%2Bblen%2Caps%2C555&keywords=high%2Bspeed%2Bblender&crid=8IR2ALTQODKI&dib_tag=se&ASIN=B00NGV4506&dib=eyJ2IjoiMSJ9.Xu0NhznEvkQP1KciA8NZDHe-rcH3gsM2nSIES7KCwadI2ceVCIX2xZtj-RYvRmri4N2KK0G4Yz-NGYGAjj26-GigSttjuVFLXJRqq1-VEKvauISIsVuGlKiWtKof5--ZqLJT8S4wQYZDzjgQjQf0kwc4cA62ElgfvR6Uuuxo1FuN3hVet9WV23ARtae_riyIUeU9Cy_cDz915ivQ_82j2JanKFoHWwSYiTvqCNlaovI.rUDn_kfuVLyZcVc3142tOm--PwBLtIixpBfHMS4nRas&qid=1786446937&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=657f8897039b81a712107ed361fa52bb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Tall glass", url: "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3HCSZLG75G5IK&dib=eyJ2IjoiMSJ9.pMnrB7TmD_ZKW1_Bb9PMpatMVi4GEO61lvanLpzZ_VKmp19fJ5Xz8W06E26ZUw0ueYP2_v8ZU4KMltrMehQvpM_wslK5Xb5s7k28QSJpnel6lUpVNAiE1Kbk5ha2lBs7I2x0yx0iIUpCICDcU3fF1K78jjnIxnM_wHdXMegNXa8EXeoyNv7--3fYupUoW2eTMvXJmKqmLDBK2ujRVr02PaYgp60gYDU2SVNSg9NWnEvFPA2WSBzGRBPyfCofhIEFXvRKrT0csgKoJqCoWDdGeWfsvYM.QtoO0iCRnKuMcOddS0uyxns9xCztkh3Lu4epJe7HTWg&dib_tag=se&keywords=tall%2Bglass&qid=1786446781&sprefix=tall%2Bgla%2Caps%2C509&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3fba6e3b07e56624a952abbe49c7b384&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-    ],
-    tags: ["smoothie", "high-protein", "breakfast", "drinks", "meal-prep"],
-    datePublished: "2026-08-12",
-    image: "/images/5-high-protein-smoothie-recipes.jpg",
-    pinImage: "/images/pins/5-high-protein-smoothie-recipes.png",
-    metaTitle: "5 High-Protein Smoothie Recipes (20g+ Protein, 2 Minutes) | The Better Home Recipes",
-    metaDescription:
-      "Five high-protein smoothies ready in 2 minutes — Chocolate Peanut Butter, Berry Blast, Tropical Mango, Green Power, Strawberry Vanilla. 20g+ protein each.",
-    mealPrep: [
+    "affiliateLinks": [
       {
-        title: "Chocolate Peanut Butter",
-        protein: "32g",
-        ingredients: [
+        "label": "High-speed blender",
+        "url": "https://www.amazon.com/Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506?ie=UTF8&s=psc&sprefix=high%2Bspeed%2Bblen%2Caps%2C555&keywords=high%2Bspeed%2Bblender&crid=8IR2ALTQODKI&dib_tag=se&ASIN=B00NGV4506&dib=eyJ2IjoiMSJ9.Xu0NhznEvkQP1KciA8NZDHe-rcH3gsM2nSIES7KCwadI2ceVCIX2xZtj-RYvRmri4N2KK0G4Yz-NGYGAjj26-GigSttjuVFLXJRqq1-VEKvauISIsVuGlKiWtKof5--ZqLJT8S4wQYZDzjgQjQf0kwc4cA62ElgfvR6Uuuxo1FuN3hVet9WV23ARtae_riyIUeU9Cy_cDz915ivQ_82j2JanKFoHWwSYiTvqCNlaovI.rUDn_kfuVLyZcVc3142tOm--PwBLtIixpBfHMS4nRas&qid=1786446937&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=657f8897039b81a712107ed361fa52bb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Tall glass",
+        "url": "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3HCSZLG75G5IK&dib=eyJ2IjoiMSJ9.pMnrB7TmD_ZKW1_Bb9PMpatMVi4GEO61lvanLpzZ_VKmp19fJ5Xz8W06E26ZUw0ueYP2_v8ZU4KMltrMehQvpM_wslK5Xb5s7k28QSJpnel6lUpVNAiE1Kbk5ha2lBs7I2x0yx0iIUpCICDcU3fF1K78jjnIxnM_wHdXMegNXa8EXeoyNv7--3fYupUoW2eTMvXJmKqmLDBK2ujRVr02PaYgp60gYDU2SVNSg9NWnEvFPA2WSBzGRBPyfCofhIEFXvRKrT0csgKoJqCoWDdGeWfsvYMfQNzsUY-CRnTDVo4.VtoO0iCRnKuMcOddS0uyxns9xCztkh3Lu4epJe7HTWg&dib_tag=se&keywords=tall%2Bglass&qid=1786446781&sprefix=tall%2Bgla%2Caps%2C509&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3fba6e3b07e56624a952abbe49c7b384&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
+    ],
+    "tags": [
+      "smoothie",
+      "high-protein",
+      "breakfast",
+      "drinks",
+      "meal-prep"
+    ],
+    "datePublished": "2026-08-12",
+    "image": "/images/5-high-protein-smoothie-recipes.jpg",
+    "pinImage": "/images/pins/5-high-protein-smoothie-recipes.png",
+    "metaTitle": "5 High-Protein Smoothie Recipes (20g+ Protein, 2 Minutes) | The Better Home Recipes",
+    "metaDescription": "Five high-protein smoothies ready in 2 minutes — Chocolate Peanut Butter, Berry Blast, Tropical Mango, Green Power, Strawberry Vanilla. 20g+ protein each.",
+    "mealPrep": [
+      {
+        "title": "Chocolate Peanut Butter",
+        "protein": "32g",
+        "ingredients": [
           "1 scoop chocolate protein powder",
           "2 tbsp peanut butter",
           "1 frozen banana",
           "1 cup milk of choice",
           "1 tbsp cocoa powder",
-          "Ice to blend",
-        ],
+          "Ice to blend"
+        ]
       },
       {
-        title: "Berry Blast",
-        protein: "28g",
-        ingredients: [
+        "title": "Berry Blast",
+        "protein": "28g",
+        "ingredients": [
           "1 scoop vanilla protein powder",
           "1 cup frozen mixed berries",
           "½ cup plain Greek yogurt",
           "1 cup almond milk",
-          "1 tbsp chia seeds",
-        ],
+          "1 tbsp chia seeds"
+        ]
       },
       {
-        title: "Tropical Mango",
-        protein: "24g",
-        ingredients: [
+        "title": "Tropical Mango",
+        "protein": "24g",
+        "ingredients": [
           "1 scoop vanilla protein powder",
           "1 cup frozen mango",
           "½ cup plain Greek yogurt",
           "¾ cup coconut water",
-          "1 tbsp shredded coconut",
-        ],
+          "1 tbsp shredded coconut"
+        ]
       },
       {
-        title: "Green Power",
-        protein: "27g",
-        ingredients: [
+        "title": "Green Power",
+        "protein": "27g",
+        "ingredients": [
           "1 scoop vanilla protein powder",
           "1 cup fresh spinach",
           "½ frozen banana",
           "½ cup plain Greek yogurt",
           "1 cup milk of choice",
-          "1 tbsp almond butter",
-        ],
+          "1 tbsp almond butter"
+        ]
       },
       {
-        title: "Strawberry Vanilla",
-        protein: "26g",
-        ingredients: [
+        "title": "Strawberry Vanilla",
+        "protein": "26g",
+        "ingredients": [
           "1 scoop vanilla protein powder",
           "1 cup frozen strawberries",
           "½ cup cottage cheese",
           "1 cup milk of choice",
-          "½ tsp vanilla extract",
-        ],
-      },
-    ],
+          "½ tsp vanilla extract"
+        ]
+      }
+    ]
   },
   {
-    slug: "copycat-panera-bread-mac-and-cheese",
-    title: "Copycat Panera Bread Mac & Cheese",
-    subtitle: "Creamy white cheddar in 20 minutes",
-    category: "copycat",
-    prepTime: "5 min",
-    cookTime: "15 min",
-    totalTime: "20 min",
-    servings: 4,
-    difficulty: "Easy",
-    description:
-      "The copycat Panera mac and cheese is all about the white cheddar — a silky, tangy cheese sauce clinging to cavatappi. It's stovetop only, ready in 20 minutes, and tastes like the cafe bowl for a fraction of the price.",
-    ingredients: [
+    "slug": "copycat-panera-bread-mac-and-cheese",
+    "title": "Copycat Panera Bread Mac & Cheese",
+    "subtitle": "Creamy white cheddar in 20 minutes",
+    "category": "copycat",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "totalTime": "20 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "The copycat Panera mac and cheese is all about the white cheddar — a silky, tangy cheese sauce clinging to cavatappi. It's stovetop only, ready in 20 minutes, and tastes like the cafe bowl for a fraction of the price.",
+    "ingredients": [
       "12 oz cavatappi or elbow pasta",
       "2 cups shredded white cheddar",
       "1 cup whole milk",
@@ -760,47 +1016,65 @@ export const recipes: Recipe[] = [
       "2 tbsp all-purpose flour",
       "½ tsp Dijon mustard",
       "¼ tsp paprika",
-      "Salt and white pepper to taste",
+      "Salt and white pepper to taste"
     ],
-    equipment: ["Large pot", "Saucepan", "Whisk", "Grater"],
-    steps: [
+    "equipment": [
+      "Large pot",
+      "Saucepan",
+      "Whisk",
+      "Grater"
+    ],
+    "steps": [
       "Boil the pasta in salted water until al dente, then drain and set aside, reserving ½ cup of the pasta water.",
       "In a saucepan, melt the butter over medium heat. Whisk in the flour and cook 1 minute to make a roux.",
       "Slowly whisk in the milk and cream and cook 3–4 minutes until the sauce thickens enough to coat a spoon.",
       "Remove from heat and stir in the white cheddar a handful at a time until melted and smooth.",
       "Add the Dijon, paprika, salt and white pepper, then fold in the drained pasta.",
-      "Loosen with a splash of the reserved pasta water if the sauce is too thick, then serve hot.",
+      "Loosen with a splash of the reserved pasta water if the sauce is too thick, then serve hot."
     ],
-    tips: [
+    "tips": [
       "Shred your own white cheddar — pre-shredded bags have anti-caking starch that makes the sauce grainy.",
-      "Off the heat is the key to smooth cheese sauce; add the cheddar once the pan is off the burner.",
+      "Off the heat is the key to smooth cheese sauce; add the cheddar once the pan is off the burner."
     ],
-    affiliateLinks: [
-      { label: "Saucepan", url: "https://www.amazon.com/Cuisinart-MC-PRO1N-Stainless-Saucepan-Helper/dp/B009W6MTQ2?crid=4M5N6P7Q8R9S&dib=eyJ2IjoiMSJ9.https://www.amazon.com/SENSARTE-Nonstick-Stay-cool-Multipurpose-Induction/dp/B09KH38HF2?crid=2VZ5EIV35L5Y2&dib=eyJ2IjoiMSJ9.QAinwdsK-CYNbBOjPxE3HOFR3rVBX2ZDcV0iLx_SGj2bOf61dbGvFbf7xOgRXseTwTkpBQuk8eqRh4s89XEGQRcOJg4pANXzjXdUbEhZYLZrPfpQCpPYG297JuY3p-AdKxyBb9eQdvRnFsCrWmWGJZgBBLKxYyplyktC6IsnXobjKxJFJuGMjbxZkHuuDbdHbzT9UDQ0SwCaSSM9wnicqftri8U6UK14iKtcbWTOHSz9fYIXhMQRr_SxAzS2DIsMdbkj4A06uhfzirBZCCbufEvfDHqdqYBRoYO1HEglG_4.J3YYl_yS9JVkGfPmccm_azx1kN0CkFGP_rP6mvEE3Wc&dib_tag=se&keywords=saucepan&qid=1786872141&sprefix=sauce%2Caps%2C563&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=aac244b2e8e81ae1dbf5b99ffee36dd9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&dib_tag=se&keywords=saucepan&qid=1786448003&sprefix=sauc%2Caps%2C500&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=00000000000000000000000000000004&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Whisk", url: "https://www.amazon.com/NileHome-Stainless-Whisking-Blending-Stirring-3/dp/B08SWBRTRK?crid=2CS8NT5VFRFG6&dib=eyJ2IjoiMSJ9.vn1T1LMF_WslotWzDq-_xU7cEuW1IsKeJTBHLKoHwqECcn_ciIvEA34guwMHwi-9rA_udHVc06PB31Si7opmh_wTAYahnUcerKGUbR2oFn1PKhUUdaBU1cggN-teWkfG9NkY-snv9h3Nma4uJthBuinfYpK4SxY4Jk5FaS5ao6YsCMUqzEZJ9MHJog13oNwgnPYYQQRiOvAJcFT3U_H-_KHv99p6nmOssVk69_3PHJUpM29uR87H_1lp0q3VkmPIL3tDs8E0H625NhU_OeRTf7vn159LNj3QHSoozbz_tSI.tgvCrPnEBw-R1p7aWEHwA2Pn6b-7kTQN_Xw-uI3G_vE&dib_tag=se&keywords=whisk&qid=1786447261&sprefix=whis%2Caps%2C575&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=421beec0b247ae768b05025544fc957e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Box grater", url: "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Saucepan",
+        "url": "https://www.amazon.com/SENSARTE-Nonstick-Stay-cool-Multipurpose-Induction/dp/B09KH38HF2?crid=2VZ5EIV35L5Y2&dib=eyJ2IjoiMSJ9.QAinwdsK-CYNbBOjPxE3HOFR3rVBX2ZDcV0iLx_SGj2bOf61dbGvFbf7xOgRXseTwTkpBQuk8eqRh4s89XEGQRcOJg4pANXzjXdUbEhZYLZrPfpQCpPYG297JuY3p-AdKxyBb9eQdvRnFsCrWmWGJZgBBLKxYyplyktC6IsnXobjKxJFJuGMjbxZkHuuDbdHbzT9UDQ0SwCaSSM9wnicqftri8U6UK14iKtcbWTOHSz9fYIXhMQRr_SxAzS2DIsMdbkj4A06uhfzirBZCCbufEvfDHqdqYBRoYO1HEglG_4.J3YYl_yS9JVkGfPmccm_azx1kN0CkFGP_rP6mvEE3Wc&dib_tag=se&keywords=saucepan&qid=1786872141&sprefix=sauce%2Caps%2C563&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=aac244b2e8e81ae1dbf5b99ffee36dd9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Whisk",
+        "url": "https://www.amazon.com/NileHome-Stainless-Whisking-Blending-Stirring-3/dp/B08SWBRTRK?crid=2CS8NT5VFRFG6&dib=eyJ2IjoiMSJ9.vn1T1LMF_WslotWzDq-_xU7cEuW1IsKeJTBHLKoHwqECcn_ciIvEA34guwMHwi-9rA_udHVc06PB31Si7opmh_wTAYahnUcerKGUbR2oFn1PKhUUdaBU1cggN-teWkfG9NkY-snv9h3Nma4uJthBuinfYpK4SxY4Jk5FaS5ao6YsCMUqzEZJ9MHJog13oNwgnPYYQQRiOvAJcFT3U_H-_KHv99p6nmOssVk69_3PHJUpM29uR87H_1lp0q3VkmPIL3tDs8E0H625NhU_OeRTf7vn159LNj3QHSoozbz_tSI.tgvCrPnEBw-R1p7aWEHwA2Pn6b-7kTQN_Xw-uI3G_vE&dib_tag=se&keywords=whisk&qid=1786447261&sprefix=whis%2Caps%2C575&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=421beec0b247ae768b05025544fc957e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Box grater",
+        "url": "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["copycat", "panera", "mac-and-cheese", "pasta", "cheese"],
-    datePublished: "2026-08-11",
-    image: "/images/copycat-panera-bread-mac-and-cheese.jpg",
-    pinImage: "/images/pins/copycat-panera-bread-mac-and-cheese.png",
-    metaTitle: "Copycat Panera Bread Mac & Cheese (White Cheddar, 20 Min) | The Better Home Recipes",
-    metaDescription:
-      "Creamy copycat Panera mac and cheese in 20 minutes — a silky white cheddar sauce over cavatappi. Stovetop only, tastes like the cafe bowl.",
+    "tags": [
+      "copycat",
+      "panera",
+      "mac-and-cheese",
+      "pasta",
+      "cheese"
+    ],
+    "datePublished": "2026-08-11",
+    "image": "/images/copycat-panera-bread-mac-and-cheese.jpg",
+    "pinImage": "/images/pins/copycat-panera-bread-mac-and-cheese.png",
+    "metaTitle": "Copycat Panera Bread Mac & Cheese (White Cheddar, 20 Min) | The Better Home Recipes",
+    "metaDescription": "Creamy copycat Panera mac and cheese in 20 minutes — a silky white cheddar sauce over cavatappi. Stovetop only, tastes like the cafe bowl."
   },
   {
-    slug: "one-pan-honey-garlic-butter-shrimp",
-    title: "One-Pan Honey Garlic Butter Shrimp",
-    subtitle: "15 minutes, one pan, zero stress",
-    category: "one-pan",
-    prepTime: "5 min",
-    cookTime: "10 min",
-    totalTime: "15 min",
-    servings: 4,
-    difficulty: "Easy",
-    description:
-      "One-pan honey garlic butter shrimp is a 15-minute dinner where juicy shrimp get seared in a glossy honey-garlic butter sauce with a hit of lemon. One skillet, almost no cleanup, and it's done before the rice finishes.",
-    ingredients: [
+    "slug": "one-pan-honey-garlic-butter-shrimp",
+    "title": "One-Pan Honey Garlic Butter Shrimp",
+    "subtitle": "15 minutes, one pan, zero stress",
+    "category": "one-pan",
+    "prepTime": "5 min",
+    "cookTime": "10 min",
+    "totalTime": "15 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "One-pan honey garlic butter shrimp is a 15-minute dinner where juicy shrimp get seared in a glossy honey-garlic butter sauce with a hit of lemon. One skillet, almost no cleanup, and it's done before the rice finishes.",
+    "ingredients": [
       "1½ lb large shrimp (peeled and deveined)",
       "3 tbsp butter",
       "4 cloves garlic (minced)",
@@ -809,85 +1083,121 @@ export const recipes: Recipe[] = [
       "1 tsp lemon juice",
       "½ tsp red pepper flakes",
       "2 tbsp fresh parsley (chopped)",
-      "Salt and black pepper to taste",
+      "Salt and black pepper to taste"
     ],
-    equipment: ["Large skillet", "Wooden spoon", "Tongs"],
-    steps: [
+    "equipment": [
+      "Large skillet",
+      "Wooden spoon",
+      "Tongs"
+    ],
+    "steps": [
       "Pat the shrimp dry and season with salt and pepper. Melt the butter in a large skillet over medium-high heat.",
       "Add the garlic and cook 30 seconds until fragrant — don't let it brown.",
       "Add the shrimp in a single layer and sear 1–2 minutes per side until just pink.",
       "Stir in the honey, soy sauce, lemon juice and red pepper flakes and toss to coat the shrimp in the glossy sauce.",
-      "Cook 1 minute more until the sauce thickens slightly, then finish with parsley and serve over rice or noodles.",
+      "Cook 1 minute more until the sauce thickens slightly, then finish with parsley and serve over rice or noodles."
     ],
-    tips: [
+    "tips": [
       "Pull the shrimp the second they turn pink — they go from tender to rubbery in under a minute.",
-      "Make it a meal: spoon the shrimp and sauce right over rice and let it soak up the honey garlic butter.",
+      "Make it a meal: spoon the shrimp and sauce right over rice and let it soak up the honey garlic butter."
     ],
-    affiliateLinks: [
-      { label: "Large skillet", url: "https://www.amazon.com/SENSARTE-Nonstick-Skillet-Induction-Healthy/dp/B0D9Q7D9VS?crid=1VNIHLRVLUXBI&dib=eyJ2IjoiMSJ9.41vwpolDYRfCYNkU-05YrjknucAQBPWNzUmJ855cYR_MDAffgvnHWfOhrh0cCmifc9Z9aUOH-1_Ik8ctBIUY8vP1HU7_IbE_PeR4qzS98kYMcpZG3qYk9CxTFOn4IcyU-RIoe7urNO2f0vVSzSh9jC_p7EtvtOvEi8tIQP6uvN_kbjiqEmn1SnFVO7Z8fKZ_l20uXf2EN49xvEX9pm8L5qu3X4ZRch4lyvGCoLG5Bdt_PJdpcSkOF4SiPaqsWTru7HQOvlnF0-RP5N5jj325B4Z8kFUT3qYLezZneZN6B4E.0PyDvgpsUiOyM1dCEQ8XuUVpibDpIFyr1DbXuKwBM9A&dib_tag=se&keywords=large%2Bskillet&qid=1786446621&sprefix=large%2Bskil%2Caps%2C540&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=e4d4a6882e8485e3994c48e0ae0643af&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Wooden spoon", url: "https://www.amazon.com/Nonstick-Cookware-Resistant-Utensils-Stirring/dp/B0FRFPQ3N5?crid=27NC175XIRFRC&dib=eyJ2IjoiMSJ9.7kdWYj9yf38TGskuggIcECMVhiK5gHgqGJ5qYyC6-PunHqegJgw5HLvW6CpY9skDWZ7gKdJTtUGejjz2NUUfmqMl-ojXYE4f0alkGc5atdnDv9WMfrmOv07DchBBxbv1C8Xi6p7pH7A0fto57eMjc7ydJwMYxbNA7ix02rrM9-HYyrzOWHiWpgaIJNRl2o7I-v4LKhOsICtZd8zpGSpTIVeMy8eIJ2tXAGFhSi4p97kbJQFobVB-BzBzyMIVPWOy5rc9w00nfz_Y0f3Q5kiYmWJ5EGEqQIJAjHi2HLtyEfE.U2K3-f3lbDJAuTF3149LHsXE7t8FBc8JDy-BBO_gi-o&dib_tag=se&keywords=wooden+spoon&qid=1786446658&sprefix=wooden+spo%2Caps%2C532&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=cb48013bb64f0951dc932f4e9d035ba2&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Tongs", url: "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Large skillet",
+        "url": "https://www.amazon.com/SENSARTE-Nonstick-Skillet-Induction-Healthy/dp/B0D9Q7D9VS?crid=1VNIHLRVLUXBI&dib=eyJ2IjoiMSJ9.41vwpolDYRfCYNkU-05YrjknucAQBPWNzUmJ855cYR_MDAffgvnHWfOhrh0cCmifc9Z9aUOH-1_Ik8ctBIUY8vP1HU7_IbE_PeR4qzS98kYMcpZG3qYk9CxTFOn4IcyU-RIoe7urNO2f0vVSzSh9jC_p7EtvtOvEi8tIQP6uvN_kbjiqEmn1SnFVO7Z8fKZ_l20uXf2EN49xvEX9pm8L5qu3X4ZRch4lyvGCoLG5Bdt_PJdpcSkOF4SiPaqsWTru7HQOvlnF0-RP5N5jj325B4Z8kFUT3qYLezZneZN6B4E.0PyDvgpsUiOyM1dCEQ8XuUVpibDpIFyr1DbXuKwBM9A&dib_tag=se&keywords=large%2Bskillet&qid=1786446621&sprefix=large%2Bskil%2Caps%2C540&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=e4d4a6882e8485e3994c48e0ae0643af&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Wooden spoon",
+        "url": "https://www.amazon.com/Nonstick-Cookware-Resistant-Utensils-Stirring/dp/B0FRFPQ3N5?crid=27NC175XIRFRC&dib=eyJ2IjoiMSJ9.7kdWYj9yf38TGskuggIcECMVhiK5gHgqGJ5qYyC6-PunHqegJgw5HLvW6CpY9skDWZ7gKdJTtUGejjz2NUUfmqMl-ojXYE4f0alkGc5atdnDv9WMfrmOv07DchBBxbv1C8Xi6p7pH7A0fto57eMjc7ydJwMYxbNA7ix02rrM9-HYyrzOWHiWpgaIJNRl2o7I-v4LKhOsICtZd8zpGSpTIVeMy8eIJ2tXAGFhSi4p97kbJQFobVB-BzBzyMIVPWOy5rc9w00nfz_Y0f3Q5kiYmWJ5EGEqQIJAjHi2HLtyEfE.U2K3-f3lbDJAuTF3149LHsXE7t8FBc8JDy-BBO_gi-o&dib_tag=se&keywords=wooden+spoon&qid=1786446658&sprefix=wooden+spo%2Caps%2C532&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=cb48013bb64f0951dc932f4e9d035ba2&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Tongs",
+        "url": "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["one-pan", "shrimp", "seafood", "quick", "honey", "garlic"],
-    datePublished: "2026-08-10",
-    image: "/images/one-pan-honey-garlic-butter-shrimp.jpg",
-    pinImage: "/images/pins/one-pan-honey-garlic-butter-shrimp.png",
-    metaTitle: "One-Pan Honey Garlic Butter Shrimp (15 Minutes) | The Better Home Recipes",
-    metaDescription:
-      "One-pan honey garlic butter shrimp in 15 minutes — juicy shrimp in a glossy honey-garlic sauce with lemon. One skillet, almost no cleanup.",
+    "tags": [
+      "one-pan",
+      "shrimp",
+      "seafood",
+      "quick",
+      "honey",
+      "garlic"
+    ],
+    "datePublished": "2026-08-10",
+    "image": "/images/one-pan-honey-garlic-butter-shrimp.jpg",
+    "pinImage": "/images/pins/one-pan-honey-garlic-butter-shrimp.png",
+    "metaTitle": "One-Pan Honey Garlic Butter Shrimp (15 Minutes) | The Better Home Recipes",
+    "metaDescription": "One-pan honey garlic butter shrimp in 15 minutes — juicy shrimp in a glossy honey-garlic sauce with lemon. One skillet, almost no cleanup."
   },
   {
-    slug: "copycat-starbucks-matcha-lemonade",
-    title: "Copycat Starbucks Matcha Lemonade",
-    subtitle: "3 ingredients, 3 minutes",
-    category: "drinks",
-    prepTime: "3 min",
-    totalTime: "3 min",
-    servings: 1,
-    difficulty: "Easy",
-    description:
-      "The copycat Starbucks matcha lemonade is just three ingredients — matcha, lemonade and ice — shaken into a frothy, refreshing green drink. It's the iced-tea copycat you can make at home in three minutes for pennies.",
-    ingredients: [
+    "slug": "copycat-starbucks-matcha-lemonade",
+    "title": "Copycat Starbucks Matcha Lemonade",
+    "subtitle": "3 ingredients, 3 minutes",
+    "category": "drinks",
+    "prepTime": "3 min",
+    "totalTime": "3 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "The copycat Starbucks matcha lemonade is just three ingredients — matcha, lemonade and ice — shaken into a frothy, refreshing green drink. It's the iced-tea copycat you can make at home in three minutes for pennies.",
+    "ingredients": [
       "½ tsp ceremonial matcha",
       "1 cup lemonade (store-bought or homemade)",
-      "Ice, to fill",
+      "Ice, to fill"
     ],
-    equipment: ["Matcha whisk", "Cocktail shaker or jar with lid", "Tall glass"],
-    steps: [
+    "equipment": [
+      "Matcha whisk",
+      "Cocktail shaker or jar with lid",
+      "Tall glass"
+    ],
+    "steps": [
       "Sift the matcha into a small bowl to remove clumps, then whisk with 2 tablespoons of warm water until smooth and frothy.",
       "Fill a cocktail shaker (or jar with a lid) with ice, then add the lemonade and the whisked matcha.",
       "Seal and shake hard for 10–15 seconds until everything is cold and frothy.",
-      "Pour into a tall glass over fresh ice and serve immediately.",
+      "Pour into a tall glass over fresh ice and serve immediately."
     ],
-    tips: [
+    "tips": [
       "Whisk the matcha with a little warm water first — dumping it straight into the lemonade leaves bitter clumps.",
-      "Shake, don't stir: the agitation is what gives it that creamy, frothy Starbucks texture.",
+      "Shake, don't stir: the agitation is what gives it that creamy, frothy Starbucks texture."
     ],
-    affiliateLinks: [
-      { label: "Matcha whisk", url: "https://www.amazon.com/Clay-Fire-Matcha-Handcrafted-Traditional/dp/B0FL2SM8XP?crid=IMZULE719TD4&dib=eyJ2IjoiMSJ9.10DLFdNYEm3vv-gGWwUknnjFU3JoISizCj2UAcFws-udV8sR4L5lgcJLN0mg1ZbSsxaHuPEMfv85B3b1piFI7jILtu9zEKHdtfiQKSOSJ1QNmeCWMDxw8NAIYoaBjjJ7_yGZ8v2k7us59aUExljqZjcK-VrztEgSz7rP59M9p2ysn0odwmgsYcJnVLs8vJggx0wOFW3rjnOHk1vb8GlTUXpLbDYHi5YwYi4nNIs_YO8zjsnmzIqQ5pbVqcv54XJfWI_nZ-gVvCdfP6tRqHUrB6TDDrCP6YA7XIIn73GGaOk.a3jcnWWUCQZKrqD0Y75WLbPZ73nHugMGSpQdCbEQ-LI&dib_tag=se&keywords=matcha%2Bwhisk&qid=1786446749&sprefix=matcha%2Bwish%2Caps%2C529&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=de5d48b5ad631782f917d21b214fe202&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Cocktail shaker", url: "https://www.amazon.com/example-Cocktail-Shaker-Stainless-Sets/dp/B09EXAMPLESHK?crid=5P6Q7R8S9T0U&dib=eyJ2IjoiMSJ9.https://www.amazon.com/KITESSENSU-Cocktail-Stainless-Bartending-Measuring/dp/B0957GCDKM?crid=SRPXDOA31R27&dib=eyJ2IjoiMSJ9.Myv8qS-yStOlwyOzWRU16SNKJfWP2sc6FLjc4eyuEDu_XBgo-FjsLcMjEzGGNDMkSGSiCh09-6mff24Y1hwz7T-IH82Zf8n26obKPutEFXpd9_9F7KrYnCtKPKtSbfjNQcyCgvLEcMXmr_fanyJ8ZhPedbSoB7kjdtOgStCc0KAGHaqNk9-DXUWRUnYginL8ZDzx4nDn0ZRBlZFsVpM1D4m4A9cX3W1WTdKfuq9ocPMqjn-Ylb3a5_Gz9oq3Ke8H8DFBwkFNV-94vR5WSmS6D55j2ELHgmJxLY0TLW9FsD0.0cvkhzvHgII-P39pQU404pfdnlNJ7_uUId_ydyU--ak&dib_tag=se&keywords=cocktail%2Bshaker&qid=1786872175&sprefix=cocktail%2Bsha%2Caps%2C560&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=9143890d6315842a62c6e211d6613239&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&dib_tag=se&keywords=cocktail%2Bshaker&qid=1786448004&sprefix=cocktail%2Bsha%2Caps%2C500&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=00000000000000000000000000000005&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Tall glass", url: "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3HCSZLG75G5IK&dib=eyJ2IjoiMSJ9.pMnrB7TmD_ZKW1_Bb9PMpatMVi4GEO61lvanLpzZ_VKmp19fJ5Xz8W06E26ZUw0ueYP2_v8ZU4KMltrMehQvpM_wslK5Xb5s7k28QSJpnel6lUpVNAiE1Kbk5ha2lBs7I2x0yx0iIUpCICDcU3fF1K78jjnIxnM_wHdXMegNXa8EXeoyNv7--3fYupUoW2eTMvXJmKqmLDBK2ujRVr02PaYgp60gYDU2SVNSg9NWnEvFPA2WSBzGRBPyfCofhIEFXvRKrT0csgKoJqCoWDdGeWfsvYM.QtoO0iCRnKuMcOddS0uyxns9xCztkh3Lu4epJe7HTWg&dib_tag=se&keywords=tall%2Bglass&qid=1786446781&sprefix=tall%2Bgla%2Caps%2C509&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3fba6e3b07e56624a952abbe49c7b384&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Matcha whisk",
+        "url": "https://www.amazon.com/Clay-Fire-Matcha-Handcrafted-Traditional/dp/B0FL2SM8XP?crid=IMZULE719TD4&dib=eyJ2IjoiMSJ9.10DLFdNYEm3vv-gGWwUknnjFU3JoISizCj2UAcFws-udV8sR4L5lgcJLN0mg1ZbSsxaHuPEMfv85B3b1piFI7jILtu9zEKHdtfiQKSOSJ1QNmeCWMDxw8NAIYoaBjjJ7_yGZ8v2k7us59aUExljqZjcK-VrztEgSz7rP59M9p2ysn0odwmgsYcJnVLs8vJggx0wOFW3rjnOHk1vb8GlTUXpLbDYHi5YwYi4nNIs_YO8zjsnmzIqQ5pbVqcv54XJfWI_nZ-gVvCdfP6tRqHUrB6TDDrCP6YA7XIIn73GGaOk.a3jcnWWUCQZKrqD0Y75WLbPZ73nHugMGSpQdCbEQ-LI&dib_tag=se&keywords=matcha%2Bwhisk&qid=1786446749&sprefix=matcha%2Bwish%2Caps%2C529&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=de5d48b5ad631782f917d21b214fe202&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Cocktail shaker",
+        "url": "https://www.amazon.com/KITESSENSU-Cocktail-Stainless-Bartending-Measuring/dp/B0957GCDKM?crid=SRPXDOA31R27&dib=eyJ2IjoiMSJ9.Myv8qS-yStOlwyOzWRU16SNKJfWP2sc6FLjc4eyuEDu_XBgo-FjsLcMjEzGGNDMkSGSiCh09-6mff24Y1hwz7T-IH82Zf8n26obKPutEFXpd9_9F7KrYnCtKPKtSbfjNQcyCgvLEcMXmr_fanyJ8ZhPedbSoB7kjdtOgStCc0KAGHaqNk9-DXUWRUnYginL8ZDzx4nDn0ZRBlZFsVpM1D4m4A9cX3W1WTdKfuq9ocPMqjn-Ylb3a5_Gz9oq3Ke8H8DFBwkFNV-94vR5WSmS6D55j2ELHgmJxLY0TLW9FsD0.0cvkhzvHgII-P39pQU404pfdnlNJ7_uUId_ydyU--ak&dib_tag=se&keywords=cocktail%2Bshaker&qid=1786872175&sprefix=cocktail%2Bsha%2Caps%2C560&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=9143890d6315842a62c6e211d6613239&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Tall glass",
+        "url": "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3HCSZLG75G5IK&dib=eyJ2IjoiMSJ9.pMnrB7TmD_ZKW1_Bb9PMpatMVi4GEO61lvanLpzZ_VKmp19fJ5Xz8W06E26ZUw0ueYP2_v8ZU4KMltrMehQvpM_wslK5Xb5s7k28QSJpnel6lUpVNAiE1Kbk5ha2lBs7I2x0yx0iIUpCICDcU3fF1K78jjnIxnM_wHdXMegNXa8EXeoyNv7--3fYupUoW2eTMvXJmKqmLDBK2ujRVr02PaYgp60gYDU2SVNSg9NWnEvFPA2WSBzGRBPyfCofhIEFXvRKrT0csgKoJqCoWDdGeWfsvYMfQNzsUY-CRnTDVo4.VtoO0iCRnKuMcOddS0uyxns9xCztkh3Lu4epJe7HTWg&dib_tag=se&keywords=tall%2Bglass&qid=1786446781&sprefix=tall%2Bgla%2Caps%2C509&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3fba6e3b07e56624a952abbe49c7b384&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["copycat", "starbucks", "matcha", "lemonade", "drinks", "iced"],
-    datePublished: "2026-08-09",
-    image: "/images/copycat-starbucks-matcha-lemonade.jpg",
-    pinImage: "/images/pins/copycat-starbucks-matcha-lemonade.png",
-    metaTitle: "Copycat Starbucks Matcha Lemonade (3 Ingredients) | The Better Home Recipes",
-    metaDescription:
-      "Copycat Starbucks matcha lemonade in 3 minutes — matcha, lemonade and ice shaken frothy. Just 3 ingredients, for a fraction of the cafe price.",
+    "tags": [
+      "copycat",
+      "starbucks",
+      "matcha",
+      "lemonade",
+      "drinks",
+      "iced"
+    ],
+    "datePublished": "2026-08-09",
+    "image": "/images/copycat-starbucks-matcha-lemonade.jpg",
+    "pinImage": "/images/pins/copycat-starbucks-matcha-lemonade.png",
+    "metaTitle": "Copycat Starbucks Matcha Lemonade (3 Ingredients) | The Better Home Recipes",
+    "metaDescription": "Copycat Starbucks matcha lemonade in 3 minutes — matcha, lemonade and ice shaken frothy. Just 3 ingredients, for a fraction of the cafe price."
   },
   {
-    slug: "high-protein-breakfast-wrap-meal-prep",
-    title: "High-Protein Breakfast Wrap Meal Prep",
-    subtitle: "5 days, 5 minutes each, 30g protein",
-    category: "meal-prep",
-    prepTime: "25 min",
-    totalTime: "25 min",
-    servings: 5,
-    difficulty: "Easy",
-    description:
-      "A five-day high-protein breakfast wrap meal prep — eggs, turkey bacon, black beans, cheese and spinach rolled in a whole wheat tortilla. Each wrap is 30g of protein, takes five minutes to reheat, and keeps you full till lunch.",
-    ingredients: [
+    "slug": "high-protein-breakfast-wrap-meal-prep",
+    "title": "High-Protein Breakfast Wrap Meal Prep",
+    "subtitle": "5 days, 5 minutes each, 30g protein",
+    "category": "meal-prep",
+    "prepTime": "25 min",
+    "totalTime": "25 min",
+    "servings": 5,
+    "difficulty": "Easy",
+    "description": "A five-day high-protein breakfast wrap meal prep — eggs, turkey bacon, black beans, cheese and spinach rolled in a whole wheat tortilla. Each wrap is 30g of protein, takes five minutes to reheat, and keeps you full till lunch.",
+    "ingredients": [
       "10 large eggs",
       "10 slices turkey bacon",
       "1 can (15 oz) black beans (rinsed)",
@@ -896,174 +1206,230 @@ export const recipes: Recipe[] = [
       "5 whole wheat tortillas",
       "2 tbsp milk",
       "1 tbsp butter",
-      "Salt and black pepper to taste",
+      "Salt and black pepper to taste"
     ],
-    equipment: ["Non-stick pan", "Meal prep containers", "Spatula", "Mixing bowl"],
-    steps: [
+    "equipment": [
+      "Non-stick pan",
+      "Meal prep containers",
+      "Spatula",
+      "Mixing bowl"
+    ],
+    "steps": [
       "Cook the turkey bacon in a non-stick pan until crisp, then crumble it into pieces.",
       "Whisk the eggs with the milk, salt and pepper. Scramble them soft in the butter, folding in the spinach until just wilted.",
       "Warm the tortillas so they roll without cracking, then lay one out and add a scoop each of eggs, beans, bacon and cheese.",
       "Roll up tight (fold the sides in, then roll from the bottom) and wrap in foil or parchment.",
-      "Repeat for all five, store in the fridge, and reheat in the microwave for 60–90 seconds each morning.",
+      "Repeat for all five, store in the fridge, and reheat in the microwave for 60–90 seconds each morning."
     ],
-    tips: [
+    "tips": [
       "Warm the tortillas first — cold ones crack and your wrap falls apart by Wednesday.",
-      "These freeze well too: wrap individually and microwave from frozen for about 2 minutes.",
+      "These freeze well too: wrap individually and microwave from frozen for about 2 minutes."
     ],
-    affiliateLinks: [
-      { label: "Meal prep containers", url: "https://www.amazon.com/KOMUEE-Containers-Airtight-Microwave-Dishwasher/dp/B08X4615SC?crid=1SI7CH1MHL917&dib=eyJ2IjoiMSJ9.8qyHg9ea13NFeMeAxetKh2-iCquJjIF3xUQQKnQLCODbh1LdpRYsciUoPjiJpAnhQ4XjHUDTje0uQMp8bpnBRaLmGXuxq3HhMrSOltE2ksiEe897P1Pu1sRe_ul7_DvWZkR4DngjeEWLFVtNlde7cuGRMNjT7Wyzx19R-a_yEmqjCFor1bh46IbsL9JytYn3Orsu8gRilpEyRu4R9qqc-wsyfumxjP9nklEE2rU1e2jePPR82Wk2XCN0l5gon_GXX2Nq4bpVoJbg9DTr8U8c9d2r3BcZ5Bv8g4loR0tgkTQ.VN6M4Ui67AVlhvxhbdJdeRY0AITQhFSGX6iH9vY5Q30&dib_tag=se&keywords=meal%2Bprep%2Bcontainer&qid=1786446973&sprefix=meal%2Bprep%2Bconta%2Caps%2C530&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=d9d16b42a9579989b1b25b3f23146655&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Non-stick pan", url: "https://www.amazon.com/SENSARTE-Nonstick-Frying-Pan-Skillet/dp/B086PHS2V8?crid=41DYZZYQRTY0&dib=eyJ2IjoiMSJ9.5BmhUdF-5NPg_yEGuG3w4K-dMF7fq5L5LJcB_-1SEYiK4hmdgKW2WN2lBspwzibWObgmA_4gsQ6_h4Ko3N8WYaCTfgFcIapBkrxhmxdubuJ5ZQ0wUWaCVGDr9kEbzSzoQV-9ybmoTwydtKI9ocWUI8t_UXEjnihAg8Jn0A_tDsLjjFFJGxkHhyopzRo2CiUsZheHFu7hY-NLmAR6Ltrim98yatrTSCJiddfXbsjrGKfzotTv3-HtU2mjzCLuSNvdC3R5O4qs3TUC5fA2p1O0_jy_XEJCwE6-lC0qR42ImmI.A5uckZCE9B0ulhG0W6rEAcuIJCZMT38ZitCXcRi5EIM&dib_tag=se&keywords=non-stick%2Bpan&qid=1786447015&sprefix=non-stick%2Bpan%2Caps%2C578&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3361412a3d1428a57a42edbbe94764d8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Spatula", url: "https://www.amazon.com/ChefAide-Silicone-Ergonomic-Resistant-Nonstick/dp/B0CHGFG64S?crid=QIIJ7VM1WVF&dib=eyJ2IjoiMSJ9.La1iSEcG-MEW7zhzIuKYspMLDGOIUdQbz8_AMVHJWR6O5H1-24U1abeqsNWbV_HkOw1muFOXQF7Op8tasRzOXZPstKcUX7G0QD1OFh_ruoER1AENOSVNEAV6RjffM0DEsJNR9QeF-9RFBt2oeG9ryrLkl2o7KLh4lAWcbI5TiumUA_uW1ZzmjtR3Xz9A8W09CNAJjaKz5dgVezVKPsdvbIYXGDbfjldfF6UP_hi85q4YTaucr9vLQrG_L4nsjn8DRCE-IkZk2nQj-Fbe_U4U9kTpXl8B6P6ik4-VoZmvUXc.xrnbFvPvyzCAPhTbdMbIeaa8kWAlKu4gpm8LrOT9zkI&dib_tag=se&keywords=spatula&qid=1786447434&sprefix=spatula%2Caps%2C651&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b317254da6af52edf84935b30bb7d093&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Meal prep containers",
+        "url": "https://www.amazon.com/KOMUEE-Containers-Airtight-Microwave-Dishwasher/dp/B08X4615SC?crid=1SI7CH1MHL917&dib=eyJ2IjoiMSJ9.8qyHg9ea13NFeMeAxetKh2-iCquJjIF3xUQQKnQLCODbh1LdpRYsciUoPjiJpAnhQ4XjHUDTje0uQMp8bpnBRaLmGXuxq3HhMrSOltE2ksiEe897P1Pu1sRe_ul7_DvWZkR4DngjeEWLFVtNlde7cuGRMNjT7Wyzx19R-a_yEmqjCFor1bh46IbsL9JytYn3Orsu8gRilpEyRu4R9qqc-wsyfumxjP9nklEE2rU1e2jePPR82Wk2XCN0l5gon_GXX2Nq4bpVoJbg9DTr8U8c9d2r3BcZ5Bv8g4loR0tgkTQ.VN6M4Ui67AVlhvxhbdJdeRY0AITQhFSGX6iH9vY5Q30&dib_tag=se&keywords=meal%2Bprep%2Bcontainer&qid=1786446973&sprefix=meal%2Bprep%2Bconta%2Caps%2C530&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=d9d16b42a9579989b1b25b3f23146655&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Non-stick pan",
+        "url": "https://www.amazon.com/SENSARTE-Nonstick-Frying-Pan-Skillet/dp/B086PHS2V8?crid=41DYZZYQRTY0&dib=eyJ2IjoiMSJ9.5BmhUdF-5NPg_yEGuG3w4K-dMF7fq5L5LJcB_-1SEYiK4hmdgKW2WN2lBspwzibWObgmA_4gsQ6_h4Ko3N8WYaCTfgFcIapBkrxhmxdubuJ5ZQ0wUWaCVGDr9kEbzSzoQV-9ybmoTwydtKI9ocWUI8t_UXEjnihAg8Jn0A_tDsLjjFFJGxkHhyopzRo2CiUsZheHFu7hY-NLmAR6Ltrim98yatrTSCJiddfXbsjrGKfzotTv3-HtU2mjzCLuSNvdC3R5O4qs3TUC5fA2p1O0_jy_XEJCwE6-lC0qR42ImmI.A5uckZCE9B0ulhG0W6rEAcuIJCZMT38ZitCXcRi5EIM&dib_tag=se&keywords=non-stick%2Bpan&qid=1786447015&sprefix=non-stick%2Bpan%2Caps%2C578&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3361412a3d1428a57a42edbbe94764d8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Spatula",
+        "url": "https://www.amazon.com/ChefAide-Silicone-Ergonomic-Resistant-Nonstick/dp/B0CHGFG64S?crid=QIIJ7VM1WVF&dib=eyJ2IjoiMSJ9.La1iSEcG-MEW7zhzIuKYspMLDGOIUdQbz8_AMVHJWR6O5H1-24U1abeqsNWbV_HkOw1muFOXQF7Op8tasRzOXZPstKcUX7G0QD1OFh_ruoER1AENOSVNEAV6RjffM0DEsJNR9QeF-9RFBt2oeG9ryrLkl2o7KLh4lAWcbI5TiumUA_uW1ZzmjtR3Xz9A8W09CNAJjaKz5dgVezVKPsdvbIYXGDbfjldfF6UP_hi85q4YTaucr9vLQrG_L4nsjn8DRCE-IkZk2nQj-Fbe_U4U9kTpXl8B6P6ik4-VoZmvUXc.xrnbFvPvyzCAPhTbdMbIeaa8kWAlKu4gpm8LrOT9zkI&dib_tag=se&keywords=spatula&qid=1786447434&sprefix=spatula%2Caps%2C651&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b317254da6af52edf84935b30bb7d093&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["meal-prep", "high-protein", "breakfast", "wrap", "eggs", "weekly"],
-    datePublished: "2026-08-08",
-    image: "/images/high-protein-breakfast-wrap-meal-prep.jpg",
-    pinImage: "/images/pins/high-protein-breakfast-wrap-meal-prep.png",
-    metaTitle: "High-Protein Breakfast Wrap Meal Prep (5 Days, 30g) | The Better Home Recipes",
-    metaDescription:
-      "Meal prep 5 high-protein breakfast wraps — eggs, turkey bacon, black beans, cheese and spinach in a whole wheat tortilla. 30g protein, 5 min each.",
+    "tags": [
+      "meal-prep",
+      "high-protein",
+      "breakfast",
+      "wrap",
+      "eggs",
+      "weekly"
+    ],
+    "datePublished": "2026-08-08",
+    "image": "/images/high-protein-breakfast-wrap-meal-prep.jpg",
+    "pinImage": "/images/pins/high-protein-breakfast-wrap-meal-prep.png",
+    "metaTitle": "High-Protein Breakfast Wrap Meal Prep (5 Days, 30g) | The Better Home Recipes",
+    "metaDescription": "Meal prep 5 high-protein breakfast wraps — eggs, turkey bacon, black beans, cheese and spinach in a whole wheat tortilla. 30g protein, 5 min each."
   },
   {
-    slug: "copycat-mcdonalds-mcflurry-3-ways",
-    title: "Copycat McDonald's McFlurry 3 Ways",
-    subtitle: "Oreo, M&M & Reese's — no machine",
-    category: "copycat",
-    prepTime: "5 min",
-    totalTime: "5 min",
-    servings: 1,
-    difficulty: "Easy",
-    description:
-      "Three copycat McDonald's McFlurries — Oreo, M&M and Reese's — made at home with no ice cream machine. Softened vanilla ice cream gets folded with your candy of choice and re-frozen for that thick, spoon-standing McD's texture.",
-    ingredients: [
+    "slug": "copycat-mcdonalds-mcflurry-3-ways",
+    "title": "Copycat McDonald's McFlurry 3 Ways",
+    "subtitle": "Oreo, M&M & Reese's — no machine",
+    "category": "copycat",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Three copycat McDonald's McFlurries — Oreo, M&M and Reese's — made at home with no ice cream machine. Softened vanilla ice cream gets folded with your candy of choice and re-frozen for that thick, spoon-standing McD's texture.",
+    "ingredients": [
       "2 cups vanilla ice cream (softened)",
       "4 Oreo cookies (crushed, for Oreo)",
       "2 tbsp M&M's (for M&M)",
       "3 Reese's peanut butter cups (chopped, for Reese's)",
-      "1 tbsp milk (if needed to loosen)",
+      "1 tbsp milk (if needed to loosen)"
     ],
-    equipment: ["Mixing bowl", "Fork or potato masher", "Freezer-safe jar or cup"],
-    steps: [
+    "equipment": [
+      "Mixing bowl",
+      "Fork or potato masher",
+      "Freezer-safe jar or cup"
+    ],
+    "steps": [
       "Soften the vanilla ice cream on the counter for 5–10 minutes until it's scoopable but not melted.",
       "Crush your mix-in: bash the Oreos in a bag, or chop the Reese's and measure the M&M's.",
       "Fold the candy into the softened ice cream with a fork until evenly distributed — this is the McFlurry swirl.",
       "Spoon into a freezer-safe jar and press down. Freeze 20–30 minutes until thick enough to stand a spoon in.",
-      "Repeat with a different candy for each of the three flavors.",
+      "Repeat with a different candy for each of the three flavors."
     ],
-    tips: [
+    "tips": [
       "Softened (not melted) ice cream is what gives you that thick, spoon-standing McD's texture — don't let it go liquid.",
-      "Crush the cookies by hand so you get chunks, not dust — the bits are the best part.",
+      "Crush the cookies by hand so you get chunks, not dust — the bits are the best part."
     ],
-    affiliateLinks: [
-      { label: "Freezer-safe jars", url: "https://www.amazon.com/example-Freezer-Jars-Glass-Storage/dp/B0AEXAMPLEJAR?crid=6R7S8T9U0V1W&dib=eyJ2IjoiMSJ9.https://www.amazon.com/NETANY-Overnight-Containers-Airtight-Storage/dp/B0CMQC79L4?crid=7K22MEXBP830&dib=eyJ2IjoiMSJ9.enoJxuZJQnPzeSyAhKOKhlmhdGJFd7oMssDb6ixXe8H2Dbn6iuUnYeAGVN87H1wGX08gIvyNb6J6E__DZ4C_PdtsTSGCZOIhiZ7sqal1fqC83890F7s3RDNDcXBIdbKoqQ8o4H7FeCqJWKXYGcv2FXE-un6bHWFcTzXtcNEJ745Dv9Ij9ZeuitGCTHBNkrkL93wWQsX836J2VdmqNz3flDcM_HhSSoF8l5EtAJnpz68l-OgyYIMGPE1s3WM1KS7s7eBO4tuE_IO6mss10XC7ZfaB8PULTGreKXqwJuJ2rkw.7lwbpo-H72h8eH6zCXwgUVSxEj2yBFDJRsRGtJcFDN4&dib_tag=se&keywords=freezer-safe%2Bjars&qid=1786872212&sprefix=freezer-safe%2Bja%2Caps%2C557&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=697fd55ab6f7fbf6975059c5d21b8495&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&dib_tag=se&keywords=freezer%2Bsafe%2Bjars&qid=1786448005&sprefix=freezer%2Bsaf%2Caps%2C500&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=00000000000000000000000000000006&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Mixing bowl", url: "https://www.amazon.com/Umite-Chef-Airtight-Stainless-Attachments/dp/B0CGWQ53L3?crid=23ZP398JASWMB&dib=eyJ2IjoiMSJ9.XvYIKVs6ZhMBJ7V3gogPAQugzzPma9lm5nRm2D0vJrOevLp9aZ3FlgL_oN7yDr-NCY1wE71n-FVBqB4_3aJOGVaVuonJdd7fKONmS-ZahgY9w5_EYU5YAAtael6OPgyVzhDvFvOLKqrqpytpTpNmSMy5NaqAcxvVIvZ6fH5kzeC-aCI17x_Y8CyKhjHws6NkFGLrqYWJ3iOLZTWVIID9b-BJBDOXGN_0j2X9J3DXeTUcjcWVB6l8yOVG5jelDiG_ayx5cckAcckF8fvv0Wt5hy__mP9TRfXazX7cqcr32kU.skLDbAV0BgyUNWIjijtXKeSrUL_W09M3IfGWTTrl3Z0&dib_tag=se&keywords=mixing%2Bbowl&qid=1786447369&sprefix=mixing%2Bbow%2Caps%2C594&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=15877a9b938b4abb43ad08aa4a9abef1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Potato masher", url: "https://www.amazon.com/example-Potato-Masher-Stainless-Mashing/dp/B0BEXAMPLEMSH?crid=7S8T9U0V1W2X&dib=eyJ2IjoiMSJ9.https://www.amazon.com/Joyoldelf-Heavy-Stainless-Potato-Masher/dp/B014499LUW?content-id=amzn1.sym.b7a3dce9-da16-4d10-a59e-2752928fe1a8%3Aamzn1.sym.b7a3dce9-da16-4d10-a59e-2752928fe1a8&crid=1C7RUBC175C5U&cv_ct_cx=potato%2Bmasher&keywords=potato%2Bmasher&pd_rd_i=B014499LUW&pd_rd_r=9b7d5c3a-dfe4-4797-91f7-bb533185f137&pd_rd_w=sVUKc&pd_rd_wg=r7M6B&pf_rd_p=b7a3dce9-da16-4d10-a59e-2752928fe1a8&pf_rd_r=2508QYV67H1VQXX6H0YJ&qid=1786872246&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=potato%2Bmashe%2Caps%2C589&sr=1-2-925d4041-2745-4edd-b995-62e9e595df4e-spons&aref=lQwm73e8i5&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=8ca4353da3c88432096e0cd05e5ea10b&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&dib_tag=se&keywords=potato%2Bmasher&qid=1786448006&sprefix=potato%2Bma%2Caps%2C500&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=00000000000000000000000000000007&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+    "affiliateLinks": [
+      {
+        "label": "Freezer-safe jars",
+        "url": "https://www.amazon.com/NETANY-Overnight-Containers-Airtight-Storage/dp/B0CMQC79L4?crid=7K22MEXBP830&dib=eyJ2IjoiMSJ9.enoJxuZJQnPzeSyAhKOKhlmhdGJFd7oMssDb6ixXe8H2Dbn6iuUnYeAGVN87H1wGX08gIvyNb6J6E__DZ4C_PdtsTSGCZOIhiZ7sqal1fqC83890F7s3RDNDcXBIdbKoqQ8o4H7FeCqJWKXYGcv2FXE-un6bHWFcTzXtcNEJ745Dv9Ij9ZeuitGCTHBNkrkL93wWQsX836J2VdmqNz3flDcM_HhSSoF8l5EtAJnpz68l-OgyYIMGPE1s3WM1KS7s7eBO4tuE_IO6mss10XC7ZfaB8PULTGreKXqwJuJ2rkw.7lwbpo-H72h8eH6zCXwgUVSxEj2yBFDJRsRGtJcFDN4&dib_tag=se&keywords=freezer-safe%2Bjars&qid=1786872212&sprefix=freezer-safe%2Bja%2Caps%2C557&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=697fd55ab6f7fbf6975059c5d21b8495&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Mixing bowl",
+        "url": "https://www.amazon.com/Umite-Chef-Airtight-Stainless-Attachments/dp/B0CGWQ53L3?crid=23ZP398JASWMB&dib=eyJ2IjoiMSJ9.XvYIKVs6ZhMBJ7V3gogPAQugzzPma9lm5nRm2D0vJrOevLp9aZ3FlgL_oN7yDr-NCY1wE71n-FVBqB4_3aJOGVaVuonJdd7fKONmS-ZahgY9w5_EYU5YAAtael6OPgyVzhDvFvOLKqrqpytpTpNmSMy5NaqAcxvVIvZ6fH5kzeC-aCI17x_Y8CyKhjHws6NkFGLrqYWJ3iOLZTWVIID9b-BJBDOXGN_0j2X9J3DXeTUcjcWVB6l8yOVG5jelDiG_ayx5cckAcckF8fvv0Wt5hy__mP9TRfXazX7cqcr32kU.skLDbAV0BgyUNWIjijtXKeSrUL_W09M3IfGWTTrl3Z0&dib_tag=se&keywords=mixing%2Bbowl&qid=1786447369&sprefix=mixing%2Bbow%2Caps%2C594&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=15877a9b938b4abb43ad08aa4a9abef1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Potato masher",
+        "url": "https://www.amazon.com/Joyoldelf-Heavy-Stainless-Potato-Masher/dp/B014499LUW?content-id=amzn1.sym.b7a3dce9-da16-4d10-a59e-2752928fe1a8%3Aamzn1.sym.b7a3dce9-da16-4d10-a59e-2752928fe1a8&crid=1C7RUBC175C5U&cv_ct_cx=potato%2Bmasher&keywords=potato%2Bmasher&pd_rd_i=B014499LUW&pd_rd_r=9b7d5c3a-dfe4-4797-91f7-bb533185f137&pd_rd_w=sVUKc&pd_rd_wg=r7M6B&pf_rd_p=b7a3dce9-da16-4d10-a59e-2752928fe1a8&pf_rd_r=2508QYV67H1VQXX6H0YJ&qid=1786872246&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=potato%2Bmashe%2Caps%2C589&sr=1-2-925d4041-2745-4edd-b995-62e9e595df4e-spons&aref=lQwm73e8i5&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=8ca4353da3c88432096e0cd05e5ea10b&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
     ],
-    tags: ["copycat", "mcdonalds", "mcflurry", "dessert", "oreo", "reeses"],
-    datePublished: "2026-08-07",
-    image: "/images/copycat-mcdonalds-mcflurry-3-ways.jpg",
-    pinImage: "/images/pins/copycat-mcdonalds-mcflurry-3-ways.png",
-    metaTitle: "Copycat McDonald's McFlurry 3 Ways (No Machine) | The Better Home Recipes",
-    metaDescription:
-      "Three copycat McDonald's McFlurries — Oreo, M&M and Reese's — made at home with no ice cream machine. Softened vanilla ice cream, 5 minutes.",
+    "tags": [
+      "copycat",
+      "mcdonalds",
+      "mcflurry",
+      "dessert",
+      "oreo",
+      "reeses"
+    ],
+    "datePublished": "2026-08-07",
+    "image": "/images/copycat-mcdonalds-mcflurry-3-ways.jpg",
+    "pinImage": "/images/pins/copycat-mcdonalds-mcflurry-3-ways.png",
+    "metaTitle": "Copycat McDonald's McFlurry 3 Ways (No Machine) | The Better Home Recipes",
+    "metaDescription": "Three copycat McDonald's McFlurries — Oreo, M&M and Reese's — made at home with no ice cream machine. Softened vanilla ice cream, 5 minutes."
   },
   {
-    slug: "6-high-protein-lunch-boxes-meal-prep",
-    title: "6 High-Protein Lunch Boxes (Meal Prep)",
-    subtitle: "35g+ protein each, 20 minutes total prep",
-    category: "meal-prep",
-    prepTime: "20 min",
-    totalTime: "20 min",
-    servings: 6,
-    difficulty: "Easy",
-    description:
-      "Six high-protein lunch boxes you can meal prep in 20 minutes total — grilled chicken rice bowl, tuna pasta salad, ground turkey taco bowl, boiled eggs with chickpea salad, salmon with sweet potato and green beans, and cottage cheese with cucumber and turkey roll-ups. Every box is 35g of protein or more.",
-    ingredients: [],
-    equipment: ["Meal prep containers", "Sheet pan", "Pot for eggs/pasta", "Mixing bowls"],
-    steps: [],
-    tips: [
+    "slug": "6-high-protein-lunch-boxes-meal-prep",
+    "title": "6 High-Protein Lunch Boxes (Meal Prep)",
+    "subtitle": "35g+ protein each, 20 minutes total prep",
+    "category": "meal-prep",
+    "prepTime": "20 min",
+    "totalTime": "20 min",
+    "servings": 6,
+    "difficulty": "Easy",
+    "description": "Six high-protein lunch boxes you can meal prep in 20 minutes total — grilled chicken rice bowl, tuna pasta salad, ground turkey taco bowl, boiled eggs with chickpea salad, salmon with sweet potato and green beans, and cottage cheese with cucumber and turkey roll-ups. Every box is 35g of protein or more.",
+    "ingredients": [],
+    "equipment": [
+      "Meal prep containers",
+      "Sheet pan",
+      "Pot for eggs/pasta",
+      "Mixing bowls"
+    ],
+    "steps": [],
+    "tips": [
       "Cook the protein in bulk first — one batch of chicken, turkey and eggs covers most of the boxes and keeps prep to 20 minutes.",
-      "Pack dressings and wet items in separate compartments so the crunchy bits stay crunchy till lunch.",
+      "Pack dressings and wet items in separate compartments so the crunchy bits stay crunchy till lunch."
     ],
-    affiliateLinks: [
-      { label: "Meal prep containers", url: "https://www.amazon.com/KOMUEE-Containers-Airtight-Microwave-Dishwasher/dp/B08X4615SC?crid=1SI7CH1MHL917&dib=eyJ2IjoiMSJ9.8qyHg9ea13NFeMeAxetKh2-iCquJjIF3xUQQKnQLCODbh1LdpRYsciUoPjiJpAnhQ4XjHUDTje0uQMp8bpnBRaLmGXuxq3HhMrSOltE2ksiEe897P1Pu1sRe_ul7_DvWZkR4DngjeEWLFVtNlde7cuGRMNjT7Wyzx19R-a_yEmqjCFor1bh46IbsL9JytYn3Orsu8gRilpEyRu4R9qqc-wsyfumxjP9nklEE2rU1e2jePPR82Wk2XCN0l5gon_GXX2Nq4bpVoJbg9DTr8U8c9d2r3BcZ5Bv8g4loR0tgkTQ.VN6M4Ui67AVlhvxhbdJdeRY0AITQhFSGX6iH9vY5Q30&dib_tag=se&keywords=meal%2Bprep%2Bcontainer&qid=1786446973&sprefix=meal%2Bprep%2Bconta%2Caps%2C530&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=d9d16b42a9579989b1b25b3f23146655&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Sheet pan", url: "https://www.amazon.com/goodcook-Nonstick-Bakeware-Cookie-multicolor/dp/B0026RHI3M?crid=11T6U8UXGRNXW&dib=eyJ2IjoiMSJ9.mOWte96yz1MSPL7uQHwiZohIvuW5M_CuAn_sEpQrmKvGV4higERf6l-NyM74PX6s2_hhuLynQ4SUxJHhLEXQIgepwrdthLoFk08HULcVg8oRGwqt-6qqCAP0lC-BEBRUVoUPIWmR7S50uUD0d4cb_4VkXV2tXVfRPkRXtlCRRSGha4hta-W3mTBH_A09kexA3M1LdpRfceMD8QmoPObPT1CVQq_J-55oXKUc6SvE8txrsedvfYCG-fa_Wf6xn6q3DijlA0Ibw3x3cbuLlud5PDy6LeqvpjW2s3qvq65G6wI.Qo7DKRi1yPTsnyKOX3vevtWMwU6yOYFzdvBFIyR5Gy8&dib_tag=se&keywords=sheet+pan&qid=1786447054&sprefix=sheet+pan%2Caps%2C536&sr=8-7&linkCode=ll2&tag=theorgani0014-20&linkId=bccb3723493045315abf9f7611f91358&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-      { label: "Pot", url: "https://www.amazon.com/example-Stockpot-Stainless-Pasta-Steamer/dp/B0CEXAMPLEPOT?crid=8T9U0V1W2X3Y&dib=eyJ2IjoiMSJ9.https://www.amazon.com/Multipurpose-Strainer-Nonstick-Effortless-Dishwasher/dp/B071L32Q8W?crid=18P0O4OLX9ITW&dib=eyJ2IjoiMSJ9.Hk5FM9ts2t-lgjKM6c-bIuFz37EC2J1UQkHWsRJuDs8mQNkC0IMrQm0FrFPLMKDnfEwK_-xVbq9oIPyHoG4teGyr9KgWZTUbHnrne8F11WePQkI_Kf24uwjErshzpoHx6vB3vbsT4V6vBfv-236Hhkw9hov1O96AUc4Hlo_ek5x3_xVJhNZE9ds1zTRlgEWhgd4Kf1b9eHPpVbhuOf-rd-9oGM98GVv25hBgc5DXU_aDdimxYMLNzDLZ5NZAeseqXP4qeRvMrbxx4vWBYsjgxt6DsjVkYJQmdxo-DwsuuVc.5LJ4LmQtuB3e_KCQxdQRwBZ-rZo7TklJPqTR3hA1WFY&dib_tag=se&keywords=stockpot&qid=1786872288&sprefix=stock%2Caps%2C555&sr=8-2&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3c345bda2c468c8f0c4e7ebd53896fcb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl&dib_tag=se&keywords=stockpot&qid=1786448007&sprefix=stock%2Caps%2C500&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=00000000000000000000000000000008&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
-    ],
-    tags: ["meal-prep", "high-protein", "lunch", "weekly", "healthy"],
-    datePublished: "2026-08-06",
-    image: "/images/6-high-protein-lunch-boxes-meal-prep.jpg",
-    pinImage: "/images/pins/6-high-protein-lunch-boxes-meal-prep.png",
-    metaTitle: "6 High-Protein Lunch Boxes to Meal Prep | The Better Home Recipes",
-    metaDescription:
-      "Meal prep 6 high-protein lunch boxes in 20 minutes — chicken rice bowl, tuna pasta, turkey taco, egg + chickpea, salmon, cottage cheese. 35g+ protein each.",
-    mealPrep: [
+    "affiliateLinks": [
       {
-        title: "Grilled Chicken Rice Bowl",
-        protein: "40g",
-        ingredients: [
+        "label": "Meal prep containers",
+        "url": "https://www.amazon.com/KOMUEE-Containers-Airtight-Microwave-Dishwasher/dp/B08X4615SC?crid=1SI7CH1MHL917&dib=eyJ2IjoiMSJ9.8qyHg9ea13NFeMeAxetKh2-iCquJjIF3xUQQKnQLCODbh1LdpRYsciUoPjiJpAnhQ4XjHUDTje0uQMp8bpnBRaLmGXuxq3HhMrSOltE2ksiEe897P1Pu1sRe_ul7_DvWZkR4DngjeEWLFVtNlde7cuGRMNjT7Wyzx19R-a_yEmqjCFor1bh46IbsL9JytYn3Orsu8gRilpEyRu4R9qqc-wsyfumxjP9nklEE2rU1e2jePPR82Wk2XCN0l5gon_GXX2Nq4bpVoJbg9DTr8U8c9d2r3BcZ5Bv8g4loR0tgkTQ.VN6M4Ui67AVlhvxhbdJdeRY0AITQhFSGX6iH9vY5Q30&dib_tag=se&keywords=meal%2Bprep%2Bcontainer&qid=1786446973&sprefix=meal%2Bprep%2Bconta%2Caps%2C530&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=d9d16b42a9579989b1b25b3f23146655&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Sheet pan",
+        "url": "https://www.amazon.com/goodcook-Nonstick-Bakeware-Cookie-multicolor/dp/B0026RHI3M?crid=11T6U8UXGRNXW&dib=eyJ2IjoiMSJ9.mOWte96yz1MSPL7uQHwiZohIvuW5M_CuAn_sEpQrmKvGV4higERf6l-NyM74PX6s2_hhuLynQ4SUxJHhLEXQIgepwrdthLoFk08HULcVg8oRGwqt-6qqCAP0lC-BEBRUVoUPIWmR7S50uUD0d4cb_4VkXV2tXVfRPkRXtlCRRSGha4hta-W3mTBH_A09kexA3M1LdpRfceMD8QmoPObPT1CVQq_J-55oXKUc6SvE8txrsedvfYCG-fa_Wf6xn6q3DijlA0Ibw3x3cbuLlud5PDy6LeqvpjW2s3qvq65G6wI.Qo7DKRi1yPTsnyKOX3vevtWMwU6yOYFzdvBFIyR5Gy8&dib_tag=se&keywords=sheet+pan&qid=1786447054&sprefix=sheet+pan%2Caps%2C536&sr=8-7&linkCode=ll2&tag=theorgani0014-20&linkId=bccb3723493045315abf9f7611f91358&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      },
+      {
+        "label": "Pot",
+        "url": "https://www.amazon.com/Multipurpose-Strainer-Nonstick-Effortless-Dishwasher/dp/B071L32Q8W?crid=18P0O4OLX9ITW&dib=eyJ2IjoiMSJ9.Hk5FM9ts2t-lgjKM6c-bIuFz37EC2J1UQkHWsRJuDs8mQNkC0IMrQm0FrFPLMKDnfEwK_-xVbq9oIPyHoG4teGyr9KgWZTUbHnrne8F11WePQkI_Kf24uwjErshzpoHx6vB3vbsT4V6vBfv-236Hhkw9hov1O96AUc4Hlo_ek5x3_xVJhNZE9ds1zTRlgEWhgd4Kf1b9eHPpVbhuOf-rd-9oGM98GVv25hBgc5DXU_aDdimxYMLNzDLZ5NZAeseqXP4qeRvMrbxx4vWBYsjgxt6DsjVkYJQmdxo-DwsuuVc.5LJ4LmQtuB3e_KCQxdQRwBZ-rZo7TklJPqTR3hA1WFY&dib_tag=se&keywords=stockpot&qid=1786872288&sprefix=stock%2Caps%2C555&sr=8-2&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3c345bda2c468c8f0c4e7ebd53896fcb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
+      }
+    ],
+    "tags": [
+      "meal-prep",
+      "high-protein",
+      "lunch",
+      "weekly",
+      "healthy"
+    ],
+    "datePublished": "2026-08-06",
+    "image": "/images/6-high-protein-lunch-boxes-meal-prep.jpg",
+    "pinImage": "/images/pins/6-high-protein-lunch-boxes-meal-prep.png",
+    "metaTitle": "6 High-Protein Lunch Boxes to Meal Prep | The Better Home Recipes",
+    "metaDescription": "Meal prep 6 high-protein lunch boxes in 20 minutes — chicken rice bowl, tuna pasta, turkey taco, egg + chickpea, salmon, cottage cheese. 35g+ protein each.",
+    "mealPrep": [
+      {
+        "title": "Grilled Chicken Rice Bowl",
+        "protein": "40g",
+        "ingredients": [
           "5 oz grilled chicken breast (sliced)",
           "1 cup cooked brown rice",
           "½ cup steamed broccoli",
           "1 tbsp soy-ginger sauce",
-          "1 tsp sesame seeds",
-        ],
+          "1 tsp sesame seeds"
+        ]
       },
       {
-        title: "Tuna Pasta Salad",
-        protein: "35g",
-        ingredients: [
+        "title": "Tuna Pasta Salad",
+        "protein": "35g",
+        "ingredients": [
           "1 can (5 oz) tuna (drained)",
           "1 cup cooked rotini",
           "2 tbsp Greek yogurt",
           "1 tbsp mayo",
-          "½ cup diced celery and peas",
-        ],
+          "½ cup diced celery and peas"
+        ]
       },
       {
-        title: "Ground Turkey Taco Bowl",
-        protein: "38g",
-        ingredients: [
+        "title": "Ground Turkey Taco Bowl",
+        "protein": "38g",
+        "ingredients": [
           "5 oz cooked ground turkey",
           "½ cup cooked rice",
           "¼ cup black beans",
           "2 tbsp shredded cheddar",
-          "2 tbsp salsa",
-        ],
+          "2 tbsp salsa"
+        ]
       },
       {
-        title: "Boiled Eggs + Chickpea Salad",
-        protein: "36g",
-        ingredients: [
+        "title": "Boiled Eggs + Chickpea Salad",
+        "protein": "36g",
+        "ingredients": [
           "3 boiled eggs (halved)",
           "1 cup canned chickpeas",
           "1 tbsp olive oil",
           "½ cup cucumber and tomato",
-          "1 tsp lemon juice",
-        ],
+          "1 tsp lemon juice"
+        ]
       },
       {
-        title: "Salmon + Sweet Potato + Green Beans",
-        protein: "37g",
-        ingredients: [
+        "title": "Salmon + Sweet Potato + Green Beans",
+        "protein": "37g",
+        "ingredients": [
           "4 oz baked salmon",
           "1 cup roasted sweet potato",
           "1 cup steamed green beans",
           "1 tsp olive oil",
-          "Lemon wedge",
-        ],
+          "Lemon wedge"
+        ]
       },
       {
-        title: "Cottage Cheese + Cucumber + Turkey Roll-Ups",
-        protein: "35g",
-        ingredients: [
+        "title": "Cottage Cheese + Cucumber + Turkey Roll-Ups",
+        "protein": "35g",
+        "ingredients": [
           "1 cup cottage cheese",
           "½ cup cucumber slices",
           "4 turkey breast roll-ups",
           "1 tbsp everything bagel seasoning",
-          "Crackers on the side",
-        ],
-      },
-    ],
+          "Crackers on the side"
+        ]
+      }
+    ]
   },
   {
     "slug": "10-lazy-breakfast-ideas-under-5-minutes",
@@ -1090,11 +1456,11 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Glass meal prep bowls",
-        "url": "#"
+        "url": "https://www.amazon.com/Containers-Airtight-Leak-Proof-Microwave-Dishwasher/dp/B0DPJXW27G?crid=1CWVOGTYQYQ8Y&dib=eyJ2IjoiMSJ9.ybs2wvTHoEH1p_vOKWw5BqHKflEJSlHogAZnV8P9w0UlCVIcbCLyeUJgxs4O3DCch-qu2f1tlq4MSRY_DIvvG_PdUlDCRvqTzjPcfbRa5c0Yw4yftAloxYMFkeRQZmZsaKYMS5GAr64RkYG-_5k7yzLOlYrjC3y3YbdYH_oJcLR-f-Bnzla80vE2l_XxgHhikQRmw7vkv1oub1w1fRnUvb68lKrMar5s8EHBgEL9oLVZgwua7y37zqWQ5jJrNOt25QlV6YMUtD8_JoAPwEUfHKDWYAFshngyYm0tD7KObcs.-ZtLxlyrwuMbqoRkWwOJeGKQdIwSQeb-TH3H94Xqff8&dib_tag=se&keywords=glass%2Bmeal%2Bprep%2Bbowls&qid=1787295119&sprefix=glass%2Bmeal%2Bprep%2Bbowls%2Caps%2C575&sr=8-17&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=caf1539ee1a93341975fa80c9507a3c0&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Chef's knife",
-        "url": "#"
+        "url": "https://www.amazon.com/imarku-Japanese-Chef-Knife-Christmas/dp/B01DDBJF12?crid=P1JL5PTKVCSL&dib=eyJ2IjoiMSJ9.ogtZ39PSrD-ERAopQ2MM3VCP_a3dl6ffe6qSY2QaFoOcz8oGUN7M6nxfUCGOkmuTwq3uZILmFIMfI9CKR6HbtdaERpyf8gZneCouzf4ttZr17ulavhgonyJg0S01i2ZJW9_kKnTuQzhzJXZDOIuw8ZebfpvQxb0X36eCZdW_FzupFACVOarwRC93n3S9wJW32TDxpexDdQkXibRkvMrFh73wPGAVexfLgPLRD1J8GnUS2SjRWh2mXWl0k4r7EoC5uyHN9Mn68B3lzNH4u7QcCzrQ9r57yN3o2ClVQiPCcT4.8HLcVWX7WBpQnFO98qmHSZvOO-1enOxBhYwGoXNB3vo&dib_tag=se&keywords=chef%27s%2Bknife&qid=1786447491&sprefix=chef%27s%2Bkni%2Caps%2C559&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b2350b77530821ac5ff826370713cf5e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "listItems": [
@@ -1148,8 +1514,8 @@ export const recipes: Recipe[] = [
       "lazy"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/10_Lazy_Breakfast_Ideas_That_Take_Under_5_Minutes.png",
-    "pinImage": "/images/recipes/10_Lazy_Breakfast_Ideas_That_Take_Under_5_Minutes.png",
+    "image": "/images/10_Lazy_Breakfast_Ideas_That_Take_Under_5_Minutes.jpeg",
+    "pinImage": "/images/pins/10_Lazy_Breakfast_Ideas_That_Take_Under_5_Minutes.png",
     "metaTitle": "10 Lazy Breakfast Ideas Under 5 Minutes – No Cooking Required",
     "metaDescription": "Quick no-cook breakfast ideas ready in under 5 minutes — overnight oats, yogurt parfaits, avocado toast, and more."
   },
@@ -1195,15 +1561,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Air fryer",
-        "url": "#"
+        "url": "https://www.amazon.com/TurboBlaze-Premium-Ceramic-Coating-90%C2%B0-450%C2%B0F/dp/B0C33CHG99?crid=29K174U7RQHED&dib=eyJ2IjoiMSJ9.JvIQTiQYIa-7vH5--3jg964Nf0p9WdZAK-1rFngdE1qGM52kKAeYw9Spp1PcLbq2qNDAfw3uEx2H6W-EFkqsdxLXGnACw1V8E1qj9ygR4ltV8I7ae4AVnWNULiWAQn0XzCG3wxdpH4V3GpRQyA_duvD4pgTzx87lPL7Bi3RZ_Zv8qmydNpS3h2S9xcyOTN3Q7L0NxnhsP1zMshbUKW9-389sbsvxO8ivjkVLFTywoNY.x8J6j-z5dUwMipVngmAM2ij0iXUm61IpGmkBkKphkoU&dib_tag=se&keywords=air%2Bfryer&qid=1787294833&sprefix=air%2Bfr%2Caps%2C587&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=1201615d33fb8c566ab906e6a65cd11d&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Large mixing bowl",
-        "url": "#"
+        "url": "https://www.amazon.com/WEPSEN-Stainless-Kitchen-Measuring-Prepping/dp/B0CT2NWXX8?content-id=amzn1.sym.29113e31-4f10-4131-ad60-91d41893b2fc%3Aamzn1.sym.29113e31-4f10-4131-ad60-91d41893b2fc&crid=2PGTJ1KK0JV9E&cv_ct_cx=large%2Bmixing%2Bbowl&keywords=large%2Bmixing%2Bbowl&pd_rd_i=B0CT2NWXX8&pd_rd_r=9195d263-901a-4a9d-92a3-5b5b3c93cbb7&pd_rd_w=uIsjq&pd_rd_wg=3C3Ql&pf_rd_p=29113e31-4f10-4131-ad60-91d41893b2fc&pf_rd_r=1MM32EDSCWCZG5X1TCPG&qid=1787295282&sbo=9ZOMT9Jm0JH%2Ft%2BWi68iDSA%3D%3D&sprefix=large%2Bmixing%2Bbow%2Caps%2C553&sr=1-3-f7d8a1b7-d68f-4a86-bfcb-111c62272989-spons&aref=uR0PevFOnJ&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c5a096620ca09998f1199d8e01b134ab&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Tongs",
-        "url": "#"
+        "url": "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -1215,8 +1581,8 @@ export const recipes: Recipe[] = [
       "quick"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/Air_Fryer_Garlic_Parmesan_Fries.png",
-    "pinImage": "/images/recipes/Air_Fryer_Garlic_Parmesan_Fries.png",
+    "image": "/images/Air_Fryer_Garlic_Parmesan_Fries.jpeg",
+    "pinImage": "/images/pins/Air_Fryer_Garlic_Parmesan_Fries.png",
     "metaTitle": "Air Fryer Garlic Parmesan Fries – Crispy in 15 Minutes",
     "metaDescription": "Crispy air fryer garlic parmesan fries ready in 15 minutes — better than takeout and made with simple pantry ingredients."
   },
@@ -1257,15 +1623,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Potato masher",
-        "url": "#"
+        "url": "https://www.amazon.com/Joyoldelf-Heavy-Stainless-Potato-Masher/dp/B014499LUW?content-id=amzn1.sym.b7a3dce9-da16-4d10-a59e-2752928fe1a8%3Aamzn1.sym.b7a3dce9-da16-4d10-a59e-2752928fe1a8&crid=1C7RUBC175C5U&cv_ct_cx=potato%2Bmasher&keywords=potato%2Bmasher&pd_rd_i=B014499LUW&pd_rd_r=9b7d5c3a-dfe4-4797-91f7-bb533185f137&pd_rd_w=sVUKc&pd_rd_wg=r7M6B&pf_rd_p=b7a3dce9-da16-4d10-a59e-2752928fe1a8&pf_rd_r=2508QYV67H1VQXX6H0YJ&qid=1786872246&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=potato%2Bmashe%2Caps%2C589&sr=1-2-925d4041-2745-4edd-b995-62e9e595df4e-spons&aref=lQwm73e8i5&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=8ca4353da3c88432096e0cd05e5ea10b&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Mixing bowl",
-        "url": "#"
+        "url": "https://www.amazon.com/Umite-Chef-Airtight-Stainless-Attachments/dp/B0CGWQ53L3?crid=23ZP398JASWMB&dib=eyJ2IjoiMSJ9.XvYIKVs6ZhMBJ7V3gogPAQugzzPma9lm5nRm2D0vJrOevLp9aZ3FlgL_oN7yDr-NCY1wE71n-FVBqB4_3aJOGVaVuonJdd7fKONmS-ZahgY9w5_EYU5YAAtael6OPgyVzhDvFvOLKqrqpytpTpNmSMy5NaqAcxvVIvZ6fH5kzeC-aCI17x_Y8CyKhjHws6NkFGLrqYWJ3iOLZTWVIID9b-BJBDOXGN_0j2X9J3DXeTUcjcWVB6l8yOVG5jelDiG_ayx5cckAcckF8fvv0Wt5hy__mP9TRfXazX7cqcr32kU.skLDbAV0BgyUNWIjijtXKeSrUL_W09M3IfGWTTrl3Z0&dib_tag=se&keywords=mixing%2Bbowl&qid=1786447369&sprefix=mixing%2Bbow%2Caps%2C594&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=15877a9b938b4abb43ad08aa4a9abef1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Citrus squeezer",
-        "url": "#"
+        "url": "https://www.amazon.com/Elite-Gourmet-ETS623-Grapefruits-Stainless/dp/B0CK9HJ7S2?crid=1YIQ27RXITQET&dib=eyJ2IjoiMSJ9.MpofArt3UHaOnw_l4i2df38sTpxWZ2mm06nPKPRR6OM2tjaJKIvl9z7PW9TMde0bcK2LitegnDPKYwl_I9BNQzMLS5GTN5vkyyySMpSPRuf-WaVd3aHJIhxMcUo8kwfCWS6WqbjnbAmp-n_dHNP78PgaSUo0E5RTbi2OkFthR-YdJWhIRHBJx1ooKQMAt2XShRtb09VpZ1uWKw2gpjELCaFIMQ2WsE5hP7z9oDgGNDeHgkaZ32RtFb4R-5_IVumTkWFi1jkzuQiInSM7nEL0GiChFPNvlPQtQv2FfT_NuMg.icwAVliH5Ko-4s-E3V8fmVP9v9JZa6gWGcrFzqHvL8c&dib_tag=se&keywords=citrus%2Bsqueezer&qid=1787295033&sprefix=citrus%2Bsquee%2Caps%2C589&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=263283c6248f72d5cc927a2ce4d403b4&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -1277,8 +1643,8 @@ export const recipes: Recipe[] = [
       "mexican"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/Copycat_Chipotle_Guacamole.png",
-    "pinImage": "/images/recipes/Copycat_Chipotle_Guacamole.png",
+    "image": "/images/Copycat_Chipotle_Guacamole.jpeg",
+    "pinImage": "/images/pins/Copycat_Chipotle_Guacamole.png",
     "metaTitle": "Copycat Chipotle Guacamole – 5 Ingredients, Restaurant-Perfect",
     "metaDescription": "Make Chipotle's famous guacamole at home in 5 minutes with just 5 ingredients. Simple, fresh, and better than the real thing."
   },
@@ -1330,15 +1696,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Dutch oven",
-        "url": "#"
+        "url": "https://www.amazon.com/Enameled-Cast-Iron-Dutch-Oven/dp/B0DXJTNWJN?crid=TVDOLLRZIF64&dib=eyJ2IjoiMSJ9.1RipCjRwp4yv3IHs4x1q8C_SHUqcsbpeDpcbdBo-2JLg8h8Hno0IxKy4bvHTMR7d5rNN7yBKHLfA7NBx2NJaHvT2Ohu22gWLSZTcPrdJi7rPdUCAiygwung_RUk4M7N7vTP8t8Ytq9H_w98foCBjki5oHks6EayOci6I-KuuEVa7ZpchUe73DELoH0QfT8TAUq-pS76fqb2QkqCQCs7coDQ0LJaVLqV6BuzAX2Ebv4-avC37i466OiHsmY0RjMuCSXMvgwGKoxeh-f3JKkGJLMczFSBFxs_ocWal1dEobMw.iFhJ4TmTPbbwvTMXmy0ScGA-yfQqoJu8OtBFyQVJgmc&dib_tag=se&keywords=dutch%2Boven&qid=1786447085&sprefix=dutch%2Bover%2Caps%2C528&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=9e4698f1f0941d03ddf58d171adcebf3&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Wooden spoon",
-        "url": "#"
+        "url": "https://www.amazon.com/Nonstick-Cookware-Resistant-Utensils-Stirring/dp/B0FRFPQ3N5?crid=27NC175XIRFRC&dib=eyJ2IjoiMSJ9.7kdWYj9yf38TGskuggIcECMVhiK5gHgqGJ5qYyC6-PunHqegJgw5HLvW6CpY9skDWZ7gKdJTtUGejjz2NUUfmqMl-ojXYE4f0alkGc5atdnDv9WMfrmOv07DchBBxbv1C8Xi6p7pH7A0fto57eMjc7ydJwMYxbNA7ix02rrM9-HYyrzOWHiWpgaIJNRl2o7I-v4LKhOsICtZd8zpGSpTIVeMy8eIJ2tXAGFhSi4p97kbJQFobVB-BzBzyMIVPWOy5rc9w00nfz_Y0f3Q5kiYmWJ5EGEqQIJAjHi2HLtyEfE.U2K3-f3lbDJAuTF3149LHsXE7t8FBc8JDy-BBO_gi-o&dib_tag=se&keywords=wooden+spoon&qid=1786446658&sprefix=wooden+spo%2Caps%2C532&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=cb48013bb64f0951dc932f4e9d035ba2&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Ladle",
-        "url": "#"
+        "url": "https://www.amazon.com/Zulay-Inch-Stainless-Steel-Ladle/dp/B07QMZ5JJH?crid=3G6PGLFSHS69L&dib=eyJ2IjoiMSJ9.Aw-TAYMd_cWyqjQKntFWlVknrTE-dFbXIDpRwV42ByZNdOVaQOWMU74-vgJBuXe21Q14eGpkoHAUmqSf5IZdpCG8t-uW6J4V1PfVLLuYchC6jBYPxla-eTDC7HTv-A_AJSaDAL4agN7WWLFnc_2tBO0iwg9Jk_wo5FR6X4jNR0zh1sx03UZrwpAKcjTuBSU-LHw-PCuDqYFP4kLVYrlYf_YcFTLZxsiUz88ooqPzGcc8bJwu8r4uCQLkY1GKKWvTjHNCzxBGxyVsGQ1zKSU1-OvOq3nbhECOETk-ygVf8ts.yeYLPLHY0OJ4kDC4vgVSEZbFOgzmBfdWfBjbNyQWbZQ&dib_tag=se&keywords=ladle&qid=1786447405&sprefix=lad%2Caps%2C546&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=cf82ef7c1d7de0ff54f670cf56f4d0b8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -1350,8 +1716,8 @@ export const recipes: Recipe[] = [
       "one-pot"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/Copycat_Olive_Garden_Chicken_Gnocchi_Soup.png",
-    "pinImage": "/images/recipes/Copycat_Olive_Garden_Chicken_Gnocchi_Soup.png",
+    "image": "/images/Copycat_Olive_Garden_Chicken_Gnocchi_Soup.jpeg",
+    "pinImage": "/images/pins/Copycat_Olive_Garden_Chicken_Gnocchi_Soup.png",
     "metaTitle": "Copycat Olive Garden Chicken Gnocchi Soup – Creamy One-Pot Recipe",
     "metaDescription": "This copycat Olive Garden chicken gnocchi soup is creamy, comforting, and made in one pot — better than the restaurant and ready in 30 minutes."
   },
@@ -1388,11 +1754,11 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "High-speed blender",
-        "url": "#"
+        "url": "https://www.amazon.com/Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506?ie=UTF8&s=psc&sprefix=high%2Bspeed%2Bblen%2Caps%2C555&keywords=high%2Bspeed%2Bblender&crid=8IR2ALTQODKI&dib_tag=se&ASIN=B00NGV4506&dib=eyJ2IjoiMSJ9.Xu0NhznEvkQP1KciA8NZDHe-rcH3gsM2nSIES7KCwadI2ceVCIX2xZtj-RYvRmri4N2KK0G4Yz-NGYGAjj26-GigSttjuVFLXJRqq1-VEKvauISIsVuGlKiWtKof5--ZqLJT8S4wQYZDzjgQjQf0kwc4cA62ElgfvR6Uuuxo1FuN3hVet9WV23ARtae_riyIUeU9Cy_cDz915ivQ_82j2JanKFoHWwSYiTvqCNlaovI.rUDn_kfuVLyZcVc3142tOm--PwBLtIixpBfHMS4nRas&qid=1786446937&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=657f8897039b81a712107ed361fa52bb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Tall glasses",
-        "url": "#"
+        "url": "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3SDY3XAS1V3MU&dib=eyJ2IjoiMSJ9.BruIBv41Cv5aVUrTFtq9KMMI_9pmyL-lJexIBGaQIQ6Nnnn46SlOV83fWHS5y-GEcT8BmfmCVOK-AJG9y9EtoGoLnZYxLB47GqrClAXiGuZoWbai6TJrjVKdjh4zCS5Q7ApeIc2_pwyb9EEqb79JxPtoDfsM4J4mpq7JG_w7yHo6_zJQPGGJ376cBjmAgFDRqF6C8KaIK_a8tLNkKLkf9qIeEafSuXlaVSqzsDyL2qOZBSQvKE3CoGOuHL4ps249H73ucMKJOv2iIWfKMDg4zh86imqfoTp3A_IUZTtjON8.0fQIsdvGGjfSPxZoE1fo31xzH1LgOEqHuGeBZscqLSs&dib_tag=se&keywords=tall%2Bglasses&qid=1787295615&sprefix=tall%2Bglas%2Caps%2C554&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=0ae6d191a7d037f96e6bede877489fe2&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -1404,8 +1770,8 @@ export const recipes: Recipe[] = [
       "no-machine"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/Copycat_Wendy_s_Frosty.png",
-    "pinImage": "/images/recipes/Copycat_Wendy_s_Frosty.png",
+    "image": "/images/Copycat_Wendy_s_Frosty.jpeg",
+    "pinImage": "/images/pins/Copycat_Wendy_s_Frosty.png",
     "metaTitle": "Copycat Wendy's Frosty – 3 Ingredients, No Machine Needed",
     "metaDescription": "Make a thick, creamy copycat Wendy's Frosty at home with just 3 ingredients and no ice cream machine required."
   },
@@ -1448,15 +1814,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Air fryer",
-        "url": "#"
+        "url": "https://www.amazon.com/TurboBlaze-Premium-Ceramic-Coating-90%C2%B0-450%C2%B0F/dp/B0C33CHG99?crid=29K174U7RQHED&dib=eyJ2IjoiMSJ9.JvIQTiQYIa-7vH5--3jg964Nf0p9WdZAK-1rFngdE1qGM52kKAeYw9Spp1PcLbq2qNDAfw3uEx2H6W-EFkqsdxLXGnACw1V8E1qj9ygR4ltV8I7ae4AVnWNULiWAQn0XzCG3wxdpH4V3GpRQyA_duvD4pgTzx87lPL7Bi3RZ_Zv8qmydNpS3h2S9xcyOTN3Q7L0NxnhsP1zMshbUKW9-389sbsvxO8ivjkVLFTywoNY.x8J6j-z5dUwMipVngmAM2ij0iXUm61IpGmkBkKphkoU&dib_tag=se&keywords=air%2Bfryer&qid=1787294833&sprefix=air%2Bfr%2Caps%2C587&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=1201615d33fb8c566ab906e6a65cd11d&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Tongs",
-        "url": "#"
+        "url": "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Mixing bowl",
-        "url": "#"
+        "url": "https://www.amazon.com/Umite-Chef-Airtight-Stainless-Attachments/dp/B0CGWQ53L3?crid=23ZP398JASWMB&dib=eyJ2IjoiMSJ9.XvYIKVs6ZhMBJ7V3gogPAQugzzPma9lm5nRm2D0vJrOevLp9aZ3FlgL_oN7yDr-NCY1wE71n-FVBqB4_3aJOGVaVuonJdd7fKONmS-ZahgY9w5_EYU5YAAtael6OPgyVzhDvFvOLKqrqpytpTpNmSMy5NaqAcxvVIvZ6fH5kzeC-aCI17x_Y8CyKhjHws6NkFGLrqYWJ3iOLZTWVIID9b-BJBDOXGN_0j2X9J3DXeTUcjcWVB6l8yOVG5jelDiG_ayx5cckAcckF8fvv0Wt5hy__mP9TRfXazX7cqcr32kU.skLDbAV0BgyUNWIjijtXKeSrUL_W09M3IfGWTTrl3Z0&dib_tag=se&keywords=mixing%2Bbowl&qid=1786447369&sprefix=mixing%2Bbow%2Caps%2C594&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=15877a9b938b4abb43ad08aa4a9abef1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "sauceVariants": [
@@ -1530,8 +1896,8 @@ export const recipes: Recipe[] = [
       "buffalo"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/Crispy_Air_Fryer_Chicken_Wings.png",
-    "pinImage": "/images/recipes/Crispy_Air_Fryer_Chicken_Wings.png",
+    "image": "/images/Crispy_Air_Fryer_Chicken_Wings.jpeg",
+    "pinImage": "/images/pins/Crispy_Air_Fryer_Chicken_Wings.png",
     "metaTitle": "Crispy Air Fryer Chicken Wings – 6 Sauces, No Deep Fry, 25 Minutes",
     "metaDescription": "Crispy air fryer chicken wings in 25 minutes with 6 sauce options — Buffalo, Honey Garlic, Korean Gochujang, and more. No deep frying needed."
   },
@@ -1586,15 +1952,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Cast iron skillet",
-        "url": "#"
+        "url": "https://www.amazon.com/Lodge-Seasoned-Cast-Iron-Skillet/dp/B00006JSUB?crid=1Q2IGX18JIM6A&dib=eyJ2IjoiMSJ9.yT7gVNTZD5mfojg5mkVUKjYoTydauk8BC_qudoyBJdrIXbEoEA-4QoRZ1i4EoTpo_ppOJFv8-9wuOoq3Quj0iyyuv42oA9hNRetNZZ42Hpv7UD4MpUKbKb7nz0ZXU30zuBjnNAiLaVEpH-dPcx6cfzJdY7WUfgdfBxKm4V1J7FEkJWoMoESmeogDd8JmURtFaYp5SbA0O2wljcJ_Qij4poy0rRtK8uzHgg3kAv6EK2tJ5tdtzfaqMTa3U65wLuEHd1d9Iw1heZGaTPYVdkPduZEGzg82MN3CTlKfiOo1eSA._YC9cUc3sNY_jkRUKCLzrbaXdmINXm-3vo9tgS7MqGU&dib_tag=se&keywords=cast%2Biron%2Bskillet&qid=1786447222&sprefix=cast%2Biron%2Bskill%2Caps%2C537&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=8e8dc5234c7c93838118dc11699177b1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Meat mallet",
-        "url": "#"
+        "url": "https://www.amazon.com/KitchenAid-KO119OHOBA-Gourmet-Tenderizer-9-45-Inch/dp/B07Q2WVG1Z?crid=38F4NQV8WDJOD&dib=eyJ2IjoiMSJ9.k8Nt-b8zXr54n7L4-B4CKXAYf1FWHcwCUdjEv52YlIB2qJ3rh0z_xF719kyUxBjrOu4iFdAOZuKtoKDJzrAt8p0TclHqxQljGXjmwvmKQ2PTY_dEGuyvOShPGAup3mF_RyY89ydXyQNg3wjPZwiOUMmsT436OrhtH1LAhklyjAHsaZZ3D1RVbybQug6AUz020lImdzHczmZ17Uj7yyswn4gL9LukFRsbrWqBoOKd1OkW39xsh_zukHMRGJ5KsZeR5HMx9LOOm2u4jwAp-abdCEQcO2PNW5xmWuE3B7EFp6w.TbAuD567rEFWoPt_9qCXm5fE7Us8xYEd8SgvekViDYY&dib_tag=se&keywords=meat%2Bmallet&qid=1787295368&sprefix=meat%2Bmallet%2Caps%2C555&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=d2a147638fa7aabdf0f4e00752440447&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Instant-read thermometer",
-        "url": "#"
+        "url": "https://www.amazon.com/Thermometer-Cooking-BACKLIGHT-WATERPROOF-Temperature/dp/B00S93EQUK?crid=2V45R8BOOGT2&dib=eyJ2IjoiMSJ9.8Ger4dMy4c3dRylJ0ztFU3EMn17qargrZcTgRn6jMofvVZEAm0qcJ_VRE-2yUvgB4kicBhPr6QahzAhlE7EE9jPOtHsl1f7yZ3Qb5xcHVJ7ZWr5LvdSVRs4didU44e4BGd-ksJU1vNB7ieK7_4OAfNKukB2U_dIzt1A9hzOhIxBjXTjRDGsUZbvg315ak52dce9iXOajFRd9szjVKAv3pPAVrkH5dLhEnAk8XoyOgJuQG6pKRD07iOjR0ioY_vq2EWvCCud2q1gRMFFopSiTg6VvAi8NTf4368O1XYdLQXc.dv3EBSg01A8M-FRJVdXg58QbiKduIEOoz2gmOzndzGs&dib_tag=se&keywords=instant+read+thermometer&qid=1787295246&sprefix=instant+read+thermo%2Caps%2C605&sr=8-7&linkCode=ll2&tag=theorgani0014-20&linkId=ccaf292f3bc1f53792e628b2f803223e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -1606,8 +1972,8 @@ export const recipes: Recipe[] = [
       "quick"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/Copycat_Chick_fil_A_Chicken_Sandwich.jpeg",
+    "pinImage": "/images/pins/Copycat_Chick_fil_A_Chicken_Sandwich.png",
     "metaTitle": "Copycat Chick-fil-A Chicken Sandwich – Crispy, Juicy & Easy at Home",
     "metaDescription": "This homemade copycat Chick-fil-A sandwich has the same crispy crust, juicy chicken, and buttery brioche bun — ready in under 30 minutes."
   },
@@ -1659,15 +2025,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Cast iron skillet",
-        "url": "#"
+        "url": "https://www.amazon.com/Lodge-Seasoned-Cast-Iron-Skillet/dp/B00006JSUB?crid=1Q2IGX18JIM6A&dib=eyJ2IjoiMSJ9.yT7gVNTZD5mfojg5mkVUKjYoTydauk8BC_qudoyBJdrIXbEoEA-4QoRZ1i4EoTpo_ppOJFv8-9wuOoq3Quj0iyyuv42oA9hNRetNZZ42Hpv7UD4MpUKbKb7nz0ZXU30zuBjnNAiLaVEpH-dPcx6cfzJdY7WUfgdfBxKm4V1J7FEkJWoMoESmeogDd8JmURtFaYp5SbA0O2wljcJ_Qij4poy0rRtK8uzHgg3kAv6EK2tJ5tdtzfaqMTa3U65wLuEHd1d9Iw1heZGaTPYVdkPduZEGzg82MN3CTlKfiOo1eSA._YC9cUc3sNY_jkRUKCLzrbaXdmINXm-3vo9tgS7MqGU&dib_tag=se&keywords=cast%2Biron%2Bskillet&qid=1786447222&sprefix=cast%2Biron%2Bskill%2Caps%2C537&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=8e8dc5234c7c93838118dc11699177b1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Burger press",
-        "url": "#"
+        "url": "https://www.amazon.com/Cuisinart-CISB-111-Smashed-Burger-Press/dp/B07SZFHKVZ?crid=1IINFDVVYUJDM&dib=eyJ2IjoiMSJ9.2HjCnozck-eoA00aOrjZesor3pCxus5hokq_4DlRPX4EnP6X1qF_V1fGRoaDGLWugk2N3z5YgQ4Y90253AUxfGHNXo2fSBW7zGJin2tRRwy457b1uzXsD2C6PzznhUdcrbEMlJJHTznVIreGy6Q4JGk_w-c6P_YoffVoOa3Q9TQM7jFnCBQkCJtaleh4OfgrW2CrDB49-fcwocVvX7JffiVbTe4RUbmjQ1xHPLciGZ4.v-APOZeiC_xO-YKvTb-XZdOv-Tag0mK_VV_Af7E_LAI&dib_tag=se&keywords=burger%2Bpress&qid=1787294991&sprefix=burger%2Bpr%2Caps%2C532&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b5cec603147e56eec4c3073c54a1a1f1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Flexible spatula",
-        "url": "#"
+        "url": "https://www.amazon.com/ChefAide-Silicone-Ergonomic-Resistant-Nonstick/dp/B0CHGFG64S?crid=2A0SVC5HLZVJ1&dib=eyJ2IjoiMSJ9.-rDpl5_Q4Gx78sf1baalWfpcVTZ7P4zGKH2CIIZvnR423EnItEOMbYiaGhkNPGk3fgCdca9ZnGU_BGN7ly2ItFTK2iM6-uL_AmRvHg1wdBMK5a_H2wISQnSSJbaQ0XFlHW5zev5ToeM8ChQZ9z_YvG1SdDEux6qsbJZsK99s6ByZ65VFsUQS3rPlVU7ubp8odf9uDhya2YmttiYzhUsjbQLVlVdYV_L0xLQOZAGOaDO88KrZiI1GCxTwOG4uum4uLoHwPkyP6jcWcCMa2wOAyyOFCp9GAsUSEuH8TwnoFf0.2Ya68W0VD7Rb3p8-9x7Et4cNA8ZgnokckXwyHfi3c2w&dib_tag=se&keywords=flexible%2Bspatula&qid=1787295074&sprefix=flexible%2Bspa%2Caps%2C567&sr=8-9&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=7ed999d8d8e27438d02797241c24afc6&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -1679,8 +2045,8 @@ export const recipes: Recipe[] = [
       "special-sauce"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/Crispy_Smash_Burgers_Special_Sauce.jpeg",
+    "pinImage": "/images/pins/Crispy_Smash_Burgers_Special_Sauce.png",
     "metaTitle": "Crispy Smash Burgers with Special Sauce – Better Than Fast Food",
     "metaDescription": "Ultra-thin crispy smash burgers with a tangy homemade special sauce — ready in 20 minutes and better than any drive-thru."
   },
@@ -1717,11 +2083,11 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Mason jars",
-        "url": "#"
+        "url": "https://www.amazon.com/Ball-Mouth-Mason-mason-Bands/dp/B097HTTNF3?crid=3EQ9W7GFM88NE&dib=eyJ2IjoiMSJ9.lqj6Tzyfa-gcoNR1ERjIOYDT4frKh5IBawXIFyXnuydFyQqclrZBgW3OTNVjx9O9j6aYm06mRCgqHP5uS0UH6WVLV-7T3ah1O7TrqB_QDGYK1beIAUa8OvRjn8mt7FQ0gmnOIephoHXFnBo3AfNOIkTuDLgex9-XiNZ7DSpeUcYS6ycTtw2ROA4AFA2P5mQLsWvRGkHCfrkVQBXpt2zuiCNyYgEFa8Ev_9iWmLcDwrgTc2y6E-OZYxfVJlaWxZsVxxMBtwJEwqPriFVN3NCXsF3v-4oJGQ9holnbFR2dvZ0.ecf5ioiuMD1yPkTKbtsDFgosao1gsILrA7Sdq4ge9cQ&dib_tag=se&keywords=mason%2Bjars&qid=1787295330&sprefix=mason%2Bja%2Caps%2C589&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=f9026d2a5d2910079203befae79daf54&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Meal prep containers",
-        "url": "#"
+        "url": "https://www.amazon.com/KOMUEE-Containers-Airtight-Microwave-Dishwasher/dp/B08X4615SC?crid=1SI7CH1MHL917&dib=eyJ2IjoiMSJ9.8qyHg9ea13NFeMeAxetKh2-iCquJjIF3xUQQKnQLCODbh1LdpRYsciUoPjiJpAnhQ4XjHUDTje0uQMp8bpnBRaLmGXuxq3HhMrSOltE2ksiEe897P1Pu1sRe_ul7_DvWZkR4DngjeEWLFVtNlde7cuGRMNjT7Wyzx19R-a_yEmqjCFor1bh46IbsL9JytYn3Orsu8gRilpEyRu4R9qqc-wsyfumxjP9nklEE2rU1e2jePPR82Wk2XCN0l5gon_GXX2Nq4bpVoJbg9DTr8U8c9d2r3BcZ5Bv8g4loR0tgkTQ.VN6M4Ui67AVlhvxhbdJdeRY0AITQhFSGX6iH9vY5Q30&dib_tag=se&keywords=meal%2Bprep%2Bcontainer&qid=1786446973&sprefix=meal%2Bprep%2Bconta%2Caps%2C530&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=d9d16b42a9579989b1b25b3f23146655&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "listItems": [
@@ -1807,8 +2173,8 @@ export const recipes: Recipe[] = [
       "quick"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/8_Overnight_Oat_Flavors_Meal_Prep.jpeg",
+    "pinImage": "/images/pins/8_Overnight_Oat_Flavors_Meal_Prep.png",
     "metaTitle": "8 Overnight Oat Flavors to Meal Prep for the Week – Easy Healthy Breakfast",
     "metaDescription": "Prep all your breakfasts in one go with 8 overnight oat flavors — each takes 5 minutes and keeps in the fridge all week."
   },
@@ -1861,15 +2227,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Stand mixer",
-        "url": "#"
+        "url": "https://www.amazon.com/Kitchen-box-Electric-Portable-Lightweight/dp/B09BVCPSBT?crid=3VOOQHPRRAU14&dib=eyJ2IjoiMSJ9.YzI6Nwe0e0LhSZli4AKYq9ha5K4UuyxJHg6PQaSiXE0CdW2_VC5sH2tGkg7dk1GT5_gucZMkpXzA15tm5y1tePjryh2OwPpnkcclbieFD9ZPCYoXAUw34QzacQ_IZ-KjS8ipksC0tQvPFjU5PEBQL77s4gRnRrx4aj1uO68DRa8VUFvBycxijoWKncm7bFjFHGStnl3gmIIBa9mPqNNzYo2BWpesSotrbX2Ubm7czZw.OUTTsjiW_gcIbLyzuuyLmDO4UXFC-jTkr3MrgIhsPkE&dib_tag=se&keywords=stand%2Bmixer&qid=1786446369&sprefix=stand%2Bmi%2Caps%2C529&sr=8-1&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=e34c5531e4877052aed1a04dc78d60af&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Baking sheet",
-        "url": "#"
+        "url": "https://www.amazon.com/NutriChef-3-Piece-Nonstick-Kitchen-Baking/dp/B089N57JGS?crid=KROAKD3A8R8P&currency=USD&dib=eyJ2IjoiMSJ9.vAfxlVdVZSbP4HWzB0GLHWtMXiBuatAgnBw-K4h8izmdpq-qe_YmMs6JI2xSiNNAzSrzZWTHeDQdJ_W6gHiFYRtYdLKMk8nD9L4S3mFbsc0iKQiaL1E-YkkkdUq-ud5gSUNWGx5QjD2POPnSCTTAl5O8e9ZmqUe3CQjpG5B8K1os_iXhzYBycWVqv6Wpe2mNzlNJOpVJuMq4k9ee3tRTHSV0RPBWs_dqmSeae9hsJTH5XEVavE1cptJYeybqSponW6anEaV1NxCgumcTlZ2_mJ7yMxxpEePsX1XTC7ZPCUo.3LIgX1O64l1RNuSQVU6AGlfuxTZWQApaGrgjQo5FI4Q&dib_tag=se&keywords=baking%2Bsheet&qid=1786446452&sprefix=baking%2Bsh%2Caps%2C539&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=0af115230d1cd60bddee9e579b5929ab&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Pastry brush",
-        "url": "#"
+        "url": "https://www.amazon.com/HOTEC-Silicone-Resistant-Marinades-Dishwasher/dp/B09JNRZHRT?crid=IHGMIQ13RZ2R&dib=eyJ2IjoiMSJ9.9PjoV_tUr5meI1KqtWNrWerj8iQYjaQUGDa1Q5z_1bBUqLA5vNaKD0Cd6N0uSrjIHq70Nxh90KFbNejI-VdvVeHuTq5Xip673_usxYz7nGpa6TYUgA1lsxMlS7AxpXDayCJ7x11mCutpUs-gXkt3eWCixf8w87_urNTxy58d9UA9DyfUmnHu9kvAkkf6lyY4dUAvtEJxP9J1OHGNKA9OVWY4-5uCI5RJ7GjVGMOsMmbj6Y3tmIy_01yhW2fLzpaiV-3NAb86ogBESTe2JWh0w8hTEyF4Th3L7ePJPv9Zd4o.wCCOBz8XAme674vClvmAT7zvnG1Asr6iopICDPKNnNI&dib_tag=se&keywords=pastry%2Bbrush&qid=1787295453&sprefix=pastry%2Bbrush%2Caps%2C579&sr=8-9&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=1a7a90fc0085edb0f8ba1813f16049fe&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -1881,8 +2247,8 @@ export const recipes: Recipe[] = [
       "cinnamon-butter"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/Copycat_Texas_Roadhouse_Rolls.jpeg",
+    "pinImage": "/images/pins/Copycat_Texas_Roadhouse_Rolls.png",
     "metaTitle": "Copycat Texas Roadhouse Rolls with Cinnamon Butter – Soft & Fluffy",
     "metaDescription": "These copycat Texas Roadhouse rolls are impossibly soft, slightly sweet, and served with whipped cinnamon honey butter — just like the restaurant."
   },
@@ -1931,15 +2297,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Oven-safe skillet",
-        "url": "#"
+        "url": "https://www.amazon.com/Lodge-Skillet-Pre-Seasoned-Ready-Stove/dp/B00006JSUA?crid=3AZT7NZUHRXBD&dib=eyJ2IjoiMSJ9.KAwBSzSJL8L5NQvLjg83Wg4GkPnKsr5AbNi7kiAMn7zzmOAiELpFOh_dQKvCaTamh0-ClyzLuBkeqrQOdOo1RzY_Tv8JmCIL7uVB2vIIIADAM-bmDuAZUN748UDBeJDLbQHTk8ZqKvoPJl7vjarAlt1nstLYQqgth4CpWPKKGEUAznf4I9eefj58hqV_IbUY3h440imhMzzfHrDyuK18i0NuQdicqVIjTSFABkhcv14ooNcsvgJwr-VqnEAnXOuQ3Ik3jIR3BnAODTY9VEktNxVMShEhLQG27ulnxeKH6V0.KWHN3bnxg6zo2lXz_5VWpd6XceMfXAqmNiu28FGp0v4&dib_tag=se&keywords=oven%2Bsafe%2Bskillet&qid=1787295409&sprefix=oven%2Bsafe%2Bskill%2Caps%2C581&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=5abda6359e88e1a32c81cde06bbb4b2f&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Tongs",
-        "url": "#"
+        "url": "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Box grater",
-        "url": "#"
+        "url": "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -1951,8 +2317,8 @@ export const recipes: Recipe[] = [
       "quick"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/One_Pan_Marry_Me_Chicken.jpeg",
+    "pinImage": "/images/pins/One_Pan_Marry_Me_Chicken.png",
     "metaTitle": "One-Pan Marry Me Chicken – Creamy Sun-Dried Tomato Sauce in 30 Minutes",
     "metaDescription": "Juicy pan-seared chicken smothered in a rich creamy sun-dried tomato parmesan sauce — made in one pan in 30 minutes."
   },
@@ -1992,11 +2358,11 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "High-speed blender",
-        "url": "#"
+        "url": "https://www.amazon.com/Ninja-Professional-Countertop-Technology-BL610/dp/B00NGV4506?ie=UTF8&s=psc&sprefix=high%2Bspeed%2Bblen%2Caps%2C555&keywords=high%2Bspeed%2Bblender&crid=8IR2ALTQODKI&dib_tag=se&ASIN=B00NGV4506&dib=eyJ2IjoiMSJ9.Xu0NhznEvkQP1KciA8NZDHe-rcH3gsM2nSIES7KCwadI2ceVCIX2xZtj-RYvRmri4N2KK0G4Yz-NGYGAjj26-GigSttjuVFLXJRqq1-VEKvauISIsVuGlKiWtKof5--ZqLJT8S4wQYZDzjgQjQf0kwc4cA62ElgfvR6Uuuxo1FuN3hVet9WV23ARtae_riyIUeU9Cy_cDz915ivQ_82j2JanKFoHWwSYiTvqCNlaovI.rUDn_kfuVLyZcVc3142tOm--PwBLtIixpBfHMS4nRas&qid=1786446937&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=657f8897039b81a712107ed361fa52bb&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Tall glass",
-        "url": "#"
+        "url": "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3HCSZLG75G5IK&dib=eyJ2IjoiMSJ9.pMnrB7TmD_ZKW1_Bb9PMpatMVi4GEO61lvanLpzZ_VKmp19fJ5Xz8W06E26ZUw0ueYP2_v8ZU4KMltrMehQvpM_wslK5Xb5s7k28QSJpnel6lUpVNAiE1Kbk5ha2lBs7I2x0yx0iIUpCICDcU3fF1K78jjnIxnM_wHdXMegNXa8EXeoyNv7--3fYupUoW2eTMvXJmKqmLDBK2ujRVr02PaYgp60gYDU2SVNSg9NWnEvFPA2WSBzGRBPyfCofhIEFXvRKrT0csgKoJqCoWDdGeWfsvYMfQNzsUY-CRnTDVo4.VtoO0iCRnKuMcOddS0uyxns9xCztkh3Lu4epJe7HTWg&dib_tag=se&keywords=tall%2Bglass&qid=1786446781&sprefix=tall%2Bgla%2Caps%2C509&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3fba6e3b07e56624a952abbe49c7b384&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -2008,8 +2374,8 @@ export const recipes: Recipe[] = [
       "healthy"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/Chocolate_Protein_Smoothie.jpeg",
+    "pinImage": "/images/pins/Chocolate_Protein_Smoothie.png",
     "metaTitle": "Chocolate Protein Smoothie That Tastes Like a Milkshake – 5 Ingredients",
     "metaDescription": "A thick, rich chocolate protein smoothie made with 5 clean ingredients — tastes like a milkshake but packed with protein.",
     "proteinGrams": 30
@@ -2065,15 +2431,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Cast iron skillet",
-        "url": "#"
+        "url": "https://www.amazon.com/Lodge-Seasoned-Cast-Iron-Skillet/dp/B00006JSUB?crid=1Q2IGX18JIM6A&dib=eyJ2IjoiMSJ9.yT7gVNTZD5mfojg5mkVUKjYoTydauk8BC_qudoyBJdrIXbEoEA-4QoRZ1i4EoTpo_ppOJFv8-9wuOoq3Quj0iyyuv42oA9hNRetNZZ42Hpv7UD4MpUKbKb7nz0ZXU30zuBjnNAiLaVEpH-dPcx6cfzJdY7WUfgdfBxKm4V1J7FEkJWoMoESmeogDd8JmURtFaYp5SbA0O2wljcJ_Qij4poy0rRtK8uzHgg3kAv6EK2tJ5tdtzfaqMTa3U65wLuEHd1d9Iw1heZGaTPYVdkPduZEGzg82MN3CTlKfiOo1eSA._YC9cUc3sNY_jkRUKCLzrbaXdmINXm-3vo9tgS7MqGU&dib_tag=se&keywords=cast%2Biron%2Bskillet&qid=1786447222&sprefix=cast%2Biron%2Bskill%2Caps%2C537&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=8e8dc5234c7c93838118dc11699177b1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Instant-read thermometer",
-        "url": "#"
+        "url": "https://www.amazon.com/Thermometer-Cooking-BACKLIGHT-WATERPROOF-Temperature/dp/B00S93EQUK?crid=2V45R8BOOGT2&dib=eyJ2IjoiMSJ9.8Ger4dMy4c3dRylJ0ztFU3EMn17qargrZcTgRn6jMofvVZEAm0qcJ_VRE-2yUvgB4kicBhPr6QahzAhlE7EE9jPOtHsl1f7yZ3Qb5xcHVJ7ZWr5LvdSVRs4didU44e4BGd-ksJU1vNB7ieK7_4OAfNKukB2U_dIzt1A9hzOhIxBjXTjRDGsUZbvg315ak52dce9iXOajFRd9szjVKAv3pPAVrkH5dLhEnAk8XoyOgJuQG6pKRD07iOjR0ioY_vq2EWvCCud2q1gRMFFopSiTg6VvAi8NTf4368O1XYdLQXc.dv3EBSg01A8M-FRJVdXg58QbiKduIEOoz2gmOzndzGs&dib_tag=se&keywords=instant+read+thermometer&qid=1787295246&sprefix=instant+read+thermo%2Caps%2C605&sr=8-7&linkCode=ll2&tag=theorgani0014-20&linkId=ccaf292f3bc1f53792e628b2f803223e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Tongs",
-        "url": "#"
+        "url": "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -2085,8 +2451,8 @@ export const recipes: Recipe[] = [
       "sauce"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/Copycat_Raising_Canes_Chicken_Tenders.jpeg",
+    "pinImage": "/images/pins/Copycat_Raising_Canes_Chicken_Tenders.png",
     "metaTitle": "Copycat Raising Cane's Chicken Tenders – Crispy, Juicy & the Secret Sauce",
     "metaDescription": "Crispy buttermilk-marinated chicken tenders with homemade Cane's sauce — better than the restaurant in just 30 minutes."
   },
@@ -2114,11 +2480,11 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Non-stick pan",
-        "url": "#"
+        "url": "https://www.amazon.com/SENSARTE-Nonstick-Frying-Pan-Skillet/dp/B086PHS2V8?crid=41DYZZYQRTY0&dib=eyJ2IjoiMSJ9.5BmhUdF-5NPg_yEGuG3w4K-dMF7fq5L5LJcB_-1SEYiK4hmdgKW2WN2lBspwzibWObgmA_4gsQ6_h4Ko3N8WYaCTfgFcIapBkrxhmxdubuJ5ZQ0wUWaCVGDr9kEbzSzoQV-9ybmoTwydtKI9ocWUI8t_UXEjnihAg8Jn0A_tDsLjjFFJGxkHhyopzRo2CiUsZheHFu7hY-NLmAR6Ltrim98yatrTSCJiddfXbsjrGKfzotTv3-HtU2mjzCLuSNvdC3R5O4qs3TUC5fA2p1O0_jy_XEJCwE6-lC0qR42ImmI.A5uckZCE9B0ulhG0W6rEAcuIJCZMT38ZitCXcRi5EIM&dib_tag=se&keywords=non-stick%2Bpan&qid=1786447015&sprefix=non-stick%2Bpan%2Caps%2C578&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3361412a3d1428a57a42edbbe94764d8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Meal prep containers",
-        "url": "#"
+        "url": "https://www.amazon.com/KOMUEE-Containers-Airtight-Microwave-Dishwasher/dp/B08X4615SC?crid=1SI7CH1MHL917&dib=eyJ2IjoiMSJ9.8qyHg9ea13NFeMeAxetKh2-iCquJjIF3xUQQKnQLCODbh1LdpRYsciUoPjiJpAnhQ4XjHUDTje0uQMp8bpnBRaLmGXuxq3HhMrSOltE2ksiEe897P1Pu1sRe_ul7_DvWZkR4DngjeEWLFVtNlde7cuGRMNjT7Wyzx19R-a_yEmqjCFor1bh46IbsL9JytYn3Orsu8gRilpEyRu4R9qqc-wsyfumxjP9nklEE2rU1e2jePPR82Wk2XCN0l5gon_GXX2Nq4bpVoJbg9DTr8U8c9d2r3BcZ5Bv8g4loR0tgkTQ.VN6M4Ui67AVlhvxhbdJdeRY0AITQhFSGX6iH9vY5Q30&dib_tag=se&keywords=meal%2Bprep%2Bcontainer&qid=1786446973&sprefix=meal%2Bprep%2Bconta%2Caps%2C530&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=d9d16b42a9579989b1b25b3f23146655&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "listItems": [
@@ -2181,8 +2547,8 @@ export const recipes: Recipe[] = [
       "quick"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/10_High_Protein_Breakfast_Ideas.jpeg",
+    "pinImage": "/images/pins/10_High_Protein_Breakfast_Ideas.png",
     "metaTitle": "10 High-Protein Breakfast Ideas to Keep You Full All Morning",
     "metaDescription": "High-protein breakfasts from egg bowls to protein pancakes — each recipe is quick, satisfying, and perfect for meal prep.",
     "proteinGrams": 30
@@ -2229,15 +2595,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Air fryer",
-        "url": "#"
+        "url": "https://www.amazon.com/TurboBlaze-Premium-Ceramic-Coating-90%C2%B0-450%C2%B0F/dp/B0C33CHG99?crid=29K174U7RQHED&dib=eyJ2IjoiMSJ9.JvIQTiQYIa-7vH5--3jg964Nf0p9WdZAK-1rFngdE1qGM52kKAeYw9Spp1PcLbq2qNDAfw3uEx2H6W-EFkqsdxLXGnACw1V8E1qj9ygR4ltV8I7ae4AVnWNULiWAQn0XzCG3wxdpH4V3GpRQyA_duvD4pgTzx87lPL7Bi3RZ_Zv8qmydNpS3h2S9xcyOTN3Q7L0NxnhsP1zMshbUKW9-389sbsvxO8ivjkVLFTywoNY.x8J6j-z5dUwMipVngmAM2ij0iXUm61IpGmkBkKphkoU&dib_tag=se&keywords=air%2Bfryer&qid=1787294833&sprefix=air%2Bfr%2Caps%2C587&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=1201615d33fb8c566ab906e6a65cd11d&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Tongs",
-        "url": "#"
+        "url": "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Small saucepan",
-        "url": "#"
+        "url": "https://www.amazon.com/Cuisinart-719-16-Classic-Stainless-Saucepan/dp/B00008CM69?crid=3MDFOTS2HUROE&dib=eyJ2IjoiMSJ9.QAinwdsK-CYNbBOjPxE3HMPr4hxU2ZhD8wbPZ1y-jiCtW_J1TbyOKBy1uxlp56ycFrfLdtWIV8XgIxRd-MKRPrnUi-rvJ9Wtrsbg_9oaYcmdaQLbPX-3rH9Zzz1WKYrYovhgiJjcIEnaEzQsRXExt5aIpewu97jUtL0_fBXfvMl-vbBv77V6r6-ZI4BlnSWaxXQ2VOHWuSgE4Ph51XRTBxVeym_JZ9k0bJMHJG9XeC6FR8TFN3-t4Jpa157YCOU6CV3d4dwgrNrmovn4d0leB44Xiu7Ojs1Q-NKkmaRyCz8.r1s79ymMmqskg66Gaphq_82T-VW6qdruYBAsp9lKE9U&dib_tag=se&keywords=small%2Bsaucepan&qid=1787295530&sprefix=small%2Bsaucep%2Caps%2C551&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=03169d89cccb51075cc93718a03703b8&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -2249,8 +2615,8 @@ export const recipes: Recipe[] = [
       "quick"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/Crispy_Air_Fryer_Salmon_Bites.jpeg",
+    "pinImage": "/images/pins/Crispy_Air_Fryer_Salmon_Bites.png",
     "metaTitle": "Crispy Air Fryer Salmon Bites with Honey Garlic Glaze – 10 Minutes",
     "metaDescription": "Bite-sized crispy salmon pieces with a sticky honey garlic glaze — cooked in the air fryer in just 10 minutes."
   },
@@ -2286,11 +2652,11 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Glass pitcher",
-        "url": "#"
+        "url": "https://www.amazon.com/Spreccio-Mason-Jar-Pitcher-Breastmilk/dp/B0DGCVK1JL?crid=IPKJPEIGAJ58&dib=eyJ2IjoiMSJ9.9l1vM4A3KvgchlohBYfYT5kA329AlVO4aI3BlvpDVf8F7Fg2lBWTZ8SR5rml9CBVBvN3_tedh2s4i7nMpXiM1DX8lBqeMSRgh1JYp8h2tKTcvZifZosHlUbH9TCXAlqmCUcA8yoHVSKl9dbnTLLbZtmcLcxJSFk-wuzbSHYg-XlYQ5vB-FZwQMivn1qpoKp9x1Y4AX4EiCnKdyZ3rCvd9-mCWQJYDh5qd4VCt8wwYzDVzU9_G2ujD0ueeT9qfphpt23C5k1FsC6iQL-ceQHMT7Xk-a81b7xW5lNJ-2GcujM.1ndyCib0tM1CjnH-zB8u6CPXhvMVA-4nVaw6HFwbXV4&dib_tag=se&keywords=glass%2Bpitcher&qid=1786872098&sprefix=glass%2Bpitc%2Caps%2C562&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=266ca3417f7c1e09423feeee72c9750e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Infuser water bottle",
-        "url": "#"
+        "url": "https://www.amazon.com/UTEBIT-Infuser-Insulated-Camping-Outdoor/dp/B0BR8SK56M?crid=33E7HR6O2HEPS&dib=eyJ2IjoiMSJ9.y0PuPqw2grQkyLWqPgX_mQYsZ6vgR29h7ATgfAICQ-4Eszad_vgAGq-QZdGodPpoqiFEbyX_yd8CW-kOGnalTRLMvQBo5_DMFNXM5Ex1F6ERPPD0V6jJox-PW8cb0AOFHVCD8-552s5cQPRpsk7V_vwIgP4gr7f1dhUhT8mhxGoFRRVfM7BqrLTZsoxqo7weDbRR6fbGflbxdDVnC5nesSNbGIlVyJYKD_3C-xMmt1NDKjmZS1Lwe7AEDU_w0-wVt-BVEohQg401otSAgLIRtw0IbvJVBlGrhNWwdroelsI._k7QkHSbFAj85G9ckqAbOnrxWY32L4s13URp_8VgYcs&dib_tag=se&keywords=infuser%2Bwater%2Bbottle&qid=1787295196&sprefix=infuser%2Bwater%2Bbott%2Caps%2C533&sr=8-5&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c02dfdc05b9ed8e0cc5d5ce1e4d89838&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "listItems": [
@@ -2359,8 +2725,8 @@ export const recipes: Recipe[] = [
       "skin"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/6_Detox_Water_Recipes.jpeg",
+    "pinImage": "/images/pins/6_Detox_Water_Recipes.png",
     "metaTitle": "6 Detox Water Recipes for Weight Loss and Glowing Skin",
     "metaDescription": "Six refreshing infused detox water recipes that support weight loss, digestion, and glowing skin — each takes 5 minutes to prep."
   },
@@ -2401,11 +2767,11 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Small whisk",
-        "url": "#"
+        "url": "https://www.amazon.com/NileHome-Stainless-Whisking-Blending-Stirring-3/dp/B08SWBRTRK?crid=2SJCTGODY5ZTU&dib=eyJ2IjoiMSJ9.9CbAVoJJ-Ip6yMNfWgFmaof9D1Rwh3PRS-hkzkoUO9UXyEi9aGNZfLqk38yttMH_gIM_pMu8rsQ3OqTX7Cz7b_4kY7e8p3TFRtzWIdmG9GB1EMuudgmX2-6Ta309ttVykeG5Gs7dD7B1cCFczjB2aM2HR6_fsvADbLSDBsU_PvB2wwj2MrjPe0g8qylrB3SV8bM_Z0RbQucRWzTtDUz3DZeH53K1f2Jq0Dq8xjjOwhVwj_YVrBiuFUBM7ZGkhyRN9BJPZA57d_mS7IHrbq36EDPecT3TlnwC8W0N8q3-f_s.LVwHcWq_WHK8mpgK_WNOW6vzASnGRE_SIIWMAgo9bfU&dib_tag=se&keywords=small%2Bwhisk&qid=1787295573&sprefix=small%2Bwhis%2Caps%2C595&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=ee49d14fa45547d3cbcada6d43130b5e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Small mason jars",
-        "url": "#"
+        "url": "https://www.amazon.com/ComSaf-Mini-Mason-Jars-4oz/dp/B09YRC9SXW?crid=CVHMLQUIH3FS&dib=eyJ2IjoiMSJ9.6_G97mRQ6FsY74JoSCi-A4aYxpMtF9d6g81RQJdwj6UT9NdkqRjc2gJwVwQWVfPvV8XRux1JP4y9kwqa2ADx1w6VjBJ23LxbqTO7k0Obn0ybegP8zUjw0PrqYTVVvUp2a0ajUcti5I5JWimD1GyBnRv4uJMWHlwXZAJpl9IXHK1-Uw0bUko3KophDmYCt_NYZfZfqGOPDWlFbLTq5FdxW8VlUD1iO2Ssc3teq5Rz11spwrkj3SEG1wAZo1a602wKdl3mDCRA4v75uRoRs_L_-8OWXwhwXW2uBf8VkFQFVNE.SuvHK5fSC7xzDx0Wfrah1wVW6ZxEsIbyOYL2BbmApUk&dib_tag=se&keywords=small%2Bmason%2Bjars&qid=1787295494&sprefix=small%2Bmason%2Bja%2Caps%2C592&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=6312b0bb70fc760ae595d1739f0611b0&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "tags": [
@@ -2417,8 +2783,8 @@ export const recipes: Recipe[] = [
       "burgers"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/Copycat_McDonalds_Big_Mac_Sauce.jpeg",
+    "pinImage": "/images/pins/Copycat_McDonalds_Big_Mac_Sauce.png",
     "metaTitle": "Copycat McDonald's Big Mac Sauce – 5 Ingredients, Ready in 2 Minutes",
     "metaDescription": "This copycat Big Mac sauce tastes exactly like McDonald's and takes 2 minutes to make with 5 pantry staples."
   },
@@ -2457,15 +2823,15 @@ export const recipes: Recipe[] = [
     "affiliateLinks": [
       {
         "label": "Cookie scoop",
-        "url": "#"
+        "url": "https://www.amazon.com/JUNADAEL-Set-Tablespoon-Cupcake-Truffles/dp/B0DK6TSL13?crid=33L9LZ2RJTE1&dib=eyJ2IjoiMSJ9.XFIFyMgrvrvsXi55f-BN0UoOsJiH34EwAn4jDhGc6CAZwWMvYrBR-OLbpxOpfWYSW8GmG-mz6XG1YdAvPV02lr6kHOygJopAfP0avrpuYcWd-vcBj_7ira1ipYFhqInmxegAOKRsmpP2uhOm8mHRQoDeXhjKpwxIVG5Vs_ZBUTktiSmJtqaM7G8lOFDg24RJX5WffeEFIC6qVVBqv7KY4snCQNnnJbEat8LICCjLvgC20pOGH_OUS07HhbChZxwImlCY6D-3PUKqbHTc0GbXa2fo1z3BDi7-56MdWLr-E8A.URZOQa25lrWMSD9m_Ab9GGFeg_pWgsivkO9FMQKv5D0&dib_tag=se&keywords=cooking+scoop&qid=1786446518&sprefix=cooking+scoo%2Caps%2C536&sr=8-6&linkCode=ll2&tag=theorgani0014-20&linkId=55bfaaf1f0a0f165158f98fcccaec5b4&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Airtight containers",
-        "url": "#"
+        "url": "https://www.amazon.com/Rubbermaid-Brilliance-Airtight-Container-BPA-Free/dp/B0752ZJ5LF?crid=Z0F89GGNT4UY&dib=eyJ2IjoiMSJ9.5MRpyVweaPJP07XGqOBD1wsdmjhYMozLz6iXZz6aQWKYymueUSn82sJng_h6kVUZXe2WRHNRJTeVmfKQtgDUTT9GUKFVhjtniql21svT65gOVYaRHD15jDuzJh44Odpsz4D_qXvisfcJdjlhSPtJ2QH9f4o_I9l9MKA81HbEsYlaKAPx_TJmO2dY4n4oh155BIg45OGtNH1ligNedn0njlf--CK9VfN5_HJDRq8ik-G61pzopxg2a9vuuTH3t-vVpZ21D3Kf78X10JCuxcrz1bKNUsQH0gZ8d_6ytiGhY_Y.f9Nd8K9YN_4AuKc3xiCT9lEmMtQ-1a8gKo0a8Dwtm0s&dib_tag=se&keywords=airtight%2Bcontainer&qid=1787294895&sprefix=airtight%2Bconta%2Caps%2C557&sr=8-19&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=1a4abfd6227ead40175359daf590e743&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       },
       {
         "label": "Mixing bowl",
-        "url": "#"
+        "url": "https://www.amazon.com/Umite-Chef-Airtight-Stainless-Attachments/dp/B0CGWQ53L3?crid=23ZP398JASWMB&dib=eyJ2IjoiMSJ9.XvYIKVs6ZhMBJ7V3gogPAQugzzPma9lm5nRm2D0vJrOevLp9aZ3FlgL_oN7yDr-NCY1wE71n-FVBqB4_3aJOGVaVuonJdd7fKONmS-ZahgY9w5_EYU5YAAtael6OPgyVzhDvFvOLKqrqpytpTpNmSMy5NaqAcxvVIvZ6fH5kzeC-aCI17x_Y8CyKhjHws6NkFGLrqYWJ3iOLZTWVIID9b-BJBDOXGN_0j2X9J3DXeTUcjcWVB6l8yOVG5jelDiG_ayx5cckAcckF8fvv0Wt5hy__mP9TRfXazX7cqcr32kU.skLDbAV0BgyUNWIjijtXKeSrUL_W09M3IfGWTTrl3Z0&dib_tag=se&keywords=mixing%2Bbowl&qid=1786447369&sprefix=mixing%2Bbow%2Caps%2C594&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=15877a9b938b4abb43ad08aa4a9abef1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl"
       }
     ],
     "listItems": [
@@ -2556,8 +2922,8 @@ export const recipes: Recipe[] = [
       "healthy"
     ],
     "datePublished": "2026-08-21",
-    "image": "/images/recipes/placeholder-recipe.png",
-    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "image": "/images/7_No_Bake_Energy_Balls.jpeg",
+    "pinImage": "/images/pins/7_No_Bake_Energy_Balls.png",
     "metaTitle": "7 No-Bake Energy Balls to Meal Prep for the Week – Easy High-Protein Snack",
     "metaDescription": "Seven no-bake energy ball flavors ready in 15 minutes — high-protein, naturally sweetened, and perfect for meal prep snacking all week."
   }
