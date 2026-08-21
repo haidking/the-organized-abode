@@ -9,25 +9,25 @@ interface Props {
   recipes: Recipe[];
 }
 
-const QUICK_CATEGORIES = [
-  "All",
-  "Copycat Recipes",
-  "One-Pan Dinners",
-  "Breakfast",
-  "Healthy",
-  "Drinks & Smoothies",
-  "Meal Prep",
+const CATEGORY_TABS = [
+  { label: "All", value: "all" },
+  { label: "Copycat", value: "copycat" },
+  { label: "One-Pan", value: "one-pan" },
+  { label: "Breakfast", value: "breakfast" },
+  { label: "Drinks", value: "drinks" },
+  { label: "Meal Prep", value: "meal-prep" },
+  { label: "Salads", value: "salads" },
 ] as const;
 
 export default function HomeRecipesExplorer({ recipes }: Props) {
   const [query, setQuery] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   const handleQueryChange = useCallback((q: string) => {
     setQuery(q);
   }, []);
 
-  // Filter recipes by search query and quick category selection
+  // Filter recipes by search query and category selection
   const filtered = useMemo(() => {
     return recipes.filter((r) => {
       // Free text search in title, subtitle, description, ingredients, tags
@@ -46,17 +46,11 @@ export default function HomeRecipesExplorer({ recipes }: Props) {
         if (!haystack.includes(q)) return false;
       }
 
-      // Quick category pill filter
-      if (selectedCategory !== "All") {
-        const catLower = selectedCategory.toLowerCase();
-        const rCatLower = (r.category || "").toLowerCase();
-        if (!rCatLower.includes(catLower.replace(" & smoothies", "").replace(" recipes", "").replace(" dinners", ""))) {
-          // Check tags as fallback match
-          const matchesTag = r.tags.some((tag) =>
-            tag.toLowerCase().includes(catLower.replace(" & smoothies", ""))
-          );
-          if (!matchesTag) return false;
-        }
+      // Category tab filter
+      if (selectedCategory !== "all") {
+        const catMatch = r.category === selectedCategory;
+        const tagMatch = r.tags?.includes(selectedCategory);
+        if (!catMatch && !tagMatch) return false;
       }
 
       return true;
@@ -64,64 +58,64 @@ export default function HomeRecipesExplorer({ recipes }: Props) {
   }, [recipes, query, selectedCategory]);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {/* Full-width Search Bar */}
       <div className="max-w-2xl mx-auto">
         <SearchBar value={query} onQueryChange={handleQueryChange} />
       </div>
 
-      {/* Quick Category Tabs */}
+      {/* Category Tabs */}
       <div className="flex items-center justify-center gap-2 overflow-x-auto pb-2 scrollbar-none">
-        {QUICK_CATEGORIES.map((cat) => {
-          const isActive = selectedCategory === cat;
+        {CATEGORY_TABS.map((tab) => {
+          const isActive = selectedCategory === tab.value;
           return (
             <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
+              key={tab.value}
+              onClick={() => setSelectedCategory(tab.value)}
               className={`whitespace-nowrap px-4 py-2 text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 cursor-pointer ${
                 isActive
                   ? "bg-forest text-white shadow-sm"
                   : "bg-surface text-ink-secondary hover:text-ink hover:bg-border/60 border border-border/80"
               }`}
             >
-              {cat}
+              {tab.label}
             </button>
           );
         })}
       </div>
 
       {/* Results Header / Count */}
-      <div className="flex items-center justify-between text-xs sm:text-sm text-ink-secondary pt-2">
+      <div className="flex items-center justify-between text-xs sm:text-sm text-ink-secondary">
         <p>
           Showing <span className="font-semibold text-ink">{filtered.length}</span> of{" "}
           <span className="font-semibold text-ink">{recipes.length}</span> recipes
         </p>
-        {(query || selectedCategory !== "All") && (
+        {(query || selectedCategory !== "all") && (
           <button
             onClick={() => {
               setQuery("");
-              setSelectedCategory("All");
+              setSelectedCategory("all");
             }}
             className="text-accent font-semibold hover:underline"
           >
-            Clear filters
+            Clear search & filters
           </button>
         )}
       </div>
 
-      {/* Recipes Grid (Full Width, 3 Columns) */}
+      {/* Recipes Grid */}
       {filtered.length === 0 ? (
         <div className="text-center py-16 bg-surface rounded-2xl border border-border">
           <p className="font-heading text-xl font-bold text-ink mb-2">No recipes found</p>
           <p className="text-sm text-ink-secondary">
-            Try searching for another recipe name, ingredient, or tag.
+            Try searching for another recipe name or ingredient.
           </p>
           <button
             onClick={() => {
               setQuery("");
-              setSelectedCategory("All");
+              setSelectedCategory("all");
             }}
-            className="mt-4 inline-flex items-center px-4 py-2 rounded-full bg-forest text-white text-sm font-medium hover:bg-forest-hover transition-colors"
+            className="mt-4 inline-flex items-center px-5 py-2.5 rounded-full bg-forest text-white text-sm font-medium hover:bg-forest-hover transition-colors"
           >
             Show All Recipes
           </button>
