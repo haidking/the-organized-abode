@@ -284,6 +284,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 </div>
               </div>
             )}
+
+            {/* Sidebar Ad Unit */}
+            <div className="rounded-2xl border border-border bg-surface p-4 text-center">
+              <AdUnit slot="8551069083" />
+            </div>
           </aside>
         </div>
 
