@@ -39,7 +39,7 @@ export default function Footer() {
             <div className="mt-4 flex items-center gap-3">
               {/* Pinterest only - no Instagram */}
               <a
-                href="https://www.pinterest.com/syedhaider0727/"
+                href="https://www.pinterest.com/thebetterhomerecipes/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:opacity-80 transition-opacity"
@@ -95,7 +95,7 @@ export default function Footer() {
             </h3>
             <div className="mt-4 space-y-3 text-sm">
               <a
-                href="https://www.pinterest.com/syedhaider0727/"
+                href="https://www.pinterest.com/thebetterhomerecipes/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-footer-text/80 hover:text-accent transition-colors"
