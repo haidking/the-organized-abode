@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { recipes } from "@/data/recipes";
-import RecipesExplorer from "@/components/RecipesExplorer";
+import HomeRecipesExplorer from "@/components/HomeRecipesExplorer";
 import FreeEbooks from "@/components/FreeEbooks";
+import BlogSpotlight from "@/components/BlogSpotlight";
 
 /* ── Trust bar items ─────────────────────────────────────────────────────── */
 const TRUST_ITEMS = [
@@ -44,17 +45,17 @@ export default function HomePage() {
   return (
     <>
       {/* ═════════════════════════════════════════════════════════════════════
-          HERO — Full-Width Banner Background (Option A)
+          HERO — Full-Width Banner Background
       ═════════════════════════════════════════════════════════════════════ */}
       <section
-        className="relative min-h-screen flex items-center overflow-hidden bg-background"
+        className="relative min-h-[85vh] flex items-center overflow-hidden bg-background"
         aria-labelledby="hero-title"
       >
-        {/* Full-bleed banner image — fills entire viewport */}
+        {/* Full-bleed banner image */}
         <div className="absolute inset-0 z-0" aria-hidden="true">
           <Image
             src="/The_Better_Home_Recipes_Banner.png"
-            alt=""
+            alt="The Better Home Recipes"
             fill
             priority
             className="object-cover"
@@ -63,13 +64,13 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Subtle warm dark gradient on left 50% only — for text readability */}
+        {/* Subtle warm dark gradient overlay */}
         <div
           className="absolute inset-0 z-10 pointer-events-none"
           aria-hidden="true"
           style={{
             background:
-              "linear-gradient(90deg, rgba(30,30,30,0.75) 0%, rgba(30,30,30,0.55) 35%, rgba(30,30,30,0.15) 55%, transparent 65%)",
+              "linear-gradient(90deg, rgba(30,30,30,0.80) 0%, rgba(30,30,30,0.60) 40%, rgba(30,30,30,0.20) 65%, transparent 80%)",
           }}
         />
 
@@ -82,7 +83,7 @@ export default function HomePage() {
               New Recipes Every Week
             </span>
 
-            {/* Headline — BIG, bold, punchy */}
+            {/* Headline */}
             <h1
               id="hero-title"
               className="font-heading text-white leading-[1.05] font-extrabold tracking-tight
@@ -98,16 +99,16 @@ export default function HomePage() {
 
             {/* Subtext */}
             <p className="text-white/90 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
-              Copycat. Quick. Better than the original.
+              Copycat favorites, one-pan weeknight wins, and easy 5-minute guides.
             </p>
 
             {/* Dual CTAs */}
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-10">
               <Link
-                href="/recipes"
+                href="#recipes"
                 className="group inline-flex items-center gap-2 rounded-full bg-forest px-8 py-4 text-base sm:text-lg font-bold text-white shadow-xl transition-all duration-300 hover:bg-forest-hover hover:shadow-2xl hover:-translate-y-0.5 min-w-[220px] justify-center"
               >
-                Browse Recipes
+                Search Recipes
                 <svg
                   className="h-5 w-5 transition-transform group-hover:translate-x-1"
                   fill="none"
@@ -119,15 +120,15 @@ export default function HomePage() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
                   />
                 </svg>
               </Link>
               <Link
-                href="#free-ebooks"
+                href="#featured-books"
                 className="group inline-flex items-center gap-2 rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 text-base sm:text-lg font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 hover:shadow-xl hover:-translate-y-0.5 min-w-[220px] justify-center"
               >
-                Recipe eBooks
+                Featured Books
                 <svg
                   className="h-5 w-5 transition-transform group-hover:translate-y-1"
                   fill="none"
@@ -146,19 +147,11 @@ export default function HomePage() {
             </div>
 
             {/* Social proof */}
-            <p className="flex items-center gap-2 text-white/70 text-sm font-medium">
+            <p className="flex items-center gap-2 text-white/80 text-sm font-medium">
               <span aria-hidden="true">⭐</span>
               50,000+ home cooks saving recipes weekly
             </p>
-
           </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce-gentle" aria-hidden="true">
-          <svg className="h-6 w-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
         </div>
       </section>
 
@@ -191,34 +184,36 @@ export default function HomePage() {
       </section>
 
       {/* ═════════════════════════════════════════════════════════════════════
-          Section Header + Recipe Grid
+          FEATURED BOOKS SECTION — Prominently placed under Hero
       ═════════════════════════════════════════════════════════════════════ */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-10">
-        <div className="mb-8 text-center">
+      <section id="featured-books" className="py-2">
+        <FreeEbooks />
+      </section>
+
+      {/* ═════════════════════════════════════════════════════════════════════
+          BLOG SPOTLIGHT — Cooking Guides & Stories
+      ═════════════════════════════════════════════════════════════════════ */}
+      <BlogSpotlight />
+
+      {/* ═════════════════════════════════════════════════════════════════════
+          RECIPES SECTION — Full width search bar & grid (No filter sidebar)
+      ═════════════════════════════════════════════════════════════════════ */}
+      <section id="recipes" className="mx-auto max-w-6xl px-4 sm:px-6 py-16 scroll-mt-20">
+        <div className="mb-10 text-center space-y-3">
           <span className="inline-block border-b-2 border-accent pb-1 text-xs font-bold uppercase tracking-wider text-accent">
             Our Recipes
           </span>
-          <h2 className="font-heading mt-2 text-4xl font-bold text-ink md:text-[36px]">
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-ink">
             Recipes Worth Saving
           </h2>
-          <p className="mx-auto mt-2 max-w-lg text-base text-ink-secondary">
-            Simple ingredients. Real results. Better than the original.
+          <p className="mx-auto max-w-lg text-base text-ink-secondary">
+            Type an ingredient, recipe title, or category below to find your next meal.
           </p>
         </div>
 
         <Suspense>
-          <RecipesExplorer recipes={recipes} />
+          <HomeRecipesExplorer recipes={recipes} />
         </Suspense>
-      </section>
-
-      {/* Extra padding before footer */}
-      <div className="pb-16" />
-
-      {/* ═════════════════════════════════════════════════════════════════════
-          Free eBooks Promo (anchored for scroll link)
-      ═════════════════════════════════════════════════════════════════════ */}
-      <section id="free-ebooks">
-        <FreeEbooks />
       </section>
     </>
   );
