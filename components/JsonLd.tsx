@@ -37,12 +37,27 @@ export default function JsonLd({ recipe, canonicalUrl }: Props) {
     recipeCuisine: "American",
     prepTime: toISO8601Duration(recipe.prepTime),
     totalTime: toISO8601Duration(recipe.totalTime),
-    recipeIngredient: recipe.ingredients,
-    recipeInstructions: recipe.steps.map((step, i) => ({
-      "@type": "HowToStep",
-      position: i + 1,
-      text: step,
-    })),
+    recipeIngredient:
+      recipe.ingredients && recipe.ingredients.length > 0
+        ? recipe.ingredients
+        : recipe.listItems
+        ? recipe.listItems.flatMap((item) => item.ingredients || []).filter(Boolean)
+        : [],
+    recipeInstructions:
+      recipe.steps && recipe.steps.length > 0
+        ? recipe.steps.map((step, i) => ({
+            "@type": "HowToStep",
+            position: i + 1,
+            text: step,
+          }))
+        : recipe.listItems
+        ? recipe.listItems.map((item, i) => ({
+            "@type": "HowToStep",
+            position: i + 1,
+            name: item.title,
+            text: item.description || (item.ingredients ? item.ingredients.join(", ") : item.title),
+          }))
+        : [],
   };
 
   if (recipe.cookTime) {

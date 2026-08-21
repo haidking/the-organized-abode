@@ -1065,6 +1065,1502 @@ export const recipes: Recipe[] = [
       },
     ],
   },
+  {
+    "slug": "10-lazy-breakfast-ideas-under-5-minutes",
+    "title": "10 Lazy Breakfast Ideas Under 5 Minutes",
+    "subtitle": "No cooking required — grab, assemble, go",
+    "category": "breakfast",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Ten quick no-cook breakfast ideas ready in under 5 minutes — from overnight oats and yogurt parfaits to avocado toast and peanut butter banana wraps. No oven, no stove, no stress.",
+    "ingredients": [],
+    "equipment": [
+      "Knife",
+      "Cutting board",
+      "Bowl",
+      "Toaster"
+    ],
+    "steps": [],
+    "tips": [
+      "Prep overnight oats and chia pudding the night before so they're truly grab-and-go in the morning.",
+      "Keep pre-washed fruit, individual Greek yogurts and single-serve nut butters stocked so assembly takes under 2 minutes."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Glass meal prep bowls",
+        "url": "#"
+      },
+      {
+        "label": "Chef's knife",
+        "url": "#"
+      }
+    ],
+    "listItems": [
+      {
+        "title": "Overnight Oats",
+        "description": "Combine ½ cup rolled oats, ¾ cup milk and 1 tbsp chia seeds in a jar the night before. Top with berries in the morning.",
+        "tip": "Add a scoop of protein powder to hit 20g+ protein."
+      },
+      {
+        "title": "Greek Yogurt Parfait",
+        "description": "Layer 1 cup Greek yogurt, granola and fresh fruit in a glass. Drizzle with honey."
+      },
+      {
+        "title": "Avocado Toast",
+        "description": "Mash ½ avocado on a toasted slice of sourdough. Top with everything bagel seasoning and a squeeze of lemon."
+      },
+      {
+        "title": "Peanut Butter Banana Wrap",
+        "description": "Spread 2 tbsp peanut butter on a whole wheat tortilla, add sliced banana and a drizzle of honey. Roll and eat."
+      },
+      {
+        "title": "Cottage Cheese & Fruit Bowl",
+        "description": "Scoop 1 cup cottage cheese into a bowl and top with fresh pineapple, peach slices or berries."
+      },
+      {
+        "title": "Hard-Boiled Egg & Cheese Plate",
+        "description": "Pair 2 pre-boiled eggs (peeled ahead) with a slice of cheese and a handful of crackers."
+      },
+      {
+        "title": "Nut Butter & Apple Slices",
+        "description": "Slice an apple and serve with 2 tbsp almond or peanut butter for dipping."
+      },
+      {
+        "title": "Protein Shake",
+        "description": "Blend 1 scoop protein powder, 1 frozen banana and 1 cup milk for 30 seconds. Done."
+      },
+      {
+        "title": "Smoked Salmon on Crackers",
+        "description": "Top 4–5 whole-grain crackers with cream cheese, smoked salmon and a sprinkle of capers."
+      },
+      {
+        "title": "Chia Pudding Cup",
+        "description": "Mix 3 tbsp chia seeds with 1 cup coconut milk and 1 tsp vanilla the night before. Top with mango in the morning."
+      }
+    ],
+    "tags": [
+      "breakfast",
+      "quick",
+      "no-cook",
+      "meal-prep",
+      "lazy"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/10_Lazy_Breakfast_Ideas_That_Take_Under_5_Minutes.png",
+    "pinImage": "/images/recipes/10_Lazy_Breakfast_Ideas_That_Take_Under_5_Minutes.png",
+    "metaTitle": "10 Lazy Breakfast Ideas Under 5 Minutes – No Cooking Required",
+    "metaDescription": "Quick no-cook breakfast ideas ready in under 5 minutes — overnight oats, yogurt parfaits, avocado toast, and more."
+  },
+  {
+    "slug": "air-fryer-garlic-parmesan-fries",
+    "title": "Air Fryer Garlic Parmesan Fries",
+    "subtitle": "Crispy in 15 minutes — better than takeout",
+    "category": "snacks",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "totalTime": "20 min",
+    "servings": 2,
+    "difficulty": "Easy",
+    "description": "Crispy air fryer garlic parmesan fries ready in 15 minutes — better than takeout and made with simple pantry ingredients. Tossed in olive oil, garlic and parmesan, then air fried until golden and crunchy.",
+    "ingredients": [
+      "2 large russet potatoes (cut into ¼-inch sticks)",
+      "2 tbsp olive oil",
+      "3 cloves garlic (minced)",
+      "¼ cup grated parmesan",
+      "1 tsp Italian seasoning",
+      "½ tsp garlic powder",
+      "½ tsp paprika",
+      "Salt and black pepper to taste",
+      "Fresh parsley (to garnish)"
+    ],
+    "equipment": [
+      "Air fryer",
+      "Large bowl",
+      "Tongs"
+    ],
+    "steps": [
+      "Soak the cut potato sticks in cold water for 20 minutes, then drain and pat completely dry. Dry fries = crispy fries.",
+      "Toss the dried fries with olive oil, garlic powder, paprika, Italian seasoning, salt and pepper in a large bowl.",
+      "Arrange in a single layer in the air fryer basket — do this in batches if needed. Never stack or overlap.",
+      "Air fry at 400°F (200°C) for 14–16 minutes, shaking the basket every 5 minutes, until golden and crispy.",
+      "Immediately toss the hot fries with the minced garlic and grated parmesan so they stick.",
+      "Garnish with fresh parsley and a pinch of flaky salt. Serve with your favourite dipping sauce."
+    ],
+    "tips": [
+      "Pat the fries bone-dry before air frying — moisture is the enemy of crispiness.",
+      "Add the raw garlic after cooking, not before, so it doesn't burn and turn bitter in the air fryer."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Air fryer",
+        "url": "#"
+      },
+      {
+        "label": "Large mixing bowl",
+        "url": "#"
+      },
+      {
+        "label": "Tongs",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "snacks",
+      "air-fryer",
+      "fries",
+      "garlic",
+      "parmesan",
+      "quick"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/Air_Fryer_Garlic_Parmesan_Fries.png",
+    "pinImage": "/images/recipes/Air_Fryer_Garlic_Parmesan_Fries.png",
+    "metaTitle": "Air Fryer Garlic Parmesan Fries – Crispy in 15 Minutes",
+    "metaDescription": "Crispy air fryer garlic parmesan fries ready in 15 minutes — better than takeout and made with simple pantry ingredients."
+  },
+  {
+    "slug": "copycat-chipotle-guacamole",
+    "title": "Copycat Chipotle Guacamole",
+    "subtitle": "5 ingredients. Restaurant-perfect. 5 minutes.",
+    "category": "copycat",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Make Chipotle's famous guacamole at home in 5 minutes with just 5 ingredients. Simple, fresh and better than the real thing — ripe avocados, red onion, lime, cilantro and salt.",
+    "ingredients": [
+      "2 ripe avocados",
+      "¼ cup red onion (finely diced)",
+      "1 lime (juiced)",
+      "½ tsp salt",
+      "¼ cup fresh cilantro (chopped)"
+    ],
+    "equipment": [
+      "Fork or potato masher",
+      "Mixing bowl",
+      "Knife",
+      "Cutting board"
+    ],
+    "steps": [
+      "Halve the avocados, remove the pits and scoop the flesh into a bowl.",
+      "Mash with a fork to your preferred texture — Chipotle's is slightly chunky, not completely smooth.",
+      "Fold in the finely diced red onion, lime juice, salt and cilantro.",
+      "Taste and adjust salt or lime as needed. The lime keeps it bright and slows browning.",
+      "Serve immediately with chips, or press plastic wrap directly onto the surface to store in the fridge."
+    ],
+    "tips": [
+      "Ripe avocados are the whole recipe — they should give slightly when pressed but not feel mushy.",
+      "Press the plastic wrap directly onto the guac (no air gaps) to prevent it from browning in the fridge."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Potato masher",
+        "url": "#"
+      },
+      {
+        "label": "Mixing bowl",
+        "url": "#"
+      },
+      {
+        "label": "Citrus squeezer",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "copycat",
+      "chipotle",
+      "guacamole",
+      "dip",
+      "snacks",
+      "mexican"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/Copycat_Chipotle_Guacamole.png",
+    "pinImage": "/images/recipes/Copycat_Chipotle_Guacamole.png",
+    "metaTitle": "Copycat Chipotle Guacamole – 5 Ingredients, Restaurant-Perfect",
+    "metaDescription": "Make Chipotle's famous guacamole at home in 5 minutes with just 5 ingredients. Simple, fresh, and better than the real thing."
+  },
+  {
+    "slug": "copycat-olive-garden-chicken-gnocchi-soup",
+    "title": "Copycat Olive Garden Chicken Gnocchi Soup",
+    "subtitle": "Creamy one-pot soup — better than the restaurant",
+    "category": "copycat",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "totalTime": "30 min",
+    "servings": 6,
+    "difficulty": "Easy",
+    "description": "This copycat Olive Garden chicken gnocchi soup is creamy, comforting and made in one pot — better than the restaurant and ready in 30 minutes. Pillowy gnocchi, shredded chicken, spinach and carrots in a rich cream base.",
+    "ingredients": [
+      "1 lb cooked chicken breast (shredded)",
+      "1 lb shelf-stable gnocchi",
+      "3 cups fresh spinach",
+      "2 medium carrots (diced)",
+      "2 stalks celery (diced)",
+      "1 small onion (diced)",
+      "3 cloves garlic (minced)",
+      "4 cups chicken broth",
+      "2 cups heavy cream",
+      "2 tbsp butter",
+      "2 tbsp all-purpose flour",
+      "1 tsp Italian seasoning",
+      "½ tsp thyme",
+      "Salt and black pepper to taste"
+    ],
+    "equipment": [
+      "Large pot or Dutch oven",
+      "Wooden spoon",
+      "Ladle"
+    ],
+    "steps": [
+      "Melt the butter in a large pot over medium heat. Add the onion, carrots and celery and cook for 5 minutes until softened.",
+      "Add the garlic, Italian seasoning and thyme and cook 1 minute until fragrant.",
+      "Sprinkle in the flour and stir for 1 minute to cook the roux.",
+      "Pour in the chicken broth and bring to a gentle boil, stirring to dissolve any lumps.",
+      "Add the gnocchi and cook for 3–4 minutes until they float and are tender.",
+      "Reduce heat to low and stir in the heavy cream and shredded chicken. Simmer 5 minutes.",
+      "Add the spinach and cook 1–2 minutes until wilted. Season to taste and serve hot."
+    ],
+    "tips": [
+      "Don't let the soup boil after adding the cream — a gentle simmer keeps the base silky and smooth.",
+      "Rotisserie chicken is a great shortcut here; shred it straight from the store."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Dutch oven",
+        "url": "#"
+      },
+      {
+        "label": "Wooden spoon",
+        "url": "#"
+      },
+      {
+        "label": "Ladle",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "copycat",
+      "olive-garden",
+      "soup",
+      "gnocchi",
+      "chicken",
+      "one-pot"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/Copycat_Olive_Garden_Chicken_Gnocchi_Soup.png",
+    "pinImage": "/images/recipes/Copycat_Olive_Garden_Chicken_Gnocchi_Soup.png",
+    "metaTitle": "Copycat Olive Garden Chicken Gnocchi Soup – Creamy One-Pot Recipe",
+    "metaDescription": "This copycat Olive Garden chicken gnocchi soup is creamy, comforting, and made in one pot — better than the restaurant and ready in 30 minutes."
+  },
+  {
+    "slug": "copycat-wendys-frosty",
+    "title": "Copycat Wendy's Frosty",
+    "subtitle": "3 ingredients. No machine. Insanely creamy.",
+    "category": "copycat",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 2,
+    "difficulty": "Easy",
+    "description": "Make a thick, creamy copycat Wendy's Frosty at home with just 3 ingredients and no ice cream machine required. Sweetened condensed milk, cocoa powder and frozen Cool Whip blend into the exact same rich, spoonable texture.",
+    "ingredients": [
+      "2 cups Cool Whip (frozen solid)",
+      "1½ cups whole milk",
+      "3 tbsp sweetened condensed milk",
+      "2 tbsp unsweetened cocoa powder"
+    ],
+    "equipment": [
+      "Blender",
+      "Tall glasses"
+    ],
+    "steps": [
+      "Make sure the Cool Whip is fully frozen — pull it straight from the freezer.",
+      "Add the frozen Cool Whip, milk, sweetened condensed milk and cocoa powder to a blender.",
+      "Blend on high for 20–30 seconds until smooth, thick and creamy.",
+      "Pour into glasses and serve immediately with a spoon — it's thick enough to stand a straw in."
+    ],
+    "tips": [
+      "Use fully frozen Cool Whip — if it's softened, the Frosty turns into a thin milkshake instead of the spoonable Wendy's texture.",
+      "For a vanilla Frosty, swap the cocoa for 1 tsp vanilla extract."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "High-speed blender",
+        "url": "#"
+      },
+      {
+        "label": "Tall glasses",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "copycat",
+      "wendys",
+      "frosty",
+      "dessert",
+      "chocolate",
+      "no-machine"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/Copycat_Wendy_s_Frosty.png",
+    "pinImage": "/images/recipes/Copycat_Wendy_s_Frosty.png",
+    "metaTitle": "Copycat Wendy's Frosty – 3 Ingredients, No Machine Needed",
+    "metaDescription": "Make a thick, creamy copycat Wendy's Frosty at home with just 3 ingredients and no ice cream machine required."
+  },
+  {
+    "slug": "crispy-air-fryer-chicken-wings",
+    "title": "Crispy Air Fryer Chicken Wings (6 Sauces)",
+    "subtitle": "No deep fry, 25 minutes, six sauce options",
+    "category": "snacks",
+    "prepTime": "5 min",
+    "cookTime": "25 min",
+    "totalTime": "30 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Crispy air fryer chicken wings in 25 minutes with 6 sauce options — Buffalo, Honey Garlic, Korean Gochujang, Lemon Pepper, Parmesan Ranch and Smoky BBQ. No deep frying needed, and they come out shatteringly crispy every time.",
+    "ingredients": [
+      "2 lb chicken wings (split into flats and drums)",
+      "1 tbsp baking powder",
+      "1 tsp garlic powder",
+      "1 tsp paprika",
+      "½ tsp salt",
+      "½ tsp black pepper"
+    ],
+    "equipment": [
+      "Air fryer",
+      "Large bowl",
+      "Tongs",
+      "Small saucepan"
+    ],
+    "steps": [
+      "Pat the wings completely dry with paper towels — this is the key to crispy skin.",
+      "Toss with baking powder, garlic powder, paprika, salt and pepper until evenly coated.",
+      "Arrange in a single layer in the air fryer basket. Air fry at 380°F for 20 minutes, flipping halfway.",
+      "Increase to 400°F and cook 5 more minutes until deeply golden and crispy.",
+      "Immediately toss in your sauce of choice (see below) and serve hot."
+    ],
+    "tips": [
+      "Baking powder is the secret — it draws moisture out of the skin for an extra-crispy crust with no oil needed.",
+      "Cook in batches if needed rather than stacking — overcrowded wings steam instead of crisp."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Air fryer",
+        "url": "#"
+      },
+      {
+        "label": "Tongs",
+        "url": "#"
+      },
+      {
+        "label": "Mixing bowl",
+        "url": "#"
+      }
+    ],
+    "sauceVariants": [
+      {
+        "name": "Buffalo",
+        "ingredients": [
+          "⅓ cup Frank's RedHot",
+          "2 tbsp melted butter",
+          "1 tsp Worcestershire"
+        ],
+        "note": "Classic game-day heat. Toss and serve with blue cheese dip."
+      },
+      {
+        "name": "Honey Garlic",
+        "ingredients": [
+          "3 tbsp honey",
+          "2 tbsp soy sauce",
+          "3 cloves garlic (minced)",
+          "1 tbsp butter"
+        ],
+        "note": "Simmer ingredients 2 min until glossy before tossing."
+      },
+      {
+        "name": "Lemon Pepper",
+        "ingredients": [
+          "2 tbsp melted butter",
+          "1 tbsp lemon zest",
+          "1 tsp cracked black pepper",
+          "½ tsp garlic powder"
+        ],
+        "note": "Toss the hot wings in butter first, then dust with the dry seasoning."
+      },
+      {
+        "name": "Parmesan Ranch",
+        "ingredients": [
+          "¼ cup grated parmesan",
+          "2 tbsp ranch dressing",
+          "1 tbsp melted butter",
+          "1 tsp garlic powder"
+        ],
+        "note": "Toss wings in butter and ranch, then shower with parmesan."
+      },
+      {
+        "name": "Smoky BBQ",
+        "ingredients": [
+          "⅓ cup BBQ sauce",
+          "1 tbsp honey",
+          "½ tsp smoked paprika",
+          "½ tsp garlic powder"
+        ],
+        "note": "Mix together and warm before tossing for the stickiest glaze."
+      },
+      {
+        "name": "Korean Gochujang",
+        "ingredients": [
+          "2 tbsp gochujang",
+          "1 tbsp honey",
+          "1 tbsp soy sauce",
+          "1 tsp sesame oil",
+          "1 tsp rice vinegar"
+        ],
+        "note": "Whisk cold and toss. Garnish with sesame seeds and sliced scallions."
+      }
+    ],
+    "tags": [
+      "snacks",
+      "air-fryer",
+      "wings",
+      "chicken",
+      "game-day",
+      "buffalo"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/Crispy_Air_Fryer_Chicken_Wings.png",
+    "pinImage": "/images/recipes/Crispy_Air_Fryer_Chicken_Wings.png",
+    "metaTitle": "Crispy Air Fryer Chicken Wings – 6 Sauces, No Deep Fry, 25 Minutes",
+    "metaDescription": "Crispy air fryer chicken wings in 25 minutes with 6 sauce options — Buffalo, Honey Garlic, Korean Gochujang, and more. No deep frying needed."
+  },
+  {
+    "slug": "copycat-chick-fil-a-chicken-sandwich",
+    "title": "Copycat Chick-fil-A Chicken Sandwich",
+    "subtitle": "Crispy, juicy & ready in under 30 minutes",
+    "category": "copycat",
+    "prepTime": "15 min",
+    "cookTime": "12 min",
+    "totalTime": "27 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "This homemade copycat Chick-fil-A sandwich has the same crispy crust, juicy chicken and buttery brioche bun — ready in under 30 minutes. The secret is a seasoned pickle brine marinade and a light seasoned flour dredge.",
+    "ingredients": [
+      "4 boneless skinless chicken breasts (pounded thin)",
+      "1 cup dill pickle juice (from a jar)",
+      "1 large egg",
+      "¼ cup milk",
+      "1 cup all-purpose flour",
+      "1 tsp paprika",
+      "1 tsp powdered sugar",
+      "1 tsp salt",
+      "½ tsp garlic powder",
+      "½ tsp black pepper",
+      "¼ tsp celery salt",
+      "Vegetable oil (for frying)",
+      "4 brioche burger buns (toasted with butter)",
+      "Dill pickle slices",
+      "Mayonnaise or Chick-fil-A sauce"
+    ],
+    "equipment": [
+      "Cast iron skillet or heavy-bottomed pan",
+      "Meat mallet",
+      "Shallow dish",
+      "Tongs",
+      "Instant-read thermometer"
+    ],
+    "steps": [
+      "Pound the chicken breasts to an even ½-inch thickness. Place in a zip-lock bag with the pickle juice and marinate in the fridge for at least 30 minutes (up to overnight).",
+      "Whisk together the egg and milk in a shallow bowl. In a separate shallow bowl, mix the flour, paprika, powdered sugar, salt, garlic powder, pepper and celery salt.",
+      "Remove the chicken from the brine and pat lightly dry. Dip each piece in the egg wash, then dredge in the seasoned flour, pressing firmly so the coating sticks.",
+      "Heat about 1 inch of vegetable oil in a cast iron skillet over medium-high heat to 350°F.",
+      "Fry the chicken for 5–6 minutes per side until deeply golden and cooked to an internal temp of 165°F. Don't crowd the pan.",
+      "Transfer to a paper towel–lined rack to drain briefly.",
+      "Assemble: butter-toasted brioche bun, mayo, pickles, the crispy chicken fillet. Serve immediately."
+    ],
+    "tips": [
+      "The pickle brine marinade is non-negotiable — it seasons the chicken from inside and adds that signature Chick-fil-A tang.",
+      "Powdered sugar in the flour isn't a typo — it's what gives the crust its slightly sweet, caramelized bite."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Cast iron skillet",
+        "url": "#"
+      },
+      {
+        "label": "Meat mallet",
+        "url": "#"
+      },
+      {
+        "label": "Instant-read thermometer",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "copycat",
+      "chick-fil-a",
+      "sandwich",
+      "chicken",
+      "fried",
+      "quick"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "Copycat Chick-fil-A Chicken Sandwich – Crispy, Juicy & Easy at Home",
+    "metaDescription": "This homemade copycat Chick-fil-A sandwich has the same crispy crust, juicy chicken, and buttery brioche bun — ready in under 30 minutes."
+  },
+  {
+    "slug": "crispy-smash-burgers-with-special-sauce",
+    "title": "Crispy Smash Burgers with Special Sauce",
+    "subtitle": "Better than fast food — ready in 20 minutes",
+    "category": "mains",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "totalTime": "20 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Ultra-thin crispy smash burgers with a tangy homemade special sauce — ready in 20 minutes and better than any drive-thru. The secret is a screaming-hot cast iron pan and a firm press that creates those lacey, caramelized edges.",
+    "ingredients": [
+      "1 lb 80/20 ground beef (divided into 4 loose balls)",
+      "4 slices American cheese",
+      "4 brioche or potato buns (toasted)",
+      "Salt and black pepper",
+      "1 tbsp butter (for toasting buns)",
+      "Shredded lettuce and sliced tomato",
+      "For the Special Sauce:",
+      "3 tbsp mayonnaise",
+      "1 tbsp ketchup",
+      "1 tsp yellow mustard",
+      "1 tbsp sweet relish",
+      "½ tsp garlic powder",
+      "½ tsp onion powder",
+      "Pinch of paprika"
+    ],
+    "equipment": [
+      "Cast iron skillet or griddle",
+      "Burger press or heavy spatula",
+      "Spatula"
+    ],
+    "steps": [
+      "Make the special sauce: whisk together mayo, ketchup, mustard, relish, garlic powder, onion powder and paprika. Refrigerate.",
+      "Heat a cast iron skillet over high heat until it's smoking hot — at least 3–4 minutes. Do not skip this step.",
+      "Season the ground beef balls with salt and pepper. Place two balls in the skillet and immediately smash each one flat with a burger press or the back of a heavy spatula. Press hard for 10 seconds.",
+      "Cook 1.5–2 minutes without touching until the edges are deeply brown and lacy.",
+      "Flip, immediately add a slice of American cheese and cook 30–45 seconds more.",
+      "Toast the buns with butter in the same pan.",
+      "Assemble: spread special sauce on both bun halves, add the patty, lettuce and tomato. Serve immediately."
+    ],
+    "tips": [
+      "Use 80/20 beef — leaner beef has no fat to render into those crispy edges.",
+      "The pan must be ripping hot before the beef hits it — this is what creates the crust, not the pressing."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Cast iron skillet",
+        "url": "#"
+      },
+      {
+        "label": "Burger press",
+        "url": "#"
+      },
+      {
+        "label": "Flexible spatula",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "mains",
+      "burgers",
+      "smash-burger",
+      "quick",
+      "beef",
+      "special-sauce"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "Crispy Smash Burgers with Special Sauce – Better Than Fast Food",
+    "metaDescription": "Ultra-thin crispy smash burgers with a tangy homemade special sauce — ready in 20 minutes and better than any drive-thru."
+  },
+  {
+    "slug": "8-overnight-oat-flavors-meal-prep",
+    "title": "8 Overnight Oat Flavors to Meal Prep for the Week",
+    "subtitle": "5 minutes each — all week covered",
+    "category": "meal-prep",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Prep all your breakfasts in one go with 8 overnight oat flavors — Peanut Butter Banana, Blueberry Lemon, Chocolate Hazelnut, Strawberry Vanilla, Apple Cinnamon, Mango Coconut, Matcha Almond and Peach Cream. Each takes 5 minutes and keeps in the fridge all week.",
+    "ingredients": [
+      "½ cup rolled oats (per jar)",
+      "¾ cup milk of choice (per jar)",
+      "1 tbsp chia seeds (per jar)",
+      "Toppings vary by flavor — see below"
+    ],
+    "equipment": [
+      "8 mason jars or airtight containers",
+      "Spoon",
+      "Measuring cups"
+    ],
+    "steps": [
+      "For every jar: combine ½ cup rolled oats, ¾ cup milk, 1 tbsp chia seeds and any mix-ins listed for that flavor.",
+      "Stir well, seal and refrigerate for at least 4 hours — overnight is ideal.",
+      "In the morning, stir and add your fresh toppings, then eat cold or warm in the microwave for 60 seconds."
+    ],
+    "tips": [
+      "Rolled oats (not instant) give the best thick, chewy texture after soaking overnight.",
+      "These keep in the fridge for up to 5 days — prep all 8 on Sunday for the whole week."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Mason jars",
+        "url": "#"
+      },
+      {
+        "label": "Meal prep containers",
+        "url": "#"
+      }
+    ],
+    "listItems": [
+      {
+        "title": "Peanut Butter Banana",
+        "ingredients": [
+          "2 tbsp peanut butter",
+          "1 tbsp honey",
+          "½ banana (sliced, to top)",
+          "Pinch of salt"
+        ]
+      },
+      {
+        "title": "Blueberry Lemon",
+        "ingredients": [
+          "¼ cup blueberries",
+          "1 tsp lemon zest",
+          "1 tbsp honey",
+          "2 tbsp vanilla Greek yogurt (to top)"
+        ]
+      },
+      {
+        "title": "Chocolate Hazelnut",
+        "ingredients": [
+          "1 tbsp Nutella (or hazelnut spread)",
+          "1 tbsp cocoa powder",
+          "1 tsp honey",
+          "Chopped hazelnuts (to top)"
+        ]
+      },
+      {
+        "title": "Strawberry Vanilla",
+        "ingredients": [
+          "¼ cup sliced strawberries",
+          "½ tsp vanilla extract",
+          "1 tbsp honey",
+          "Whipped cream (to top)"
+        ]
+      },
+      {
+        "title": "Apple Cinnamon",
+        "ingredients": [
+          "¼ cup diced apple",
+          "½ tsp cinnamon",
+          "1 tbsp maple syrup",
+          "Granola (to top)"
+        ]
+      },
+      {
+        "title": "Mango Coconut",
+        "ingredients": [
+          "¼ cup diced mango",
+          "2 tbsp coconut flakes",
+          "¾ cup coconut milk (instead of regular milk)",
+          "Lime zest (to top)"
+        ]
+      },
+      {
+        "title": "Matcha Almond",
+        "ingredients": [
+          "1 tsp matcha powder",
+          "2 tbsp almond butter",
+          "1 tbsp honey",
+          "Sliced almonds (to top)"
+        ]
+      },
+      {
+        "title": "Peach Cream",
+        "ingredients": [
+          "¼ cup diced peach",
+          "2 tbsp cream cheese (softened)",
+          "1 tbsp honey",
+          "½ tsp vanilla",
+          "Extra peach slices (to top)"
+        ]
+      }
+    ],
+    "tags": [
+      "meal-prep",
+      "breakfast",
+      "overnight-oats",
+      "healthy",
+      "quick"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "8 Overnight Oat Flavors to Meal Prep for the Week – Easy Healthy Breakfast",
+    "metaDescription": "Prep all your breakfasts in one go with 8 overnight oat flavors — each takes 5 minutes and keeps in the fridge all week."
+  },
+  {
+    "slug": "copycat-texas-roadhouse-rolls-cinnamon-butter",
+    "title": "Copycat Texas Roadhouse Rolls with Cinnamon Butter",
+    "subtitle": "Soft, fluffy & served with whipped cinnamon honey butter",
+    "category": "copycat",
+    "prepTime": "20 min",
+    "cookTime": "15 min",
+    "totalTime": "1 hr 35 min",
+    "servings": 12,
+    "difficulty": "Medium",
+    "description": "These copycat Texas Roadhouse rolls are impossibly soft, slightly sweet and served with whipped cinnamon honey butter — just like the restaurant. The secret is honey in the dough and melted butter brushed on straight from the oven.",
+    "ingredients": [
+      "1 packet (2¼ tsp) active dry yeast",
+      "1 cup warm milk (110°F)",
+      "3 tbsp honey",
+      "3 tbsp melted butter (plus more for brushing)",
+      "1 large egg",
+      "3 cups all-purpose flour",
+      "1 tsp salt",
+      "For the Cinnamon Butter:",
+      "½ cup unsalted butter (softened)",
+      "2 tbsp powdered sugar",
+      "2 tbsp honey",
+      "1 tsp cinnamon",
+      "Pinch of salt"
+    ],
+    "equipment": [
+      "Stand mixer with dough hook",
+      "Baking sheet",
+      "Parchment paper",
+      "Brush"
+    ],
+    "steps": [
+      "Proof the yeast: mix warm milk, yeast and 1 tbsp honey in a bowl. Let sit 5–10 minutes until foamy.",
+      "In a stand mixer with a dough hook, combine the proofed yeast, remaining honey, melted butter, egg, flour and salt. Mix on medium for 5–7 minutes until a soft, smooth dough forms.",
+      "Cover and let rise in a warm place for 1 hour until doubled in size.",
+      "Punch down the dough, divide into 12 equal balls and place on a parchment-lined baking sheet touching each other.",
+      "Cover and let rise 30 more minutes until puffy.",
+      "Bake at 350°F for 14–16 minutes until golden on top.",
+      "Brush immediately with melted butter.",
+      "Make the cinnamon butter: beat together softened butter, powdered sugar, honey, cinnamon and salt until fluffy. Serve alongside warm rolls."
+    ],
+    "tips": [
+      "Don't let the milk get too hot — above 115°F kills the yeast and the rolls won't rise.",
+      "Rolls touching in the pan = soft sides instead of crusty ones, just like the restaurant."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Stand mixer",
+        "url": "#"
+      },
+      {
+        "label": "Baking sheet",
+        "url": "#"
+      },
+      {
+        "label": "Pastry brush",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "copycat",
+      "texas-roadhouse",
+      "rolls",
+      "bread",
+      "baking",
+      "cinnamon-butter"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "Copycat Texas Roadhouse Rolls with Cinnamon Butter – Soft & Fluffy",
+    "metaDescription": "These copycat Texas Roadhouse rolls are impossibly soft, slightly sweet, and served with whipped cinnamon honey butter — just like the restaurant."
+  },
+  {
+    "slug": "one-pan-marry-me-chicken",
+    "title": "One-Pan Marry Me Chicken",
+    "subtitle": "Creamy sun-dried tomato sauce in 30 minutes",
+    "category": "one-pan",
+    "prepTime": "5 min",
+    "cookTime": "25 min",
+    "totalTime": "30 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Juicy pan-seared chicken smothered in a rich creamy sun-dried tomato parmesan sauce — made in one pan in 30 minutes. The sauce is so good it's been known to inspire marriage proposals.",
+    "ingredients": [
+      "4 boneless skinless chicken breasts",
+      "1 cup heavy cream",
+      "½ cup chicken broth",
+      "⅓ cup sun-dried tomatoes (chopped)",
+      "½ cup grated parmesan",
+      "4 cloves garlic (minced)",
+      "1 tsp Italian seasoning",
+      "½ tsp red pepper flakes",
+      "2 tbsp olive oil",
+      "Fresh basil (to garnish)",
+      "Salt and black pepper"
+    ],
+    "equipment": [
+      "Large oven-safe skillet",
+      "Tongs",
+      "Grater"
+    ],
+    "steps": [
+      "Season the chicken breasts with salt, pepper and Italian seasoning on both sides.",
+      "Heat olive oil in a large oven-safe skillet over medium-high heat. Sear the chicken for 4–5 minutes per side until golden. Transfer to a plate.",
+      "Reduce heat to medium. Add garlic to the same pan and cook 30 seconds until fragrant.",
+      "Pour in the chicken broth to deglaze, scraping up any browned bits.",
+      "Stir in the heavy cream, sun-dried tomatoes, parmesan and red pepper flakes. Simmer 3–4 minutes until slightly thickened.",
+      "Nestle the chicken back into the sauce. Transfer to a 375°F oven and bake 15 minutes until chicken is cooked through.",
+      "Garnish with fresh basil and extra parmesan. Serve with pasta, rice or crusty bread."
+    ],
+    "tips": [
+      "Don't skip the oven step — it finishes the chicken gently without drying it out and thickens the sauce beautifully.",
+      "Sun-dried tomatoes packed in oil have more flavour — drain them but keep a splash of the oil for the pan."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Oven-safe skillet",
+        "url": "#"
+      },
+      {
+        "label": "Tongs",
+        "url": "#"
+      },
+      {
+        "label": "Box grater",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "one-pan",
+      "chicken",
+      "creamy",
+      "marry-me-chicken",
+      "sun-dried-tomato",
+      "quick"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "One-Pan Marry Me Chicken – Creamy Sun-Dried Tomato Sauce in 30 Minutes",
+    "metaDescription": "Juicy pan-seared chicken smothered in a rich creamy sun-dried tomato parmesan sauce — made in one pan in 30 minutes."
+  },
+  {
+    "slug": "chocolate-protein-smoothie",
+    "title": "Chocolate Protein Smoothie That Tastes Like a Milkshake",
+    "subtitle": "5 clean ingredients — packed with protein",
+    "category": "drinks",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "A thick, rich chocolate protein smoothie made with 5 clean ingredients — tastes like a milkshake but packed with protein. Frozen banana, chocolate protein powder, almond milk, cocoa powder and peanut butter blend into the creamiest, most satisfying breakfast drink.",
+    "ingredients": [
+      "1 frozen banana (peeled and chunked)",
+      "1 scoop chocolate protein powder",
+      "1 cup unsweetened almond milk",
+      "1 tbsp unsweetened cocoa powder",
+      "2 tbsp peanut butter",
+      "Ice (optional, for extra thickness)"
+    ],
+    "equipment": [
+      "High-speed blender",
+      "Tall glass"
+    ],
+    "steps": [
+      "Add the almond milk to the blender first so the blades move freely.",
+      "Add the frozen banana, protein powder, cocoa powder and peanut butter.",
+      "Blend on high for 30–45 seconds until thick and completely smooth.",
+      "Taste — add a drizzle of honey if you want it sweeter, or a few ice cubes for a thicker texture.",
+      "Pour into a tall glass and serve immediately."
+    ],
+    "tips": [
+      "Freeze your bananas in advance — they make the smoothie thick without any ice watering it down.",
+      "Use a good-quality chocolate protein powder; it's the foundation of the flavour."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "High-speed blender",
+        "url": "#"
+      },
+      {
+        "label": "Tall glass",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "drinks",
+      "smoothie",
+      "high-protein",
+      "chocolate",
+      "quick",
+      "healthy"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "Chocolate Protein Smoothie That Tastes Like a Milkshake – 5 Ingredients",
+    "metaDescription": "A thick, rich chocolate protein smoothie made with 5 clean ingredients — tastes like a milkshake but packed with protein.",
+    "proteinGrams": 30
+  },
+  {
+    "slug": "copycat-raising-canes-chicken-tenders",
+    "title": "Copycat Raising Cane's Chicken Tenders",
+    "subtitle": "Crispy, juicy & the secret Cane's sauce",
+    "category": "copycat",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "totalTime": "1 hr",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Crispy buttermilk-marinated chicken tenders with homemade Cane's sauce — better than the restaurant in just 30 minutes. The sauce has 5 pantry ingredients and nails that tangy, peppery dipping sauce.",
+    "ingredients": [
+      "1½ lb chicken tenders",
+      "1 cup buttermilk",
+      "1 tsp hot sauce",
+      "1½ cups all-purpose flour",
+      "1 tsp garlic powder",
+      "1 tsp paprika",
+      "1 tsp salt",
+      "½ tsp black pepper",
+      "Vegetable oil (for frying)",
+      "For Cane's Sauce:",
+      "½ cup mayonnaise",
+      "3 tbsp ketchup",
+      "1 tbsp Worcestershire sauce",
+      "1 tsp garlic powder",
+      "½ tsp black pepper",
+      "½ tsp salt"
+    ],
+    "equipment": [
+      "Cast iron skillet or deep pan",
+      "Tongs",
+      "Instant-read thermometer",
+      "Paper towels"
+    ],
+    "steps": [
+      "Make the Cane's sauce first: whisk together mayo, ketchup, Worcestershire, garlic powder, pepper and salt. Refrigerate for at least 30 minutes — it gets better as it sits.",
+      "Combine buttermilk and hot sauce in a bowl. Add the chicken tenders, cover and marinate in the fridge for 30 minutes to 4 hours.",
+      "Whisk together flour, garlic powder, paprika, salt and pepper in a shallow dish.",
+      "Remove chicken from marinade, letting the excess drip off, then dredge in the seasoned flour pressing firmly.",
+      "Heat 1½ inches of vegetable oil in a cast iron skillet to 350°F.",
+      "Fry tenders in batches for 4–5 minutes per side until golden and cooked to 165°F internal temp.",
+      "Drain on a paper towel–lined rack and serve immediately with the chilled Cane's sauce."
+    ],
+    "tips": [
+      "Don't skip the buttermilk marinade — the lactic acid tenderises the chicken so it stays juicy through frying.",
+      "The sauce is better made ahead; the flavours meld into something really close to the original after an hour."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Cast iron skillet",
+        "url": "#"
+      },
+      {
+        "label": "Instant-read thermometer",
+        "url": "#"
+      },
+      {
+        "label": "Tongs",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "copycat",
+      "raising-canes",
+      "chicken",
+      "tenders",
+      "fried",
+      "sauce"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "Copycat Raising Cane's Chicken Tenders – Crispy, Juicy & the Secret Sauce",
+    "metaDescription": "Crispy buttermilk-marinated chicken tenders with homemade Cane's sauce — better than the restaurant in just 30 minutes."
+  },
+  {
+    "slug": "10-high-protein-breakfast-ideas",
+    "title": "10 High-Protein Breakfast Ideas to Keep You Full All Morning",
+    "subtitle": "Quick, satisfying and perfect for meal prep",
+    "category": "breakfast",
+    "prepTime": "10 min",
+    "totalTime": "15 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "High-protein breakfasts from egg bowls to protein pancakes — each recipe is quick, satisfying and perfect for meal prep. Every idea hits at least 25g of protein to keep you fuelled all morning.",
+    "ingredients": [],
+    "equipment": [
+      "Non-stick pan",
+      "Mixing bowl",
+      "Meal prep containers"
+    ],
+    "steps": [],
+    "tips": [
+      "Batch-cook your proteins on Sunday — scramble a dozen eggs, bake sausage and cook a big pot of oats and breakfast prep becomes a 5-minute assembly each morning.",
+      "Cottage cheese is an underrated protein powerhouse — 1 cup has 28g of protein with almost no prep."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Non-stick pan",
+        "url": "#"
+      },
+      {
+        "label": "Meal prep containers",
+        "url": "#"
+      }
+    ],
+    "listItems": [
+      {
+        "title": "Scrambled Egg & Turkey Sausage Bowl",
+        "description": "Scramble 3 eggs with 2 turkey sausage links crumbled in. Add shredded cheddar and salsa.",
+        "tip": "35g protein — the single highest-protein option on this list."
+      },
+      {
+        "title": "Greek Yogurt Parfait with Granola",
+        "description": "1 cup plain Greek yogurt, ¼ cup granola, mixed berries and a drizzle of honey.",
+        "tip": "26g protein. Use Fage 0% for the leanest option."
+      },
+      {
+        "title": "Protein Pancakes",
+        "description": "Blend 1 banana, 2 eggs and 1 scoop vanilla protein powder. Cook like regular pancakes.",
+        "tip": "28g protein. Top with nut butter and sliced banana."
+      },
+      {
+        "title": "Smoked Salmon Avocado Toast",
+        "description": "2 slices sourdough, ½ avocado mashed, 3 oz smoked salmon, everything bagel seasoning.",
+        "tip": "30g protein. Prep the night before and toast fresh each morning."
+      },
+      {
+        "title": "Overnight Protein Oats",
+        "description": "½ cup oats, 1 scoop protein powder, 1 cup milk, 1 tbsp chia seeds — soak overnight.",
+        "tip": "30g protein. Add peanut butter and banana to top."
+      },
+      {
+        "title": "Cottage Cheese Bowl",
+        "description": "1 cup full-fat cottage cheese topped with pineapple chunks, walnuts and a drizzle of honey.",
+        "tip": "28g protein with zero cooking."
+      },
+      {
+        "title": "Egg White Veggie Omelette",
+        "description": "Whisk 5 egg whites with diced bell pepper, spinach and feta. Cook in a non-stick pan.",
+        "tip": "27g protein. Make 4 and refrigerate — reheat in 60 seconds."
+      },
+      {
+        "title": "High-Protein Breakfast Burrito",
+        "description": "Scrambled eggs, black beans, turkey bacon and cheddar in a whole wheat tortilla.",
+        "tip": "32g protein. Wrap in foil and freeze for the week."
+      },
+      {
+        "title": "Tuna & Avocado Rice Bowl",
+        "description": "1 can tuna (drained), ½ avocado, ½ cup cooked brown rice, soy sauce and sesame seeds.",
+        "tip": "35g protein. Works hot or cold."
+      },
+      {
+        "title": "Peanut Butter Banana Smoothie",
+        "description": "1 frozen banana, 2 tbsp peanut butter, 1 scoop vanilla protein, 1 cup milk — blend 30 seconds.",
+        "tip": "30g protein. Thicken with ice or frozen banana."
+      }
+    ],
+    "tags": [
+      "breakfast",
+      "high-protein",
+      "meal-prep",
+      "healthy",
+      "quick"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "10 High-Protein Breakfast Ideas to Keep You Full All Morning",
+    "metaDescription": "High-protein breakfasts from egg bowls to protein pancakes — each recipe is quick, satisfying, and perfect for meal prep.",
+    "proteinGrams": 30
+  },
+  {
+    "slug": "crispy-air-fryer-salmon-bites",
+    "title": "Crispy Air Fryer Salmon Bites with Honey Garlic Glaze",
+    "subtitle": "10 minutes, sticky glaze, perfect bites",
+    "category": "mains",
+    "prepTime": "5 min",
+    "cookTime": "10 min",
+    "totalTime": "15 min",
+    "servings": 2,
+    "difficulty": "Easy",
+    "description": "Bite-sized crispy salmon pieces with a sticky honey garlic glaze — cooked in the air fryer in just 10 minutes. Serve over rice with steamed broccoli for an insanely easy weeknight dinner.",
+    "ingredients": [
+      "1 lb salmon fillet (skin removed, cut into 1½-inch cubes)",
+      "2 tbsp soy sauce",
+      "2 tbsp honey",
+      "3 cloves garlic (minced)",
+      "1 tsp sesame oil",
+      "1 tsp rice vinegar",
+      "½ tsp ginger (grated)",
+      "½ tsp red pepper flakes",
+      "1 tbsp oil (for tossing)",
+      "Sesame seeds and sliced scallions (to garnish)"
+    ],
+    "equipment": [
+      "Air fryer",
+      "Small bowl",
+      "Tongs"
+    ],
+    "steps": [
+      "Pat the salmon cubes completely dry with paper towels and toss with the oil and a pinch of salt.",
+      "Air fry at 400°F for 8–10 minutes, shaking the basket halfway, until the edges are crispy and the salmon is cooked through.",
+      "Meanwhile, combine soy sauce, honey, garlic, sesame oil, rice vinegar and ginger in a small saucepan over medium heat. Simmer 2–3 minutes until slightly thickened.",
+      "Toss the hot crispy salmon bites in the warm glaze immediately.",
+      "Garnish with sesame seeds and scallions and serve over steamed rice."
+    ],
+    "tips": [
+      "Dry the salmon thoroughly before air frying — moisture on the surface prevents browning.",
+      "Don't overcook: salmon is done when it flakes with gentle pressure and has gone from translucent to opaque."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Air fryer",
+        "url": "#"
+      },
+      {
+        "label": "Tongs",
+        "url": "#"
+      },
+      {
+        "label": "Small saucepan",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "mains",
+      "salmon",
+      "air-fryer",
+      "honey-garlic",
+      "seafood",
+      "quick"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "Crispy Air Fryer Salmon Bites with Honey Garlic Glaze – 10 Minutes",
+    "metaDescription": "Bite-sized crispy salmon pieces with a sticky honey garlic glaze — cooked in the air fryer in just 10 minutes."
+  },
+  {
+    "slug": "6-detox-water-recipes",
+    "title": "6 Detox Water Recipes for Weight Loss and Glowing Skin",
+    "subtitle": "5 minutes each — sip your way to better health",
+    "category": "drinks",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Six refreshing infused detox water recipes that support weight loss, digestion and glowing skin — each takes 5 minutes to prep. Fill a pitcher, refrigerate and sip throughout the day.",
+    "ingredients": [
+      "Filtered water (8 cups per pitcher)",
+      "Fresh fruits, herbs and spices vary by recipe — see below"
+    ],
+    "equipment": [
+      "Large glass pitcher",
+      "Knife",
+      "Cutting board"
+    ],
+    "steps": [
+      "Prepare your chosen fruits and herbs as described below.",
+      "Add ingredients to a large glass pitcher and fill with cold filtered water.",
+      "Refrigerate for at least 2 hours — overnight is even better for a stronger infusion.",
+      "Sip throughout the day. Refill with water once; discard and start fresh after 24 hours."
+    ],
+    "tips": [
+      "The longer the ingredients steep, the stronger the flavour — overnight infusions are noticeably more intense.",
+      "Citrus peels add bitterness if left too long; stick to 12 hours max for lemon and lime."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Glass pitcher",
+        "url": "#"
+      },
+      {
+        "label": "Infuser water bottle",
+        "url": "#"
+      }
+    ],
+    "listItems": [
+      {
+        "title": "Cucumber Mint",
+        "ingredients": [
+          "½ cucumber (thinly sliced)",
+          "10 fresh mint leaves",
+          "1 lemon (sliced)"
+        ],
+        "description": "The most refreshing of the bunch — great for bloating and digestion."
+      },
+      {
+        "title": "Lemon Ginger",
+        "ingredients": [
+          "2 lemons (sliced)",
+          "1-inch fresh ginger (thinly sliced)",
+          "1 tbsp honey (optional)"
+        ],
+        "description": "Anti-inflammatory and metabolism-boosting. Great hot or cold."
+      },
+      {
+        "title": "Strawberry Basil",
+        "ingredients": [
+          "1 cup strawberries (sliced)",
+          "10 fresh basil leaves",
+          "1 lime (sliced)"
+        ],
+        "description": "Fruity, herby and surprisingly complex. Great for skin."
+      },
+      {
+        "title": "Orange Turmeric",
+        "ingredients": [
+          "1 orange (sliced)",
+          "1 tsp turmeric powder",
+          "½ tsp black pepper",
+          "1-inch ginger"
+        ],
+        "description": "Golden and anti-inflammatory. The black pepper activates the turmeric."
+      },
+      {
+        "title": "Apple Cinnamon",
+        "ingredients": [
+          "1 apple (thinly sliced)",
+          "2 cinnamon sticks",
+          "1 tsp vanilla extract"
+        ],
+        "description": "Tastes like fall — great for blood sugar balance and curbing cravings."
+      },
+      {
+        "title": "Watermelon Lime",
+        "ingredients": [
+          "2 cups cubed watermelon",
+          "2 limes (sliced)",
+          "10 fresh mint leaves"
+        ],
+        "description": "Hydrating and light — the best one for hot days."
+      }
+    ],
+    "tags": [
+      "drinks",
+      "detox",
+      "healthy",
+      "water",
+      "weight-loss",
+      "skin"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "6 Detox Water Recipes for Weight Loss and Glowing Skin",
+    "metaDescription": "Six refreshing infused detox water recipes that support weight loss, digestion, and glowing skin — each takes 5 minutes to prep."
+  },
+  {
+    "slug": "copycat-mcdonalds-big-mac-sauce",
+    "title": "Copycat McDonald's Big Mac Sauce",
+    "subtitle": "5 ingredients, 2 minutes — the real deal",
+    "category": "copycat",
+    "prepTime": "2 min",
+    "totalTime": "2 min",
+    "servings": 6,
+    "difficulty": "Easy",
+    "description": "This copycat Big Mac sauce tastes exactly like McDonald's and takes 2 minutes to make with 5 pantry staples. Use it on burgers, as a dipping sauce, on salads or as a spread — it makes everything taste like a Big Mac.",
+    "ingredients": [
+      "½ cup mayonnaise",
+      "2 tbsp French dressing",
+      "2 tbsp sweet relish",
+      "1 tsp yellow mustard",
+      "½ tsp garlic powder",
+      "½ tsp onion powder",
+      "¼ tsp paprika",
+      "Salt to taste"
+    ],
+    "equipment": [
+      "Small bowl",
+      "Whisk or fork"
+    ],
+    "steps": [
+      "Combine all ingredients in a small bowl: mayo, French dressing, sweet relish, yellow mustard, garlic powder, onion powder and paprika.",
+      "Whisk until completely smooth and evenly mixed.",
+      "Taste and add a pinch of salt if needed.",
+      "Use immediately or refrigerate in a sealed jar — the flavour deepens after an hour in the fridge."
+    ],
+    "tips": [
+      "French dressing is the secret ingredient most copycat recipes miss — it's what gives the sauce its distinctive tangy-sweet flavour.",
+      "This keeps in the fridge for up to 2 weeks in an airtight jar."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Small whisk",
+        "url": "#"
+      },
+      {
+        "label": "Small mason jars",
+        "url": "#"
+      }
+    ],
+    "tags": [
+      "copycat",
+      "mcdonalds",
+      "sauce",
+      "condiment",
+      "quick",
+      "burgers"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "Copycat McDonald's Big Mac Sauce – 5 Ingredients, Ready in 2 Minutes",
+    "metaDescription": "This copycat Big Mac sauce tastes exactly like McDonald's and takes 2 minutes to make with 5 pantry staples."
+  },
+  {
+    "slug": "7-no-bake-energy-balls",
+    "title": "7 No-Bake Energy Balls to Meal Prep for the Week",
+    "subtitle": "15 minutes, 7 flavors, all week snacking covered",
+    "category": "snacks",
+    "prepTime": "15 min",
+    "totalTime": "15 min",
+    "servings": 14,
+    "difficulty": "Easy",
+    "description": "Seven no-bake energy ball flavors ready in 15 minutes — high-protein, naturally sweetened and perfect for meal prep snacking all week. Mix, roll, refrigerate and snack.",
+    "ingredients": [
+      "1 cup rolled oats (base for all)",
+      "¼ cup honey or maple syrup (base for all)",
+      "¼ cup nut butter of choice (base for most)",
+      "Additional ingredients vary by flavor — see below"
+    ],
+    "equipment": [
+      "Mixing bowl",
+      "Cookie scoop or spoon",
+      "Baking sheet lined with parchment"
+    ],
+    "steps": [
+      "For each flavor, combine the base oats, honey/maple syrup and any additional ingredients listed.",
+      "Mix until everything sticks together — if the mixture is too dry, add 1 tsp more honey; if too wet, add 1 tbsp more oats.",
+      "Scoop with a tablespoon and roll into 1-inch balls between your palms.",
+      "Place on a parchment-lined sheet and refrigerate 20 minutes until firm.",
+      "Store in an airtight container in the fridge for up to 1 week, or freeze for 3 months."
+    ],
+    "tips": [
+      "Slightly wet hands help you roll without the mixture sticking to your palms.",
+      "All flavors freeze beautifully — make a double batch and freeze half for grab-and-go snacking all month."
+    ],
+    "affiliateLinks": [
+      {
+        "label": "Cookie scoop",
+        "url": "#"
+      },
+      {
+        "label": "Airtight containers",
+        "url": "#"
+      },
+      {
+        "label": "Mixing bowl",
+        "url": "#"
+      }
+    ],
+    "listItems": [
+      {
+        "title": "Peanut Butter Chocolate Chip",
+        "ingredients": [
+          "1 cup oats",
+          "½ cup peanut butter",
+          "¼ cup honey",
+          "½ cup chocolate chips",
+          "1 tsp vanilla"
+        ],
+        "tip": "The crowd favourite — goes first every time."
+      },
+      {
+        "title": "Coconut Almond",
+        "ingredients": [
+          "1 cup oats",
+          "½ cup almond butter",
+          "¼ cup honey",
+          "½ cup shredded coconut",
+          "¼ cup sliced almonds"
+        ]
+      },
+      {
+        "title": "Matcha White Chocolate",
+        "ingredients": [
+          "1 cup oats",
+          "½ cup almond butter",
+          "3 tbsp honey",
+          "1 tsp matcha powder",
+          "¼ cup white chocolate chips"
+        ],
+        "tip": "Earthy and sweet — refrigerate for at least 30 min before rolling."
+      },
+      {
+        "title": "Brownie Batter",
+        "ingredients": [
+          "1 cup oats",
+          "½ cup peanut butter",
+          "¼ cup honey",
+          "2 tbsp cocoa powder",
+          "¼ cup mini chocolate chips"
+        ],
+        "tip": "Add 1 tbsp ground flaxseed for extra fibre."
+      },
+      {
+        "title": "Lemon Poppy Seed",
+        "ingredients": [
+          "1 cup oats",
+          "¼ cup almond butter",
+          "3 tbsp honey",
+          "2 tbsp lemon zest",
+          "1 tbsp poppy seeds",
+          "1 tsp vanilla"
+        ],
+        "tip": "Bright and zesty — the most surprising one on the list."
+      },
+      {
+        "title": "Oatmeal Raisin",
+        "ingredients": [
+          "1 cup oats",
+          "½ cup peanut butter",
+          "3 tbsp maple syrup",
+          "½ cup raisins",
+          "1 tsp cinnamon"
+        ]
+      },
+      {
+        "title": "Cinnamon Roll",
+        "ingredients": [
+          "1 cup oats",
+          "¼ cup cream cheese (softened)",
+          "3 tbsp maple syrup",
+          "1 tsp cinnamon",
+          "½ tsp vanilla",
+          "2 tbsp chopped pecans"
+        ],
+        "tip": "These are softer than the others — refrigerate for 1 hour before serving."
+      }
+    ],
+    "tags": [
+      "snacks",
+      "energy-balls",
+      "no-bake",
+      "meal-prep",
+      "high-protein",
+      "healthy"
+    ],
+    "datePublished": "2026-08-21",
+    "image": "/images/recipes/placeholder-recipe.png",
+    "pinImage": "/images/recipes/placeholder-recipe.png",
+    "metaTitle": "7 No-Bake Energy Balls to Meal Prep for the Week – Easy High-Protein Snack",
+    "metaDescription": "Seven no-bake energy ball flavors ready in 15 minutes — high-protein, naturally sweetened, and perfect for meal prep snacking all week."
+  }
 ];
 
 /** Human-friendly category label for badges and filters. */

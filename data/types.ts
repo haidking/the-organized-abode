@@ -23,6 +23,22 @@ export interface MealPrepMeal {
   ingredients: string[];
 }
 
+// Used for listicle-style roundup pages (e.g. "10 Lazy Breakfasts", "8 Overnight Oat Flavors").
+// Each entry is one numbered item with an optional tip/description and optional ingredient list.
+export interface ListItem {
+  title: string;
+  description?: string;
+  ingredients?: string[];
+  tip?: string;
+}
+
+// Used for multi-variant recipes (e.g. "Crispy Air Fryer Chicken Wings – 6 Sauces").
+export interface SauceVariant {
+  name: string;
+  ingredients: string[];
+  note?: string;
+}
+
 export interface Recipe {
   slug: string;
   title: string;
@@ -43,6 +59,8 @@ export interface Recipe {
     url: string; // Amazon affiliate URL — leave as placeholder "#"
   }[];
   mealPrep?: MealPrepMeal[]; // present only on the breakfast roundup recipe
+  listItems?: ListItem[];    // present on listicle/roundup pages
+  sauceVariants?: SauceVariant[]; // present on multi-sauce/variant recipe pages
   tags: string[]; // for SEO and filtering
   datePublished: string; // ISO format
   image: string; // /images/[slug].jpg
