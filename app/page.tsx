@@ -192,9 +192,21 @@ export default function HomePage() {
       </section>
 
       {/* ═════════════════════════════════════════════════════════════════════
-          Section Header + Recipe Grid (Clean search bar, no filter sidebar)
+          1. Free eBooks Promo (above recipes)
       ═════════════════════════════════════════════════════════════════════ */}
-      <section id="recipes" className="mx-auto max-w-6xl px-4 sm:px-6 py-12 scroll-mt-20">
+      <section id="free-ebooks" className="scroll-mt-20">
+        <FreeEbooks />
+      </section>
+
+      {/* ═════════════════════════════════════════════════════════════════════
+          2. Featured Blogs / Recipe Guides Spotlight (above recipes)
+      ═════════════════════════════════════════════════════════════════════ */}
+      <BlogSpotlight />
+
+      {/* ═════════════════════════════════════════════════════════════════════
+          3. Section Header + Recipe Grid (Search bar + recipe cards)
+      ═════════════════════════════════════════════════════════════════════ */}
+      <section id="recipes" className="mx-auto max-w-6xl px-4 sm:px-6 py-16 scroll-mt-20">
         <div className="mb-8 text-center">
           <span className="inline-block border-b-2 border-accent pb-1 text-xs font-bold uppercase tracking-wider text-accent">
             Our Recipes
@@ -210,21 +222,6 @@ export default function HomePage() {
         <Suspense>
           <HomeRecipesExplorer recipes={recipes} />
         </Suspense>
-      </section>
-
-      {/* ═════════════════════════════════════════════════════════════════════
-          Blog Spotlight
-      ═════════════════════════════════════════════════════════════════════ */}
-      <BlogSpotlight />
-
-      {/* Extra padding before ebooks */}
-      <div className="pb-12" />
-
-      {/* ═════════════════════════════════════════════════════════════════════
-          Free eBooks Promo (anchored for scroll link at the bottom)
-      ═════════════════════════════════════════════════════════════════════ */}
-      <section id="free-ebooks">
-        <FreeEbooks />
       </section>
     </>
   );
