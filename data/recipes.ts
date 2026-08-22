@@ -7,6 +7,561 @@ import type { Recipe, Category } from "./types";
  */
 export const recipes: Recipe[] = [
   {
+    "slug": "copycat-olive-garden-chicken-alfredo",
+    "title": "Copycat Olive Garden Chicken Alfredo",
+    "subtitle": "Rich, creamy parmesan cream sauce with grilled chicken and fettuccine",
+    "category": "copycat",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "totalTime": "25 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "This copycat Olive Garden Chicken Alfredo is rich, creamy, and made with a simple parmesan cream sauce — ready in 25 minutes and better than dining in.",
+    "ingredients": [
+      "1 lb fettuccine pasta",
+      "2 large chicken breasts (sliced in half horizontally into cutlets)",
+      "1 cup heavy cream",
+      "½ cup unsalted butter",
+      "1½ cups freshly grated parmesan cheese",
+      "3 cloves garlic (minced)",
+      "1 tbsp olive oil",
+      "1 tsp Italian seasoning",
+      "Salt and freshly cracked black pepper to taste",
+      "2 tbsp fresh parsley (chopped, for garnish)"
+    ],
+    "equipment": [
+      "Large pasta pot",
+      "Large skillet",
+      "Whisk",
+      "Chef's knife",
+      "Box grater"
+    ],
+    "steps": [
+      "Bring a large pot of salted water to a boil. Cook fettuccine al dente according to package instructions. Reserve ½ cup of starchy pasta water, then drain.",
+      "Season chicken breasts with salt, pepper, and Italian seasoning. Heat olive oil in a large skillet over medium-high heat. Sear chicken cutlets for 5-6 minutes per side until golden brown and cooked through (165°F). Remove and let rest 5 minutes before slicing.",
+      "In the same skillet over medium heat, melt the unsalted butter. Add minced garlic and sauté for 1 minute until fragrant.",
+      "Pour in the heavy cream and bring to a gentle simmer for 3-4 minutes, stirring constantly.",
+      "Reduce heat to low. Gradually whisk in freshly grated parmesan cheese until completely smooth and velvety. If sauce is too thick, splash in reserved pasta water.",
+      "Toss cooked fettuccine directly into the Alfredo sauce. Divide into warm bowls, top with sliced seared chicken breast, and garnish with fresh parsley and extra black pepper."
+    ],
+    "tips": [
+      "Always grate your own parmesan from a block. Pre-shredded cheese contains anti-caking agents that make cream sauce grainy.",
+      "Olive Garden's Alfredo relies on heavy cream reduction with real butter and parmesan — never a flour roux."
+    ],
+    "affiliateLinks": [
+      { "label": "Large pasta pot", "url": "https://www.amazon.com/Cuisinart-766-26-Classic-Induction-Ready-Stockpot/dp/B00008CM6B?linkCode=ll2&tag=theorgani0014-20" },
+      { "label": "Large skillet", "url": "https://www.amazon.com/SENSARTE-Nonstick-Skillet-Induction-Healthy/dp/B0D9Q7D9VS?crid=1VNIHLRVLUXBI&dib=eyJ2IjoiMSJ9.41vwpolDYRfCYNkU-05YrjknucAQBPWNzUmJ855cYR_MDAffgvnHWfOhrh0cCmifc9Z9aUOH-1_Ik8ctBIUY8vP1HU7_IbE_PeR4qzS98kYMcpZG3qYk9CxTFOn4IcyU-RIoe7urNO2f0vVSzSh9jC_p7EtvtOvEi8tIQP6uvN_kbjiqEmn1SnFVO7Z8fKZ_l20uXf2EN49xvEX9pm8L5qu3X4ZRch4lyvGCoLG5Bdt_PJdpcSkOF4SiPaqsWTru7HQOvlnF0-RP5N5jj325B4Z8kFUT3qYLezZneZN6B4E.0PyDvgpsUiOyM1dCEQ8XuUVpibDpIFyr1DbXuKwBM9A&dib_tag=se&keywords=large%2Bskillet&qid=1786446621&sprefix=large%2Bskil%2Caps%2C540&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=e4d4a6882e8485e3994c48e0ae0643af&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+      { "label": "Box grater", "url": "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" }
+    ],
+    "tags": ["copycat", "olive garden", "chicken alfredo", "pasta", "creamy", "italian", "dinner"],
+    "datePublished": "2026-08-22",
+    "image": "/images/copycat-olive-garden-chicken-alfredo.jpeg",
+    "pinImage": "/images/pins/copycat-olive-garden-chicken-alfredo.png",
+    "metaTitle": "Copycat Olive Garden Chicken Alfredo – Creamy, Better Than the Restaurant",
+    "metaDescription": "This copycat Olive Garden Chicken Alfredo is rich, creamy, and made with a simple parmesan cream sauce — ready in 25 minutes and better than dining in."
+  },
+  {
+    "slug": "crispy-honey-garlic-salmon-sheet-pan",
+    "title": "Crispy Honey Garlic Salmon (Sheet Pan)",
+    "subtitle": "Caramelized 20-minute weeknight dinner with zero mess",
+    "category": "one-pan",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "totalTime": "20 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "This crispy honey garlic salmon is made on one sheet pan in just 20 minutes — caramelized glaze, tender flaky fish, and zero mess.",
+    "ingredients": [
+      "4 salmon fillets (6 oz each, skin-on)",
+      "3 tbsp raw honey",
+      "3 tbsp low-sodium soy sauce",
+      "4 cloves garlic (minced)",
+      "1 tbsp olive oil",
+      "1 tbsp fresh lemon juice",
+      "½ tsp sriracha or red pepper flakes",
+      "1 lb broccoli florets or asparagus spears",
+      "1 tbsp sesame seeds",
+      "2 green onions (sliced)"
+    ],
+    "equipment": [
+      "Sheet pan",
+      "Parchment paper",
+      "Small whisk or bowl",
+      "Basting brush"
+    ],
+    "steps": [
+      "Preheat oven to 400°F (200°C) and line a large rimmed sheet pan with parchment paper.",
+      "In a small bowl, whisk together honey, soy sauce, minced garlic, lemon juice, and sriracha until smooth.",
+      "Arrange salmon fillets and broccoli florets on the sheet pan. Toss broccoli lightly in 1 tbsp olive oil, salt, and pepper.",
+      "Pat salmon fillets dry with paper towels, then brush generously with half of the honey garlic glaze.",
+      "Bake for 12-14 minutes until salmon is tender and flakes easily with a fork. Brush remaining glaze over salmon, then switch oven to broil for 2 minutes until glaze caramelizes into sticky golden edges.",
+      "Garnish with toasted sesame seeds and sliced green onions. Serve immediately with lemon wedges."
+    ],
+    "tips": [
+      "Pat salmon completely dry before brushing with glaze so the sweet glaze adheres and caramelizes instead of slipping off.",
+      "Keep an eye during the 2-minute broil step — honey burns quickly once caramelization starts!"
+    ],
+    "affiliateLinks": [
+      { "label": "Sheet pan", "url": "https://www.amazon.com/goodcook-Nonstick-Bakeware-Cookie-multicolor/dp/B0026RHI3M?crid=11T6U8UXGRNXW&dib=eyJ2IjoiMSJ9.mOWte96yz1MSPL7uQHwiZohIvuW5M_CuAn_sEpQrmKvGV4higERf6l-NyM74PX6s2_hhuLynQ4SUxJHhLEXQIgepwrdthLoFk08HULcVg8oRGwqt-6qqCAP0lC-BEBRUVoUPIWmR7S50uUD0d4cb_4VkXV2tXVfRPkRXtlCRRSGha4hta-W3mTBH_A09kexA3M1LdpRfceMD8QmoPObPT1CVQq_J-55oXKUc6SvE8txrsedvfYCG-fa_Wf6xn6q3DijlA0Ibw3x3cbuLlud5PDy6LeqvpjW2s3qvq65G6wI.Qo7DKRi1yPTsnyKOX3vevtWMwU6yOYFzdvBFIyR5Gy8&dib_tag=se&keywords=sheet+pan&qid=1786447054&sprefix=sheet+pan%2Caps%2C536&sr=8-7&linkCode=ll2&tag=theorgani0014-20&linkId=bccb3723493045315abf9f7611f91358&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+      { "label": "Parchment paper", "url": "https://www.amazon.com/Reynolds-Kitchens-Unbleached-Parchment-Paper/dp/B07PFYT8MC?crid=KROAKD3A8R8P&currency=USD&dib=eyJ2IjoiMSJ9.vAfxlVdVZSbP4HWzB0GLHWtMXiBuatAgnBw-K4h8izmdpq-qe_YmMs6JI2xSiNNAzSrzZWTHeDQdJ_W6gHiFYRtYdLKMk8nD9L4S3mFbsc0iKQiaL1E-YkkkdUq-ud5gSUNWGx5QjD2POPnSCTTAl5O8e9ZmqUe3CQjpG5B8K1os_iXhzYBycWVqv6Wpe2mNzlNJOpVJuMq4k9ee3tRTHSV0RPBWs_dqmSeae9hsJTH5XEVavE1cptJYeybqSponW6anEaV1NxCgumcTlZ2_mJ7yMxxpEePsX1XTC7ZPCUo.3LIgX1O64l1RNuSQVU6AGlfuxTZWQApaGrgjQo5FI4Q&dib_tag=se&keywords=baking%2Bsheet&qid=1786446490&sprefix=baking%2Bsh%2Caps%2C539&sr=8-1&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=aa66ed18094e202ded3c9cf8a7f54b44&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+      { "label": "Basting brush", "url": "https://www.amazon.com/HOTEC-Silicone-Resistant-Marinades-Dishwasher/dp/B09JNRZHRT?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["salmon", "honey garlic", "sheet pan", "quick dinner", "seafood", "healthy"],
+    "datePublished": "2026-08-22",
+    "image": "/images/crispy-honey-garlic-salmon-sheet-pan.jpeg",
+    "pinImage": "/images/pins/crispy-honey-garlic-salmon-sheet-pan.png",
+    "metaTitle": "Crispy Honey Garlic Salmon – 20-Minute Sheet Pan Dinner",
+    "metaDescription": "This crispy honey garlic salmon is made on one sheet pan in just 20 minutes — caramelized glaze, tender flaky fish, and zero mess."
+  },
+  {
+    "slug": "avocado-toast-4-ways",
+    "title": "5-Minute Avocado Toast 4 Ways",
+    "subtitle": "Classic, Egg & Bagel, Smoked Salmon, and Tomato Balsamic",
+    "category": "breakfast",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Four avocado toast variations ready in 5 minutes — Classic, Egg & Everything Bagel, Smoked Salmon, and Tomato Balsamic.",
+    "ingredients": [],
+    "equipment": [
+      "Toaster",
+      "Chef's knife",
+      "Cutting board",
+      "Mixing bowl",
+      "Fork"
+    ],
+    "steps": [],
+    "tips": [
+      "Select ripe avocados that yield slightly to gentle thumb pressure near the stem.",
+      "Squeeze fresh lemon or lime juice over smashed avocado to brighten flavor and prevent browning for hours."
+    ],
+    "affiliateLinks": [
+      { "label": "Toaster", "url": "https://www.amazon.com/Cuisinart-CPT-122-2-Slice-Compact-Toaster/dp/B0091QOH8Y?linkCode=ll2&tag=theorgani0014-20" },
+      { "label": "Chef's knife", "url": "https://www.amazon.com/imarku-Japanese-Chef-Knife-Christmas/dp/B01DDBJF12?crid=P1JL5PTKVCSL&dib=eyJ2IjoiMSJ9.ogtZ39PSrD-ERAopQ2MM3VCP_a3dl6ffe6qSY2QaFoOcz8oGUN7M6nxfUCGOkmuTwq3uZILmFIMfI9CKR6HbtdaERpyf8gZneCouzf4ttZr17ulavhgonyJg0S01i2ZJW9_kKnTuQzhzJXZDOIuw8ZebfpvQxb0X36eCZdW_FzupFACVOarwRC93n3S9wJW32TDxpexDdQkXibRkvMrFh73wPGAVexfLgPLRD1J8GnUS2SjRWh2mXWl0k4r7EoC5uyHN9Mn68B3lzNH4u7QcCzrQ9r57yN3o2ClVQiPCcT4.8HLcVWX7WBpQnFO98qmHSZvOO-1enOxBhYwGoXNB3vo&dib_tag=se&keywords=chef%27s%2Bknife&qid=1786447491&sprefix=chef%27s%2Bkni%2Caps%2C559&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=b2350b77530821ac5ff826370713cf5e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" }
+    ],
+    "listItems": [
+      {
+        "title": "1. Classic Lemon & Sea Salt",
+        "description": "Thick sourdough toasted dark, topped with coarsely smashed ripe avocado, fresh lemon juice, flaky sea salt, red pepper flakes, and extra virgin olive oil drizzle.",
+        "ingredients": ["1 slice sourdough", "½ ripe avocado", "1 tsp lemon juice", "Flaky sea salt & red pepper flakes", "Olive oil drizzle"]
+      },
+      {
+        "title": "2. Soft Egg & Everything Bagel",
+        "description": "Smashed avocado toast topped with a 6-minute jammy soft-boiled egg (or sunny fried egg) and a generous sprinkle of everything bagel seasoning.",
+        "ingredients": ["1 slice sourdough", "½ ripe avocado", "1 soft-boiled egg", "1 tsp everything bagel seasoning"]
+      },
+      {
+        "title": "3. Smoked Salmon & Dill",
+        "description": "Smashed avocado spread over toasted rye bread, layered with thin slices of smoked salmon, fresh dill sprigs, sliced red onion, and capers.",
+        "ingredients": ["1 slice rye bread", "½ ripe avocado", "2 oz smoked salmon", "Fresh dill & capers", "Red onion slices"]
+      },
+      {
+        "title": "4. Heirloom Tomato & Balsamic Glaze",
+        "description": "Thick sliced ripe heirloom tomatoes over smashed avocado, topped with fresh chiffonade basil, cracked black pepper, and a sweet balsamic glaze reduction drizzle.",
+        "ingredients": ["1 slice artisan bread", "½ ripe avocado", "2 thick heirloom tomato slices", "Fresh basil", "Balsamic glaze reduction"]
+      }
+    ],
+    "tags": ["avocado toast", "breakfast", "quick", "healthy", "vegetarian", "easy"],
+    "datePublished": "2026-08-22",
+    "image": "/images/avocado-toast-4-ways.jpeg",
+    "pinImage": "/images/pins/avocado-toast-4-ways.png",
+    "metaTitle": "Avocado Toast 4 Ways – 5-Minute Breakfast Recipes You'll Make Every Day",
+    "metaDescription": "Four avocado toast variations ready in 5 minutes — Classic, Egg & Everything Bagel, Smoked Salmon, and Tomato Balsamic."
+  },
+  {
+    "slug": "copycat-panera-broccoli-cheddar-soup",
+    "title": "Copycat Panera Broccoli Cheddar Soup",
+    "subtitle": "Thick, creamy, cheesy one-pot soup in 30 minutes",
+    "category": "copycat",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "totalTime": "30 min",
+    "servings": 6,
+    "difficulty": "Easy",
+    "description": "This copycat Panera Broccoli Cheddar Soup is thick, creamy, and loaded with real cheddar — made in one pot in 30 minutes.",
+    "ingredients": [
+      "4 cups broccoli florets (chopped small)",
+      "1 cup carrots (matchstick cut or coarsely shredded)",
+      "1 small yellow onion (diced)",
+      "4 tbsp butter",
+      "¼ cup all-purpose flour",
+      "2 cups chicken or vegetable broth",
+      "2 cups half-and-half (or heavy cream)",
+      "8 oz sharp cheddar cheese (freshly shredded)",
+      "½ tsp nutmeg",
+      "Salt and black pepper to taste"
+    ],
+    "equipment": [
+      "Dutch oven or large soup pot",
+      "Whisk",
+      "Wooden spoon",
+      "Box grater"
+    ],
+    "steps": [
+      "In a large Dutch oven or soup pot over medium heat, melt the butter. Add diced onion and sauté for 4-5 minutes until translucent.",
+      "Whisk in all-purpose flour and cook for 1-2 minutes to eliminate raw flour taste.",
+      "Slowly pour in chicken broth and half-and-half, whisking continuously to prevent lumps.",
+      "Add small broccoli florets, shredded carrots, nutmeg, salt, and pepper. Bring to a simmer over medium heat.",
+      "Reduce heat to medium-low and simmer uncovered for 12-15 minutes until broccoli is tender.",
+      "Remove pot from heat. Gradually stir in freshly shredded sharp cheddar cheese until completely melted and smooth. Serve warm in soup bowls or sourdough bread bowls!"
+    ],
+    "tips": [
+      "Always grate sharp cheddar from a block. Pre-packaged shredded cheese won't melt smoothly into the broth.",
+      "Chop broccoli florets small so every spoonful gets perfect texture and cheesy goodness."
+    ],
+    "affiliateLinks": [
+      { "label": "Dutch oven", "url": "https://www.amazon.com/Enameled-Cast-Iron-Dutch-Oven/dp/B0DXJTNWJN?crid=TVDOLLRZIF64&dib=eyJ2IjoiMSJ9.1RipCjRwp4yv3IHs4x1q8C_SHUqcsbpeDpcbdBo-2JLg8h8Hno0IxKy4bvHTMR7d5rNN7yBKHLfA7NBx2NJaHvT2Ohu22gWLSZTcPrdJi7rPdUCAiygwung_RUk4M7N7vTP8t8Ytq9H_w98foCBjki5oHks6EayOci6I-KuuEVa7ZpchUe73DELoH0QfT8TAUq-pS76fqb2QkqCQCs7coDQ0LJaVLqV6BuzAX2Ebv4-avC37i466OiHsmY0RjMuCSXMvgwGKoxeh-f3JKkGJLMczFSBFxs_ocWal1dEobMw.iFhJ4TmTPbbwvTMXmy0ScGA-yfQqoJu8OtBFyQVJgmc&dib_tag=se&keywords=dutch%2Boven&qid=1786447085&sprefix=dutch%2Bover%2Caps%2C528&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=9e4698f1f0941d03ddf58d171adcebf3&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+      { "label": "Box grater", "url": "https://www.amazon.com/Urbanstrive-Container-Professional-Stainless-Vegetables/dp/B0CLB61K3H?crid=2IZNL1K0JQAJY&dib=eyJ2IjoiMSJ9.41fLi6DmGTcTCg8EK1IjGbZThva4b3KFrUQH2xbMoOJRLXEt60YNfhyCIO6L94xFuICtoblN5n2Y2v3P6Er6LUbOphl511rz8Hk1_TkeRdVVwsjxD77Sm2KhP50bdXYNvVy3uh22jM4ZCn28E9EgjIqXfABE_RpQWVTIr235irddiQUXqIWhBskvpSsn_GwHkXfwvpCBylmRzUPn8IjBJbexVQ4qZNcdvauLD0plrrNUpxwgg0Xq6UFXk9ytXpuLZCxvy5K-HN-83Bf18V4ShSmGzXNijyd4is6r6TTP81U.NPQq-f8XTzahtne0WCJ7W_XhRcArl16dTM9hsi0AvHc&dib_tag=se&keywords=box%2Bgrater&qid=1786447158&sprefix=box%2Bgrat%2Caps%2C537&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=4f2816e78ec12c5b614042555c900951&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+      { "label": "Whisk", "url": "https://www.amazon.com/NileHome-Stainless-Whisking-Blending-Stirring-3/dp/B08SWBRTRK?crid=2CS8NT5VFRFG6&dib=eyJ2IjoiMSJ9.vn1T1LMF_WslotWzDq-_xU7cEuW1IsKeJTBHLKoHwqECcn_ciIvEA34guwMHwi-9rA_udHVc06PB31Si7opmh_wTAYahnUcerKGUbR2oFn1PKhUUdaBU1cggN-teWkfG9NkY-snv9h3Nma4uJthBuinfYpK4SxY4Jk5FaS5ao6YsCMUqzEZJ9MHJog13oNwgnPYYQQRiOvAJcFT3U_H-_KHv99p6nmOssVk69_3PHJUpM29uR87H_1lp0q3VkmPIL3tDs8E0H625NhU_OeRTf7vn159LNj3QHSoozbz_tSI.tgvCrPnEBw-R1p7aWEHwA2Pn6b-7kTQN_Xw-uI3G_vE&dib_tag=se&keywords=whisk&qid=1786447261&sprefix=whis%2Caps%2C575&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=421beec0b247ae768b05025544fc957e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" }
+    ],
+    "tags": ["copycat", "panera", "broccoli cheddar", "soup", "comfort food", "one-pot"],
+    "datePublished": "2026-08-22",
+    "image": "/images/copycat-panera-broccoli-cheddar-soup.jpeg",
+    "pinImage": "/images/pins/copycat-panera-broccoli-cheddar-soup.png",
+    "metaTitle": "Copycat Panera Broccoli Cheddar Soup – Creamy, Cheesy & Better Than the Original",
+    "metaDescription": "This copycat Panera Broccoli Cheddar Soup is thick, creamy, and loaded with real cheddar — made in one pot in 30 minutes."
+  },
+  {
+    "slug": "copycat-starbucks-iced-brown-sugar-matcha-latte",
+    "title": "Copycat Starbucks Iced Brown Sugar Matcha Latte",
+    "subtitle": "Ceremonial matcha & homemade brown sugar syrup in 2 minutes",
+    "category": "drinks",
+    "prepTime": "2 min",
+    "totalTime": "2 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "This copycat Starbucks Iced Brown Sugar Matcha Latte costs under $2 and takes 2 minutes — smoother and more customizable than the original.",
+    "ingredients": [
+      "1½ tsp ceremonial grade matcha powder",
+      "2 tbsp warm water (175°F)",
+      "2 tbsp brown sugar syrup (or 1 tbsp dark brown sugar)",
+      "¾ cup oat milk (preferably barista blend)",
+      "1 cup ice cubes",
+      "Dash of cinnamon (optional garnish)"
+    ],
+    "equipment": [
+      "Bamboo matcha whisk or electric frother",
+      "Small matcha bowl",
+      "Tall glass"
+    ],
+    "steps": [
+      "Sift ceremonial grade matcha powder into a small bowl to eliminate any clumps.",
+      "Add warm water (around 175°F, not boiling) and whisk vigorously in a 'W' shape using a bamboo whisk or electric handheld frother for 30 seconds until frothy and smooth.",
+      "In a tall glass, add brown sugar syrup and fill glass with ice cubes.",
+      "Pour oat milk over ice, leaving about 2 inches at the top.",
+      "Slowly pour the whisked matcha over the oat milk layer for a beautiful green-and-white gradient look. Stir gently before sipping!"
+    ],
+    "tips": [
+      "Use water around 175°F (80°C). Boiling water scolds matcha leaves and introduces bitter flavors.",
+      "Brown sugar syrup: simmer equal parts dark brown sugar and water with a drop of vanilla for instant coffee shop syrup."
+    ],
+    "affiliateLinks": [
+      { "label": "Bamboo matcha whisk", "url": "https://www.amazon.com/Clay-Fire-Matcha-Handcrafted-Traditional/dp/B0FL2SM8XP?crid=IMZULE719TD4&dib=eyJ2IjoiMSJ9.10DLFdNYEm3vv-gGWwUknnjFU3JoISizCj2UAcFws-udV8sR4L5lgcJLN0mg1ZbSsxaHuPEMfv85B3b1piFI7jILtu9zEKHdtfiQKSOSJ1QNmeCWMDxw8NAIYoaBjjJ7_yGZ8v2k7us59aUExljqZjcK-VrztEgSz7rP59M9p2ysn0odwmgsYcJnVLs8vJggx0wOFW3rjnOHk1vb8GlTUXpLbDYHi5YwYi4nNIs_YO8zjsnmzIqQ5pbVqcv54XJfWI_nZ-gVvCdfP6tRqHUrB6TDDrCP6YA7XIIn73GGaOk.a3jcnWWUCQZKrqD0Y75WLbPZ73nHugMGSpQdCbEQ-LI&dib_tag=se&keywords=matcha%2Bwhisk&qid=1786446749&sprefix=matcha%2Bwish%2Caps%2C529&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=de5d48b5ad631782f917d21b214fe202&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+      { "label": "Handheld electric frother", "url": "https://www.amazon.com/Zulay-Milk-Frother-Handheld-Foamer/dp/B074ZL35DH?linkCode=ll2&tag=theorgani0014-20" },
+      { "label": "Tall glass", "url": "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?crid=3HCSZLG75G5IK&dib=eyJ2IjoiMSJ9.pMnrB7TmD_ZKW1_Bb9PMpatMVi4GEO61lvanLpzZ_VKmp19fJ5Xz8W06E26ZUw0ueYP2_v8ZU4KMltrMehQvpM_wslK5Xb5s7k28QSJpnel6lUpVNAiE1Kbk5ha2lBs7I2x0yx0iIUpCICDcU3fF1K78jjnIxnM_wHdXMegNXa8EXeoyNv7--3fYupUoW2eTMvXJmKqmLDBK2ujRVr02PaYgp60gYDU2SVNSg9NWnEvFPA2WSBzGRBPyfCofhIEFXvRKrT0csgKoJqCoWDdGeWfsvYMfQNzsUY-CRnTDVo4.VtoO0iCRnKuMcOddS0uyxns9xCztkh3Lu4epJe7HTWg&dib_tag=se&keywords=tall%2Bglass&qid=1786446781&sprefix=tall%2Bgla%2Caps%2C509&sr=8-8&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=3fba6e3b07e56624a952abbe49c7b384&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" }
+    ],
+    "tags": ["copycat", "starbucks", "matcha latte", "iced coffee", "drinks", "brown sugar"],
+    "datePublished": "2026-08-22",
+    "image": "/images/copycat-starbucks-iced-brown-sugar-matcha-latte.jpeg",
+    "pinImage": "/images/pins/copycat-starbucks-iced-brown-sugar-matcha-latte.png",
+    "metaTitle": "Copycat Starbucks Iced Brown Sugar Matcha Latte – Ready in 2 Minutes at Home",
+    "metaDescription": "This copycat Starbucks Iced Brown Sugar Matcha Latte costs under $2 and takes 2 minutes — smoother and more customizable than the original."
+  },
+  {
+    "slug": "garlic-butter-noodles-15-minutes",
+    "title": "Garlic Butter Noodles (15 Minutes)",
+    "subtitle": "5 simple pantry ingredients — insanely comforting & fast",
+    "category": "mains",
+    "prepTime": "5 min",
+    "cookTime": "10 min",
+    "totalTime": "15 min",
+    "servings": 3,
+    "difficulty": "Easy",
+    "description": "These garlic butter noodles come together in 15 minutes with 5 pantry ingredients — rich, savory, and completely addictive.",
+    "ingredients": [
+      "8 oz thick noodles (spaghetti, fettuccine, or ramen noodles)",
+      "4 tbsp unsalted butter",
+      "5 cloves garlic (minced)",
+      "1 tbsp low-sodium soy sauce",
+      "½ cup freshly grated parmesan cheese",
+      "Reserved pasta water (¼ cup)",
+      "Fresh parsley or red pepper flakes (for garnish)"
+    ],
+    "equipment": [
+      "Pasta pot",
+      "Skillet",
+      "Tongs",
+      "Garlic press"
+    ],
+    "steps": [
+      "Boil noodles in salted water until al dente according to package instructions. Scoop out ¼ cup starchy pasta cooking water before draining.",
+      "While noodles boil, melt butter in a wide skillet over medium-low heat. Add minced garlic and sauté gently for 2 minutes until soft, fragrant, and barely golden (do not burn!).",
+      "Stir soy sauce into the garlic butter.",
+      "Add drained hot noodles directly to skillet along with grated parmesan cheese and splash of pasta water.",
+      "Toss vigorously with tongs over low heat for 1 minute until butter, cheese, and starchy water emulsify into a silky sauce coating every noodle.",
+      "Plate immediately, garnished with fresh parsley and red pepper flakes."
+    ],
+    "tips": [
+      "The splash of soy sauce supplies umami depth without making the noodles taste like Asian stir-fry.",
+      "Sauté garlic over low heat so it sweetens without scorching or turning bitter."
+    ],
+    "affiliateLinks": [
+      { "label": "Kitchen tongs", "url": "https://www.amazon.com/Eddeas-Kitchen-Tongs-Ergonomic-Stainless/dp/B093C29J8H?crid=2O3IUHHQ2ZBO3&dib=eyJ2IjoiMSJ9.LzTWU6VQGbhVSKvPiNqAZUD742_iq0Zw71RphuFg8d62G9M4bOcLti3NmPk9vQe4QMbQ8mnpC7UubO39EXQERwnnQkQpOlObtmdKJICt25D0iZu3lJ_NEk9Xo6sKtqJdzmOh0_fe4c3ufp9C5hJmY06cMXhWQr9AvDk6dR-P5K9cSLV8IiB1CIXa8-7vjl4nfK5-yQW5-6mQMwyAwO3mLLIkEBetmKHTmj4ICG-JxW74DtfvQ5ZQacSqrHTnGJZ7UhXB-JyYiM7nkl0UxdnIkLN86bluscJhtuaUMfaH69E._KGJWRi4sFbC4SYSDCO7DCyzVz8bFIu6aERrOcB2qRk&dib_tag=se&keywords=tongs&qid=1786447119&sprefix=tongs%2Caps%2C565&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=c256996751729f5a9ad1fddb53e493f9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+      { "label": "Garlic press", "url": "https://www.amazon.com/Garlic-Press-Easy-Squeeze-Ergonomic-Professional/dp/B07N7KFHVH?crid=TD0OSTRL4FB&dib=eyJ2IjoiMSJ9.DVOWrEMVuQds5c5SVkroV1YHgFVQelKyzAijway-5ucYTxWsVriGLLg_e-LxAcP_gBM_lEV8JsvF5SddukcE1PHfYj9POhIa038OhKz4Z1WmqjS8c1O1wQY0xHSy_gtPPHhH5pE2AObIv0ZrlceFeTU9iQtdydVUiE8_wJEsggMYEuDhsHooWBpDdt-caGUO28wy-UC-SFl3gDvsjplzVcKG4puoGZZ9jMKfTdDz8Kc2Wov3aR7Mxrwjg22cZifcXyCSntrp0rphy9tfgkouFwP0VLjeUyy3UOU1C7hbN0w.-GuJh0wZT6SOvOSgBv5sTZfliJe9JydgXZaXn2HBgYs&dib_tag=se&keywords=garlic%2Bpress&qid=1786447462&sprefix=garlic%2Bpr%2Caps%2C514&sr=8-6&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=279de00f5fde249948bc6d3ebd5cbab0&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" }
+    ],
+    "tags": ["garlic butter noodles", "quick dinner", "pasta", "15 minutes", "comfort food", "budget"],
+    "datePublished": "2026-08-22",
+    "image": "/images/garlic-butter-noodles-15-minutes.jpeg",
+    "pinImage": "/images/pins/garlic-butter-noodles-15-minutes.png",
+    "metaTitle": "Garlic Butter Noodles – 15-Minute Recipe with 5 Simple Ingredients",
+    "metaDescription": "These garlic butter noodles come together in 15 minutes with 5 pantry ingredients — rich, savory, and completely addictive."
+  },
+  {
+    "slug": "high-protein-lunch-boxes-meal-prep",
+    "title": "6 High-Protein Lunch Boxes (Meal Prep)",
+    "subtitle": "30g+ protein each — prep 6 lunches in 20 minutes",
+    "category": "meal-prep",
+    "prepTime": "20 min",
+    "totalTime": "20 min",
+    "servings": 6,
+    "difficulty": "Easy",
+    "description": "Six high-protein lunch boxes with 30g+ protein each — prepped in 20 minutes and fresh all week.",
+    "ingredients": [],
+    "equipment": [
+      "Glass meal prep containers",
+      "Chef's knife",
+      "Cutting board",
+      "Sheet pan"
+    ],
+    "steps": [],
+    "tips": [
+      "Store salad dressings and sauces in small separate condiment containers so veggies stay crisp all 5 days.",
+      "Use 3-compartment glass containers to prevent flavor mixing between grains and cooked proteins."
+    ],
+    "affiliateLinks": [
+      { "label": "Meal prep containers", "url": "https://www.amazon.com/KOMUEE-Containers-Airtight-Microwave-Dishwasher/dp/B08X4615SC?crid=1SI7CH1MHL917&dib=eyJ2IjoiMSJ9.8qyHg9ea13NFeMeAxetKh2-iCquJjIF3xUQQKnQLCODbh1LdpRYsciUoPjiJpAnhQ4XjHUDTje0uQMp8bpnBRaLmGXuxq3HhMrSOltE2ksiEe897P1Pu1sRe_ul7_DvWZkR4DngjeEWLFVtNlde7cuGRMNjT7Wyzx19R-a_yEmqjCFor1bh46IbsL9JytYn3Orsu8gRilpEyRu4R9qqc-wsyfumxjP9nklEE2rU1e2jePPR82Wk2XCN0l5gon_GXX2Nq4bpVoJbg9DTr8U8c9d2r3BcZ5Bv8g4loR0tgkTQ.VN6M4Ui67AVlhvxhbdJdeRY0AITQhFSGX6iH9vY5Q30&dib_tag=se&keywords=meal%2Bprep%2Bcontainer&qid=1786446973&sprefix=meal%2Bprep%2Bconta%2Caps%2C530&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=d9d16b42a9579989b1b25b3f23146655&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+      { "label": "Sheet pan", "url": "https://www.amazon.com/goodcook-Nonstick-Bakeware-Cookie-multicolor/dp/B0026RHI3M?crid=11T6U8UXGRNXW&dib=eyJ2IjoiMSJ9.mOWte96yz1MSPL7uQHwiZohIvuW5M_CuAn_sEpQrmKvGV4higERf6l-NyM74PX6s2_hhuLynQ4SUxJHhLEXQIgepwrdthLoFk08HULcVg8oRGwqt-6qqCAP0lC-BEBRUVoUPIWmR7S50uUD0d4cb_4VkXV2tXVfRPkRXtlCRRSGha4hta-W3mTBH_A09kexA3M1LdpRfceMD8QmoPObPT1CVQq_J-55oXKUc6SvE8txrsedvfYCG-fa_Wf6xn6q3DijlA0Ibw3x3cbuLlud5PDy6LeqvpjW2s3qvq65G6wI.Qo7DKRi1yPTsnyKOX3vevtWMwU6yOYFzdvBFIyR5Gy8&dib_tag=se&keywords=sheet+pan&qid=1786447054&sprefix=sheet+pan%2Caps%2C536&sr=8-7&linkCode=ll2&tag=theorgani0014-20&linkId=bccb3723493045315abf9f7611f91358&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" }
+    ],
+    "mealPrep": [
+      {
+        "title": "Grilled Chicken & Quinoa Box",
+        "protein": "38g protein",
+        "ingredients": [
+          "5 oz grilled chicken breast (sliced)",
+          "¾ cup cooked quinoa",
+          "½ cup roasted zucchini & bell peppers",
+          "2 tbsp lemon tahini dressing"
+        ]
+      },
+      {
+        "title": "Turkey Taco Bowl Box",
+        "protein": "35g protein",
+        "ingredients": [
+          "5 oz lean ground turkey taco meat",
+          "½ cup black beans",
+          "½ cup brown rice",
+          "¼ cup salsa & shredded cheddar"
+        ]
+      },
+      {
+        "title": "Salmon & Brown Rice Box",
+        "protein": "34g protein",
+        "ingredients": [
+          "5 oz baked salmon fillet",
+          "¾ cup cooked brown rice",
+          "1 cup steamed edamame & broccoli",
+          "1 tbsp teriyaki glaze"
+        ]
+      },
+      {
+        "title": "Greek Chicken & Cucumber Box",
+        "protein": "36g protein",
+        "ingredients": [
+          "5 oz roasted Greek lemon chicken",
+          "½ cup chickpeas & cherry tomatoes",
+          "½ cup cucumber slices",
+          "2 tbsp tzatziki dip & feta"
+        ]
+      },
+      {
+        "title": "Egg Salad Lettuce Wrap Box",
+        "protein": "30g protein",
+        "ingredients": [
+          "3 hard-boiled eggs + 2 egg whites (mashed with Greek yogurt)",
+          "4 large romaine lettuce leaves",
+          "1 cup grape tomatoes & celery sticks",
+          "1 oz almonds"
+        ]
+      },
+      {
+        "title": "Steak & Sweet Potato Box",
+        "protein": "40g protein",
+        "ingredients": [
+          "5 oz grilled sirloin steak strips",
+          "¾ cup roasted sweet potato cubes",
+          "1 cup steamed green beans",
+          "1 tbsp chimichurri sauce"
+        ]
+      }
+    ],
+    "tags": ["meal prep", "high-protein", "lunch boxes", "healthy", "fitness", "weekly meal prep"],
+    "datePublished": "2026-08-22",
+    "image": "/images/high-protein-lunch-boxes-meal-prep.jpeg",
+    "pinImage": "/images/pins/high-protein-lunch-boxes-meal-prep.png",
+    "metaTitle": "6 High-Protein Lunch Boxes to Meal Prep for the Week – 30g+ Protein Each",
+    "metaDescription": "Six high-protein lunch boxes with 30g+ protein each — prepped in 20 minutes and fresh all week."
+  },
+  {
+    "slug": "apple-cider-vinegar-morning-detox-drink",
+    "title": "Apple Cider Vinegar Morning Detox Drink",
+    "subtitle": "5-ingredient 2-minute daily morning wellness ritual",
+    "category": "drinks",
+    "prepTime": "2 min",
+    "totalTime": "2 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "This ACV morning detox drink combines apple cider vinegar, lemon, honey, and cinnamon for a simple daily ritual that supports digestion and energy.",
+    "ingredients": [
+      "1-2 tbsp raw unfiltered apple cider vinegar (with 'the mother')",
+      "1 tbsp fresh lemon juice",
+      "1 tbsp raw organic honey",
+      "¼ tsp ground cinnamon",
+      "Pinch of cayenne pepper (optional)",
+      "1 cup warm water (not boiling)"
+    ],
+    "equipment": [
+      "Glass mug or mason jar",
+      "Spoon",
+      "Straw"
+    ],
+    "steps": [
+      "Warm 1 cup of water until comfortable to drink (around 100°F-110°F, never boiling).",
+      "Pour warm water into a glass mug or mason jar.",
+      "Add raw unfiltered apple cider vinegar, fresh lemon juice, honey, and ground cinnamon.",
+      "Stir well until honey dissolves completely.",
+      "Sip through a straw first thing in the morning on an empty stomach to protect tooth enamel!"
+    ],
+    "tips": [
+      "Always buy organic ACV that states 'with the mother' on the label for active enzymes and probiotics.",
+      "Drink through a glass or silicone straw to minimize vinegar acidity contact with tooth enamel."
+    ],
+    "affiliateLinks": [
+      { "label": "Reusable glass straws", "url": "https://www.amazon.com/ALBOR-Glass-Straws-Reusable-Cleaning/dp/B085VSR959?linkCode=ll2&tag=theorgani0014-20" },
+      { "label": "Mason jar mug", "url": "https://www.amazon.com/Glass-Mason-Jars-Handles-Lids/dp/B085CD7M16?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["apple cider vinegar", "detox drink", "healthy", "morning ritual", "wellness", "digestion"],
+    "datePublished": "2026-08-22",
+    "image": "/images/apple-cider-vinegar-morning-detox-drink.jpeg",
+    "pinImage": "/images/pins/apple-cider-vinegar-morning-detox-drink.png",
+    "metaTitle": "Apple Cider Vinegar Morning Detox Drink – 5 Ingredients, Drink Daily",
+    "metaDescription": "This ACV morning detox drink combines apple cider vinegar, lemon, honey, and cinnamon for a simple daily ritual that supports digestion and energy."
+  },
+  {
+    "slug": "copycat-kfc-original-recipe-chicken",
+    "title": "Copycat KFC Original Recipe Chicken (11 Herbs & Spices)",
+    "subtitle": "Double-coated for thick crunch — oven or air fryer",
+    "category": "copycat",
+    "prepTime": "15 min",
+    "cookTime": "25 min",
+    "totalTime": "40 min",
+    "servings": 4,
+    "difficulty": "Medium",
+    "description": "This copycat KFC Original Recipe Chicken uses all 11 herbs and spices — double-coated for a thick crunchy crust, made in your oven or air fryer.",
+    "ingredients": [
+      "3 lbs chicken pieces (thighs, drumsticks, breasts)",
+      "2 cups buttermilk (for soaking)",
+      "2 cups all-purpose flour",
+      "11 Herbs & Spices Blend:",
+      "⅔ tbsp salt",
+      "½ tbsp dried thyme",
+      "½ tbsp dried basil",
+      "⅓ tbsp dried oregano",
+      "1 tbsp celery salt",
+      "1 tbsp ground black pepper",
+      "1 tbsp dried mustard powder",
+      "4 tbsp paprika",
+      "2 tbsp garlic salt",
+      "1 tbsp ground ginger",
+      "3 tbsp ground white pepper",
+      "2 large eggs + ½ cup milk (egg wash)"
+    ],
+    "equipment": [
+      "Air fryer or deep baking sheet with wire rack",
+      "2 large shallow bowls",
+      "Tongs"
+    ],
+    "steps": [
+      "Soak chicken pieces in buttermilk for at least 30 minutes (or overnight in fridge).",
+      "In a large bowl, thoroughly whisk all-purpose flour with the complete 11 Herbs & Spices Blend.",
+      "In a second bowl, whisk together eggs and milk.",
+      "Double-Dredge: remove chicken from buttermilk, coat thoroughly in flour mix, dip into egg wash, then coat a second time in flour mix, pressing firmly so thick crumbles form.",
+      "Air Fryer Method: Spray basket with oil. Air fry at 380°F for 22-25 minutes, flipping halfway and light oil spray, until internal temp hits 165°F.",
+      "Oven Method: Bake on wire rack set over sheet pan at 420°F for 30-35 minutes until golden and crispy.",
+      "Rest for 5 minutes on wire rack before serving!"
+    ],
+    "tips": [
+      "White pepper is the secret driver behind KFC's signature savory aroma — don't substitute black pepper for all of it!",
+      "The double-dredge (flour -> egg wash -> flour) creates those signature crunchy craggy ridges."
+    ],
+    "affiliateLinks": [
+      { "label": "Air fryer", "url": "https://www.amazon.com/TurboBlaze-Premium-Ceramic-Coating-90%C2%B0-450%C2%B0F/dp/B0C33CHG99?crid=29K174U7RQHED&dib=eyJ2IjoiMSJ9.JvIQTiQYIa-7vH5--3jg964Nf0p9WdZAK-1rFngdE1qGM52kKAeYw9Spp1PcLbq2qNDAfw3uEx2H6W-EFkqsdxLXGnACw1V8E1qj9ygR4ltV8I7ae4AVnWNULiWAQn0XzCG3wxdpH4V3GpRQyA_duvD4pgTzx87lPL7Bi3RZ_Zv8qmydNpS3h2S9xcyOTN3Q7L0NxnhsP1zMshbUKW9-389sbsvxO8ivjkVLFTywoNY.x8J6j-z5dUwMipVngmAM2ij0iXUm61IpGmkBkKphkoU&dib_tag=se&keywords=air%2Bfryer&qid=1787294833&sprefix=air%2Bfr%2Caps%2C587&sr=8-4&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=1201615d33fb8c566ab906e6a65cd11d&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+      { "label": "Baking sheet with wire rack", "url": "https://www.amazon.com/Cooling-Racks-Baking-Sheet-Set/dp/B0875N6C6R?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["copycat", "kfc", "fried chicken", "11 herbs and spices", "air fryer", "dinner"],
+    "datePublished": "2026-08-22",
+    "image": "/images/copycat-kfc-original-recipe-chicken.jpeg",
+    "pinImage": "/images/pins/copycat-kfc-original-recipe-chicken.png",
+    "metaTitle": "Copycat KFC Original Recipe Chicken – The 11 Herbs and Spices Revealed",
+    "metaDescription": "This copycat KFC Original Recipe Chicken uses all 11 herbs and spices — double-coated for a thick crunchy crust, made in your oven or air fryer."
+  },
+  {
+    "slug": "copycat-chipotle-burrito-bowl",
+    "title": "Copycat Chipotle Burrito Bowl",
+    "subtitle": "Fully loaded cilantro lime rice, adobo chicken, pico, corn salsa & guac",
+    "category": "copycat",
+    "prepTime": "10 min",
+    "cookTime": "15 min",
+    "totalTime": "25 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "This copycat Chipotle Burrito Bowl is fully loaded with cilantro lime rice, grilled chicken, fresh pico, and homemade guac — ready in 25 minutes.",
+    "ingredients": [
+      "1.5 lbs chicken thighs (marinated in chipotle peppers in adobo, garlic, cumin, oregano)",
+      "2 cups cooked white rice (tossed with chopped cilantro, lime juice, salt, and bay leaf oil)",
+      "1 cup canned black beans (warmed with cumin)",
+      "1 cup sweet corn salsa (corn, red onion, poblano pepper, cilantro, lime)",
+      "1 cup fresh pico de gallo (diced tomatoes, onion, jalapeño, cilantro, lime)",
+      "1 cup fresh guacamole (mashed avocado, lime, cilantro, salt)",
+      "½ cup sour cream & shredded Monterey Jack cheese"
+    ],
+    "equipment": [
+      "Cast iron skillet or grill pan",
+      "Rice cooker or pot",
+      "Mixing bowls"
+    ],
+    "steps": [
+      "Chicken: blend 2 chipotle peppers in adobo, 2 garlic cloves, 1 tsp cumin, 1 tsp oregano, 1 tbsp lime juice, and oil. Marinate chicken thighs for 15 minutes. Sear in cast-iron skillet over medium-high heat for 6 minutes per side until charred. Chop into bite-size pieces.",
+      "Cilantro Lime Rice: stir fresh chopped cilantro, 2 tbsp lime juice, and a pinch of salt into warm cooked white rice.",
+      "Corn Salsa & Pico: mix corn salsa ingredients in one bowl and fresh pico de gallo in another.",
+      "Build Bowls: divide cilantro lime rice into 4 bowls. Top with warm black beans, adobo grilled chicken, corn salsa, pico de gallo, scoop of guacamole, sour cream, and shredded cheese."
+    ],
+    "tips": [
+      "Chipotle's chicken relies on adobo marinade cooked in cast iron to get those charred smoky edges.",
+      "Toss rice with cilantro and lime juice right when it finishes steaming so it absorbs maximum flavor."
+    ],
+    "affiliateLinks": [
+      { "label": "Cast iron skillet", "url": "https://www.amazon.com/Lodge-Seasoned-Cast-Iron-Skillet/dp/B00006JSUB?crid=1Q2IGX18JIM6A&dib=eyJ2IjoiMSJ9.yT7gVNTZD5mfojg5mkVUKjYoTydauk8BC_qudoyBJdrIXbEoEA-4QoRZ1i4EoTpo_ppOJFv8-9wuOoq3Quj0iyyuv42oA9hNRetNZZ42Hpv7UD4MpUKbKb7nz0ZXU30zuBjnNAiLaVEpH-dPcx6cfzJdY7WUfgdfBxKm4V1J7FEkJWoMoESmeogDd8JmURtFaYp5SbA0O2wljcJ_Qij4poy0rRtK8uzHgg3kAv6EK2tJ5tdtzfaqMTa3U65wLuEHd1d9Iw1heZGaTPYVdkPduZEGzg82MN3CTlKfiOo1eSA._YC9cUc3sNY_jkRUKCLzrbaXdmINXm-3vo9tgS7MqGU&dib_tag=se&keywords=cast%2Biron%2Bskillet&qid=1786447222&sprefix=cast%2Biron%2Bskill%2Caps%2C537&sr=8-7&th=1&linkCode=ll2&tag=theorgani0014-20&linkId=8e8dc5234c7c93838118dc11699177b1&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl" },
+      { "label": "Rice cooker", "url": "https://www.amazon.com/Aroma-Housewares-ARC-914SBD-Cool-Touch-Cooker/dp/B007WQ9YNO?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["copycat", "chipotle", "burrito bowl", "mexican", "chicken", "healthy"],
+    "datePublished": "2026-08-22",
+    "image": "/images/copycat-chipotle-burrito-bowl.jpeg",
+    "pinImage": "/images/pins/copycat-chipotle-burrito-bowl.png",
+    "metaTitle": "Copycat Chipotle Burrito Bowl at Home – Fully Loaded, Ready in 25 Minutes",
+    "metaDescription": "This copycat Chipotle Burrito Bowl is fully loaded with cilantro lime rice, grilled chicken, fresh pico, and homemade guac — ready in 25 minutes."
+  },
+  {
     "slug": "viral-cucumber-salad",
     "title": "Viral Cucumber Salad",
     "subtitle": "3 ingredients. Dangerously addictive.",

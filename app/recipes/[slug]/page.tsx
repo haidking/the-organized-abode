@@ -14,6 +14,7 @@ import RecipeImage from "@/components/RecipeImage";
 import AdUnit from "@/components/AdUnit";
 import PrintRecipeButton from "@/components/PrintRecipeButton";
 import RecipeRatingComments from "@/components/RecipeRatingComments";
+import { getPostBySlug } from "@/lib/blog";
 
 const SITE_URL = "https://thebetterhomerecipes.com";
 
@@ -63,6 +64,25 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
   const isRoundup = !!recipe.mealPrep && recipe.mealPrep.length > 0;
   const isListicle = !!recipe.listItems && recipe.listItems.length > 0;
   const hasSauces = !!recipe.sauceVariants && recipe.sauceVariants.length > 0;
+
+  // Find related blog post guide if one exists
+  const blogSlugMap: Record<string, string> = {
+    "copycat-olive-garden-chicken-alfredo": "copycat-olive-garden-chicken-alfredo-guide",
+    "crispy-honey-garlic-salmon-sheet-pan": "honey-garlic-salmon-sheet-pan-guide",
+    "avocado-toast-4-ways": "avocado-toast-4-ways-guide",
+    "copycat-panera-broccoli-cheddar-soup": "panera-broccoli-cheddar-soup-guide",
+    "copycat-starbucks-iced-brown-sugar-matcha-latte": "starbucks-matcha-latte-guide",
+    "garlic-butter-noodles-15-minutes": "garlic-butter-noodles-guide",
+    "high-protein-lunch-boxes-meal-prep": "high-protein-lunch-boxes-guide",
+    "copycat-ihop-buttermilk-pancakes": "ihop-pancakes-guide",
+    "viral-cucumber-salad": "viral-cucumber-salad-guide",
+    "apple-cider-vinegar-morning-detox-drink": "apple-cider-vinegar-detox-guide",
+    "copycat-kfc-original-recipe-chicken": "kfc-copycat-chicken-guide",
+    "copycat-chipotle-burrito-bowl": "chipotle-burrito-bowl-guide",
+  };
+
+  const blogPostSlug = blogSlugMap[recipe.slug] || `${recipe.slug}-guide`;
+  const relatedBlogPost = getPostBySlug(blogPostSlug);
 
   return (
     <>
@@ -281,6 +301,29 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
                   ))}
                 </ul>
               </section>
+            )}
+
+            {/* Blog Post Guide Link CTA */}
+            {relatedBlogPost && (
+              <div className="mt-8 rounded-2xl bg-highlight-soft/80 border border-forest/20 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
+                <div className="space-y-1 text-center sm:text-left">
+                  <span className="inline-block rounded-full bg-forest text-white px-3 py-0.5 text-[10px] font-bold uppercase tracking-wider">
+                    In-Depth Recipe Guide
+                  </span>
+                  <h3 className="font-heading text-lg font-bold text-ink">
+                    Want the cooking tips & secrets behind this recipe?
+                  </h3>
+                  <p className="text-xs text-ink-secondary">
+                    Read: {relatedBlogPost.title}
+                  </p>
+                </div>
+                <Link
+                  href={`/blog/${relatedBlogPost.slug}`}
+                  className="flex-shrink-0 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-2.5 text-xs font-bold text-white shadow hover:bg-forest-hover transition-all duration-200"
+                >
+                  Read the Full Guide →
+                </Link>
+              </div>
             )}
 
             {/* Internal CTA: Browse more recipes */}
