@@ -154,7 +154,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
             </p>
 
             {/* ── AdSense: Responsive horizontal ad ── */}
-            <AdUnit />
+            <AdUnit slot="RECIPE_TOP" />
 
             {/* Ingredients (skip for roundup/listicle pages if empty) */}
             {!isRoundup && recipe.ingredients.length > 0 && (
@@ -349,7 +349,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
             <RecipeRatingComments recipeSlug={params.slug} recipeTitle={recipe.title} />
 
             {/* ── AdSense: Responsive horizontal ad ── */}
-            <AdUnit />
+            <AdUnit slot="RECIPE_BOTTOM" />
           </article>
 
           {/* ── Right column (sidebar) ── */}
@@ -367,12 +367,12 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
             Get more easy 30-minute recipes, meal prep guides, and kitchen tips delivered straight to your inbox!
           </p>
           <a
-            href="https://thebetterhomerecipes.website"
+            href="https://thebetterhomerecipes.com"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3 text-base font-bold text-[#2D6A4F] hover:bg-emerald-50 transition-all duration-200 shadow-md hover:shadow-lg"
           >
-            Get the full recipe → thebetterhomerecipes.website
+            Get the full recipe → thebetterhomerecipes.com
           </a>
         </div>
       </div>

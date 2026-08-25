@@ -207,12 +207,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
             {/* AdSense Unit in content */}
             <div className="my-8">
-              <AdUnit slot="8551069083" />
+              <AdUnit slot="BLOG_POST_INLINE" />
             </div>
           </div>
 
           {/* Sidebar Column (1 column) */}
-          <aside className="space-y-6 lg:sticky lg:top-24 h-fit">
+          <aside className="space-y-6 h-fit">
             {/* Try the Recipe CTA Card */}
             <div className="rounded-2xl border border-border bg-surface p-6 shadow-sm space-y-4">
               <span className="inline-block rounded-full bg-highlight-soft text-forest px-3 py-1 text-xs font-bold uppercase tracking-wider">
@@ -287,7 +287,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
             {/* Sidebar Ad Unit */}
             <div className="rounded-2xl border border-border bg-surface p-4 text-center">
-              <AdUnit slot="8551069083" />
+              <AdUnit slot="BLOG_POST_SIDEBAR" />
             </div>
           </aside>
         </div>

@@ -48,7 +48,7 @@ export default function BlogListingPage() {
 
       {/* AdSense Unit */}
       <div className="pt-6">
-        <AdUnit slot="8551069083" />
+        <AdUnit slot="BLOG_LISTING" />
       </div>
     </div>
   );

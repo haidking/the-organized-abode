@@ -26,6 +26,9 @@ export default function AdUnit({
 
   return (
     <div className={className} aria-label="Advertisement">
+      <span className="text-xs text-ink-secondary/60 mb-1 block text-center font-medium">
+        Advertisement
+      </span>
       <ins
         className="adsbygoogle"
         style={{ display: "block", minWidth: "250px" }}
