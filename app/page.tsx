@@ -10,31 +10,75 @@ import BlogSpotlight from "@/components/BlogSpotlight";
 const TRUST_ITEMS = [
   {
     icon: (
-      <path d="M8.5 3.5c-2.2 0-4 1.8-4 4 0 2.5 3.5 6.5 3.5 6.5s3.5-4 3.5-6.5c0-2.2-1.8-4-4-4zM8.5 9.5c-.8 0-1.5-.7-1.5-1.5S7.7 6.5 8.5 6.5 10 7.2 10 8s-.7 1.5-1.5 1.5z" />
+      <svg
+        className="h-6 w-6 text-forest"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.4 19 2c1 2 2 4.1 2 7 0 6-4.5 11-10 11Z" />
+        <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+      </svg>
     ),
     label: "Real Ingredients",
     sub: "No processed junk",
   },
   {
     icon: (
-      <>
-        <circle cx="12" cy="12" r="9" />
-        <polyline points="12 7 12 12 15 14" />
-      </>
+      <svg
+        className="h-6 w-6 text-forest"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+      </svg>
     ),
     label: "Under 30 Min",
     sub: "Most recipes",
   },
   {
     icon: (
-      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+      <svg
+        className="h-6 w-6 text-forest"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 10.58 0A4 4 0 0 1 18 13.87V21H6Z" />
+        <line x1="6" y1="17" x2="18" y2="17" />
+      </svg>
     ),
     label: "Better Than Takeout",
     sub: "Proven at home",
   },
   {
     icon: (
-      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+      <svg
+        className="h-6 w-6 text-forest"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+      </svg>
     ),
     label: "Saved by Thousands",
     sub: "On Pinterest",
@@ -166,25 +210,25 @@ export default function HomePage() {
       {/* ═════════════════════════════════════════════════════════════════════
           Trust Bar
       ═════════════════════════════════════════════════════════════════════ */}
-      <section className="border-y border-border bg-surface py-5">
+      <section className="border-y border-border/80 bg-gradient-to-r from-surface via-background to-surface py-6 sm:py-8">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid grid-cols-2 gap-6 sm:flex sm:items-center sm:justify-center sm:gap-8 lg:gap-16">
+          <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-4 sm:gap-6 lg:gap-8">
             {TRUST_ITEMS.map((item) => (
-              <div key={item.label} className="flex flex-col items-center text-center">
-                <svg
-                  className="mb-2 h-7 w-7 text-accent"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
+              <div
+                key={item.label}
+                className="group flex flex-col sm:flex-row items-center sm:items-center text-center sm:text-left gap-3 p-3.5 sm:p-4 rounded-2xl bg-surface/80 border border-border/60 shadow-sm transition-all duration-300 hover:shadow-md hover:border-forest/30 hover:bg-surface"
+              >
+                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-forest/10 border border-forest/15 text-forest group-hover:scale-105 group-hover:bg-forest group-hover:text-white transition-all duration-300 shadow-sm">
                   {item.icon}
-                </svg>
-                <span className="text-sm font-bold text-ink">{item.label}</span>
-                <span className="mt-0.5 text-xs text-ink-secondary">{item.sub}</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-xs sm:text-sm font-bold text-ink leading-tight group-hover:text-forest transition-colors duration-200">
+                    {item.label}
+                  </span>
+                  <span className="mt-0.5 text-[11px] sm:text-xs font-medium text-ink-secondary">
+                    {item.sub}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
