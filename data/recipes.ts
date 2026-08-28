@@ -3481,6 +3481,777 @@ export const recipes: Recipe[] = [
     "pinImage": "/images/pins/7_No_Bake_Energy_Balls.png",
     "metaTitle": "7 No-Bake Energy Balls to Meal Prep for the Week – Easy High-Protein Snack",
     "metaDescription": "Seven no-bake energy ball flavors ready in 15 minutes — high-protein, naturally sweetened, and perfect for meal prep snacking all week."
+  },
+  {
+    "slug": "150g-protein-day-meal-plan",
+    "title": "What I Eat in a Day to Hit 150g Protein",
+    "subtitle": "Full-day real food meal plan — breakfast, lunch, dinner, and snacks",
+    "category": "meal-prep",
+    "prepTime": "20 min",
+    "cookTime": "25 min",
+    "totalTime": "45 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "A complete full-day meal plan hitting 150g protein with real food — Greek yogurt bowl, chicken rice bowl, protein smoothie, steak dinner, and more.",
+    "ingredients": [
+      "Breakfast: 1 cup Greek yogurt + 1 scoop protein powder + berries",
+      "Snack 1: 1 scoop chocolate protein powder + 1 cup almond milk + banana",
+      "Lunch: 6 oz grilled chicken breast + 1 cup jasmine rice + broccoli",
+      "Snack 2: 1 cup low-fat cottage cheese + sliced peach",
+      "Dinner: 6 oz sirloin steak + 1 medium sweet potato + steamed asparagus"
+    ],
+    "equipment": [
+      "Blender",
+      "Cast iron skillet",
+      "Meal prep containers"
+    ],
+    "steps": [
+      "Breakfast: Whisk protein powder into Greek yogurt until smooth. Top with fresh berries and chia seeds.",
+      "Morning Snack: Blend chocolate protein powder, almond milk, ice, and banana until thick.",
+      "Lunch: Grill seasoned chicken breast and serve over steamed jasmine rice with broccoli.",
+      "Afternoon Snack: Pair fresh cottage cheese with sliced fruits or berries.",
+      "Dinner: Sear sirloin steak in a hot cast iron skillet. Serve alongside baked sweet potato and asparagus."
+    ],
+    "mealPrep": [
+      {
+        "title": "Breakfast: Greek Yogurt Power Bowl",
+        "protein": "32g protein",
+        "ingredients": ["1 cup Greek yogurt", "1 scoop protein powder", "½ cup berries", "1 tbsp chia seeds"]
+      },
+      {
+        "title": "Snack 1: Chocolate Protein Smoothie",
+        "protein": "25g protein",
+        "ingredients": ["1 scoop whey protein", "1 cup almond milk", "1 banana", "Ice"]
+      },
+      {
+        "title": "Lunch: Grilled Chicken Rice Bowl",
+        "protein": "40g protein",
+        "ingredients": ["6 oz chicken breast", "1 cup jasmine rice", "1 cup steamed broccoli", "1 tbsp soy sauce"]
+      },
+      {
+        "title": "Snack 2: Cottage Cheese + Fruit",
+        "protein": "26g protein",
+        "ingredients": ["1 cup low-fat cottage cheese", "1 fresh peach or berries"]
+      },
+      {
+        "title": "Dinner: Steak + Sweet Potato",
+        "protein": "40g protein",
+        "ingredients": ["6 oz sirloin steak", "1 baked sweet potato", "1 cup asparagus", "1 tsp butter"]
+      }
+    ],
+    "tips": [
+      "Distribute protein evenly across 4-5 meals to maximize muscle protein synthesis throughout the day.",
+      "Prep chicken rice bowls in bulk on Sunday so lunch is ready in 2 minutes."
+    ],
+    "affiliateLinks": [],
+    "tags": ["150g protein", "meal plan", "high-protein", "what i eat in a day", "fitness", "meal prep"],
+    "datePublished": "2026-08-28",
+    "image": "/images/150g-protein-day-meal-plan.jpeg",
+    "pinImage": "/images/pins/150g-protein-day-meal-plan.png",
+    "metaTitle": "What I Eat in a Day to Hit 150g Protein – Full High-Protein Meal Plan",
+    "metaDescription": "A complete full-day meal plan hitting 150g protein with real food — Greek yogurt bowl, chicken rice bowl, protein smoothie, steak dinner, and more."
+  },
+  {
+    "slug": "3-dollar-tuna-avocado-rice-bowl",
+    "title": "The $3 Lunch That Tastes Like $15 (Tuna Avocado Rice Bowl)",
+    "subtitle": "Soy-sesame dressed tuna over warm jasmine rice with avocado & sriracha mayo",
+    "category": "mains",
+    "prepTime": "5 min",
+    "cookTime": "5 min",
+    "totalTime": "10 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "A restaurant-quality tuna avocado rice bowl for under $3 — soy-sesame tuna, jasmine rice, avocado, cucumber, and sriracha mayo in 10 minutes.",
+    "ingredients": [
+      "1 can (5 oz) albacore or skipjack tuna (drained)",
+      "1 cup cooked jasmine rice (warm)",
+      "½ ripe avocado (sliced)",
+      "½ cucumber (sliced thin)",
+      "2 tbsp low-sodium soy sauce",
+      "1 tbsp toasted sesame oil",
+      "1 tbsp sriracha mayo",
+      "1 green onion (sliced)",
+      "1 tsp sesame seeds"
+    ],
+    "equipment": [
+      "Small mixing bowl",
+      "Rice cooker or microwave",
+      "Chef's knife"
+    ],
+    "steps": [
+      "In a small bowl, flake drained canned tuna with a fork. Mix in soy sauce and toasted sesame oil.",
+      "Scoop warm jasmine rice into a serving bowl.",
+      "Arrange soy-sesame dressed tuna, sliced avocado, and cucumber slices neatly over the rice.",
+      "Drizzle generously with sriracha mayo.",
+      "Garnish with sliced green onions and toasted sesame seeds. Serve warm or cold!"
+    ],
+    "tips": [
+      "Use high-quality canned yellowfin or albacore tuna packed in olive oil or water for clean flavor.",
+      "Warm rice absorbs the soy-sesame marinade better than cold rice."
+    ],
+    "affiliateLinks": [],
+    "tags": ["tuna rice bowl", "budget meal", "under 3 dollars", "quick lunch", "high protein", "10 minute recipe"],
+    "datePublished": "2026-08-28",
+    "image": "/images/3-dollar-tuna-avocado-rice-bowl.jpeg",
+    "pinImage": "/images/pins/3-dollar-tuna-avocado-rice-bowl.png",
+    "metaTitle": "The $3 Lunch That Tastes Like $15 – Easy Tuna Avocado Rice Bowl",
+    "metaDescription": "A restaurant-quality tuna avocado rice bowl for under $3 — soy-sesame tuna, jasmine rice, avocado, cucumber, and sriracha mayo in 10 minutes."
+  },
+  {
+    "slug": "6-restaurant-sauces-2-minutes",
+    "title": "6 Restaurant Sauces You Can Make at Home in 2 Minutes",
+    "subtitle": "Garlic Aioli, Honey Sriracha, Chick-fil-A, Yum Yum, Big Mac, and Boom Boom Sauce",
+    "category": "snacks",
+    "prepTime": "2 min",
+    "cookTime": "0 min",
+    "totalTime": "2 min",
+    "servings": 6,
+    "difficulty": "Easy",
+    "description": "Six copycat restaurant sauces ready in 2 minutes each — Garlic Aioli, Honey Sriracha, Chick-fil-A Sauce, Yum Yum, Big Mac Sauce, and Boom Boom Sauce.",
+    "ingredients": [
+      "Garlic Aioli: ½ cup mayo, 2 minced garlic cloves, 1 tsp lemon juice, salt & pepper",
+      "Honey Sriracha: 2 tbsp honey, 2 tbsp sriracha, 1 tsp soy sauce, ¼ tsp garlic powder",
+      "Chick-fil-A Sauce: ¼ cup mayo, 1 tbsp honey, 1 tbsp yellow mustard, 1 tbsp BBQ sauce, 1 tsp lemon juice",
+      "Yum Yum Sauce: ½ cup mayo, 1 tbsp ketchup, ½ tsp garlic powder, ½ tsp paprika, 1 tsp sugar, 1 tsp rice vinegar",
+      "Big Mac Sauce: ½ cup mayo, 2 tbsp sweet relish, 1 tbsp yellow mustard, 1 tsp white vinegar, ½ tsp garlic powder",
+      "Boom Boom Sauce: ½ cup mayo, 1 tbsp sriracha, 2 tbsp sweet chili sauce, ½ tsp garlic powder"
+    ],
+    "equipment": [
+      "Small whisk or fork",
+      "Mixing bowls",
+      "Small mason jars"
+    ],
+    "steps": [
+      "Choose your desired sauce variant from the ingredients list.",
+      "Add all corresponding ingredients into a small mixing bowl.",
+      "Whisk vigorously with a fork or small whisk for 30 seconds until creamy and fully emulsified.",
+      "Transfer to an airtight mason jar or squeeze bottle and chill before serving with fries, nuggets, or burgers!"
+    ],
+    "sauceVariants": [
+      {
+        "name": "Garlic Aioli",
+        "ingredients": ["½ cup mayo", "2 cloves garlic (minced)", "1 tsp fresh lemon juice", "Pinch of salt and black pepper"],
+        "note": "Perfect for dipping French fries, sweet potato wedges, or spreading on burgers."
+      },
+      {
+        "name": "Honey Sriracha",
+        "ingredients": ["2 tbsp raw honey", "2 tbsp sriracha sauce", "1 tsp low-sodium soy sauce", "¼ tsp garlic powder"],
+        "note": "Incredible glaze for chicken wings, salmon bites, or roasted veggies."
+      },
+      {
+        "name": "Chick-fil-A Sauce",
+        "ingredients": ["¼ cup mayo", "1 tbsp honey", "1 tbsp yellow mustard", "1 tbsp honey BBQ sauce", "1 tsp lemon juice"],
+        "note": "The classic sweet, smoky, and tangy chicken dip."
+      },
+      {
+        "name": "Yum Yum Sauce",
+        "ingredients": ["½ cup mayo", "1 tbsp ketchup", "½ tsp garlic powder", "½ tsp smoked paprika", "1 tsp sugar", "1 tsp rice vinegar"],
+        "note": "Hibachi steakhouse style pink sauce for rice and grilled shrimp."
+      },
+      {
+        "name": "Big Mac Special Sauce",
+        "ingredients": ["½ cup mayo", "2 tbsp sweet pickle relish", "1 tbsp yellow mustard", "1 tsp white vinegar", "½ tsp garlic powder", "½ tsp onion powder"],
+        "note": "Iconic burger sauce formula."
+      },
+      {
+        "name": "Boom Boom Sauce",
+        "ingredients": ["½ cup mayo", "1 tbsp sriracha", "2 tbsp sweet Thai chili sauce", "½ tsp garlic powder"],
+        "note": "Spicy, sweet, and garlicky dip for fried seafood or chicken tenders."
+      }
+    ],
+    "tips": [
+      "Let sauces rest in the fridge for 15-30 minutes before serving to allow flavors to meld together.",
+      "Store homemade sauces in sealed glass jars in the refrigerator for up to 2 weeks."
+    ],
+    "affiliateLinks": [],
+    "tags": ["sauce recipes", "copycat sauces", "2 minute sauce", "garlic aioli", "chick-fil-a sauce", "yum yum sauce"],
+    "datePublished": "2026-08-28",
+    "image": "/images/6-restaurant-sauces-2-minutes.jpeg",
+    "pinImage": "/images/pins/6-restaurant-sauces-2-minutes.png",
+    "metaTitle": "6 Restaurant Sauces You Can Make at Home in 2 Minutes – Copycat Recipes",
+    "metaDescription": "Six copycat restaurant sauces ready in 2 minutes each — Garlic Aioli, Honey Sriracha, Chick-fil-A Sauce, Yum Yum, Big Mac Sauce, and Boom Boom Sauce."
+  },
+  {
+    "slug": "brown-butter-guide",
+    "title": "Brown Butter: The One Ingredient That Makes Everything Taste Better",
+    "subtitle": "How to make nutty browned butter in 5 minutes & 5 ways to use it",
+    "category": "mains",
+    "prepTime": "1 min",
+    "cookTime": "5 min",
+    "totalTime": "6 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Brown butter takes 5 minutes, uses regular butter, and makes cookies, pasta, pancakes, and vegetables taste like a restaurant made them. Here's how.",
+    "ingredients": [
+      "½ cup (1 stick) unsalted butter",
+      "Pinch of sea salt (optional)"
+    ],
+    "equipment": [
+      "Light-colored skillet or saucepan",
+      "Heat-proof spatula",
+      "Heat-proof bowl"
+    ],
+    "steps": [
+      "Cut 1 stick of butter into equal-sized tablespoons so it melts evenly.",
+      "Place butter in a light-colored skillet over medium heat (light color allows you to see the milk solids turn golden brown).",
+      "Melt butter, stirring constantly with a spatula. It will begin to foam and crackle after 2-3 minutes.",
+      "Watch closely as the foaming subsides: tiny brown flecks will form at the bottom and a rich nutty aroma will release.",
+      "Immediately pour the browned butter into a heat-proof bowl to stop the cooking process. Do not leave in the hot pan!"
+    ],
+    "listItems": [
+      {
+        "title": "1. Brown Butter Pasta Sauce",
+        "description": "Toss hot pasta with brown butter, fresh sage leaves, parmesan, and cracked black pepper."
+      },
+      {
+        "title": "2. Bakery-Style Brown Butter Cookies",
+        "description": "Substitute regular melted butter with cooled brown butter in your favorite chocolate chip cookie recipe."
+      },
+      {
+        "title": "3. Brown Butter Fluffy Pancakes",
+        "description": "Drizzle warm brown butter over stacked pancakes and waffles with pure maple syrup."
+      },
+      {
+        "title": "4. Roasted Vegetables",
+        "description": "Toss roasted carrots, Brussels sprouts, or green beans in brown butter before serving."
+      },
+      {
+        "title": "5. Seared Steak or Fish Finishing Sauce",
+        "description": "Spoon warm brown butter with lemon juice and parsley over seared salmon or sirloin steak."
+      }
+    ],
+    "tips": [
+      "Use unsalted butter so you have full control over the final saltiness of your dish.",
+      "Remove pan from heat as soon as you smell a hazelnut-like aroma — butter turns from browned to burnt in seconds!"
+    ],
+    "affiliateLinks": [],
+    "tags": ["brown butter", "beurre noisette", "cooking technique", "baking secret", "pasta sauce", "flavor hack"],
+    "datePublished": "2026-08-28",
+    "image": "/images/brown-butter-guide.jpeg",
+    "pinImage": "/images/pins/brown-butter-guide.png",
+    "metaTitle": "Brown Butter – How to Make It and 5 Ways It Makes Everything Better",
+    "metaDescription": "Brown butter takes 5 minutes, uses regular butter, and makes cookies, pasta, pancakes, and vegetables taste like a restaurant made them. Here's how."
+  },
+  {
+    "slug": "5-meals-from-1-rotisserie-chicken",
+    "title": "5 Meals from 1 Rotisserie Chicken (Zero Waste Week)",
+    "subtitle": "Stretching one $8 chicken into 5 distinct weeknight dinners for under $10 total",
+    "category": "meal-prep",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "totalTime": "30 min",
+    "servings": 5,
+    "difficulty": "Easy",
+    "description": "One $8 rotisserie chicken turned into 5 completely different meals for the week — quesadillas, soup, fried rice, flatbreads, and Caesar wraps. Zero waste.",
+    "ingredients": [
+      "1 whole store-bought rotisserie chicken (shredded & bones reserved)",
+      "Flour tortillas & flatbreads",
+      "Cooked rice, frozen veggies, eggs",
+      "Chicken broth & heavy cream",
+      "BBQ sauce & shredded cheese",
+      "Romaine lettuce & Caesar dressing"
+    ],
+    "equipment": [
+      "Chef's knife & cutting board",
+      "Large skillet",
+      "Soup pot"
+    ],
+    "steps": [
+      "Day 1 (Chicken Quesadillas): Fold shredded chicken, salsa, and cheddar in flour tortillas. Sear in skillet until crispy.",
+      "Day 2 (Creamy Chicken Soup): Simmer chicken bones in water with carrots and celery for stock. Add chicken, cream, and egg noodles.",
+      "Day 3 (Chicken Fried Rice): Sauté leftover cold rice with diced chicken, frozen peas & carrots, scrambled eggs, and soy sauce.",
+      "Day 4 (BBQ Chicken Flatbreads): Top flatbreads with BBQ sauce, shredded chicken, red onion, and mozzarella. Bake at 400°F for 10 minutes.",
+      "Day 5 (Chicken Caesar Salad Wraps): Toss remaining chicken with chopped romaine, parmesan, and Caesar dressing. Roll into large tortillas."
+    ],
+    "listItems": [
+      {
+        "title": "Meal 1: Crispy Chicken Quesadillas",
+        "description": "Quick weeknight quesadillas loaded with shredded chicken breast and melted Mexican cheese.",
+        "ingredients": ["1 cup shredded chicken", "2 large tortillas", "½ cup shredded cheese", "2 tbsp salsa"]
+      },
+      {
+        "title": "Meal 2: Creamy Rotisserie Chicken Soup",
+        "description": "Hearty comforting soup made using homemade carcass stock, chicken meat, and tender noodles.",
+        "ingredients": ["1 cup shredded chicken", "Chicken carcass stock", "1 cup carrots & celery", "1 cup egg noodles"]
+      },
+      {
+        "title": "Meal 3: 10-Minute Chicken Fried Rice",
+        "description": "High-heat stir-fried rice loaded with chicken, eggs, and crisp vegetables.",
+        "ingredients": ["1 cup chicken", "2 cups cooked jasmine rice", "2 eggs", "½ cup frozen peas & carrots", "2 tbsp soy sauce"]
+      },
+      {
+        "title": "Meal 4: BBQ Chicken & Red Onion Flatbreads",
+        "description": "Crispy baked flatbread pizzas with sweet BBQ sauce and melted mozzarella.",
+        "ingredients": ["1 cup chicken", "2 Naan flatbreads", "¼ cup BBQ sauce", "½ cup mozzarella", "Red onion slices"]
+      },
+      {
+        "title": "Meal 5: Loaded Chicken Caesar Salad Wraps",
+        "description": "Cool, crunchy Caesar salad and chicken wrapped in flour tortillas.",
+        "ingredients": ["1 cup chicken", "2 large wrap tortillas", "2 cups romaine lettuce", "2 tbsp Caesar dressing", "2 tbsp parmesan"]
+      }
+    ],
+    "tips": [
+      "Shred the rotisserie chicken while it is still warm — the meat separates effortlessly from the bones.",
+      "Boil the chicken carcass with onion, garlic, and water for 45 minutes to make rich homemade chicken stock."
+    ],
+    "affiliateLinks": [],
+    "tags": ["rotisserie chicken", "meal prep", "budget cooking", "zero waste", "5 dinners 1 chicken", "easy meals"],
+    "datePublished": "2026-08-28",
+    "image": "/images/5-meals-from-1-rotisserie-chicken.jpeg",
+    "pinImage": "/images/pins/5-meals-from-1-rotisserie-chicken.png",
+    "metaTitle": "5 Meals from 1 Rotisserie Chicken – Zero Waste Weekly Meal Plan",
+    "metaDescription": "One $8 rotisserie chicken turned into 5 completely different meals for the week — quesadillas, soup, fried rice, flatbreads, and Caesar wraps. Zero waste."
+  },
+  {
+    "slug": "how-to-cook-eggs-7-ways",
+    "title": "The Correct Way to Cook Each Egg (7 Methods)",
+    "subtitle": "Exact times, temperatures, and techniques for perfect eggs every single time",
+    "category": "breakfast",
+    "prepTime": "2 min",
+    "cookTime": "10 min",
+    "totalTime": "12 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Sunny side up, over easy, soft boiled, hard boiled, scrambled, poached, and baked eggs — done correctly every time with exact time and temperature.",
+    "ingredients": [
+      "Large fresh eggs",
+      "Unsalted butter or olive oil",
+      "Water & white vinegar (for poaching)",
+      "Salt & freshly cracked black pepper"
+    ],
+    "equipment": [
+      "Non-stick skillet",
+      "Small saucepan",
+      "Slotted spoon",
+      "Ramekin"
+    ],
+    "steps": [
+      "Sunny Side Up: Melt butter over medium-low heat. Crack egg. Cook 2-3 minutes uncovered without flipping until whites are set and yolk is fully runny.",
+      "Over Easy: Cook as sunny side up for 2 minutes. Flip gently and cook for just 30 seconds more. Yolk stays slightly runny.",
+      "Soft Boiled: Lower eggs into gently boiling water. Boil for exactly 6 minutes. Transfer immediately to an ice bath for 3 minutes before peeling.",
+      "Hard Boiled: Boil eggs gently for 10-12 minutes. Cool in ice bath completely for easy peeling and yellow yolks with zero green ring.",
+      "Scrambled: Whisk eggs with salt. Cook over low heat, pushing slowly with a rubber spatula. Remove from heat while still glossy and soft.",
+      "Poached: Bring water with 1 tbsp vinegar to a gentle simmer. Create a vortex with a spoon, drop egg into center, and cook for 3 minutes.",
+      "Baked (Shirred): Crack egg into a buttered ramekin with a splash of cream. Bake at 350°F (180°C) for 10-12 minutes until whites are set."
+    ],
+    "listItems": [
+      {
+        "title": "1. Sunny Side Up",
+        "description": "Medium-low heat, no flip, 2-3 minutes. Yolk remains warm, rich, and fully runny.",
+        "tip": "Cover the pan with a lid for 30 seconds if you prefer a thin white film over the top."
+      },
+      {
+        "title": "2. Over Easy",
+        "description": "Cook 2 minutes on first side, flip gently, cook 30 seconds more. Yolk remains silky.",
+        "tip": "Use plenty of melted butter so the egg slides effortlessly on your spatula."
+      },
+      {
+        "title": "3. Soft Boiled (6-Minute Egg)",
+        "description": "Boiling water, exactly 6 minutes, immediate ice bath. Creamy jammy center.",
+        "tip": "Lower eggs into boiling water with a spoon so shells don't crack on the bottom."
+      },
+      {
+        "title": "4. Hard Boiled (10-12 Minutes)",
+        "description": "Boiling water, 10-12 minutes, ice bath. Tender whites and golden bright yolks.",
+        "tip": "Older eggs peel significantly easier than fresh farm eggs."
+      },
+      {
+        "title": "5. Soft French-Style Scrambled Eggs",
+        "description": "Low heat, slow folding, remove when just set.",
+        "tip": "Take the pan off the burner 1 minute early — residual heat finishes cooking them off-stove."
+      },
+      {
+        "title": "6. Restaurant Poached Egg",
+        "description": "Simmering water with 1 tbsp white vinegar, whirlpool method, 3 minutes.",
+        "tip": "Crack egg into a fine mesh sieve first to drain loose watery whites before dropping in water."
+      },
+      {
+        "title": "7. Baked / Shirred Ramekin Egg",
+        "description": "350°F oven, buttered ramekin, splash of heavy cream, baked 10-12 minutes.",
+        "tip": "Top with grated gruyere or parmesan and fresh herbs before baking."
+      }
+    ],
+    "tips": [
+      "Always cook scrambled eggs over low heat — high heat squeezes water out of eggs and makes them rubbery.",
+      "An ice bath immediately stops cooking for boiled eggs and prevents dark green sulfur rings around yolks."
+    ],
+    "affiliateLinks": [],
+    "tags": ["how to cook eggs", "egg cooking guide", "soft boiled egg", "scrambled eggs", "poached egg", "breakfast guide"],
+    "datePublished": "2026-08-28",
+    "image": "/images/how-to-cook-eggs-7-ways.jpeg",
+    "pinImage": "/images/pins/how-to-cook-eggs-7-ways.png",
+    "metaTitle": "How to Cook Eggs 7 Different Ways – Exact Time and Temperature for Each",
+    "metaDescription": "Sunny side up, over easy, soft boiled, hard boiled, scrambled, poached, and baked eggs — done correctly every time with exact time and temperature."
+  },
+  {
+    "slug": "instant-ramen-upgrade",
+    "title": "How to Upgrade Instant Ramen into a Restaurant Bowl (5 Minutes)",
+    "subtitle": "Soft-boiled egg, butter, soy sauce, chili oil, and green onions over $0.25 ramen",
+    "category": "mains",
+    "prepTime": "3 min",
+    "cookTime": "7 min",
+    "totalTime": "10 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Five extra ingredients and five extra minutes is all it takes to turn a $0.25 ramen packet into a rich restaurant-quality bowl. Here's exactly how.",
+    "ingredients": [
+      "1 packet instant ramen (shin, maruchan, or sapporo ichiban)",
+      "1 large egg (soft-boiled for 6.5 minutes)",
+      "1 tbsp butter",
+      "1 tbsp soy sauce",
+      "1 tsp chili oil or chili crisp",
+      "2 green onions (thinly sliced)",
+      "Optional: 1 sheet nori seaweed, sweet corn kernels, sesame seeds"
+    ],
+    "equipment": [
+      "Small saucepan",
+      "Slotted spoon",
+      "Ramen bowl"
+    ],
+    "steps": [
+      "Boil egg: Bring a small pot of water to a boil. Gently lower egg and boil for exactly 6.5 minutes. Plunge in ice water, peel, and slice in half.",
+      "Cook noodles: In another 2 cups of boiling water, cook instant ramen noodles for 3 minutes. Stir in half of the seasoning packet.",
+      "Build broth base: Stir butter, soy sauce, and chili oil directly into the hot ramen broth until melted and glossy.",
+      "Assemble bowl: Pour noodles and rich broth into a wide bowl.",
+      "Garnish: Top with soft-boiled egg halves, sliced green onions, nori seaweed, corn, and sesame seeds. Enjoy hot!"
+    ],
+    "tips": [
+      "Stirring butter into the broth creates a creamy emulsified body similar to long-simmered tonkotsu broth.",
+      "Only use half of the seasoning packet — soy sauce and chili oil add fresh umami without excess sodium."
+    ],
+    "affiliateLinks": [],
+    "tags": ["instant ramen upgrade", "ramen hacks", "cheap dinner", "gourmet ramen", "5 minute upgrade", "easy meals"],
+    "datePublished": "2026-08-28",
+    "image": "/images/instant-ramen-upgrade.jpeg",
+    "pinImage": "/images/pins/instant-ramen-upgrade.png",
+    "metaTitle": "How to Upgrade Instant Ramen into a Restaurant Bowl – 5 Extra Minutes",
+    "metaDescription": "Five extra ingredients and five extra minutes is all it takes to turn a $0.25 ramen packet into a rich restaurant-quality bowl. Here's exactly how."
+  },
+  {
+    "slug": "foods-cheaper-to-make-at-home",
+    "title": "Foods That Are 8x Cheaper to Make at Home (Cost Breakdown)",
+    "subtitle": "Guacamole, Big Mac sauce, Cold Brew, Chipotle Bowl, Garlic Bread, and Acai Bowl",
+    "category": "mains",
+    "prepTime": "10 min",
+    "cookTime": "10 min",
+    "totalTime": "20 min",
+    "servings": 6,
+    "difficulty": "Easy",
+    "description": "Guacamole, Big Mac sauce, cold brew, a Chipotle bowl, garlic bread, and an acai bowl — all 6–10x cheaper to make at home. Here's the exact cost breakdown.",
+    "ingredients": [
+      "Guacamole: avocados, lime, cilantro, salt",
+      "Big Mac Sauce: mayo, relish, mustard, spices",
+      "Cold Brew Coffee: coarse ground coffee beans, water",
+      "Chipotle Bowl: rice, chicken, beans, salsa, guac",
+      "Garlic Bread: French baguette, butter, garlic, parsley",
+      "Acai Bowl: frozen acai packet, banana, almond milk, granola"
+    ],
+    "equipment": [
+      "Mixing bowls",
+      "Blender",
+      "French press or pitcher"
+    ],
+    "steps": [
+      "Compare restaurant takeout prices vs homemade grocery unit costs.",
+      "Prepare your favorite homemade copycat version in under 10-15 minutes.",
+      "Save over $150+ every month by swapping these 6 takeout items for homemade versions!"
+    ],
+    "listItems": [
+      {
+        "title": "1. Fresh Guacamole",
+        "description": "Restaurant: $7.00 per side → Homemade: $0.90 per serving (Save 87%)",
+        "ingredients": ["2 ripe avocados", "1 lime (juiced)", "¼ cup fresh cilantro", "½ tsp salt"]
+      },
+      {
+        "title": "2. Big Mac Special Sauce",
+        "description": "Restaurant: $3.50 extra → Homemade: $0.30 per batch (Save 91%)",
+        "ingredients": ["½ cup mayo", "2 tbsp relish", "1 tbsp mustard", "Spices"]
+      },
+      {
+        "title": "3. Vanilla Cold Brew Coffee",
+        "description": "Coffee Shop: $6.00 per cup → Homemade: $0.40 per glass (Save 93%)",
+        "ingredients": ["1 cup coarse coffee grounds", "4 cups cold water", "1 tbsp vanilla syrup"]
+      },
+      {
+        "title": "4. Loaded Chipotle Burrito Bowl",
+        "description": "Takeout: $14.00 per bowl → Homemade: $2.80 per bowl (Save 80%)",
+        "ingredients": ["Chicken thigh", "Jasmine rice", "Black beans", "Pico & guac"]
+      },
+      {
+        "title": "5. Restaurant Garlic Bread",
+        "description": "Pizzeria: $5.00 side → Homemade: $0.60 full loaf (Save 88%)",
+        "ingredients": ["1 baguette", "4 tbsp butter", "3 garlic cloves", "Parsley"]
+      },
+      {
+        "title": "6. Smoothie Shop Acai Bowl",
+        "description": "Smoothie Bar: $12.00 bowl → Homemade: $1.50 bowl (Save 87%)",
+        "ingredients": ["1 acai packet", "1 frozen banana", "¼ cup almond milk", "Granola & berries"]
+      }
+    ],
+    "tips": [
+      "Buy staple ingredients like rice, dry beans, and coffee grounds in bulk to maximize cost savings.",
+      "Prep cold brew and sauces in batches on Sunday to last the entire work week."
+    ],
+    "affiliateLinks": [],
+    "tags": ["cheaper at home", "budget breakdown", "save money on groceries", "copycat budget", "frugal living", "healthy budget"],
+    "datePublished": "2026-08-28",
+    "image": "/images/foods-cheaper-to-make-at-home.jpeg",
+    "pinImage": "/images/pins/foods-cheaper-to-make-at-home.png",
+    "metaTitle": "6 Foods That Are 8x Cheaper to Make at Home – Real Cost Breakdown",
+    "metaDescription": "Guacamole, Big Mac sauce, cold brew, a Chipotle bowl, garlic bread, and an acai bowl — all 6–10x cheaper to make at home. Here's the exact cost breakdown."
+  },
+  {
+    "slug": "freezer-breakfast-burritos",
+    "title": "Freezer Breakfast Burritos (Meal Prep 8 at Once)",
+    "subtitle": "High-protein meal prep burritos — 38g protein each, reheat from frozen in 90s",
+    "category": "meal-prep",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "totalTime": "30 min",
+    "servings": 8,
+    "difficulty": "Easy",
+    "description": "Make 8 freezer breakfast burritos on Sunday — eggs, turkey, black beans, and cheddar in a flour tortilla. Reheat from frozen in 90 seconds. 38g protein each.",
+    "ingredients": [
+      "8 large flour tortillas (burrito size)",
+      "8 whole eggs + 4 egg whites (scrambled)",
+      "400g (1 lb) lean ground turkey (cooked & seasoned with taco spices)",
+      "1 can (15 oz) black beans (drained & rinsed)",
+      "1 cup shredded cheddar cheese",
+      "½ cup fresh salsa or pico de gallo",
+      "1 tsp cumin, salt & black pepper",
+      "1 cup fresh spinach (chopped)"
+    ],
+    "equipment": [
+      "Large skillet",
+      "Aluminum foil sheets",
+      "Large mixing bowl"
+    ],
+    "steps": [
+      "Cook turkey & eggs: Brown ground turkey with taco seasoning in a skillet. In another pan, softly scramble eggs and egg whites.",
+      "Cool completely: Allow cooked turkey, eggs, and black beans to cool to room temperature before assembling to prevent soggy tortillas.",
+      "Assemble burritos: Divide scrambled eggs, seasoned turkey, black beans, spinach, salsa, and shredded cheddar evenly among 8 flour tortillas.",
+      "Wrap tightly: Fold sides of tortilla inward, then roll tightly from bottom to top.",
+      "Wrap in foil & freeze: Wrap each burrito tightly in aluminum foil. Place all 8 burritos in a gallon freezer ziplock bag and freeze for up to 3 months.",
+      "Reheat: Remove foil, wrap burrito in a damp paper towel, and microwave on high for 90 to 120 seconds until hot and melted!"
+    ],
+    "tips": [
+      "Cooling cooked ingredients completely before rolling is the #1 secret to avoiding soggy burritos.",
+      "Wrapping in a damp paper towel when microwaving steams the tortilla so it stays soft and pliable."
+    ],
+    "affiliateLinks": [],
+    "tags": ["freezer breakfast burritos", "meal prep breakfast", "high protein breakfast", "reheat from frozen", "38g protein", "grab and go"],
+    "datePublished": "2026-08-28",
+    "image": "/images/freezer-breakfast-burritos.jpeg",
+    "pinImage": "/images/pins/freezer-breakfast-burritos.png",
+    "metaTitle": "Freezer Breakfast Burritos – Meal Prep 8 at Once, Reheat in 90 Seconds",
+    "metaDescription": "Make 8 freezer breakfast burritos on Sunday — eggs, turkey, black beans, and cheddar in a flour tortilla. Reheat from frozen in 90 seconds. 38g protein each."
+  },
+  {
+    "slug": "30g-protein-breakfast-7-day-results",
+    "title": "What Happens to Your Body When You Eat 30g Protein Every Morning",
+    "subtitle": "Day-by-day 7-day experience: satiety, energy levels, sugar cravings & focus",
+    "category": "breakfast",
+    "prepTime": "5 min",
+    "cookTime": "10 min",
+    "totalTime": "15 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Day 1: hunger crashes later. Day 3: sugar cravings drop. Day 7: you stop thinking about food between meals. Here's what actually happens each day.",
+    "ingredients": [
+      "Sample Breakfast A: 3 eggs + 3 egg whites scrambled with spinach & feta + sourdough toast (32g protein)",
+      "Sample Breakfast B: 1 cup 0% Greek yogurt + 1 scoop protein powder + berries & chia seeds (35g protein)",
+      "Sample Breakfast C: 1 cup cottage cheese + 2 hard-boiled eggs + sliced tomatoes & everything seasoning (30g protein)"
+    ],
+    "equipment": [
+      "Non-stick skillet",
+      "Bowl",
+      "Spoon"
+    ],
+    "steps": [
+      "Choose a 30g+ protein breakfast option every morning within 60 minutes of waking up.",
+      "Track your energy, hunger levels, and mid-morning craving triggers throughout the week.",
+      "Notice how high protein breakfast stabilizes blood glucose and eliminates the 10am office snack craving!"
+    ],
+    "listItems": [
+      {
+        "title": "Day 1: Hunger Crashes Later",
+        "description": "Instead of feeling hungry 2 hours after toast or cereal, full satiety lasts 4 to 5 hours until lunch."
+      },
+      {
+        "title": "Day 2: Steadier Energy Levels",
+        "description": "No 10am blood sugar crash or mid-morning brain fog. Energy remains smooth and consistent."
+      },
+      {
+        "title": "Day 3: Sugar Cravings Start Dropping",
+        "description": "Dopamine and satiety hormone ghrelin stabilize, reducing afternoon sweet cravings significantly."
+      },
+      {
+        "title": "Day 4: Improved Muscle Retention",
+        "description": "Leucine threshold triggers muscle protein synthesis early in the morning."
+      },
+      {
+        "title": "Day 5: Shifting Body Composition",
+        "description": "Higher thermic effect of food (TEF) burns more calories during digestion."
+      },
+      {
+        "title": "Day 6: Better Evening Sleep Quality",
+        "description": "Balanced daytime blood sugar prevents late-night cortisol spikes and improves sleep depth."
+      },
+      {
+        "title": "Day 7: Freedom from Constant Food Thoughts",
+        "description": "You no longer obsess over snacks between meals — full dietary control achieved."
+      }
+    ],
+    "tips": [
+      "Prioritize fast-digesting or easy sources like Greek yogurt, cottage cheese, or eggs to reach 30g without feeling overly stuffed.",
+      "Hydrate with a glass of water alongside your high-protein breakfast."
+    ],
+    "affiliateLinks": [],
+    "tags": ["30g protein breakfast", "high protein benefits", "7 day results", "satiety", "weight loss tips", "healthy breakfast"],
+    "datePublished": "2026-08-28",
+    "image": "/images/30g-protein-breakfast-7-day-results.jpeg",
+    "pinImage": "/images/pins/30g-protein-breakfast-7-day-results.png",
+    "metaTitle": "What Happens When You Eat 30g Protein Every Morning – 7-Day Results",
+    "metaDescription": "Day 1: hunger crashes later. Day 3: sugar cravings drop. Day 7: you stop thinking about food between meals. Here's what actually happens each day."
+  },
+  {
+    "slug": "healthy-eating-50-dollars-a-week",
+    "title": "The Exact Grocery List for Eating Healthy on $50 a Week",
+    "subtitle": "Complete weekly shopping list covering 21 meals at $2.40 per meal",
+    "category": "meal-prep",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "totalTime": "45 min",
+    "servings": 21,
+    "difficulty": "Easy",
+    "description": "A complete $50 weekly grocery list covering 21 meals at $2.40 each — proteins, produce, pantry staples, and extras. Nothing wasted, everything used.",
+    "ingredients": [
+      "Proteins ($18): 2 dozen eggs, 1 lb ground turkey, 4 cans tuna, 1 tub Greek yogurt, 1 rotisserie chicken",
+      "Produce ($12): 1 bag spinach, 1 bunch bananas, 1 bag apples, 1 bag frozen broccoli, sweet potatoes, cucumber, lemon",
+      "Pantry ($12): Oats, jasmine rice, olive oil, 2 cans black beans, garlic, soy sauce",
+      "Extras ($8): Whole wheat bread, salsa, hot sauce, single protein packets"
+    ],
+    "equipment": [
+      "Grocery bag",
+      "Chef's knife",
+      "Meal prep containers"
+    ],
+    "steps": [
+      "Shop strictly from the 4 structured categories (Proteins, Produce, Pantry, Extras).",
+      "Batch cook rice, roast sweet potatoes, and pull rotisserie chicken on Sunday.",
+      "Assemble balanced meals throughout the week for under $2.40 per serving!"
+    ],
+    "listItems": [
+      {
+        "title": "Category 1: High-Value Proteins ($18)",
+        "description": "2 dozen eggs ($6.00), 1 lb ground turkey ($4.00), 4 cans tuna ($3.20), 1 large tub Greek yogurt ($3.80), 1 rotisserie chicken ($7.99)."
+      },
+      {
+        "title": "Category 2: Nutrient-Dense Produce ($12)",
+        "description": "Bagged spinach ($2.50), bananas ($1.20), 3 sweet potatoes ($2.00), frozen broccoli ($2.00), cucumber ($0.80), apples ($3.50)."
+      },
+      {
+        "title": "Category 3: Budget Pantry Staples ($12)",
+        "description": "Rolled oats ($2.50), 2 lb bag jasmine rice ($2.50), 2 cans black beans ($1.60), soy sauce & garlic ($3.00), olive oil (pantry)."
+      },
+      {
+        "title": "Category 4: Flavor Extras ($8)",
+        "description": "Whole wheat bread loaf ($2.50), jarred salsa ($2.00), hot sauce ($1.50), chia seeds or seasoning ($2.00)."
+      }
+    ],
+    "tips": [
+      "Buy frozen vegetables — they are picked at peak ripeness, cost half as much as fresh, and never spoil in your crisper drawer.",
+      "Stick strictly to the perimeter of the grocery store where whole foods live."
+    ],
+    "affiliateLinks": [],
+    "tags": ["50 dollar grocery list", "healthy budget", "eat healthy cheap", "21 budget meals", "grocery hack", "meal prep budget"],
+    "datePublished": "2026-08-28",
+    "image": "/images/healthy-eating-50-dollars-a-week.jpeg",
+    "pinImage": "/images/pins/healthy-eating-50-dollars-a-week.png",
+    "metaTitle": "Eat Healthy for $50 a Week – The Exact Grocery List for 21 Meals",
+    "metaDescription": "A complete $50 weekly grocery list covering 21 meals at $2.40 each — proteins, produce, pantry staples, and extras. Nothing wasted, everything used."
+  },
+  {
+    "slug": "30-meals-5-pantry-staples",
+    "title": "30 Meals You Can Make with 5 Pantry Staples",
+    "subtitle": "Eggs, Rice, Olive Oil, Garlic, and Canned Tomatoes — Endless Quick Dinners",
+    "category": "meal-prep",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "totalTime": "20 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Eggs, rice, olive oil, garlic, and canned tomatoes can make 30 completely different meals. Shakshuka, garlic fried rice, tomato pasta, baked eggs, and more.",
+    "ingredients": [
+      "Staple 1: Fresh Large Eggs",
+      "Staple 2: Jasmine or Long Grain White Rice",
+      "Staple 3: Extra Virgin Olive Oil",
+      "Staple 4: Fresh Garlic Cloves",
+      "Staple 5: Whole Peeled or Crushed Canned Tomatoes"
+    ],
+    "equipment": [
+      "Cast iron skillet",
+      "Saucepan",
+      "Wooden spoon"
+    ],
+    "steps": [
+      "Combine garlic infused olive oil with crushed canned tomatoes for quick sauces.",
+      "Poach, fry, or scramble eggs directly into rice or tomato bases.",
+      "Rotate through 30 flavor-packed meal variations without needing extra grocery trips!"
+    ],
+    "listItems": [
+      {
+        "title": "1. Classic Shakshuka",
+        "description": "Eggs gently poached in a simmering, garlic-infused crushed tomato sauce."
+      },
+      {
+        "title": "2. Crispy Garlic Fried Rice",
+        "description": "Cold jasmine rice stir-fried in fragrant garlic olive oil and topped with a fried egg."
+      },
+      {
+        "title": "3. Simple 10-Minute Tomato Pasta",
+        "description": "Simmered garlic tomato sauce tossed over pasta or rice."
+      },
+      {
+        "title": "4. Baked Eggs in Tomato Sauce",
+        "description": "Ramekins filled with seasoned tomato sauce and eggs baked until golden."
+      },
+      {
+        "title": "5. Rice Bowl with Fried Egg & Garlic Oil",
+        "description": "Warm rice drizzled with golden fried garlic chips and oil, topped with a runny fried egg."
+      },
+      {
+        "title": "6. Blended Tomato Garlic Soup",
+        "description": "Canned tomatoes simmered with garlic and olive oil, blended until velvety smooth."
+      },
+      {
+        "title": "7. Classic Egg Fried Rice",
+        "description": "Fluffy rice tossed with scrambled eggs, garlic oil, and soy sauce."
+      },
+      {
+        "title": "8. Tomato Rice Pilaf with Poached Egg",
+        "description": "Rice cooked in tomato juice and garlic broth topped with a poached egg."
+      },
+      {
+        "title": "9. Pan-Roasted Garlic Tomatoes on Toast",
+        "description": "Blistered garlic tomatoes served over toasted bread with olive oil."
+      },
+      {
+        "title": "10. Soft Scrambled Eggs with Tomato Confit",
+        "description": "Slowly scrambled eggs folded with sweet olive oil simmered garlic tomatoes."
+      }
+    ],
+    "tips": [
+      "Sauté minced garlic in cold olive oil slowly over low heat so it releases aroma without scorching.",
+      "Keep canned crushed San Marzano tomatoes stocked for instant restaurant-quality tomato bases."
+    ],
+    "affiliateLinks": [],
+    "tags": ["5 pantry staples", "30 budget meals", "pantry cooking", "emergency meal plan", "cheap easy dinners", "shakshuka"],
+    "datePublished": "2026-08-28",
+    "image": "/images/30-meals-5-pantry-staples.jpeg",
+    "pinImage": "/images/pins/30-meals-5-pantry-staples.png",
+    "metaTitle": "30 Meals from 5 Pantry Staples – Budget Cooking Guide",
+    "metaDescription": "Eggs, rice, olive oil, garlic, and canned tomatoes can make 30 completely different meals. Shakshuka, garlic fried rice, tomato pasta, baked eggs, and more."
   }
 ];
 

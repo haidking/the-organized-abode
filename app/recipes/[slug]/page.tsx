@@ -79,6 +79,18 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
     "apple-cider-vinegar-morning-detox-drink": "apple-cider-vinegar-detox-guide",
     "copycat-kfc-original-recipe-chicken": "kfc-copycat-chicken-guide",
     "copycat-chipotle-burrito-bowl": "chipotle-burrito-bowl-guide",
+    "150g-protein-day-meal-plan": "150g-protein-day-guide",
+    "3-dollar-tuna-avocado-rice-bowl": "budget-lunch-upgrade-guide",
+    "6-restaurant-sauces-2-minutes": "restaurant-sauces-guide",
+    "brown-butter-guide": "brown-butter-cooking-guide",
+    "5-meals-from-1-rotisserie-chicken": "rotisserie-chicken-meal-plan-guide",
+    "how-to-cook-eggs-7-ways": "how-to-cook-eggs-guide",
+    "instant-ramen-upgrade": "ramen-upgrade-guide",
+    "foods-cheaper-to-make-at-home": "cooking-at-home-cost-breakdown-guide",
+    "freezer-breakfast-burritos": "freezer-burrito-guide",
+    "30g-protein-breakfast-7-day-results": "protein-breakfast-science-guide",
+    "healthy-eating-50-dollars-a-week": "50-dollar-grocery-guide",
+    "30-meals-5-pantry-staples": "pantry-meals-guide",
   };
 
   const blogPostSlug = blogSlugMap[recipe.slug] || `${recipe.slug}-guide`;
