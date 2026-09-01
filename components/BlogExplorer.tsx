@@ -56,7 +56,7 @@ export default function BlogExplorer({ posts }: BlogExplorerProps) {
             <button
               key={category}
               onClick={() => handleCategoryChange(category)}
-              className={`whitespace-nowrap px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 cursor-pointer ${
+              className={`whitespace-nowrap px-4 py-2.5 min-h-[44px] text-sm font-medium rounded-full transition-all duration-200 cursor-pointer ${
                 isActive
                   ? "bg-forest text-white shadow-sm"
                   : "bg-surface text-ink-secondary hover:text-ink hover:bg-border/60 border border-border/60"
@@ -102,9 +102,9 @@ export default function BlogExplorer({ posts }: BlogExplorerProps) {
       {totalPages > 1 && (
         <div className="flex items-center justify-center gap-2 pt-6">
           <button
-            onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+            onClick={() => { setCurrentPage((prev) => Math.max(prev - 1, 1)); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             disabled={currentPage === 1}
-            className="px-4 py-2 rounded-lg border border-border bg-surface text-sm font-medium text-ink hover:bg-border/40 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            className="px-4 py-2.5 min-h-[44px] rounded-lg border border-border bg-surface text-sm font-medium text-ink hover:bg-border/40 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
           >
             ← Previous
           </button>
@@ -114,9 +114,9 @@ export default function BlogExplorer({ posts }: BlogExplorerProps) {
           </div>
 
           <button
-            onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+            onClick={() => { setCurrentPage((prev) => Math.min(prev + 1, totalPages)); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             disabled={currentPage === totalPages}
-            className="px-4 py-2 rounded-lg border border-border bg-surface text-sm font-medium text-ink hover:bg-border/40 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+            className="px-4 py-2.5 min-h-[44px] rounded-lg border border-border bg-surface text-sm font-medium text-ink hover:bg-border/40 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
           >
             Next →
           </button>

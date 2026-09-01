@@ -29,29 +29,32 @@ export default function Header() {
         scrolled ? "shadow-md" : ""
       }`}
     >
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-2 px-4 py-3 sm:flex-row sm:justify-between sm:gap-0 sm:px-6">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 sm:py-3 sm:px-6">
+        {/* Brand / Logo — always visible */}
         <Link
           href="/"
-          className="flex items-center gap-2 font-heading italic text-lg sm:text-xl font-bold text-accent hover:opacity-80 transition-opacity text-center"
+          className="flex items-center gap-2 font-heading italic text-base sm:text-xl font-bold text-accent hover:opacity-80 transition-opacity"
           aria-label="The Better Home Recipes - Home"
         >
           <Image
             src="/The_Better_Home_Recipes_Logo.png"
             alt=""
-            width={48}
-            height={48}
-            className="h-12 w-12 sm:h-[48px] sm:w-[48px] object-contain"
+            width={40}
+            height={40}
+            className="h-10 w-10 sm:h-12 sm:w-12 object-contain flex-shrink-0"
             priority
             aria-hidden="true"
           />
-          <span className="hidden sm:inline">The Better Home Recipes</span>
+          <span className="leading-tight">The Better Home Recipes</span>
         </Link>
-        <div className="flex items-center gap-5 sm:gap-6 text-sm font-medium">
+
+        {/* Desktop nav links — hidden on mobile (BottomNav handles mobile nav) */}
+        <div className="hidden md:flex items-center gap-5 lg:gap-6 text-sm font-medium">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`transition-colors relative ${
+              className={`py-1 transition-colors relative ${
                 pathname === link.href
                   ? "text-accent"
                   : "text-ink-secondary hover:text-accent"
@@ -66,24 +69,25 @@ export default function Header() {
               )}
             </Link>
           ))}
-          {/* Mobile search icon - links to recipes page which has the search bar */}
           <Link
             href="/recipes"
-            className="p-2 rounded-full text-ink-secondary hover:text-accent hover:bg-border/50 transition-colors lg:hidden"
-            aria-label="Search recipes"
-          >
-            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
-              <circle cx="11" cy="11" r="8" />
-              <path d="M21 21l-4.35-4.35" />
-            </svg>
-          </Link>
-          <Link
-            href="/recipes"
-            className="bg-forest text-white rounded-full px-5 py-2 text-sm font-medium hover:bg-forest-hover transition-all duration-300 hidden sm:inline-flex"
+            className="bg-forest text-white rounded-full px-5 py-2 text-sm font-medium hover:bg-forest-hover transition-all duration-300 inline-flex"
           >
             Browse Recipes
           </Link>
         </div>
+
+        {/* Mobile: search icon shortcut */}
+        <Link
+          href="/recipes"
+          className="md:hidden flex items-center justify-center min-h-[44px] min-w-[44px] rounded-full text-ink-secondary hover:text-accent hover:bg-border/50 transition-colors"
+          aria-label="Search recipes"
+        >
+          <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+            <circle cx="11" cy="11" r="8" />
+            <path d="M21 21l-4.35-4.35" />
+          </svg>
+        </Link>
       </div>
     </nav>
   );

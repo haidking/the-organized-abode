@@ -89,7 +89,7 @@ export default function HomeRecipesExplorer({ recipes }: Props) {
             <button
               key={tab.value}
               onClick={() => handleCategoryChange(tab.value)}
-              className={`whitespace-nowrap px-4 py-2 text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 cursor-pointer ${
+              className={`whitespace-nowrap px-4 py-2.5 min-h-[44px] text-xs sm:text-sm font-semibold rounded-full transition-all duration-200 cursor-pointer ${
                 isActive
                   ? "bg-forest text-white shadow-sm"
                   : "bg-surface text-ink-secondary hover:text-ink hover:bg-border/60 border border-border/80"

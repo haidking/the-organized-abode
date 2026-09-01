@@ -33,15 +33,39 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Prevent iOS from auto-inflating font sizes */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
   @apply bg-background text-ink font-body min-h-screen;
+  /* Suppress the blue tap highlight on mobile */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Safe-area aware BottomNav spacer — applied to main via the layout pb-20 class.
+   On notched phones (iPhone X+), env(safe-area-inset-bottom) adds extra padding. */
+.safe-bottom-pad {
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom));
+}
+
+/* Visually hidden utility for screen-reader-only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 /* Numbered steps */
 .recipe-step {
-  @apply relative pl-12 py-5;
+  @apply relative pl-10 sm:pl-12 py-5;
 }
 .recipe-step-number {
   @apply absolute left-0 top-5 flex h-7 w-7 items-center justify-center rounded-full bg-accent text-xs font-bold text-white;

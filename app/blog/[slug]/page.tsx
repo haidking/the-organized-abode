@@ -170,7 +170,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             </span>
           </div>
 
-          <h1 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-ink leading-tight">
+          <h1 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-ink leading-tight">
             {post.title}
           </h1>
 
@@ -293,9 +293,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
 
         {/* Bottom CTA Banner */}
-        <section className="my-12 rounded-3xl bg-forest p-8 sm:p-10 text-white shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="space-y-2 text-center md:text-left">
-            <h3 className="font-heading text-2xl sm:text-3xl font-bold">
+        <section className="my-10 sm:my-12 rounded-3xl bg-forest p-6 sm:p-8 lg:p-10 text-white shadow-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-5 sm:gap-6">
+          <div className="space-y-2">
+            <h3 className="font-heading text-xl sm:text-2xl lg:text-3xl font-bold">
               Get more recipes like this
             </h3>
             <p className="text-sm sm:text-base text-white/90 max-w-xl leading-relaxed">
@@ -305,7 +305,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
           <Link
             href="/recipes"
-            className="flex-shrink-0 rounded-full bg-white text-forest px-7 py-3.5 text-sm font-bold hover:bg-highlight-soft transition-colors shadow-md"
+            className="rounded-full bg-white text-forest px-6 sm:px-7 py-3 sm:py-3.5 text-sm font-bold hover:bg-highlight-soft transition-colors shadow-md w-full sm:w-auto text-center md:flex-shrink-0"
           >
             Browse All Recipes →
           </Link>

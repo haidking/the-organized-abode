@@ -11,7 +11,7 @@ export default function PrintRecipeButton() {
     <button
       type="button"
       onClick={handlePrint}
-      className="inline-flex items-center gap-1.5 rounded-full bg-surface border border-border px-3.5 py-1.5 text-xs font-semibold text-ink hover:bg-forest hover:text-white hover:border-forest transition-colors shadow-sm no-print"
+      className="hidden sm:inline-flex items-center gap-1.5 rounded-full bg-surface border border-border px-3.5 py-1.5 text-xs font-semibold text-ink hover:bg-forest hover:text-white hover:border-forest transition-colors shadow-sm no-print"
       aria-label="Print Recipe"
     >
       <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

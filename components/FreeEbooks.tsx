@@ -79,7 +79,7 @@ export default function FreeEbooks() {
           </span>
           <h2
             id="ebooks-heading"
-            className="mt-4 font-heading text-3xl sm:text-4xl font-bold text-ink"
+            className="mt-4 font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-ink"
           >
             Recipe eBooks — Grab Your Copy
           </h2>
@@ -90,7 +90,7 @@ export default function FreeEbooks() {
         </div>
 
         {/* ── Book cards ── */}
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3 sm:gap-6">
+        <div className="mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-6">
           {EBOOKS.map((book, i) => (
             <EbookCard
               key={book.title}
@@ -166,7 +166,7 @@ function EbookCard({
         href={book.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 inline-flex items-center rounded-full bg-accent px-6 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-accent/90 hover:shadow-md"
+        className="mt-4 inline-flex items-center justify-center rounded-full bg-accent px-6 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:bg-accent/90 hover:shadow-md w-full sm:w-auto"
       >
         {book.badge}
       </a>

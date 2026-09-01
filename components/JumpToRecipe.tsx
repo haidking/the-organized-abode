@@ -42,7 +42,7 @@ export default function JumpToRecipe({
   return (
     <button
       onClick={scrollToTarget}
-      className="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white shadow-lg hover:bg-accent/90 hover:shadow-xl transition-all duration-200 animate-slide-up"
+      className="fixed bottom-[80px] right-4 lg:bottom-6 lg:right-6 z-40 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2.5 text-sm font-semibold text-white shadow-lg hover:bg-accent/90 hover:shadow-xl transition-all duration-200 animate-slide-up"
       aria-label={label}
     >
       <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

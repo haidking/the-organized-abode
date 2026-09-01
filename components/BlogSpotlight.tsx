@@ -8,30 +8,30 @@ export default function BlogSpotlight() {
   if (posts.length === 0) return null;
 
   return (
-    <section className="bg-surface border-y border-border py-16">
+    <section className="bg-surface border-y border-border py-12 sm:py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 sm:mb-10 gap-4">
           <div>
             <span className="inline-block rounded-full bg-highlight-soft text-forest px-3.5 py-1 text-xs font-semibold uppercase tracking-wider mb-2">
               From Our Kitchen Blog
             </span>
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-ink">
+            <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-ink">
               Recipe Stories & Guides
             </h2>
-            <p className="mt-2 text-base text-ink-secondary max-w-xl">
+            <p className="mt-2 text-sm sm:text-base text-ink-secondary max-w-xl">
               Deep dives into copycat secrets, meal prep guides, and step-by-step cooking techniques.
             </p>
           </div>
 
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-accent-hover transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-accent-hover transition-colors flex-shrink-0 min-h-[44px]"
           >
             Explore All Blog Posts <span aria-hidden="true">→</span>
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
           {posts.map((post) => (
             <article
               key={post.slug}
@@ -42,7 +42,7 @@ export default function BlogSpotlight() {
                   src={post.coverImage}
                   alt={post.title}
                   fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <span className="absolute top-3 left-3 rounded-full bg-forest text-white px-3 py-1 text-xs font-semibold shadow-sm">
@@ -50,7 +50,7 @@ export default function BlogSpotlight() {
                 </span>
               </Link>
 
-              <div className="flex flex-1 flex-col p-5">
+              <div className="flex flex-1 flex-col p-4 sm:p-5">
                 <div className="text-xs text-ink-secondary mb-2">
                   {post.readTime} min read
                 </div>
@@ -66,7 +66,7 @@ export default function BlogSpotlight() {
                 <div className="mt-4 pt-3 border-t border-border/60 flex items-center justify-between">
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="text-xs font-bold text-accent group-hover:underline"
+                    className="text-xs font-bold text-accent group-hover:underline min-h-[44px] flex items-center"
                   >
                     Read Article →
                   </Link>

@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BottomNav from "@/components/BottomNav";
+import BackToTop from "@/components/BackToTop";
 import "./globals.css";
 
 /* ── Fonts ──────────────────────────────────────────────────────────────── */
@@ -78,6 +79,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* ─── Bottom mobile nav ─── */}
         <BottomNav />
+
+        {/* ─── Back to top ─── */}
+        <BackToTop />
 
         {/* ─── Vercel Analytics ─── */}
         <Analytics />

@@ -92,7 +92,7 @@ export default function HomePage() {
           HERO — Full-Width Banner Background
       ═════════════════════════════════════════════════════════════════════ */}
       <section
-        className="relative min-h-screen flex items-center overflow-hidden bg-background"
+        className="relative min-h-[60vh] sm:min-h-[70vh] lg:min-h-screen flex items-center overflow-hidden bg-background"
         aria-labelledby="hero-title"
       >
         {/* Full-bleed banner image — fills entire viewport */}
@@ -119,7 +119,7 @@ export default function HomePage() {
         />
 
         {/* Content overlay */}
-        <div className="relative z-20 mx-auto max-w-6xl px-4 sm:px-6 py-20 sm:py-28 lg:py-32 w-full">
+        <div className="relative z-20 mx-auto max-w-6xl px-4 sm:px-6 py-12 sm:py-28 lg:py-32 w-full">
           <div className="max-w-3xl animate-fade-in-up">
             {/* Badge */}
             <span className="inline-flex items-center gap-1.5 rounded-full bg-forest/90 px-4 py-1.5 text-xs sm:text-sm font-semibold text-white tracking-wide mb-6 shadow-lg backdrop-blur-sm">
@@ -130,9 +130,9 @@ export default function HomePage() {
             {/* Headline — BIG, bold, punchy */}
             <h1
               id="hero-title"
-              className="font-heading text-white leading-[1.05] font-extrabold tracking-tight
-                text-[44px] sm:text-[56px] lg:text-[72px] xl:text-[80px]
-                mb-6"
+              className="font-heading text-white leading-[1.1] font-extrabold tracking-tight
+                text-[36px] sm:text-[52px] lg:text-[72px] xl:text-[80px]
+                mb-5"
             >
               Real Recipes.
               <br />
@@ -147,10 +147,10 @@ export default function HomePage() {
             </p>
 
             {/* Dual CTAs */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mb-8 sm:mb-10">
               <Link
                 href="#recipes"
-                className="group inline-flex items-center gap-2 rounded-full bg-forest px-8 py-4 text-base sm:text-lg font-bold text-white shadow-xl transition-all duration-300 hover:bg-forest-hover hover:shadow-2xl hover:-translate-y-0.5 min-w-[220px] justify-center"
+                className="group inline-flex items-center justify-center gap-2 rounded-full bg-forest px-8 py-4 text-base sm:text-lg font-bold text-white shadow-xl transition-all duration-300 hover:bg-forest-hover hover:shadow-2xl hover:-translate-y-0.5 w-full sm:w-auto sm:min-w-[220px]"
               >
                 Browse Recipes
                 <svg
@@ -170,7 +170,7 @@ export default function HomePage() {
               </Link>
               <Link
                 href="#free-ebooks"
-                className="group inline-flex items-center gap-2 rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 text-base sm:text-lg font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 hover:shadow-xl hover:-translate-y-0.5 min-w-[220px] justify-center"
+                className="group inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 text-base sm:text-lg font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto sm:min-w-[220px]"
               >
                 Recipe eBooks
                 <svg
@@ -255,7 +255,7 @@ export default function HomePage() {
           <span className="inline-block border-b-2 border-accent pb-1 text-xs font-bold uppercase tracking-wider text-accent">
             Our Recipes
           </span>
-          <h2 className="font-heading mt-2 text-4xl font-bold text-ink md:text-[36px]">
+          <h2 className="font-heading mt-2 text-2xl sm:text-3xl md:text-[36px] font-bold text-ink">
             Recipes Worth Saving
           </h2>
           <p className="mx-auto mt-2 max-w-lg text-base text-ink-secondary">

@@ -258,7 +258,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
                   {recipe.steps.map((step, i) => (
                     <li key={i} className="recipe-step">
                       <span className="recipe-step-number">{i + 1}</span>
-                      <p className="text-sm leading-relaxed text-ink">{step}</p>
+                      <p className="text-sm sm:text-base leading-relaxed text-ink">{step}</p>
                     </li>
                   ))}
                 </ol>
@@ -327,13 +327,13 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
 
             {/* Blog Post Guide Link CTA */}
             {relatedBlogPost && (
-              <div className="mt-8 rounded-2xl bg-highlight-soft/80 border border-forest/20 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
-                <div className="space-y-1 text-center sm:text-left">
+              <div className="mt-8 rounded-2xl bg-highlight-soft/80 border border-forest/20 p-5 sm:p-6 flex flex-col gap-4 shadow-sm">
+                <div className="space-y-1">
                   <span className="inline-block rounded-full bg-forest text-white px-3 py-0.5 text-[10px] font-bold uppercase tracking-wider">
                     In-Depth Recipe Guide
                   </span>
-                  <h3 className="font-heading text-lg font-bold text-ink">
-                    Want the cooking tips & secrets behind this recipe?
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-ink">
+                    Want the cooking tips &amp; secrets behind this recipe?
                   </h3>
                   <p className="text-xs text-ink-secondary">
                     Read: {relatedBlogPost.title}
@@ -341,7 +341,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
                 </div>
                 <Link
                   href={`/blog/${relatedBlogPost.slug}`}
-                  className="flex-shrink-0 inline-flex items-center gap-2 rounded-full bg-forest px-6 py-2.5 text-xs font-bold text-white shadow hover:bg-forest-hover transition-all duration-200"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-forest px-6 py-3 text-xs font-bold text-white shadow hover:bg-forest-hover transition-all duration-200 w-full sm:w-auto sm:self-start"
                 >
                   Read the Full Guide →
                 </Link>
@@ -349,8 +349,8 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
             )}
 
             {/* Internal CTA: Browse more recipes */}
-            <div className="mt-10 mb-8 rounded-2xl bg-gradient-to-r from-background to-surface border border-border p-6 text-center shadow-sm">
-              <h3 className="font-heading text-xl font-bold text-ink mb-2">
+            <div className="mt-10 mb-8 rounded-2xl bg-gradient-to-r from-background to-surface border border-border p-5 sm:p-6 text-center shadow-sm">
+              <h3 className="font-heading text-lg sm:text-xl font-bold text-ink mb-2">
                 Looking for more delicious ideas?
               </h3>
               <p className="text-sm text-ink-secondary mb-4 max-w-md mx-auto">
@@ -358,7 +358,7 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
               </p>
               <Link
                 href="/recipes"
-                className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-2.5 text-sm font-semibold text-white shadow hover:bg-accent-dark transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow hover:bg-accent-dark transition-all duration-200 w-full sm:w-auto"
               >
                 Browse more recipes →
               </Link>
@@ -381,18 +381,18 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
         </div>
 
         {/* ── Footer CTA Banner (Forest Green #2D6A4F) ── */}
-        <div className="mt-16 rounded-2xl bg-[#2D6A4F] text-white p-8 sm:p-10 text-center shadow-md">
-          <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3 text-white">
+        <div className="mt-16 rounded-2xl bg-[#2D6A4F] text-white p-6 sm:p-8 lg:p-10 text-center shadow-md">
+          <h2 className="font-heading text-xl sm:text-2xl lg:text-3xl font-bold mb-3 text-white">
             Love this recipe?
           </h2>
-          <p className="text-base text-emerald-100 mb-6 max-w-xl mx-auto">
+          <p className="text-sm sm:text-base text-emerald-100 mb-5 max-w-xl mx-auto">
             Get more easy 30-minute recipes, meal prep guides, and kitchen tips delivered straight to your inbox!
           </p>
           <a
             href="https://thebetterhomerecipes.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3 text-base font-bold text-[#2D6A4F] hover:bg-emerald-50 transition-all duration-200 shadow-md hover:shadow-lg"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 sm:px-8 py-3 text-sm sm:text-base font-bold text-[#2D6A4F] hover:bg-emerald-50 transition-all duration-200 shadow-md hover:shadow-lg w-full sm:w-auto"
           >
             Get the full recipe → thebetterhomerecipes.com
           </a>
