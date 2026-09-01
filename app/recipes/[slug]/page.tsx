@@ -91,6 +91,16 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
     "30g-protein-breakfast-7-day-results": "protein-breakfast-science-guide",
     "healthy-eating-50-dollars-a-week": "50-dollar-grocery-guide",
     "30-meals-5-pantry-staples": "pantry-meals-guide",
+    "copycat-outback-bloomin-onion-sauce": "copycat-outback-bloomin-onion-sauce-guide",
+    "7-easy-sheet-pan-dinners": "7-easy-sheet-pan-dinners-guide",
+    "copycat-starbucks-dragon-drink": "copycat-starbucks-dragon-drink-guide",
+    "creamy-white-bean-spinach-soup": "creamy-white-bean-spinach-soup-guide",
+    "high-protein-french-toast-meal-prep": "high-protein-french-toast-meal-prep-guide",
+    "copycat-raising-canes-coleslaw": "copycat-raising-canes-coleslaw-guide",
+    "9-lazy-high-protein-snack-combos": "9-lazy-high-protein-snack-combos-guide",
+    "copycat-baskin-robbins-oreo-shake": "copycat-baskin-robbins-oreo-shake-guide",
+    "pumpkin-spice-overnight-oats-5-ways": "pumpkin-spice-overnight-oats-5-ways-guide",
+    "homemade-bone-broth-canning-guide": "homemade-bone-broth-canning-guide-blog",
   };
 
   const blogPostSlug = blogSlugMap[recipe.slug] || `${recipe.slug}-guide`;

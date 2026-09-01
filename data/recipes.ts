@@ -4252,6 +4252,514 @@ export const recipes: Recipe[] = [
     "pinImage": "/images/pins/30-meals-5-pantry-staples.png",
     "metaTitle": "30 Meals from 5 Pantry Staples – Budget Cooking Guide",
     "metaDescription": "Eggs, rice, olive oil, garlic, and canned tomatoes can make 30 completely different meals. Shakshuka, garlic fried rice, tomato pasta, baked eggs, and more."
+  },
+  {
+    "slug": "copycat-outback-bloomin-onion-sauce",
+    "title": "Copycat Outback Steakhouse Bloomin' Onion Sauce",
+    "subtitle": "Creamy, tangy, and smoky dipping sauce ready in 5 minutes with pantry staples",
+    "category": "copycat",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "totalTime": "5 min",
+    "servings": 8,
+    "difficulty": "Easy",
+    "description": "Recreate Outback Steakhouse's famous Bloomin' Onion sauce in 5 minutes using mayonnaise, horseradish, ketchup, and spices. Perfect dip for onion rings, fries, and burgers.",
+    "ingredients": [
+      "½ cup mayonnaise",
+      "2 tbsp horseradish sauce (prepared)",
+      "2 tbsp ketchup",
+      "1 tsp paprika (smoked or sweet)",
+      "½ tsp cayenne pepper",
+      "½ tsp garlic powder",
+      "¼ tsp dried oregano",
+      "Pinch of salt and black pepper"
+    ],
+    "equipment": [
+      "Small mixing bowl",
+      "Whisk or fork",
+      "Airtight storage container"
+    ],
+    "steps": [
+      "Add mayonnaise, prepared horseradish, ketchup, paprika, cayenne pepper, garlic powder, oregano, salt, and pepper into a small bowl.",
+      "Whisk vigorously for 30–60 seconds until completely smooth and creamy.",
+      "Cover and chill in the refrigerator for at least 30 minutes to allow the spices and horseradish flavors to meld together.",
+      "Serve chilled alongside hot fried onion rings, French fries, chicken tenders, or spread on burgers!"
+    ],
+    "tips": [
+      "Adjust the cayenne pepper up or down to customize your preferred heat level.",
+      "For authentic Outback flavor, use prepared horseradish (not creamed horseradish)."
+    ],
+    "affiliateLinks": [],
+    "tags": ["copycat", "outback steakhouse", "bloomin onion sauce", "dipping sauce", "5 minute sauce", "condiments"],
+    "datePublished": "2026-09-01",
+    "image": "/images/copycat-outback-bloomin-onion-sauce.jpeg",
+    "pinImage": "/images/pins/copycat-outback-bloomin-onion-sauce.png",
+    "metaTitle": "Copycat Outback Bloomin' Onion Sauce – Ready in 5 Minutes",
+    "metaDescription": "Recreate Outback Steakhouse's famous Bloomin' Onion dipping sauce in 5 minutes with mayonnaise, horseradish, ketchup, and spices. Tangy, creamy, and smoky."
+  },
+  {
+    "slug": "7-easy-sheet-pan-dinners",
+    "title": "7 Easy Sheet Pan Dinners for Busy Weeknights",
+    "subtitle": "One pan, zero stress, minimal cleanup weeknight dinners ready in under 30 minutes",
+    "category": "one-pan",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "totalTime": "30 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Seven delicious one-pan sheet dinners — from honey garlic salmon to fajita chicken and lemon herb pork chops. Fast prep, roasted flavors, and effortless cleanup.",
+    "ingredients": [
+      "Proteins: salmon fillets, chicken breast, shrimp, smoked sausage, pork chops",
+      "Vegetables: broccoli, bell peppers, asparagus, zucchini, cherry tomatoes, sweet potatoes",
+      "Seasonings & Oils: extra virgin olive oil, garlic powder, Italian seasoning, soy sauce, honey"
+    ],
+    "equipment": [
+      "Large rimmed baking sheet",
+      "Parchment paper or aluminum foil",
+      "Chef's knife"
+    ],
+    "steps": [
+      "Preheat oven to 200°C (400°F) and line a rimmed baking sheet with parchment paper.",
+      "Arrange your choice of protein and sliced vegetables in a single even layer across the sheet.",
+      "Drizzle evenly with olive oil, season generously with herbs and spices, and toss gently to coat.",
+      "Bake for 18–22 minutes until protein is cooked through and vegetables are tender-crisp with caramelized edges."
+    ],
+    "listItems": [
+      {
+        "title": "1. Honey Garlic Salmon & Broccoli",
+        "description": "Salmon fillets and fresh broccoli roasted with a soy-honey garlic glaze."
+      },
+      {
+        "title": "2. Sheet Pan Chicken Fajitas",
+        "description": "Sliced chicken breast, colorful bell peppers, and red onion tossed in fajita seasoning."
+      },
+      {
+        "title": "3. Smoked Sausage, Peppers & Sweet Potatoes",
+        "description": "Savory kielbasa slices roasted with caramelized sweet potato cubes and crisp bell peppers."
+      },
+      {
+        "title": "4. Lemon Herb Garlic Butter Shrimp & Asparagus",
+        "description": "Succulent large shrimp and tender asparagus spears baked in lemon garlic butter."
+      },
+      {
+        "title": "5. Greek Chicken, Olives & Roasted Potatoes",
+        "description": "Diced chicken thighs, baby potatoes, cherry tomatoes, kalamata olives, and melted feta cheese."
+      },
+      {
+        "title": "6. Garlic Parmesan Pork Chops & Green Beans",
+        "description": "Boneless pork chops baked alongside fresh green beans topped with crispy grated parmesan."
+      },
+      {
+        "title": "7. Tuscan Sausage & Gnocchi Sheet Pan",
+        "description": "Shelf-stable potato gnocchi, Italian sausage, cherry tomatoes, and fresh spinach roasted to golden perfection."
+      }
+    ],
+    "tips": [
+      "Line your baking sheet with parchment paper for true 60-second cleanup.",
+      "Cut all vegetables to uniform sizes so everything roasts evenly in the same timeframe."
+    ],
+    "affiliateLinks": [],
+    "tags": ["sheet pan dinners", "one pan meals", "busy weeknight dinners", "easy weeknight meals", "healthy dinner ideas"],
+    "datePublished": "2026-09-01",
+    "image": "/images/7-easy-sheet-pan-dinners.jpeg",
+    "pinImage": "/images/pins/7-easy-sheet-pan-dinners.png",
+    "metaTitle": "7 Easy Sheet Pan Dinners for Busy Weeknights – Quick 30-Minute Meals",
+    "metaDescription": "Seven easy one-pan sheet dinners for quick weeknight cooking — salmon, fajita chicken, sausage, shrimp, pork chops, and gnocchi. Minimal cleanup."
+  },
+  {
+    "slug": "copycat-starbucks-dragon-drink",
+    "title": "Copycat Starbucks Dragon Drink",
+    "subtitle": "Vibrant mango dragonfruit refresher with creamy coconut milk in 2 minutes",
+    "category": "drinks",
+    "prepTime": "2 min",
+    "cookTime": "0 min",
+    "totalTime": "2 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Recreate Starbucks' famous Dragon Drink for under $1.50 using mango juice, white grape juice, coconut milk, and freeze-dried dragonfruit pieces over ice.",
+    "ingredients": [
+      "½ cup mango nectar or mango juice",
+      "¼ cup white grape juice",
+      "½ cup coconut milk (carton or canned)",
+      "1 tbsp freeze-dried dragonfruit (pitaya) pieces",
+      "1 cup ice"
+    ],
+    "equipment": [
+      "Cocktail shaker or tall glass",
+      "Spoon"
+    ],
+    "steps": [
+      "Fill a tall glass or cocktail shaker with 1 cup of ice.",
+      "Pour in mango nectar, white grape juice, and coconut milk.",
+      "Add freeze-dried dragonfruit pieces.",
+      "Shake vigorously for 15 seconds (or stir thoroughly) until the drink turns a vivid bright magenta pink.",
+      "Pour into a cold glass and enjoy immediately!"
+    ],
+    "tips": [
+      "Freeze-dried dragonfruit provides the signature neon pink hue — stir well as the fruit rehydrates.",
+      "Use coconut milk from a carton for a lighter drink, or canned coconut milk for extra creamy indulgence."
+    ],
+    "affiliateLinks": [],
+    "tags": ["copycat", "starbucks", "dragon drink", "drinks", "refresher", "coconut milk", "mango dragonfruit"],
+    "datePublished": "2026-09-01",
+    "image": "/images/copycat-starbucks-dragon-drink.jpeg",
+    "pinImage": "/images/pins/copycat-starbucks-dragon-drink.png",
+    "metaTitle": "Copycat Starbucks Dragon Drink – 3 Ingredients, Ready in 2 Minutes",
+    "metaDescription": "Make Starbucks' vibrant Dragon Drink at home in 2 minutes for $1.50 — mango juice, coconut milk, and freeze-dried dragonfruit over ice."
+  },
+  {
+    "slug": "creamy-white-bean-spinach-soup",
+    "title": "Creamy White Bean & Spinach Soup",
+    "subtitle": "Hearty, high-fiber, 20-minute one-pot Tuscan vegetarian soup",
+    "category": "mains",
+    "prepTime": "5 min",
+    "cookTime": "15 min",
+    "totalTime": "20 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Tender cannellini beans, fresh spinach, garlic, and herbs in a rich parmesan broth blended for effortless creaminess without heavy cream. Ready in 20 minutes.",
+    "ingredients": [
+      "2 cans (15 oz each) cannellini beans or Great Northern beans (drained & rinsed)",
+      "4 cups vegetable broth (or low-sodium chicken broth)",
+      "3 cloves garlic (minced)",
+      "1 small yellow onion (diced)",
+      "2 cups fresh baby spinach",
+      "2 tbsp extra virgin olive oil",
+      "½ cup freshly grated parmesan cheese",
+      "1 tsp Italian seasoning",
+      "Salt and black pepper to taste"
+    ],
+    "equipment": [
+      "Large Dutch oven or soup pot",
+      "Immersion blender (or regular blender)",
+      "Wooden spoon"
+    ],
+    "steps": [
+      "Heat olive oil in a Dutch oven over medium heat. Add diced onion and minced garlic, sautéing for 3–4 minutes until translucent and fragrant.",
+      "Add Italian seasoning, cannellini beans, and vegetable broth. Bring to a gentle boil.",
+      "Reduce heat and simmer for 10 minutes. Use an immersion blender to partially blend 1/3 of the soup directly in the pot for a naturally thick, velvety texture.",
+      "Stir in fresh baby spinach and grated parmesan cheese until spinach wilts and cheese melts smoothly into the broth (2 minutes).",
+      "Ladle into warm bowls, drizzle with olive oil, top with cracked pepper and extra parmesan. Serve with crusty bread!"
+    ],
+    "tips": [
+      "Blending just a portion of the beans creates a rich creamy base without adding flour or heavy cream.",
+      "Add a pinch of red pepper flakes for subtle Tuscan warmth."
+    ],
+    "affiliateLinks": [],
+    "tags": ["white bean soup", "spinach soup", "vegetarian soup", "one pot soup", "high fiber", "tuscan soup", "20 minute dinner"],
+    "datePublished": "2026-09-01",
+    "image": "/images/creamy-white-bean-spinach-soup.jpeg",
+    "pinImage": "/images/pins/creamy-white-bean-spinach-soup.png",
+    "metaTitle": "Creamy White Bean & Spinach Soup – 20-Minute One-Pot Recipe",
+    "metaDescription": "High-fiber creamy cannellini white bean and fresh spinach soup in a rich garlic parmesan broth. Ready in 20 minutes with no heavy cream."
+  },
+  {
+    "slug": "high-protein-french-toast-meal-prep",
+    "title": "High-Protein French Toast Meal Prep",
+    "subtitle": "Cottage cheese & egg batter delivering 35g protein per serving all week",
+    "category": "breakfast",
+    "prepTime": "10 min",
+    "cookTime": "10 min",
+    "totalTime": "20 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Make high-protein French toast for the entire week — thick sourdough dipped in a blended cottage cheese, egg, cinnamon batter. 35g protein, reheats in 60s.",
+    "ingredients": [
+      "8 slices thick sourdough or brioche bread",
+      "1 cup 2% cottage cheese",
+      "4 large eggs + 4 egg whites",
+      "½ cup unsweetened almond milk",
+      "1 tbsp maple syrup or honey",
+      "1 tsp ground cinnamon",
+      "1 tsp vanilla extract",
+      "Butter or cooking spray for pan"
+    ],
+    "equipment": [
+      "Blender",
+      "Large non-stick skillet or griddle",
+      "Shallow dipping dish",
+      "Meal prep storage containers"
+    ],
+    "steps": [
+      "In a blender, combine cottage cheese, eggs, egg whites, almond milk, maple syrup, cinnamon, and vanilla. Blend for 30 seconds until silky smooth.",
+      "Pour batter into a shallow dish. Dip each slice of sourdough bread for 10–15 seconds per side so it absorbs the custard batter.",
+      "Melt butter on a skillet over medium heat. Cook French toast slices for 2–3 minutes per side until golden brown and cooked through.",
+      "Cool completely on a wire rack before stacking in meal prep containers.",
+      "Reheat in a toaster, toaster oven, or air fryer at 180°C (350°F) for 2 minutes for crispy edges!"
+    ],
+    "tips": [
+      "Blending cottage cheese into the egg batter completely eliminates curd texture while boosting protein dramatically.",
+      "Reheat in a toaster rather than a microwave to keep the exterior crisp."
+    ],
+    "affiliateLinks": [],
+    "tags": ["high protein french toast", "cottage cheese french toast", "breakfast meal prep", "35g protein", "fit breakfast", "healthy french toast"],
+    "datePublished": "2026-09-01",
+    "image": "/images/high-protein-french-toast-meal-prep.jpeg",
+    "pinImage": "/images/pins/high-protein-french-toast-meal-prep.png",
+    "metaTitle": "High-Protein French Toast Meal Prep – 35g Protein, Reheats in 60s",
+    "metaDescription": "Make high-protein French toast for the week with a blended cottage cheese egg batter. 35g protein per serving, crisp and delicious."
+  },
+  {
+    "slug": "copycat-raising-canes-coleslaw",
+    "title": "Copycat Raising Cane's Coleslaw",
+    "subtitle": "Creamy, tangy mayonnaise-vinegar cabbage slaw in under 10 minutes",
+    "category": "copycat",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "totalTime": "10 min",
+    "servings": 6,
+    "difficulty": "Easy",
+    "description": "The exact copycat recipe for Raising Cane's famous coleslaw — shredded cabbage and carrots tossed in a smooth mayo, apple cider vinegar, and celery salt dressing.",
+    "ingredients": [
+      "1 bag (14 oz) shredded coleslaw mix (green cabbage, red cabbage, carrots)",
+      "½ cup mayonnaise",
+      "2 tbsp white sugar",
+      "1½ tbsp apple cider vinegar",
+      "1 tbsp whole milk or buttermilk",
+      "½ tsp celery salt",
+      "¼ tsp black pepper",
+      "Pinch of salt"
+    ],
+    "equipment": [
+      "Large mixing bowl",
+      "Whisk"
+    ],
+    "steps": [
+      "In a large bowl, whisk mayonnaise, sugar, apple cider vinegar, milk, celery salt, black pepper, and salt until sugar is fully dissolved and dressing is smooth.",
+      "Add the bag of shredded coleslaw mix into the bowl.",
+      "Toss thoroughly with tongs or large spoons until every strand of cabbage is evenly coated with dressing.",
+      "Cover and chill in the fridge for at least 2 hours before serving for optimal crunch and flavor infusion!"
+    ],
+    "tips": [
+      "Celery salt is the secret ingredient that gives Raising Cane's coleslaw its distinct fast-food flavor.",
+      "Letting the slaw chill in the fridge for a few hours softens the cabbage slightly while letting the dressing thicken."
+    ],
+    "affiliateLinks": [],
+    "tags": ["copycat", "raising canes", "coleslaw recipe", "cabbage slaw", "side dish", "bbq side", "10 minute recipe"],
+    "datePublished": "2026-09-01",
+    "image": "/images/copycat-raising-canes-coleslaw.jpeg",
+    "pinImage": "/images/pins/copycat-raising-canes-coleslaw.png",
+    "metaTitle": "Copycat Raising Cane's Coleslaw Recipe – Ready in 10 Minutes",
+    "metaDescription": "Make Raising Cane's famous creamy coleslaw at home in 10 minutes with mayonnaise, apple cider vinegar, sugar, and celery salt."
+  },
+  {
+    "slug": "9-lazy-high-protein-snack-combos",
+    "title": "9 Lazy High-Protein Snack Combos (No-Cook)",
+    "subtitle": "Fast, no-cook snack pairings packing 15g–25g protein with zero prep time",
+    "category": "snacks",
+    "prepTime": "5 min",
+    "cookTime": "0 min",
+    "totalTime": "5 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Nine effortless no-cook high-protein snack combinations deliver 15g to 25g of protein in under 2 minutes. Perfect for busy afternoons and healthy fitness goals.",
+    "ingredients": [
+      "Cottage cheese, Greek yogurt, eggs, turkey deli meat, tuna, edamame, protein powder, nuts, seeds"
+    ],
+    "equipment": [
+      "Small bowls or containers",
+      "Spoon"
+    ],
+    "steps": [
+      "Select your preferred snack pairing from the list below.",
+      "Combine ingredients in a small bowl or container.",
+      "Enjoy immediately as a quick 15g–25g protein snack!"
+    ],
+    "listItems": [
+      {
+        "title": "1. Cottage Cheese & Pineapple Bowl",
+        "description": "¾ cup cottage cheese topped with ½ cup diced pineapple (20g protein)."
+      },
+      {
+        "title": "2. Greek Yogurt & Peanut Butter Swirl",
+        "description": "¾ cup 0% Greek yogurt swirled with 1 tbsp creamy peanut butter and honey (21g protein)."
+      },
+      {
+        "title": "3. Turkey & Cheddar Roll-Ups",
+        "description": "4 slices roast turkey breast wrapped around cheddar cheese sticks (22g protein)."
+      },
+      {
+        "title": "4. Steamed Edamame with Sea Salt",
+        "description": "1½ cups shelled edamame sprinkled with coarse sea salt (18g protein)."
+      },
+      {
+        "title": "5. Tuna & Avocado Crackers",
+        "description": "1 can albacore tuna mixed with ¼ mashed avocado served on whole grain crackers (26g protein)."
+      },
+      {
+        "title": "6. Hard-Boiled Eggs & Everything Bagel Seasoning",
+        "description": "2 hard-boiled eggs dusted with everything bagel spice blend (13g protein)."
+      },
+      {
+        "title": "7. Crunchy Roasted Chickpeas & Almonds",
+        "description": "½ cup sea salt roasted chickpeas paired with 15 raw almonds (15g protein)."
+      },
+      {
+        "title": "8. Beef Jerky & String Cheese Duo",
+        "description": "1 oz peppered beef jerky paired with 1 mozzarella string cheese stick (18g protein)."
+      },
+      {
+        "title": "9. 1-Minute Protein Chocolate Mug Cake",
+        "description": "1 scoop chocolate whey protein, 1 egg, and 2 tbsp milk whisked in a mug and microwaved for 45s (28g protein)."
+      }
+    ],
+    "tips": [
+      "Keep hard-boiled eggs, canned tuna, and cottage cheese stocked for emergency 2-minute high-protein snacks.",
+      "Pairing protein with healthy fats or fiber keeps blood sugar steady and suppresses hunger longer."
+    ],
+    "affiliateLinks": [],
+    "tags": ["high protein snacks", "lazy snacks", "no cook snacks", "quick protein", "healthy snacking", "fit snacks"],
+    "datePublished": "2026-09-01",
+    "image": "/images/9-lazy-high-protein-snack-combos.jpeg",
+    "pinImage": "/images/pins/9-lazy-high-protein-snack-combos.png",
+    "metaTitle": "9 Lazy High-Protein Snack Combos – No-Cook 15g-25g Protein Ideas",
+    "metaDescription": "Nine quick no-cook high-protein snack pairings providing 15g-25g of protein in 2 minutes. Cottage cheese, Greek yogurt, turkey roll-ups, and more."
+  },
+  {
+    "slug": "copycat-baskin-robbins-oreo-shake",
+    "title": "Copycat Baskin-Robbins Oreo Ice Cream Shake",
+    "subtitle": "Ultra-thick, creamy Oreo ice cream milkshake ready in 3 minutes",
+    "category": "desserts",
+    "prepTime": "3 min",
+    "cookTime": "0 min",
+    "totalTime": "3 min",
+    "servings": 2,
+    "difficulty": "Easy",
+    "description": "Recreate Baskin-Robbins' thick, creamy Oreo ice cream shake at home using vanilla ice cream, Oreo cookies, milk, and whipped cream. Blender-only perfection in 3 minutes.",
+    "ingredients": [
+      "3 cups premium vanilla ice cream (softened slightly)",
+      "8 Oreo cookies (plus 2 crushed for topping)",
+      "½ cup whole milk",
+      "Whipped cream for topping",
+      "Chocolate syrup for glass drizzle"
+    ],
+    "equipment": [
+      "High-speed blender",
+      "Tall glasses"
+    ],
+    "steps": [
+      "Drizzle chocolate syrup inside the rim of 2 tall glasses.",
+      "In a blender, add vanilla ice cream, whole milk, and 8 Oreo cookies.",
+      "Blend on medium speed for 20–30 seconds until thick and creamy with fine chocolate cookie bits throughout.",
+      "Pour immediately into prepared glasses.",
+      "Top generously with whipped cream and remaining crushed Oreo cookies. Serve with a thick straw!"
+    ],
+    "tips": [
+      "Use minimal milk to keep the milkshake thick and scoopable like Baskin-Robbins.",
+      "Don't over-blend — pulse until cookie pieces are crushed into small specks without turning the shake gray."
+    ],
+    "affiliateLinks": [],
+    "tags": ["copycat", "baskin robbins", "oreo shake", "milkshake", "desserts", "oreo dessert", "blender recipe"],
+    "datePublished": "2026-09-01",
+    "image": "/images/copycat-baskin-robbins-oreo-shake.jpeg",
+    "pinImage": "/images/pins/copycat-baskin-robbins-oreo-shake.png",
+    "metaTitle": "Copycat Baskin-Robbins Oreo Shake – 3 Ingredients, Ultra-Thick",
+    "metaDescription": "Recreate Baskin-Robbins' famous thick Oreo milkshake at home in 3 minutes. Vanilla ice cream, milk, and Oreo cookies blended to perfection."
+  },
+  {
+    "slug": "pumpkin-spice-overnight-oats-5-ways",
+    "title": "Pumpkin Spice Overnight Oats 5 Ways",
+    "subtitle": "Five cozy fall meal prep variations packed with warm spices and high fiber",
+    "category": "breakfast",
+    "prepTime": "10 min",
+    "cookTime": "0 min",
+    "totalTime": "10 min",
+    "servings": 5,
+    "difficulty": "Easy",
+    "description": "Five cozy autumn pumpkin spice overnight oat variations — Classic Pumpkin Pie, Pecan Crunch, Chai Spice, Chocolate Chip, and Vanilla Protein. 5 minutes prep.",
+    "ingredients": [
+      "Base Oats: rolled oats, canned pumpkin purée, milk of choice, chia seeds, maple syrup, pumpkin pie spice, vanilla"
+    ],
+    "equipment": [
+      "5 small mason jars",
+      "Spoon"
+    ],
+    "steps": [
+      "Combine base oats, pumpkin purée, milk, chia seeds, maple syrup, and pumpkin pie spice in mason jars.",
+      "Mix in flavor variation ingredients (pecans, chocolate chips, protein powder, or chai spices).",
+      "Seal jars tightly and refrigerate for at least 4 hours (overnight is best).",
+      "Grab and enjoy cold or warm up for 60 seconds in the microwave!"
+    ],
+    "listItems": [
+      {
+        "title": "1. Classic Pumpkin Pie Oats",
+        "description": "Rolled oats, 3 tbsp canned pumpkin purée, maple syrup, chia seeds, and warm pumpkin pie spice."
+      },
+      {
+        "title": "2. Pumpkin Pecan Crunch Oats",
+        "description": "Classic pumpkin oat base topped with chopped pecans and brown sugar."
+      },
+      {
+        "title": "3. Maple Pumpkin Chai Oats",
+        "description": "Classic base infused with chai spice blend and pure maple syrup drizzle."
+      },
+      {
+        "title": "4. Dark Chocolate Chip Pumpkin Oats",
+        "description": "Classic base folded with dark chocolate chips for an autumnal sweet treat."
+      },
+      {
+        "title": "5. Vanilla Protein Pumpkin Oats",
+        "description": "Classic base blended with 1 scoop vanilla whey protein powder for 25g protein."
+      }
+    ],
+    "tips": [
+      "Use 100% pure canned pumpkin purée, NOT pumpkin pie mix which contains pre-added sugars and additives.",
+      "Chia seeds absorb liquid overnight, creating a velvety pie-filling consistency."
+    ],
+    "affiliateLinks": [],
+    "tags": ["pumpkin spice", "overnight oats", "fall breakfast", "meal prep breakfast", "high fiber", "autumn recipes"],
+    "datePublished": "2026-09-01",
+    "image": "/images/pumpkin-spice-overnight-oats-5-ways.jpeg",
+    "pinImage": "/images/pins/pumpkin-spice-overnight-oats-5-ways.png",
+    "metaTitle": "Pumpkin Spice Overnight Oats 5 Ways – Cozy Fall Meal Prep",
+    "metaDescription": "Five cozy pumpkin spice overnight oat variations prepped in 5 minutes — Classic Pumpkin Pie, Pecan Crunch, Maple Chai, Chocolate Chip, and Protein."
+  },
+  {
+    "slug": "homemade-bone-broth-canning-guide",
+    "title": "Homemade Bone Broth Canning Guide",
+    "subtitle": "Pressure canning walkthrough for rich collagen broth shelf-stable up to 1 year",
+    "category": "mains",
+    "prepTime": "20 min",
+    "cookTime": "12 hours",
+    "totalTime": "12 hours 20 min",
+    "servings": 12,
+    "difficulty": "Medium",
+    "description": "Learn how to simmer nutrient-dense collagen bone broth and safely pressure can it at home for shelf-stable storage up to 1 year without refrigeration.",
+    "ingredients": [
+      "4 lbs beef marrow bones or chicken carcasses (roasted)",
+      "12 cups water",
+      "2 tbsp apple cider vinegar",
+      "2 yellow onions (halved)",
+      "4 carrots (chopped)",
+      "4 celery stalks (chopped)",
+      "6 garlic cloves",
+      "2 bay leaves & 1 tbsp black peppercorns"
+    ],
+    "equipment": [
+      "Large stockpot or Slow Cooker",
+      "Pressure Canner (with gauge or weights)",
+      "Pint or quart Mason jars with new lids & bands",
+      "Jar lifter & fine mesh strainer"
+    ],
+    "steps": [
+      "Roast bones at 200°C (400°F) for 30 minutes until browned. Transfer to stockpot.",
+      "Add water, apple cider vinegar, onions, carrots, celery, garlic, bay leaves, and peppercorns. Simmer gently for 12–24 hours (or slow cook).",
+      "Strain broth through a fine mesh sieve into a clean bowl. Skim excess fat off the top.",
+      "Ladle hot bone broth into sterilized mason jars, leaving 1-inch headspace. Wipe jar rims clean and fasten lids fingertip tight.",
+      "Process in a pressure canner at 10 lbs pressure (or adjusted for altitude) for 20 minutes for pints or 25 minutes for quarts.",
+      "Allow canner to depressurize naturally, remove jars, and let cool for 24 hours. Check seals and store on shelf for up to 1 year!"
+    ],
+    "tips": [
+      "Apple cider vinegar is essential to extract minerals and collagen from bone marrow.",
+      "Never water-bath can bone broth — low-acid foods like broth REQUIRE a pressure canner for botulism safety."
+    ],
+    "affiliateLinks": [],
+    "tags": ["bone broth", "pressure canning", "canning guide", "shelf stable broth", "collagen broth", "meal prep", "homesteading"],
+    "datePublished": "2026-09-01",
+    "image": "/images/homemade-bone-broth-canning-guide.jpeg",
+    "pinImage": "/images/pins/homemade-bone-broth-canning-guide.png",
+    "metaTitle": "Homemade Bone Broth Canning Guide – Shelf Stable for 1 Year",
+    "metaDescription": "Complete guide to making rich collagen bone broth and safely pressure canning it for shelf-stable pantry storage up to 1 year."
   }
 ];
 
