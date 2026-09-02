@@ -7,6 +7,522 @@ import type { Recipe, Category } from "./types";
  */
 export const recipes: Recipe[] = [
   {
+    "slug": "copycat-applebees-bourbon-street-chicken",
+    "title": "Copycat Applebee's Bourbon Street Chicken",
+    "subtitle": "Juicy Cajun-marinated chicken breast served over buttery sautéed onions & mushrooms",
+    "category": "copycat",
+    "prepTime": "15 min",
+    "cookTime": "15 min",
+    "totalTime": "30 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "This copycat Applebee's Bourbon Street Chicken features Cajun-marinated chicken breasts seared until juicy, served over sizzled onions, mushrooms, and rich garlic butter.",
+    "ingredients": [
+      "4 boneless skinless chicken breasts (flattened to even thickness)",
+      "2 tbsp Cajun seasoning blend",
+      "2 tbsp olive oil",
+      "3 tbsp unsalted butter",
+      "1 large yellow onion (sliced)",
+      "8 oz white or cremini mushrooms (sliced)",
+      "4 cloves garlic (minced)",
+      "1 tbsp Worcestershire sauce",
+      "2 tbsp fresh parsley (chopped)",
+      "Salt and black pepper to taste"
+    ],
+    "equipment": [
+      "Cast iron skillet",
+      "Chef's knife",
+      "Cutting board"
+    ],
+    "steps": [
+      "Season chicken breasts generously on both sides with Cajun seasoning, salt, and pepper.",
+      "Heat olive oil in a large cast-iron skillet over medium-high heat. Sear chicken cutlets for 5-6 minutes per side until golden brown and cooked through (165°F). Remove chicken and cover loosely with foil to rest.",
+      "Reduce heat to medium and melt butter in the same skillet. Add sliced onions and mushrooms. Sauté for 6-8 minutes until tender and caramelized around the edges.",
+      "Stir in minced garlic and Worcestershire sauce, cooking for 1 minute until fragrant.",
+      "Slice seared Cajun chicken and serve directly over the sizzling skillet onions and mushrooms. Garnish with fresh chopped parsley."
+    ],
+    "tips": [
+      "Serving on a hot cast iron skillet keeps the butter sizzling just like the Applebee's restaurant presentation.",
+      "Pound chicken breasts to an even ½-inch thickness so they cook quickly without drying out."
+    ],
+    "affiliateLinks": [
+      { "label": "Cast iron skillet", "url": "https://www.amazon.com/Lodge-Seasoned-Cast-Iron-Skillet/dp/B00006JSUB?linkCode=ll2&tag=theorgani0014-20" },
+      { "label": "Chef's knife", "url": "https://www.amazon.com/imarku-Japanese-Chef-Knife-Christmas/dp/B01DDBJF12?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["copycat", "applebees", "bourbon street chicken", "cajun", "chicken", "skillet", "dinner"],
+    "datePublished": "2026-09-02",
+    "image": "/images/copycat-applebees-bourbon-street-chicken.jpeg",
+    "pinImage": "/images/pins/copycat-applebees-bourbon-street-chicken.png",
+    "metaTitle": "Copycat Applebee's Bourbon Street Chicken – Sizzling Cajun Skillet",
+    "metaDescription": "This copycat Applebee's Bourbon Street Chicken features Cajun-marinated chicken breasts seared until juicy, served over sizzled onions, mushrooms, and rich garlic butter."
+  },
+  {
+    "slug": "9-lazy-high-protein-dinners-under-400-calories",
+    "title": "9 Lazy High-Protein Dinners Under 400 Calories",
+    "subtitle": "30g+ protein each — fast 15-minute low-calorie weeknight wins",
+    "category": "meal-prep",
+    "prepTime": "15 min",
+    "totalTime": "15 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Nine lazy, low-calorie, high-protein dinners with 30g+ protein under 400 calories — quick 15-minute meals perfect for weight loss and muscle building.",
+    "ingredients": [],
+    "equipment": [
+      "Skillet",
+      "Glass meal prep containers",
+      "Air fryer"
+    ],
+    "steps": [],
+    "listItems": [
+      {
+        "title": "1. Ground Turkey & Black Bean Taco Bowl (380 kcal | 38g Protein)",
+        "description": "Seasoned 93% lean ground turkey cooked with taco seasoning, served over cauliflower rice with black beans, salsa, and 1 tbsp light sour cream.",
+        "ingredients": ["4 oz lean ground turkey", "½ cup black beans", "1 cup cauliflower rice", "2 tbsp salsa", "1 tbsp light sour cream"]
+      },
+      {
+        "title": "2. Greek Chicken Tzatziki Bowl (360 kcal | 42g Protein)",
+        "description": "Juicy grilled chicken breast over chopped cucumbers, cherry tomatoes, kalamata olives, and 2 tbsp store-bought tzatziki dip.",
+        "ingredients": ["5 oz grilled chicken breast", "1 cup chopped cucumbers", "½ cup cherry tomatoes", "2 tbsp tzatziki dip"]
+      },
+      {
+        "title": "3. Air Fryer Buffalo Chicken Wrap (350 kcal | 36g Protein)",
+        "description": "Diced cooked chicken breast tossed in Frank's RedHot buffalo sauce, wrapped in a low-carb tortilla with shredded romaine and Greek yogurt ranch.",
+        "ingredients": ["4 oz chicken breast", "1 low-carb tortilla", "2 tbsp Frank's RedHot", "1 tbsp Greek yogurt ranch", "Romaine lettuce"]
+      },
+      {
+        "title": "4. Egg White & Veggie Fried Rice (310 kcal | 32g Protein)",
+        "description": "1 cup liquid egg whites scrambled with 1 cup cauliflower rice, peas, carrots, low-sodium soy sauce, and sesame oil drizzle.",
+        "ingredients": ["1 cup liquid egg whites", "1 cup cauliflower rice", "½ cup frozen peas & carrots", "1 tbsp low-sodium soy sauce"]
+      },
+      {
+        "title": "5. High-Protein Tuna Melt Toast (340 kcal | 35g Protein)",
+        "description": "Canned albacore tuna mixed with Greek yogurt and Dijon mustard, spread over 1 slice toasted sourdough and topped with 1 slice melted light Swiss cheese.",
+        "ingredients": ["1 can albacore tuna", "2 tbsp Greek yogurt", "1 tsp Dijon mustard", "1 slice sourdough", "1 slice light Swiss cheese"]
+      },
+      {
+        "title": "6. Garlic Shrimp & Zucchini Noodle Stir-Fry (290 kcal | 34g Protein)",
+        "description": "Jumbo shrimp seared in garlic butter and tossed with spiraled zucchini noodles, red bell pepper strips, and soy sauce.",
+        "ingredients": ["6 oz jumbo shrimp", "2 cups spiralized zucchini noodles", "1 tsp garlic butter", "1 tbsp soy sauce"]
+      },
+      {
+        "title": "7. Blended Cottage Cheese Tomato Pasta (370 kcal | 32g Protein)",
+        "description": "High-protein chickpea pasta tossed in a creamy sauce made from blended cottage cheese, marinara, and fresh garlic.",
+        "ingredients": ["2 oz chickpea pasta", "⅓ cup cottage cheese (blended)", "⅓ cup marinara sauce", "Fresh basil"]
+      },
+      {
+        "title": "8. Teriyaki Tofu & Edamame Power Bowl (390 kcal | 30g Protein)",
+        "description": "Crispy air-fried extra firm tofu cubes tossed with shelled edamame, steamed broccoli, and 1 tbsp light teriyaki glaze.",
+        "ingredients": ["5 oz extra firm tofu", "½ cup shelled edamame", "1 cup broccoli florets", "1 tbsp light teriyaki glaze"]
+      },
+      {
+        "title": "9. Sheet Pan Lemon Herb Tilapia & Asparagus (320 kcal | 38g Protein)",
+        "description": "Flaky tilapia fillets roasted on a sheet pan with fresh lemon slices, garlic, and crisp asparagus spears.",
+        "ingredients": ["2 tilapia fillets (6 oz total)", "1 bunch asparagus", "1 tbsp lemon juice", "1 tsp olive oil", "Garlic powder"]
+      }
+    ],
+    "tips": [
+      "Keep pre-cooked lean chicken breast and liquid egg whites in your fridge for sub-10-minute dinner assembly.",
+      "Replacing half your rice or pasta with cauliflower rice or zucchini noodles cuts 150+ calories without shrinking your portion."
+    ],
+    "affiliateLinks": [
+      { "label": "Glass meal prep containers", "url": "https://www.amazon.com/KOMUEE-Containers-Airtight-Microwave-Dishwasher/dp/B08X4615SC?linkCode=ll2&tag=theorgani0014-20" },
+      { "label": "Air fryer", "url": "https://www.amazon.com/TurboBlaze-Premium-Ceramic-Coating-90%C2%B0-450%C2%B0F/dp/B0C33CHG99?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["high-protein", "low-calorie", "under 400 calories", "lazy dinners", "meal prep", "weight loss"],
+    "datePublished": "2026-09-02",
+    "image": "/images/9-lazy-high-protein-dinners-under-400-calories.jpeg",
+    "pinImage": "/images/pins/9-lazy-high-protein-dinners-under-400-calories.png",
+    "metaTitle": "9 Lazy High-Protein Dinners Under 400 Calories – Fast 15-Minute Meals",
+    "metaDescription": "Nine lazy, low-calorie, high-protein dinners with 30g+ protein under 400 calories — quick 15-minute meals perfect for weight loss."
+  },
+  {
+    "slug": "creamy-marry-me-orzo-25-minutes",
+    "title": "Creamy Marry Me Orzo (One Pan, 25 Minutes)",
+    "subtitle": "Sun-dried tomato, garlic, and parmesan cream sauce with tender orzo pasta",
+    "category": "one-pan",
+    "prepTime": "5 min",
+    "cookTime": "20 min",
+    "totalTime": "25 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "This one-pan Creamy Marry Me Orzo is rich, velvety, and packed with sun-dried tomatoes, garlic, spinach, and parmesan — cooked in 25 minutes.",
+    "ingredients": [
+      "1½ cups orzo pasta (uncooked)",
+      "⅓ cup sun-dried tomatoes (chopped, in oil)",
+      "3 tbsp sun-dried tomato oil (from jar)",
+      "4 cloves garlic (minced)",
+      "2½ cups chicken or vegetable broth",
+      "¾ cup heavy cream or coconut cream",
+      "½ cup freshly grated parmesan cheese",
+      "2 cups fresh baby spinach",
+      "1 tsp red pepper flakes",
+      "Fresh basil leaves for garnish"
+    ],
+    "equipment": [
+      "Wide skillet or Dutch oven",
+      "Wooden spoon",
+      "Box grater"
+    ],
+    "steps": [
+      "Heat sun-dried tomato oil in a wide skillet or Dutch oven over medium heat. Add minced garlic and red pepper flakes, sautéing for 1 minute until fragrant.",
+      "Stir in uncooked orzo and chopped sun-dried tomatoes, toasting the orzo for 2 minutes.",
+      "Pour in chicken broth and bring to a gentle boil. Reduce heat to medium-low, cover, and simmer for 10-12 minutes until orzo is tender and broth is absorbed, stirring occasionally.",
+      "Stir in heavy cream, grated parmesan, and fresh baby spinach until spinach wilts and sauce becomes rich and creamy.",
+      "Garnish with fresh basil and extra parmesan before serving warm."
+    ],
+    "tips": [
+      "Toast the uncooked orzo in the sun-dried tomato oil for 2 minutes before adding liquid to lock in nutty depth.",
+      "Add grilled chicken or shrimp on top for an easy 30g+ protein upgrade!"
+    ],
+    "affiliateLinks": [
+      { "label": "Dutch oven", "url": "https://www.amazon.com/Enameled-Cast-Iron-Dutch-Oven/dp/B0DXJTNWJN?linkCode=ll2&tag=theorgani0014-20" },
+      { "label": "Wooden spoon", "url": "https://www.amazon.com/Nonstick-Cookware-Resistant-Utensils-Stirring/dp/B0FRFPQ3N5?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["marry me orzo", "one-pan", "orzo", "sun-dried tomato", "creamy pasta", "25-minute dinner"],
+    "datePublished": "2026-09-02",
+    "image": "/images/creamy-marry-me-orzo-25-minutes.jpeg",
+    "pinImage": "/images/pins/creamy-marry-me-orzo-25-minutes.png",
+    "metaTitle": "Creamy Marry Me Orzo – 25-Minute One-Pan Pasta Dinner",
+    "metaDescription": "This one-pan Creamy Marry Me Orzo is rich, velvety, and packed with sun-dried tomatoes, garlic, spinach, and parmesan — cooked in 25 minutes."
+  },
+  {
+    "slug": "copycat-dutch-bros-golden-eagle-blended",
+    "title": "Copycat Dutch Bros Golden Eagle Blended",
+    "subtitle": "Creamy vanilla & caramel blended espresso drink topped with caramel drizzle",
+    "category": "drinks",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Make the famous Dutch Bros Golden Eagle Blended at home in 5 minutes — creamy espresso, vanilla syrup, caramel sauce, and half-and-half blended over ice.",
+    "ingredients": [
+      "2 shots strong espresso (or ½ cup cold brew concentrate)",
+      "½ cup half-and-half (Dutch Bros Kick Me Mix style)",
+      "1 tbsp vanilla syrup",
+      "2 tbsp caramel sauce (plus extra for drizzling)",
+      "1½ cups ice cubes",
+      "Whipped cream (for topping)"
+    ],
+    "equipment": [
+      "High-speed blender",
+      "Espresso machine or moka pot",
+      "Tall glass"
+    ],
+    "steps": [
+      "Brew 2 shots of espresso and let cool for 2 minutes (or use cold brew concentrate).",
+      "Add espresso, half-and-half, vanilla syrup, caramel sauce, and ice into a high-speed blender.",
+      "Blend on high speed for 30-45 seconds until thick, slushy, and completely smooth.",
+      "Drizzle the inside of a glass with extra caramel sauce, pour in the blended Golden Eagle, and top with whipped cream and caramel drizzle."
+    ],
+    "tips": [
+      "Use half-and-half instead of milk for that signature rich Dutch Bros 'Kick Me' texture.",
+      "Pouring room temp or chilled espresso over ice before blending prevents the ice from melting too fast."
+    ],
+    "affiliateLinks": [
+      { "label": "High-speed blender", "url": "https://www.amazon.com/Ninja-Professional-72-Ounce-Total-Crushing-BL610/dp/B00NGV4E1G?linkCode=ll2&tag=theorgani0014-20" },
+      { "label": "Tall glass", "url": "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["copycat", "dutch bros", "golden eagle", "blended coffee", "caramel latte", "drinks"],
+    "datePublished": "2026-09-02",
+    "image": "/images/copycat-dutch-bros-golden-eagle-blended.jpeg",
+    "pinImage": "/images/pins/copycat-dutch-bros-golden-eagle-blended.png",
+    "metaTitle": "Copycat Dutch Bros Golden Eagle Blended – Save $7 at Home",
+    "metaDescription": "Make the famous Dutch Bros Golden Eagle Blended at home in 5 minutes — creamy espresso, vanilla syrup, caramel sauce, and half-and-half blended over ice."
+  },
+  {
+    "slug": "30-minute-sheet-pan-fajitas",
+    "title": "30-Minute Sheet Pan Fajitas (Chicken or Steak)",
+    "subtitle": "Sizzling seasoned bell peppers, onions, and tender juicy steak or chicken",
+    "category": "one-pan",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "totalTime": "30 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "These 30-minute sheet pan fajitas feature tender sliced chicken breast or flank steak roasted with colorful peppers, onions, and homemade fajita seasoning.",
+    "ingredients": [
+      "1.5 lbs chicken breasts or flank steak (thinly sliced)",
+      "3 bell peppers (red, yellow, green - thinly sliced)",
+      "1 large yellow onion (thinly sliced)",
+      "2 tbsp olive oil",
+      "2 tbsp lime juice",
+      "Fajita Seasoning: 1 tbsp chili powder, 1 tsp cumin, 1 tsp garlic powder, 1 tsp onion powder, ½ tsp smoked paprika, ½ tsp oregano, salt and pepper",
+      "Warm flour tortillas, cilantro, guacamole, and salsa for serving"
+    ],
+    "equipment": [
+      "Sheet pan",
+      "Parchment paper",
+      "Chef's knife",
+      "Cutting board"
+    ],
+    "steps": [
+      "Preheat oven to 425°F (220°C) and line a large rimmed sheet pan with parchment paper.",
+      "In a small bowl, mix all fajita seasoning ingredients together.",
+      "Spread sliced chicken or steak, bell peppers, and yellow onions across the sheet pan in a single layer.",
+      "Drizzle olive oil and lime juice over everything, then sprinkle evenly with fajita seasoning. Toss well to coat.",
+      "Roast for 18-20 minutes until chicken/steak is tender and peppers are blistered and caramelized around the edges.",
+      "Serve immediately wrapped in warm tortillas with lime wedges, cilantro, guacamole, and fresh salsa."
+    ],
+    "tips": [
+      "High heat (425°F) is key to getting charred fajita edges on the peppers and onions without overcooking the meat.",
+      "Spread ingredients in a single layer without crowding so they roast instead of steam."
+    ],
+    "affiliateLinks": [
+      { "label": "Sheet pan", "url": "https://www.amazon.com/goodcook-Nonstick-Bakeware-Cookie-multicolor/dp/B0026RHI3M?linkCode=ll2&tag=theorgani0014-20" },
+      { "label": "Chef's knife", "url": "https://www.amazon.com/imarku-Japanese-Chef-Knife-Christmas/dp/B01DDBJF12?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["sheet pan", "fajitas", "mexican", "chicken fajitas", "steak fajitas", "30-minute dinner", "one-pan"],
+    "datePublished": "2026-09-02",
+    "image": "/images/30-minute-sheet-pan-fajitas.jpeg",
+    "pinImage": "/images/pins/30-minute-sheet-pan-fajitas.png",
+    "metaTitle": "30-Minute Sheet Pan Fajitas – Easy Chicken or Steak Dinner",
+    "metaDescription": "These 30-minute sheet pan fajitas feature tender sliced chicken breast or flank steak roasted with colorful peppers, onions, and homemade fajita seasoning."
+  },
+  {
+    "slug": "6-high-protein-desserts-hit-macros",
+    "title": "6 High-Protein Desserts That Hit the Macros",
+    "subtitle": "15g-25g protein per serving — satisfy your sweet tooth guilt-free",
+    "category": "desserts",
+    "prepTime": "10 min",
+    "totalTime": "10 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "Six delicious high-protein desserts with 15g-25g of protein per serving — quick 5-minute treat ideas that fit your fitness macros without sacrifice.",
+    "ingredients": [],
+    "equipment": [
+      "Food processor or blender",
+      "Mixing bowl",
+      "Measuring spoons"
+    ],
+    "steps": [],
+    "listItems": [
+      {
+        "title": "1. Chocolate Peanut Butter Cottage Cheese Mousse (24g Protein)",
+        "description": "Silky blended cottage cheese whipped with chocolate protein powder, cocoa, PB2 powder, and maple syrup.",
+        "ingredients": ["½ cup low-fat cottage cheese", "1 scoop chocolate protein powder", "1 tbsp cocoa powder", "1 tbsp PB2", "1 tbsp maple syrup"]
+      },
+      {
+        "title": "2. Greek Yogurt Edible Cookie Dough (22g Protein)",
+        "description": "Thick Greek yogurt mixed with vanilla whey-casein protein powder, peanut butter, oat flour, and mini chocolate chips.",
+        "ingredients": ["½ cup plain Greek yogurt", "1 scoop vanilla protein powder", "1 tbsp peanut butter", "1 tbsp oat flour", "1 tbsp mini chocolate chips"]
+      },
+      {
+        "title": "3. 45-Second Chocolate Protein Mug Cake (20g Protein)",
+        "description": "Soft microwave mug cake made with chocolate casein protein, cocoa, baking powder, egg white, and almond milk.",
+        "ingredients": ["1 scoop chocolate casein protein", "1 tbsp cocoa powder", "½ tsp baking powder", "1 egg white", "3 tbsp almond milk"]
+      },
+      {
+        "title": "4. High-Protein Chocolate Pudding (25g Protein)",
+        "description": "Instant pudding texture achieved by whisking chocolate protein powder into cold milk and 2 tbsp chia seeds.",
+        "ingredients": ["1 scoop chocolate protein powder", "¾ cup cold almond milk", "2 tbsp chia seeds", "1 tsp sweetener"]
+      },
+      {
+        "title": "5. Birthday Cake Protein Fluff (18g Protein)",
+        "description": "Fluffy dessert bowl whipped with Greek yogurt, vanilla protein, almond extract, and rainbow sprinkles.",
+        "ingredients": ["½ cup Greek yogurt", "1 scoop vanilla protein", "¼ tsp almond extract", "1 tsp rainbow sprinkles"]
+      },
+      {
+        "title": "6. Frozen Peanut Butter Berry Protein Bark (15g Protein)",
+        "description": "Greek yogurt spread onto a sheet pan with melted peanut butter drizzle and crushed berries, then frozen.",
+        "ingredients": ["¾ cup Greek yogurt", "1 tbsp melted peanut butter", "¼ cup fresh raspberries", "1 tbsp honey"]
+      }
+    ],
+    "tips": [
+      "Blend cottage cheese in a high-speed processor to transform it into a silky, cheesecake-like base with zero curds.",
+      "Use whey-casein blend protein powder for baking and mug cakes for a softer, non-rubbery texture."
+    ],
+    "affiliateLinks": [
+      { "label": "High-speed blender", "url": "https://www.amazon.com/Ninja-Professional-72-Ounce-Total-Crushing-BL610/dp/B00NGV4E1G?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["high-protein", "desserts", "macros", "cottage cheese recipes", "fit treats", "low sugar"],
+    "datePublished": "2026-09-02",
+    "image": "/images/6-high-protein-desserts-hit-macros.jpeg",
+    "pinImage": "/images/pins/6-high-protein-desserts-hit-macros.png",
+    "metaTitle": "6 High-Protein Desserts That Hit the Macros – 15g-25g Protein",
+    "metaDescription": "Six delicious high-protein desserts with 15g-25g of protein per serving — quick 5-minute treat ideas that fit your fitness macros without sacrifice."
+  },
+  {
+    "slug": "copycat-subway-chipotle-southwest-sauce",
+    "title": "Copycat Subway Chipotle Southwest Sauce",
+    "subtitle": "Smoky, creamy, zesty condiment ready in 2 minutes",
+    "category": "copycat",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 8,
+    "difficulty": "Easy",
+    "description": "Recreate Subway's iconically smoky Chipotle Southwest Sauce at home in 2 minutes — perfect for sandwiches, wraps, burgers, and dipping.",
+    "ingredients": [
+      "½ cup mayonnaise",
+      "¼ cup sour cream or plain Greek yogurt",
+      "2 tbsp chipotle peppers in adobo (minced, plus 1 tbsp adobo sauce)",
+      "1 tbsp fresh lime juice",
+      "½ tsp garlic powder",
+      "½ tsp onion powder",
+      "½ tsp smoked paprika",
+      "¼ tsp cumin",
+      "¼ tsp salt"
+    ],
+    "equipment": [
+      "Small whisk",
+      "Mixing bowl",
+      "Mason jar"
+    ],
+    "steps": [
+      "In a small bowl, whisk mayonnaise, sour cream, minced chipotle peppers, and adobo sauce until smooth.",
+      "Add lime juice, garlic powder, onion powder, smoked paprika, cumin, and salt.",
+      "Whisk vigorously for 30 seconds until completely uniform and creamy.",
+      "Chill in the refrigerator for 15-30 minutes before serving to let flavors marry together."
+    ],
+    "tips": [
+      "Adjust chipotle adobo sauce to control heat: 1 tbsp for mild zesty smokiness, 2 tbsp for extra kick!",
+      "Stores in an airtight glass jar in the fridge for up to 2 weeks."
+    ],
+    "affiliateLinks": [
+      { "label": "Mason jar", "url": "https://www.amazon.com/Glass-Mason-Jars-Handles-Lids/dp/B085CD7M16?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["copycat", "subway", "chipotle southwest sauce", "dipping sauce", "sandwich sauce", "condiments"],
+    "datePublished": "2026-09-02",
+    "image": "/images/copycat-subway-chipotle-southwest-sauce.jpeg",
+    "pinImage": "/images/pins/copycat-subway-chipotle-southwest-sauce.png",
+    "metaTitle": "Copycat Subway Chipotle Southwest Sauce – 2-Minute Recipe",
+    "metaDescription": "Recreate Subway's iconically smoky Chipotle Southwest Sauce at home in 2 minutes — perfect for sandwiches, wraps, burgers, and dipping."
+  },
+  {
+    "slug": "homemade-freezer-waffles-meal-prep",
+    "title": "Homemade Freezer Waffles (Meal Prep, 10 at Once)",
+    "subtitle": "Fluffy golden waffles ready to pop in the toaster all week long",
+    "category": "breakfast",
+    "prepTime": "10 min",
+    "cookTime": "20 min",
+    "totalTime": "30 min",
+    "servings": 10,
+    "difficulty": "Easy",
+    "description": "Batch prep 10 crisp, golden homemade waffles in 30 minutes. Freeze and pop them in the toaster for fast, hot breakfasts all week long.",
+    "ingredients": [
+      "2 cups all-purpose flour",
+      "2 tbsp granulated sugar",
+      "1 tbsp baking powder",
+      "½ tsp salt",
+      "2 large eggs (separated)",
+      "1½ cups milk",
+      "½ cup melted unsalted butter",
+      "1 tsp vanilla extract"
+    ],
+    "equipment": [
+      "Waffle maker",
+      "Wire cooling rack",
+      "Mixing bowls",
+      "Whisk"
+    ],
+    "steps": [
+      "Whisk flour, sugar, baking powder, and salt together in a large bowl.",
+      "In a separate bowl, whisk egg yolks, milk, melted butter, and vanilla extract. Pour wet ingredients into dry and stir until just combined.",
+      "Beat egg whites in a clean bowl until stiff peaks form. Gently fold whipped egg whites into the batter for extra fluffiness.",
+      "Preheat waffle iron and grease lightly. Pour ⅓ cup batter per waffle and cook until golden brown and crispy (4-5 minutes).",
+      "Cool waffles completely on a wire rack in a single layer.",
+      "Flash freeze on a baking sheet for 30 minutes, then transfer into freezer ziplock bags. Toast directly from frozen for 2-3 minutes!"
+    ],
+    "tips": [
+      "Whipped egg whites folded into the batter give freezer waffles light, airy centers and crispy toasted exteriors.",
+      "Cool waffles completely on a wire rack before freezing so steam doesn't make them soggy."
+    ],
+    "affiliateLinks": [
+      { "label": "Waffle maker", "url": "https://www.amazon.com/Cuisinart-WAF-F20-Double-Belgian-Waffle/dp/B010TFQZYC?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["freezer waffles", "meal prep", "breakfast", "waffles", "make ahead", "batch cooking"],
+    "datePublished": "2026-09-02",
+    "image": "/images/homemade-freezer-waffles-meal-prep.jpeg",
+    "pinImage": "/images/pins/homemade-freezer-waffles-meal-prep.png",
+    "metaTitle": "Homemade Freezer Waffles – Batch Prep 10 Crispy Waffles",
+    "metaDescription": "Batch prep 10 crisp, golden homemade waffles in 30 minutes. Freeze and pop them in the toaster for fast, hot breakfasts all week long."
+  },
+  {
+    "slug": "iced-lavender-london-fog-latte",
+    "title": "Iced Lavender London Fog Latte",
+    "subtitle": "Fragrant Earl Grey tea, vanilla, lavender syrup & creamy milk over ice",
+    "category": "drinks",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 1,
+    "difficulty": "Easy",
+    "description": "This iced Lavender London Fog Latte combines concentrated Earl Grey tea, floral lavender syrup, vanilla, and cold milk over ice for a coffeehouse favorite.",
+    "ingredients": [
+      "2 Earl Grey tea bags (steeped in ¼ cup hot water for 5 minutes)",
+      "1 tbsp culinary lavender syrup (or honey + lavender buds)",
+      "1 tsp vanilla extract",
+      "¾ cup milk (whole milk, oat milk, or almond milk)",
+      "1 cup ice cubes",
+      "Dried lavender buds for garnish (optional)"
+    ],
+    "equipment": [
+      "Mug for steeping",
+      "Tall glass",
+      "Spoon"
+    ],
+    "steps": [
+      "Steep 2 Earl Grey tea bags in ¼ cup hot water for 5 minutes to create a concentrated tea base. Remove tea bags and let cool.",
+      "Stir lavender syrup and vanilla extract into the warm Earl Grey concentrate until dissolved.",
+      "Fill a tall glass with ice cubes and pour in the lavender Earl Grey tea base.",
+      "Pour milk over ice and stir gently to combine into a soft purple-gray creamy latte.",
+      "Garnish with a pinch of dried culinary lavender buds."
+    ],
+    "tips": [
+      "Steeping 2 tea bags in a small amount of hot water yields a concentrated Earl Grey base that won't get watered down by ice.",
+      "Frothed cold milk poured slowly creates a beautiful layered cloud effect."
+    ],
+    "affiliateLinks": [
+      { "label": "Tall glass", "url": "https://www.amazon.com/Drinking-Water-Crystal-Highball-Glasses/dp/B0DBL3WXYW?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["london fog", "lavender latte", "iced tea", "earl grey", "drinks", "coffeehouse"],
+    "datePublished": "2026-09-02",
+    "image": "/images/iced-lavender-london-fog-latte.jpeg",
+    "pinImage": "/images/pins/iced-lavender-london-fog-latte.png",
+    "metaTitle": "Iced Lavender London Fog Latte – 5-Minute Iced Tea Recipe",
+    "metaDescription": "This iced Lavender London Fog Latte combines concentrated Earl Grey tea, floral lavender syrup, vanilla, and cold milk over ice for a coffeehouse favorite."
+  },
+  {
+    "slug": "3-ingredient-mango-sorbet-no-machine",
+    "title": "3-Ingredient Mango Sorbet (No Machine)",
+    "subtitle": "Tropical, silky, refreshingly sweet dessert blended in 5 minutes",
+    "category": "desserts",
+    "prepTime": "5 min",
+    "totalTime": "5 min",
+    "servings": 4,
+    "difficulty": "Easy",
+    "description": "Make ultra-creamy 3-ingredient Mango Sorbet in 5 minutes with frozen mango, lime juice, and honey — no ice cream maker required!",
+    "ingredients": [
+      "4 cups frozen mango chunks",
+      "2 tbsp fresh lime juice",
+      "3 tbsp honey or agave nectar",
+      "2-4 tbsp water or coconut water (if needed to blend)"
+    ],
+    "equipment": [
+      "Food processor or high-speed blender",
+      "Spatula",
+      "Ice cream scoop"
+    ],
+    "steps": [
+      "Add frozen mango chunks, fresh lime juice, and honey into a high-speed blender or food processor.",
+      "Pulse 5-6 times to break down frozen mango, then blend on high.",
+      "Add 1 tablespoon of water at a time only if needed to keep blades turning. Scrape down sides with a spatula.",
+      "Blend for 2 minutes until smooth, velvety, and scoopable like soft-serve.",
+      "Scoop into dessert bowls and serve immediately, or freeze for 1 hour in a loaf pan for firmer scoops."
+    ],
+    "tips": [
+      "Fresh lime juice cuts through the tropical mango sweetness and acts as a natural flavor brightener.",
+      "If frozen solid after storing in the freezer, let sit at room temp for 5-10 minutes before scooping."
+    ],
+    "affiliateLinks": [
+      { "label": "High-speed blender", "url": "https://www.amazon.com/Ninja-Professional-72-Ounce-Total-Crushing-BL610/dp/B00NGV4E1G?linkCode=ll2&tag=theorgani0014-20" }
+    ],
+    "tags": ["mango sorbet", "no machine", "3-ingredient", "dessert", "dairy-free", "healthy treats", "vegan"],
+    "datePublished": "2026-09-02",
+    "image": "/images/3-ingredient-mango-sorbet-no-machine.jpeg",
+    "pinImage": "/images/pins/3-ingredient-mango-sorbet-no-machine.png",
+    "metaTitle": "3-Ingredient Mango Sorbet (No Machine) – 5-Minute Dessert",
+    "metaDescription": "Make ultra-creamy 3-ingredient Mango Sorbet in 5 minutes with frozen mango, lime juice, and honey — no ice cream maker required!"
+  },
+  {
     "slug": "copycat-olive-garden-chicken-alfredo",
     "title": "Copycat Olive Garden Chicken Alfredo",
     "subtitle": "Rich, creamy parmesan cream sauce with grilled chicken and fettuccine",

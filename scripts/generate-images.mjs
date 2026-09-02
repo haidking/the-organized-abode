@@ -34,13 +34,16 @@ function main() {
 
   for (const recipe of recipes) {
     const slug = recipe.slug;
-    const heroPath = `${IMAGES_DIR}/${slug}.jpg`;
+    const heroPathJpg = `${IMAGES_DIR}/${slug}.jpg`;
+    const heroPathJpeg = `${IMAGES_DIR}/${slug}.jpeg`;
     const pinPath = `${PINS_DIR}/${slug}.png`;
 
-    if (!existsSync(heroPath)) {
-      writeFileSync(heroPath, TRANSPARENT_PNG);
+    if (!existsSync(heroPathJpg) && !existsSync(heroPathJpeg)) {
+      const heroPath = recipe.image || heroPathJpeg;
+      const targetFile = `./public${heroPath}`;
+      writeFileSync(targetFile, TRANSPARENT_PNG);
       created++;
-      console.log(`Created placeholder: ${heroPath}`);
+      console.log(`Created placeholder: ${targetFile}`);
     } else {
       skipped++;
     }

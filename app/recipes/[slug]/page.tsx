@@ -101,6 +101,16 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
     "copycat-baskin-robbins-oreo-shake": "copycat-baskin-robbins-oreo-shake-guide",
     "pumpkin-spice-overnight-oats-5-ways": "pumpkin-spice-overnight-oats-5-ways-guide",
     "homemade-bone-broth-canning-guide": "homemade-bone-broth-canning-guide-blog",
+    "copycat-applebees-bourbon-street-chicken": "copycat-applebees-bourbon-street-chicken-guide",
+    "9-lazy-high-protein-dinners-under-400-calories": "9-lazy-high-protein-dinners-under-400-calories-guide",
+    "creamy-marry-me-orzo-25-minutes": "creamy-marry-me-orzo-25-minutes-guide",
+    "copycat-dutch-bros-golden-eagle-blended": "copycat-dutch-bros-golden-eagle-blended-guide",
+    "30-minute-sheet-pan-fajitas": "30-minute-sheet-pan-fajitas-guide",
+    "6-high-protein-desserts-hit-macros": "6-high-protein-desserts-hit-macros-guide",
+    "copycat-subway-chipotle-southwest-sauce": "copycat-subway-chipotle-southwest-sauce-guide",
+    "homemade-freezer-waffles-meal-prep": "homemade-freezer-waffles-meal-prep-guide",
+    "iced-lavender-london-fog-latte": "iced-lavender-london-fog-latte-guide",
+    "3-ingredient-mango-sorbet-no-machine": "3-ingredient-mango-sorbet-no-machine-guide",
   };
 
   const blogPostSlug = blogSlugMap[recipe.slug] || `${recipe.slug}-guide`;
