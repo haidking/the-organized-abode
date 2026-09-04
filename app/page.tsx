@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { recipes } from "@/data/recipes";
 import HomeRecipesExplorer from "@/components/HomeRecipesExplorer";
-import FreeEbooks from "@/components/FreeEbooks";
+
 import BlogSpotlight from "@/components/BlogSpotlight";
 
 /* ── Trust bar items ─────────────────────────────────────────────────────── */
@@ -168,32 +168,13 @@ export default function HomePage() {
                   />
                 </svg>
               </Link>
-              <Link
-                href="#free-ebooks"
-                className="group inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/30 bg-white/10 px-8 py-4 text-base sm:text-lg font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white/20 hover:border-white/50 hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto sm:min-w-[220px]"
-              >
-                Recipe eBooks
-                <svg
-                  className="h-5 w-5 transition-transform group-hover:translate-y-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 5v14M19 12l-7 7-7-7"
-                  />
-                </svg>
-              </Link>
+
             </div>
 
             {/* Social proof */}
             <p className="flex items-center gap-2 text-white/70 text-sm font-medium">
               <span aria-hidden="true">⭐</span>
-              50,000+ home cooks saving recipes weekly
+              92k monthly visitors and growing
             </p>
 
           </div>
@@ -235,12 +216,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═════════════════════════════════════════════════════════════════════
-          1. Free eBooks Promo (above recipes)
-      ═════════════════════════════════════════════════════════════════════ */}
-      <section id="free-ebooks" className="scroll-mt-20">
-        <FreeEbooks />
-      </section>
+
 
       {/* ═════════════════════════════════════════════════════════════════════
           2. Featured Blogs / Recipe Guides Spotlight (above recipes)

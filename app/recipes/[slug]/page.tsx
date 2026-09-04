@@ -393,18 +393,19 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
         {/* ── Footer CTA Banner (Forest Green #2D6A4F) ── */}
         <div className="mt-16 rounded-2xl bg-[#2D6A4F] text-white p-6 sm:p-8 lg:p-10 text-center shadow-md">
           <h2 className="font-heading text-xl sm:text-2xl lg:text-3xl font-bold mb-3 text-white">
-            Love this recipe?
+            Enjoyed this recipe?
           </h2>
           <p className="text-sm sm:text-base text-emerald-100 mb-5 max-w-xl mx-auto">
-            Get more easy 30-minute recipes, meal prep guides, and kitchen tips delivered straight to your inbox!
+            Browse more easy home recipes, meal prep guides, and copycat favorites — all made with real, simple ingredients.
           </p>
           <a
-            href="https://thebetterhomerecipes.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/recipes"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 sm:px-8 py-3 text-sm sm:text-base font-bold text-[#2D6A4F] hover:bg-emerald-50 transition-all duration-200 shadow-md hover:shadow-lg w-full sm:w-auto"
           >
-            Get the full recipe → thebetterhomerecipes.com
+            Browse All Recipes
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </a>
         </div>
       </div>

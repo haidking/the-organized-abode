@@ -4,14 +4,14 @@ import { recipes } from "@/data/recipes";
 import RecipesExplorer from "@/components/RecipesExplorer";
 
 export const metadata: Metadata = {
-  title: "Recipes",
+  title: "All Recipes — Copycat, One-Pan, Drinks & Meal Prep | The Better Home Recipes",
   description:
-    "Browse all recipes — copycat favorites, one-pan dinners, drinks, meal prep and more.",
+    "Browse 80+ home recipes — restaurant copycats, one-pan dinners, high-protein meal prep, refreshing drinks, and budget-friendly meals. Filter by category, time, or dietary preference.",
   alternates: { canonical: "/recipes" },
   openGraph: {
-    title: "Recipes | The Better Home Recipes",
+    title: "All Recipes | The Better Home Recipes",
     description:
-      "Browse all recipes — copycat favorites, one-pan dinners, drinks, meal prep and more.",
+      "Browse 80+ home recipes — copycat favorites, one-pan dinners, drinks, meal prep and more. Real food for real home kitchens.",
     type: "website",
   },
 };

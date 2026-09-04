@@ -12,6 +12,7 @@ const siteLinks = [
   { href: "/contact", label: "Contact" },
   { href: "/privacy-policy", label: "Privacy Policy" },
   { href: "/disclaimer", label: "Disclaimer" },
+  { href: "/terms", label: "Terms of Use" },
 ];
 
 function PinterestIcon({ className }: { className?: string }) {
