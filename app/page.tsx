@@ -80,8 +80,8 @@ const TRUST_ITEMS = [
         <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
       </svg>
     ),
-    label: "Saved by Thousands",
-    sub: "On Pinterest",
+    label: "Family Tested",
+    sub: "Everyday favorites",
   },
 ];
 
@@ -171,10 +171,10 @@ export default function HomePage() {
 
             </div>
 
-            {/* Social proof */}
+            {/* Value statement */}
             <p className="flex items-center gap-2 text-white/70 text-sm font-medium">
               <span aria-hidden="true">⭐</span>
-              92k monthly visitors and growing
+              Tested home-cooked favorites for everyday meals
             </p>
 
           </div>

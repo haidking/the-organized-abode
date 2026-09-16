@@ -152,6 +152,8 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
               <MetaChip>📋 Total · {recipe.totalTime}</MetaChip>
               <MetaChip>👤 Serves · {recipe.servings}</MetaChip>
               <MetaChip>📊 {recipe.difficulty}</MetaChip>
+              {recipe.calories && <MetaChip>🔥 {recipe.calories} kcal</MetaChip>}
+              {recipe.proteinGrams && <MetaChip>💪 {recipe.proteinGrams}g Protein</MetaChip>}
             </div>
 
             {/* Save to Pinterest + Print Recipe row */}
@@ -184,6 +186,61 @@ export default function RecipePage({ params }: { params: { slug: string } }) {
             <p className="mt-6 text-base leading-relaxed text-ink-secondary">
               {recipe.description}
             </p>
+
+            {/* Why This Recipe Works & Editorial Notes */}
+            <div className="mt-6 rounded-2xl border border-border/80 bg-surface/60 p-5 sm:p-6 space-y-4">
+              <h2 className="font-heading text-lg font-bold text-ink flex items-center gap-2">
+                <span>✨</span> Why This Recipe Works
+              </h2>
+              <div className="text-sm sm:text-base leading-relaxed text-ink-secondary space-y-3">
+                <p>
+                  {recipe.category === "copycat" && (
+                    <>
+                      Recreating restaurant favorites at home gives you complete control over ingredient freshness and seasonings while capturing that craveable takeout flavor. This recipe is designed to deliver restaurant-quality results using accessible pantry staples and dependable skillet or baking techniques.
+                    </>
+                  )}
+                  {recipe.category === "one-pan" && (
+                    <>
+                      One-pan cooking succeeds by layering deep flavor without creating extra kitchen cleanup. By searing proteins first to build fond on the pan surface, then deglazing with aromatics and vegetables, all the savory juices stay concentrated in a single skillet.
+                    </>
+                  )}
+                  {recipe.category === "meal-prep" && (
+                    <>
+                      Great meal prep requires recipes that maintain their moisture, texture, and flavor profile after refrigeration. This dish utilizes sturdy ingredients that reheat evenly without drying out or separating, making your weekly meals effortless and wholesome.
+                    </>
+                  )}
+                  {recipe.category === "breakfast" && (
+                    <>
+                      Mornings call for reliable, nutrient-dense fuel that comes together quickly. This recipe balances efficient prep, satisfying flavor, and dependable heat control so you can start your day energized.
+                    </>
+                  )}
+                  {recipe.category === "drinks" && (
+                    <>
+                      Crafting specialty drinks at home saves significant cost while allowing you to tailor sweetness and dairy choices. The key is proper emulsification, temperature balancing, and high-quality steepings.
+                    </>
+                  )}
+                  {recipe.category !== "copycat" &&
+                    recipe.category !== "one-pan" &&
+                    recipe.category !== "meal-prep" &&
+                    recipe.category !== "breakfast" &&
+                    recipe.category !== "drinks" && (
+                      <>
+                        Tested for everyday home kitchens, this recipe balances approachable preparation with deep, satisfying flavor. By focusing on fundamental culinary timing and whole ingredients, it delivers dependable results every time.
+                      </>
+                    )}
+                </p>
+                {recipe.tips && recipe.tips.length > 0 && (
+                  <div className="pt-2 border-t border-border/60">
+                    <span className="font-semibold text-ink text-xs uppercase tracking-wider block mb-1">
+                      Chef&apos;s Key Secret:
+                    </span>
+                    <p className="text-sm italic text-ink/90">
+                      &ldquo;{recipe.tips[0]}&rdquo;
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
 
             {/* ── AdSense: Responsive horizontal ad ── */}
             <AdUnit slot="RECIPE_TOP" />

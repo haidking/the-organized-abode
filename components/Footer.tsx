@@ -106,7 +106,7 @@ export default function Footer() {
                 Pinterest
               </a>
               <p className="text-footer-text/80">
-                <span className="font-semibold text-footer-text">100k</span> monthly views
+                Fresh recipes &amp; meal prep ideas
               </p>
             </div>
           </div>

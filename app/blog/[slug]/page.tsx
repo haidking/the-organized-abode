@@ -14,7 +14,7 @@ interface BlogPostPageProps {
   };
 }
 
-// Generate static params for all 18 blog posts at build time
+// Generate static params for all blog posts at build time
 export async function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({
